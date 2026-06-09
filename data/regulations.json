@@ -1,0 +1,350 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-09",
+  "regulations": [
+    {
+      "id": "GDPR",
+      "name": "General Data Protection Regulation",
+      "short_name": "GDPR",
+      "domain": ["data_privacy"],
+      "jurisdiction": "European Union",
+      "geography": {
+        "type": "regional",
+        "regions": ["EU"],
+        "countries": ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE"]
+      },
+      "status": "active",
+      "effective_date": "2018-05-25",
+      "authority": "European Data Protection Board (EDPB)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "summary": "The world's most comprehensive data protection law, governing how organizations collect, store, process, and transfer personal data of individuals in the EU. It applies to any organization worldwide that handles EU resident data, regardless of where the organization is based.",
+      "key_requirements": [
+        "Establish a lawful basis for every processing activity",
+        "Respect data subject rights: access, erasure ('right to be forgotten'), portability, rectification, objection",
+        "Report personal data breaches to supervisory authority within 72 hours",
+        "Appoint a Data Protection Officer (DPO) for high-risk processing activities",
+        "Implement Privacy by Design and Privacy by Default",
+        "Conduct Data Protection Impact Assessments (DPIAs) for high-risk activities",
+        "Ensure valid consent is freely given, specific, informed, and unambiguous",
+        "Restrict transfers of personal data outside the EEA without adequate safeguards"
+      ],
+      "penalties": "Up to €20 million or 4% of global annual turnover (whichever is higher)",
+      "tags": ["privacy", "data_protection", "consent", "breach_notification", "dpo", "dpia"]
+    },
+    {
+      "id": "NIS2",
+      "name": "Network and Information Security Directive 2",
+      "short_name": "NIS2",
+      "domain": ["cybersecurity", "critical_infrastructure"],
+      "jurisdiction": "European Union",
+      "geography": {
+        "type": "regional",
+        "regions": ["EU"],
+        "countries": ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE"]
+      },
+      "status": "active",
+      "effective_date": "2024-10-17",
+      "authority": "European Union Agency for Cybersecurity (ENISA)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022L2555",
+      "summary": "A landmark EU directive that significantly expands cybersecurity obligations for organizations operating critical infrastructure and essential services. NIS2 broadens the scope of its predecessor to include more sectors and introduces stricter requirements for risk management, incident reporting, and supply chain security.",
+      "key_requirements": [
+        "Implement risk management measures including policies on risk analysis and information system security",
+        "Report significant cybersecurity incidents to national authorities within 24 hours (initial) and 72 hours (detailed)",
+        "Ensure business continuity and crisis management capabilities",
+        "Address supply chain security and manage third-party risks",
+        "Implement vulnerability handling and disclosure processes",
+        "Train staff and promote cybersecurity awareness",
+        "Ensure security of network and information systems including encryption",
+        "Senior management accountability for compliance — fines can target executives personally"
+      ],
+      "penalties": "Up to €10 million or 2% of global annual turnover for essential entities",
+      "tags": ["cybersecurity", "incident_reporting", "supply_chain", "critical_infrastructure", "risk_management"]
+    },
+    {
+      "id": "DORA",
+      "name": "Digital Operational Resilience Act",
+      "short_name": "DORA",
+      "domain": ["finance", "cybersecurity"],
+      "jurisdiction": "European Union",
+      "geography": {
+        "type": "regional",
+        "regions": ["EU"],
+        "countries": ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE"]
+      },
+      "status": "active",
+      "effective_date": "2025-01-17",
+      "authority": "European Supervisory Authorities (EBA, EIOPA, ESMA)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554",
+      "summary": "A regulation that establishes uniform requirements for the digital operational resilience of financial entities in the EU. DORA consolidates and upgrades ICT risk requirements previously scattered across multiple sectoral regulations, specifically for banks, insurers, investment firms, and their critical ICT third-party providers.",
+      "key_requirements": [
+        "Establish an ICT Risk Management Framework with governance and accountability",
+        "Conduct regular Digital Operational Resilience Testing (DORA testing) including advanced threat-led penetration testing (TLPT)",
+        "Detect, manage, classify, and report major ICT-related incidents",
+        "Manage ICT third-party risk with robust contractual requirements and exit strategies",
+        "Share cybersecurity threat intelligence among financial entities",
+        "Maintain and test business continuity and disaster recovery plans",
+        "Critical ICT third-party providers (CTPPs) must register and comply with ENISA oversight"
+      ],
+      "penalties": "Up to 2% of global annual turnover; periodic penalty payments up to 1% of average daily turnover",
+      "tags": ["finance", "resilience", "ict_risk", "third_party_risk", "penetration_testing", "incident_management"]
+    },
+    {
+      "id": "AI_ACT",
+      "name": "EU Artificial Intelligence Act",
+      "short_name": "EU AI Act",
+      "domain": ["ai_governance"],
+      "jurisdiction": "European Union",
+      "geography": {
+        "type": "regional",
+        "regions": ["EU"],
+        "countries": ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE"]
+      },
+      "status": "active",
+      "effective_date": "2026-08-02",
+      "authority": "EU AI Office (European Commission)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689",
+      "summary": "The world's first comprehensive legal framework for artificial intelligence, classifying AI systems by risk level and imposing corresponding obligations. Unacceptable-risk AI (e.g., social scoring) is banned; high-risk AI (e.g., CV screening, credit scoring, biometric identification) must meet strict requirements before deployment.",
+      "key_requirements": [
+        "Prohibit unacceptable-risk AI systems including real-time biometric surveillance in public spaces, social scoring, and manipulative AI",
+        "High-risk AI systems must undergo conformity assessments and register in EU database",
+        "Maintain technical documentation, logs, and human oversight for high-risk AI",
+        "Ensure transparency: users must know when interacting with AI (chatbots, deepfakes)",
+        "General-purpose AI model providers must disclose training data and conduct adversarial testing",
+        "Establish a quality management system for high-risk AI systems",
+        "Post-market monitoring and incident reporting for high-risk AI"
+      ],
+      "penalties": "Up to €35 million or 7% of global annual turnover for prohibited AI violations",
+      "tags": ["ai_governance", "transparency", "high_risk_ai", "conformity_assessment", "gpai"]
+    },
+    {
+      "id": "CYBER_ACT",
+      "name": "EU Cybersecurity Act",
+      "short_name": "EU Cyber Act",
+      "domain": ["cybersecurity"],
+      "jurisdiction": "European Union",
+      "geography": {
+        "type": "regional",
+        "regions": ["EU"],
+        "countries": ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE"]
+      },
+      "status": "active",
+      "effective_date": "2019-06-27",
+      "authority": "European Union Agency for Cybersecurity (ENISA)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0881",
+      "summary": "A regulation that grants ENISA a permanent mandate and establishes an EU-wide cybersecurity certification framework for ICT products, services, and processes. It enables the creation of European cybersecurity certification schemes to replace the current patchwork of national schemes.",
+      "key_requirements": [
+        "Voluntary European cybersecurity certification schemes for ICT products, services, and processes",
+        "Three assurance levels: basic, substantial, and high — based on risk profile",
+        "Manufacturers can self-declare conformity at the basic level; independent assessment required for high level",
+        "National certification supervisory authorities must be designated by each member state",
+        "ENISA maintains a database of all issued, amended, and withdrawn certificates",
+        "Cybersecurity certification does not replace sector-specific requirements (e.g., NIS2, DORA)"
+      ],
+      "penalties": "Defined by national laws; administrative fines for misleading certification claims",
+      "tags": ["cybersecurity", "certification", "enisa", "ict_products", "assurance_levels"]
+    },
+    {
+      "id": "CCPA",
+      "name": "California Consumer Privacy Act (as amended by CPRA)",
+      "short_name": "CCPA / CPRA",
+      "domain": ["data_privacy"],
+      "jurisdiction": "United States — California",
+      "geography": {
+        "type": "state",
+        "regions": ["US"],
+        "countries": ["US"]
+      },
+      "status": "active",
+      "effective_date": "2023-01-01",
+      "authority": "California Privacy Protection Agency (CPPA)",
+      "url": "https://oag.ca.gov/privacy/ccpa",
+      "summary": "California's comprehensive privacy law (originally 2020, expanded by CPRA in 2023) gives California residents broad rights over their personal information held by businesses. It is considered the most stringent U.S. state privacy law and a model for other states. It applies to for-profit businesses meeting certain thresholds.",
+      "key_requirements": [
+        "Disclose categories of personal information collected and purposes for processing",
+        "Honor consumer rights: access, deletion, correction, and opt-out of sale/sharing",
+        "Right to limit use of sensitive personal information (SPI)",
+        "Opt-out of automated decision-making, including profiling",
+        "Conduct and document risk assessments for high-risk processing activities",
+        "Enter into contracts with service providers and contractors limiting data use",
+        "Honor opt-out preference signals (Global Privacy Control) automatically",
+        "No retaliation for exercising privacy rights"
+      ],
+      "penalties": "Up to $2,500 per unintentional violation; $7,500 per intentional violation; $150–$750 per consumer per data breach incident",
+      "tags": ["privacy", "consumer_rights", "opt_out", "california", "us_state_law"]
+    },
+    {
+      "id": "HIPAA",
+      "name": "Health Insurance Portability and Accountability Act",
+      "short_name": "HIPAA",
+      "domain": ["health", "data_privacy"],
+      "jurisdiction": "United States — Federal",
+      "geography": {
+        "type": "national",
+        "regions": ["US"],
+        "countries": ["US"]
+      },
+      "status": "active",
+      "effective_date": "2003-04-14",
+      "authority": "U.S. Department of Health and Human Services (HHS) — Office for Civil Rights (OCR)",
+      "url": "https://www.hhs.gov/hipaa/index.html",
+      "summary": "U.S. federal law that establishes national standards for protecting the privacy and security of protected health information (PHI). It applies to covered entities (healthcare providers, health plans, clearinghouses) and their business associates who handle PHI on their behalf.",
+      "key_requirements": [
+        "Privacy Rule: Safeguard PHI and give patients rights to access and amend their health records",
+        "Security Rule: Implement administrative, physical, and technical safeguards for electronic PHI (ePHI)",
+        "Breach Notification Rule: Notify affected individuals, HHS, and media within 60 days of a breach",
+        "Minimum Necessary standard: only access or disclose the minimum PHI needed for the purpose",
+        "Business Associate Agreements (BAAs) required for all third-party PHI handlers",
+        "Conduct a comprehensive risk analysis and implement a risk management plan",
+        "Designate a Privacy Officer and a Security Officer",
+        "Prohibit the sale of PHI without specific authorization"
+      ],
+      "penalties": "Tiered: $100–$50,000 per violation; maximum $1.9 million per violation category per year; criminal penalties up to 10 years imprisonment",
+      "tags": ["health", "phi", "privacy", "security", "breach_notification", "hipaa_baa"]
+    },
+    {
+      "id": "SOX",
+      "name": "Sarbanes-Oxley Act",
+      "short_name": "SOX",
+      "domain": ["finance"],
+      "jurisdiction": "United States — Federal",
+      "geography": {
+        "type": "national",
+        "regions": ["US"],
+        "countries": ["US"]
+      },
+      "status": "active",
+      "effective_date": "2002-07-30",
+      "authority": "U.S. Securities and Exchange Commission (SEC) and Public Company Accounting Oversight Board (PCAOB)",
+      "url": "https://www.govinfo.gov/app/details/PLAW-107publ204",
+      "summary": "A U.S. federal law enacted in response to the Enron and WorldCom scandals that establishes enhanced standards for all U.S. publicly traded companies and their auditors. SOX Section 404 requires management and auditors to assess and attest to the effectiveness of internal controls over financial reporting (ICFR).",
+      "key_requirements": [
+        "CEO and CFO must personally certify the accuracy of financial reports (Sections 302 and 906)",
+        "Assess and document internal controls over financial reporting (ICFR) annually (Section 404)",
+        "External auditor must independently attest to management's ICFR assessment (larger companies)",
+        "Establish and maintain an audit committee with financial expert requirements",
+        "Maintain document retention policies; destruction of audit records is a criminal offense",
+        "Establish whistleblower protection programs and anonymous reporting mechanisms",
+        "Prohibit loans to executives and directors",
+        "Auditor independence requirements: prohibit certain non-audit services for audit clients"
+      ],
+      "penalties": "Up to $5 million in fines and 20 years imprisonment for securities fraud; SEC enforcement actions",
+      "tags": ["finance", "internal_controls", "financial_reporting", "audit", "public_company", "sec"]
+    },
+    {
+      "id": "EO14028",
+      "name": "Executive Order 14028 — Improving the Nation's Cybersecurity",
+      "short_name": "EO 14028",
+      "domain": ["cybersecurity"],
+      "jurisdiction": "United States — Federal",
+      "geography": {
+        "type": "national",
+        "regions": ["US"],
+        "countries": ["US"]
+      },
+      "status": "active",
+      "effective_date": "2021-05-12",
+      "authority": "U.S. Office of Management and Budget (OMB), CISA, NIST",
+      "url": "https://www.federalregister.gov/executive-order/14028",
+      "summary": "A U.S. presidential executive order that mandates sweeping cybersecurity improvements across the federal government and its contractors. It directly catalyzed the creation of the NIST Secure Software Development Framework (SSDF), Zero Trust architecture requirements, and software bill of materials (SBOM) requirements.",
+      "key_requirements": [
+        "Federal agencies must adopt Zero Trust Architecture (ZTA) following NIST SP 800-207",
+        "Software vendors selling to the federal government must provide a Software Bill of Materials (SBOM)",
+        "Implement multi-factor authentication (MFA) and encryption for federal systems within 180 days",
+        "Establish a Cyber Safety Review Board (CSRB) to review significant cyber incidents",
+        "Mandate use of endpoint detection and response (EDR) solutions across federal agencies",
+        "Require cloud service providers to share cyber threat and incident data",
+        "Standardize cybersecurity incident playbooks across federal agencies",
+        "Remove barriers to sharing threat information between government and private sector"
+      ],
+      "penalties": "N/A (executive order — non-compliance risks contract termination for federal vendors)",
+      "tags": ["cybersecurity", "zero_trust", "sbom", "mfa", "federal_government", "us_policy"]
+    },
+    {
+      "id": "PIPL",
+      "name": "Personal Information Protection Law",
+      "short_name": "PIPL",
+      "domain": ["data_privacy"],
+      "jurisdiction": "People's Republic of China",
+      "geography": {
+        "type": "national",
+        "regions": ["APAC"],
+        "countries": ["CN"]
+      },
+      "status": "active",
+      "effective_date": "2021-11-01",
+      "authority": "Cyberspace Administration of China (CAC)",
+      "url": "http://www.npc.gov.cn/npc/c30834/202108/a8c4e3672c74491a80b53a172bb753fe.shtml",
+      "summary": "China's first comprehensive personal information protection law, drawing inspiration from the GDPR while incorporating distinctive Chinese characteristics. PIPL applies to organizations processing personal information of Chinese individuals, both within China and offshore, and imposes strict requirements for cross-border data transfers.",
+      "key_requirements": [
+        "Obtain separate consent for each processing purpose; bundled consents are invalid",
+        "Conduct Personal Information Protection Impact Assessments (PIPIAs) before high-risk processing",
+        "Designate a Personal Information Protection Officer (PIPO)",
+        "Strict cross-border data transfer restrictions: standard contracts, security assessments, or certification required",
+        "Critical information infrastructure operators and large-scale processors must store data in China",
+        "Notify authorities and individuals within specified timeframes of personal information breaches",
+        "Implement technical and organizational security measures proportionate to risk",
+        "Individuals have the right to access, copy, correct, delete, and transfer their personal information"
+      ],
+      "penalties": "Up to RMB 50 million (approx. USD 7 million) or 5% of prior year's annual turnover",
+      "tags": ["privacy", "china", "cross_border_transfer", "data_localization", "consent", "pipia"]
+    },
+    {
+      "id": "LGPD",
+      "name": "Lei Geral de Proteção de Dados (Brazilian General Data Protection Law)",
+      "short_name": "LGPD",
+      "domain": ["data_privacy"],
+      "jurisdiction": "Brazil",
+      "geography": {
+        "type": "national",
+        "regions": ["LATAM"],
+        "countries": ["BR"]
+      },
+      "status": "active",
+      "effective_date": "2020-09-18",
+      "authority": "Autoridade Nacional de Proteção de Dados (ANPD)",
+      "url": "https://www.gov.br/secretariageral/pt-br/legislacao/lei/2018/2018-lei-13709",
+      "summary": "Brazil's comprehensive data protection law, heavily influenced by the GDPR. It applies to any processing of personal data performed in Brazil or where the purpose of processing is to offer goods or services to individuals located in Brazil. LGPD establishes a rights-based approach to data protection.",
+      "key_requirements": [
+        "Establish a lawful basis for processing (10 legal bases similar to GDPR's 6)",
+        "Respect data subject rights including access, correction, deletion, portability, and information on third parties",
+        "Report data security incidents that may cause risk or harm to data subjects to the ANPD",
+        "Appoint a Data Protection Officer (Encarregado) — name and contact must be publicly available",
+        "Conduct Data Protection Impact Reports (Relatório de Impacto) for high-risk processing",
+        "Implement security, technical, and administrative measures to protect personal data",
+        "International data transfers require adequate protection or specific safeguards",
+        "Sensitive data (health, race, religion, etc.) requires specific consent or legal basis"
+      ],
+      "penalties": "Up to R$50 million (~USD 10 million) per violation or 2% of Brazilian revenue, capped at R$50 million per infraction",
+      "tags": ["privacy", "brazil", "latam", "data_protection", "lgpd", "anpd"]
+    },
+    {
+      "id": "PDPL",
+      "name": "Personal Data Protection Law",
+      "short_name": "PDPL",
+      "domain": ["data_privacy"],
+      "jurisdiction": "Kingdom of Saudi Arabia",
+      "geography": {
+        "type": "national",
+        "regions": ["MENA"],
+        "countries": ["SA"]
+      },
+      "status": "active",
+      "effective_date": "2023-09-14",
+      "authority": "Saudi Data and AI Authority (SDAIA) / National Data Management Office (NDMO)",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023.pdf",
+      "summary": "Saudi Arabia's first comprehensive data protection law establishing rights for individuals regarding their personal data and obligations for organizations processing it. The PDPL applies to data controllers processing personal data of individuals located in Saudi Arabia, regardless of where the controller is based.",
+      "key_requirements": [
+        "Obtain explicit consent for processing personal data or rely on alternative legal bases",
+        "Notify data subjects of processing purposes, types of data collected, and their rights",
+        "Respect individual rights: access, correction, erasure, and objection to processing",
+        "Report data breaches to SDAIA and affected individuals within 72 hours",
+        "Conduct Data Transfer Impact Assessments (DTIAs) before cross-border transfers",
+        "Store data relating to Saudi citizens or residents within Saudi Arabia (data localization)",
+        "Sensitive data (health, financial, biometric) requires heightened protection and explicit consent",
+        "Appoint a Data Protection Officer for high-risk processing activities"
+      ],
+      "penalties": "Up to SAR 5 million (~USD 1.3 million) for violations; SAR 3 million for confidentiality breaches; criminal penalties for intentional violations",
+      "tags": ["privacy", "saudi_arabia", "mena", "data_localization", "consent", "breach_notification"]
+    }
+  ]
+}

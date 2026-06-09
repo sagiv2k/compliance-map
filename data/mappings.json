@@ -1,0 +1,350 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-09",
+  "mappings": [
+    {
+      "regulation_id": "GDPR",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 addresses technical and organizational security measures (GDPR Art. 32) and incident management (Art. 33). It does not cover lawful basis, data subject rights, consent management, or DPO requirements.",
+      "mapped_articles": ["Art. 25", "Art. 32", "Art. 33"],
+      "mapped_controls": ["A.5.1", "A.5.2", "A.5.7", "A.8.2", "A.8.3", "A.8.7", "A.8.16"]
+    },
+    {
+      "regulation_id": "GDPR",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 is specifically designed as a GDPR-aligned privacy extension to ISO 27001. It covers data controller obligations, data processor requirements, privacy by design, data subject rights, and international transfers. Gap areas include specific GDPR legal bases and supervisory authority interactions.",
+      "mapped_articles": ["Art. 5", "Art. 6", "Art. 7", "Art. 12–22", "Art. 25", "Art. 28", "Art. 32", "Art. 35", "Art. 44–49"],
+      "mapped_controls": ["PIMS-All", "A.7-ext", "A.8-ext"]
+    },
+    {
+      "regulation_id": "GDPR",
+      "standard_id": "SOC2",
+      "coverage_level": "partial",
+      "notes": "SOC 2 Privacy criteria (P1–P8) align with GDPR data subject rights and purpose limitation. The Security criteria cover Art. 32 technical measures. However, SOC 2 does not address consent management, cross-border transfers, or DPIA requirements.",
+      "mapped_articles": ["Art. 5", "Art. 13–14", "Art. 17", "Art. 20", "Art. 32"],
+      "mapped_controls": ["P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "CC6", "CC7"]
+    },
+    {
+      "regulation_id": "GDPR",
+      "standard_id": "NIST_800_53",
+      "coverage_level": "partial",
+      "notes": "NIST 800-53 Rev. 5 includes privacy controls (AT-3(3), IP, AP, DI families) that map to many GDPR requirements. The privacy control families provide substantial coverage but NIST is a U.S. federal standard not purpose-built for GDPR.",
+      "mapped_articles": ["Art. 5", "Art. 12–22", "Art. 25", "Art. 32", "Art. 35"],
+      "mapped_controls": ["IP-1", "IP-2", "IP-3", "IP-4", "DI-1", "DI-2", "AP-1", "AP-2", "SC-8", "AC-all"]
+    },
+    {
+      "regulation_id": "GDPR",
+      "standard_id": "ISO31000",
+      "coverage_level": "minimal",
+      "notes": "ISO 31000 provides a generic risk framework that can underpin the DPIA process (Art. 35). It does not address privacy-specific controls or GDPR obligations directly.",
+      "mapped_articles": ["Art. 35"],
+      "mapped_controls": []
+    },
+    {
+      "regulation_id": "NIS2",
+      "standard_id": "ISO27001",
+      "coverage_level": "substantial",
+      "notes": "ISO 27001 is frequently cited by NIS2 guidance as providing a solid baseline. NIS2 Art. 21 security measures map well to ISO 27001 controls. Gaps include NIS2-specific incident reporting timelines (24h/72h) and supply chain reporting to authorities.",
+      "mapped_articles": ["Art. 21", "Art. 23"],
+      "mapped_controls": ["A.5.1", "A.5.7", "A.5.23", "A.5.24", "A.5.26", "A.8.1", "A.8.8", "A.8.16", "A.8.17"]
+    },
+    {
+      "regulation_id": "NIS2",
+      "standard_id": "NIST_CSF",
+      "coverage_level": "substantial",
+      "notes": "NIST CSF 2.0 functions (Govern, Identify, Protect, Detect, Respond, Recover) map directly to NIS2 Art. 21 security categories. CSF's Govern function addresses the supply chain risk requirements in NIS2.",
+      "mapped_articles": ["Art. 20", "Art. 21"],
+      "mapped_controls": ["GV.all", "ID.all", "PR.all", "DE.all", "RS.all", "RC.all"]
+    },
+    {
+      "regulation_id": "NIS2",
+      "standard_id": "CIS_CONTROLS",
+      "coverage_level": "substantial",
+      "notes": "CIS Controls v8 Implementation Group 2 (medium organizations) broadly covers NIS2 Art. 21 technical requirements. CIS 17 (Incident Response) maps to NIS2 reporting obligations; CIS 15 (Service Provider Management) maps to supply chain security.",
+      "mapped_articles": ["Art. 21"],
+      "mapped_controls": ["CIS-1", "CIS-2", "CIS-3", "CIS-4", "CIS-5", "CIS-6", "CIS-7", "CIS-10", "CIS-13", "CIS-14", "CIS-15", "CIS-17"]
+    },
+    {
+      "regulation_id": "NIS2",
+      "standard_id": "NIST_800_53",
+      "coverage_level": "partial",
+      "notes": "NIST 800-53 provides deep technical controls that address NIS2 Art. 21 security measures. The Incident Response (IR) family maps to NIS2 incident notification. As a U.S. federal standard, it does not address EU-specific supervisory interactions.",
+      "mapped_articles": ["Art. 21", "Art. 23"],
+      "mapped_controls": ["IR-all", "CA-all", "SI-all", "SC-all", "RA-all"]
+    },
+    {
+      "regulation_id": "NIS2",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 supports the risk management and risk assessment requirements of NIS2 Art. 21. NIS2 requires documented risk analysis processes which ISO 31000 provides.",
+      "mapped_articles": ["Art. 21"],
+      "mapped_controls": []
+    },
+    {
+      "regulation_id": "DORA",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 covers information security controls, incident management, and supplier security that align with DORA. However, DORA requires specific ICT risk management framework documentation, digital resilience testing, and regulatory reporting that go beyond ISO 27001 scope.",
+      "mapped_articles": ["Art. 5–14", "Art. 17–23"],
+      "mapped_controls": ["A.5.1", "A.5.2", "A.5.24", "A.5.29", "A.5.30", "A.8.16"]
+    },
+    {
+      "regulation_id": "DORA",
+      "standard_id": "NIST_CSF",
+      "coverage_level": "substantial",
+      "notes": "NIST CSF maps closely to DORA's five pillars: ICT Risk Management (ID/PR), Incident Classification (DE/RS), Resilience Testing (ID/RS), Third-Party Risk (GV/ID), and Threat Intelligence (DE). CSF 2.0's Govern function addresses DORA's management accountability requirements.",
+      "mapped_articles": ["Art. 5–10", "Art. 17–23", "Art. 24–27"],
+      "mapped_controls": ["GV.all", "ID.all", "PR.all", "DE.all", "RS.all", "RC.all"]
+    },
+    {
+      "regulation_id": "DORA",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 underpins DORA's ICT risk management framework requirements (Art. 5–9). DORA's risk tolerance and risk treatment requirements align with ISO 31000's risk treatment process.",
+      "mapped_articles": ["Art. 5", "Art. 6", "Art. 8", "Art. 9"],
+      "mapped_controls": []
+    },
+    {
+      "regulation_id": "DORA",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT 2019's APO (Align, Plan and Organize) and DSS (Deliver, Service and Support) domains cover DORA's ICT governance, change management, and operational resilience requirements. COBIT's MEA domain supports DORA's monitoring and testing obligations.",
+      "mapped_articles": ["Art. 5", "Art. 6", "Art. 11", "Art. 12"],
+      "mapped_controls": ["APO.12", "APO.14", "DSS.01", "DSS.04", "MEA.02"]
+    },
+    {
+      "regulation_id": "AI_ACT",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 provides a risk management process that supports the AI Act's mandatory risk management system for high-risk AI (Art. 9). AI Act requires a documented, iterative risk management cycle — ISO 31000 provides the framework.",
+      "mapped_articles": ["Art. 9"],
+      "mapped_controls": []
+    },
+    {
+      "regulation_id": "AI_ACT",
+      "standard_id": "ISO27001",
+      "coverage_level": "minimal",
+      "notes": "ISO 27001 cybersecurity controls partially support AI Act requirements for data governance (Art. 10) and cybersecurity of high-risk AI systems (Art. 15). Limited overlap with AI-specific transparency and conformity assessment requirements.",
+      "mapped_articles": ["Art. 10", "Art. 15"],
+      "mapped_controls": ["A.8.2", "A.8.10", "A.8.11"]
+    },
+    {
+      "regulation_id": "AI_ACT",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT 2019's governance objectives support AI Act requirements for accountability, oversight, and documentation of high-risk AI systems. COBIT APO.01 (strategy) and MEA.01 (performance monitoring) are particularly relevant.",
+      "mapped_articles": ["Art. 9", "Art. 17", "Art. 26"],
+      "mapped_controls": ["APO.01", "APO.12", "MEA.01", "MEA.02"]
+    },
+    {
+      "regulation_id": "CCPA",
+      "standard_id": "ISO27701",
+      "coverage_level": "partial",
+      "notes": "ISO 27701 privacy controls address CCPA's data subject rights (access, deletion, portability), purpose limitation, and data minimization. CCPA-specific requirements like opt-out of sale and service provider contracts have partial but not complete mapping.",
+      "mapped_articles": ["§1798.100", "§1798.105", "§1798.110", "§1798.115", "§1798.120"],
+      "mapped_controls": ["PIMS-A.7.2", "PIMS-A.7.3", "PIMS-A.7.4", "PIMS-A.8.2"]
+    },
+    {
+      "regulation_id": "CCPA",
+      "standard_id": "SOC2",
+      "coverage_level": "partial",
+      "notes": "SOC 2 Privacy (P1–P8) criteria address notice, choice/consent, access, disclosure, and security for personal information. CCPA-specific requirements like opt-out of sale and GPC signal handling require additional custom controls.",
+      "mapped_articles": ["§1798.100", "§1798.105", "§1798.120", "§1798.135"],
+      "mapped_controls": ["P1", "P2", "P3", "P4", "P5", "P6", "P8"]
+    },
+    {
+      "regulation_id": "CCPA",
+      "standard_id": "NIST_800_53",
+      "coverage_level": "partial",
+      "notes": "NIST 800-53 privacy control families (IP, AP, DI) cover many CCPA obligations including individual participation, data quality, and authority/purpose documentation.",
+      "mapped_articles": ["§1798.100", "§1798.110", "§1798.120"],
+      "mapped_controls": ["IP-1", "IP-2", "IP-3", "IP-4", "AP-1", "AP-2", "DI-1", "DI-2"]
+    },
+    {
+      "regulation_id": "HIPAA",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 technical controls align well with HIPAA Security Rule requirements for access control, encryption, audit logging, and incident management. The Privacy Rule requirements (minimum necessary, patient rights) are not addressed by ISO 27001.",
+      "mapped_articles": ["§164.308", "§164.310", "§164.312"],
+      "mapped_controls": ["A.5.18", "A.8.2", "A.8.3", "A.8.5", "A.8.7", "A.8.15", "A.8.16", "A.8.24"]
+    },
+    {
+      "regulation_id": "HIPAA",
+      "standard_id": "NIST_800_53",
+      "coverage_level": "substantial",
+      "notes": "NIST 800-53 is widely used for HIPAA compliance. HHS officially references NIST as providing an acceptable security framework. Rev. 5 privacy controls address Privacy Rule; security controls address Security Rule. The mapping is well-documented in NIST SP 800-66.",
+      "mapped_articles": ["§164.308", "§164.310", "§164.312", "§164.502", "§164.514"],
+      "mapped_controls": ["AC-all", "AU-all", "IA-all", "SC-all", "SI-all", "IP-all", "DI-all"]
+    },
+    {
+      "regulation_id": "HIPAA",
+      "standard_id": "SOC2",
+      "coverage_level": "partial",
+      "notes": "SOC 2 Security and Confidentiality criteria address HIPAA Security Rule technical safeguards. SOC 2 Privacy criteria partially cover Privacy Rule requirements. Many covered entities use SOC 2 Type II alongside HIPAA attestations.",
+      "mapped_articles": ["§164.308", "§164.312"],
+      "mapped_controls": ["CC6", "CC7", "C1", "P1", "P2", "P3"]
+    },
+    {
+      "regulation_id": "HIPAA",
+      "standard_id": "ISO9001",
+      "coverage_level": "minimal",
+      "notes": "ISO 9001 quality management principles support HIPAA's administrative safeguards requirements for documented policies, procedures, training, and continual improvement. Not a direct mapping but provides a quality governance foundation.",
+      "mapped_articles": ["§164.308(a)(5)"],
+      "mapped_controls": []
+    },
+    {
+      "regulation_id": "SOX",
+      "standard_id": "COBIT",
+      "coverage_level": "full",
+      "notes": "COBIT 2019 is the most widely used IT governance framework for SOX IT compliance. COBIT's MEA (Monitor, Evaluate and Assess) and APO domains directly address SOX Section 404 internal controls over financial reporting (ICFR). The PCAOB has formally recognized COBIT mappings.",
+      "mapped_articles": ["Section 302", "Section 404", "Section 906"],
+      "mapped_controls": ["MEA.02", "MEA.03", "APO.12", "APO.14", "EDM.01", "EDM.03"]
+    },
+    {
+      "regulation_id": "SOX",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 supports SOX IT General Controls (ITGCs) requirements for access management, change management, operations, and logging. However, SOX financial reporting integrity and audit committee requirements are beyond ISO 27001 scope.",
+      "mapped_articles": ["Section 404"],
+      "mapped_controls": ["A.5.18", "A.8.2", "A.8.3", "A.8.5", "A.8.32", "A.5.24"]
+    },
+    {
+      "regulation_id": "SOX",
+      "standard_id": "NIST_800_53",
+      "coverage_level": "partial",
+      "notes": "NIST 800-53 Audit and Accountability (AU) and Access Control (AC) families address SOX IT General Controls. The Configuration Management (CM) family supports change management controls.",
+      "mapped_articles": ["Section 404"],
+      "mapped_controls": ["AU-all", "AC-all", "CM-all", "IA-all"]
+    },
+    {
+      "regulation_id": "SOX",
+      "standard_id": "ISO9001",
+      "coverage_level": "minimal",
+      "notes": "ISO 9001 quality management principles (documented processes, management review, internal audit) support SOX's broader internal control requirements. Not a recognized SOX compliance framework but provides complementary governance.",
+      "mapped_articles": ["Section 302", "Section 404"],
+      "mapped_controls": []
+    },
+    {
+      "regulation_id": "EO14028",
+      "standard_id": "NIST_CSF",
+      "coverage_level": "full",
+      "notes": "EO 14028 directly mandated NIST to update the CSF. NIST CSF 2.0 incorporates all EO 14028 requirements: Zero Trust (Protect), Software Security (GV/ID), Incident Response (RS), and Supply Chain Risk (GV). Using NIST CSF is the primary recommended implementation path for EO 14028.",
+      "mapped_articles": ["Sections 3, 4, 7, 8"],
+      "mapped_controls": ["GV.all", "ID.all", "PR.all", "DE.all", "RS.all", "RC.all"]
+    },
+    {
+      "regulation_id": "EO14028",
+      "standard_id": "NIST_800_53",
+      "coverage_level": "full",
+      "notes": "NIST 800-53 is the primary control catalog for federal agencies implementing EO 14028. The SA (System and Services Acquisition) family covers SBOM requirements; IA (Identification and Authentication) covers MFA; SC (System and Communications Protection) covers encryption and Zero Trust architecture.",
+      "mapped_articles": ["Sections 3, 4, 7, 8"],
+      "mapped_controls": ["SA-all", "IA-all", "SC-all", "IR-all", "RA-all", "CM-all"]
+    },
+    {
+      "regulation_id": "EO14028",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 covers the information security management requirements of EO 14028 but lacks specific guidance on SBOM, Zero Trust Architecture, and federal incident reporting protocols.",
+      "mapped_articles": ["Sections 3, 4"],
+      "mapped_controls": ["A.5.1", "A.8.5", "A.8.8", "A.8.16", "A.8.24"]
+    },
+    {
+      "regulation_id": "EO14028",
+      "standard_id": "CIS_CONTROLS",
+      "coverage_level": "substantial",
+      "notes": "CIS Controls v8 directly implements EO 14028 requirements. CIS 1–6 (asset and access management) support Zero Trust; CIS 16 (Application Software Security) supports SBOM requirements; CIS 17 (Incident Response) supports incident reporting mandates.",
+      "mapped_articles": ["Sections 3, 4, 7"],
+      "mapped_controls": ["CIS-1", "CIS-2", "CIS-4", "CIS-5", "CIS-6", "CIS-14", "CIS-16", "CIS-17"]
+    },
+    {
+      "regulation_id": "PIPL",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 PIMS controls map closely to PIPL obligations including data subject rights, purpose limitation, data minimization, and security measures. PIPL-specific data localization and CAC cross-border transfer requirements need supplementary controls.",
+      "mapped_articles": ["Art. 13–25", "Art. 38–43", "Art. 51–56"],
+      "mapped_controls": ["PIMS-A.7", "PIMS-A.8"]
+    },
+    {
+      "regulation_id": "PIPL",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 addresses PIPL's security measures requirements (Art. 51). The standard does not cover PIPL's consent management, individual rights, or China-specific cross-border transfer requirements.",
+      "mapped_articles": ["Art. 51", "Art. 57"],
+      "mapped_controls": ["A.8.1", "A.8.2", "A.8.3", "A.8.16", "A.8.24"]
+    },
+    {
+      "regulation_id": "PIPL",
+      "standard_id": "ISO31000",
+      "coverage_level": "minimal",
+      "notes": "ISO 31000 provides a risk framework supporting PIPL's Personal Information Protection Impact Assessment (PIPIA) requirements (Art. 55).",
+      "mapped_articles": ["Art. 55", "Art. 56"],
+      "mapped_controls": []
+    },
+    {
+      "regulation_id": "LGPD",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 maps very closely to LGPD due to shared GDPR influence. Privacy governance, data subject rights, security measures, and international transfer controls are well covered. LGPD's specific legal bases (10 bases) and ANPD reporting procedures need local supplementation.",
+      "mapped_articles": ["Art. 6", "Art. 17–22", "Art. 37–40", "Art. 46–51"],
+      "mapped_controls": ["PIMS-A.7", "PIMS-A.8"]
+    },
+    {
+      "regulation_id": "LGPD",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 supports LGPD's security measures (Art. 46) and incident notification requirements (Art. 48). It does not address the privacy rights framework or LGPD's 10 legal bases.",
+      "mapped_articles": ["Art. 46", "Art. 48"],
+      "mapped_controls": ["A.5.1", "A.5.24", "A.8.2", "A.8.16", "A.8.24"]
+    },
+    {
+      "regulation_id": "LGPD",
+      "standard_id": "ISO31000",
+      "coverage_level": "minimal",
+      "notes": "ISO 31000 supports LGPD's Data Protection Impact Report (RIPD) requirements under Art. 38.",
+      "mapped_articles": ["Art. 38"],
+      "mapped_controls": []
+    },
+    {
+      "regulation_id": "PDPL",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "Saudi Arabia's PDPL closely mirrors GDPR structure, so ISO 27701 provides strong coverage for privacy governance, data subject rights, consent management, and security. PDPL's data localization for Saudi citizens and SDAIA reporting procedures require supplementary local controls.",
+      "mapped_articles": ["Art. 8–20", "Art. 29–34"],
+      "mapped_controls": ["PIMS-A.7", "PIMS-A.8"]
+    },
+    {
+      "regulation_id": "PDPL",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 addresses PDPL's organizational and technical security requirements. SDAIA has endorsed ISO 27001 as a recommended framework. Does not cover PDPL's privacy rights, consent, or data localization requirements.",
+      "mapped_articles": ["Art. 19", "Art. 20"],
+      "mapped_controls": ["A.5.1", "A.8.2", "A.8.3", "A.8.16", "A.8.24"]
+    },
+    {
+      "regulation_id": "PDPL",
+      "standard_id": "ISO31000",
+      "coverage_level": "minimal",
+      "notes": "ISO 31000 supports PDPL's Data Transfer Impact Assessment requirement before cross-border transfers.",
+      "mapped_articles": ["Art. 29"],
+      "mapped_controls": []
+    },
+    {
+      "regulation_id": "CYBER_ACT",
+      "standard_id": "ISO27001",
+      "coverage_level": "substantial",
+      "notes": "The EU Cybersecurity Act certification schemes are built around ISO 27001 controls as a baseline. ENISA's candidate schemes (EUCS, EUCC) explicitly reference ISO 27001. ISO 27001 certification is often the foundation for achieving 'substantial' assurance level under EU schemes.",
+      "mapped_articles": ["Art. 51–65"],
+      "mapped_controls": ["A.5", "A.6", "A.7", "A.8"]
+    },
+    {
+      "regulation_id": "CYBER_ACT",
+      "standard_id": "CIS_CONTROLS",
+      "coverage_level": "partial",
+      "notes": "CIS Controls v8 addresses the technical security requirements for the 'basic' assurance level in EU Cybersecurity Act certification schemes. Higher assurance levels require more formal certification processes.",
+      "mapped_articles": ["Art. 52"],
+      "mapped_controls": ["CIS-1", "CIS-2", "CIS-3", "CIS-4", "CIS-5", "CIS-6", "CIS-7"]
+    }
+  ]
+}
