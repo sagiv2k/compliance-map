@@ -32,12 +32,59 @@ const OverviewView = {
             </svg>
             Global Regulation Coverage
           </span>
+          <div class="map-mode-toggle">
+            <button :class="['map-mode-btn', { active: mapColorMode === 'count' }]" @click="setMapMode('count')">By Count</button>
+            <button :class="['map-mode-btn', { active: mapColorMode === 'domain' }]" @click="setMapMode('domain')">By Domain</button>
+          </div>
           <span class="map-section__hint">Click any country to see applicable regulations</span>
         </div>
-        <div id="world-map"></div>
+        <div id="world-map" style="height:420px;width:100%;"></div>
+
+        <!-- Country detail panel (shown when a country is clicked) -->
+        <div class="country-panel" :class="{ open: countryPanel }" v-if="countryPanel">
+          <div class="country-panel__header">
+            <div class="country-panel__title">
+              <span class="country-panel__name">{{ countryPanel.name }}</span>
+              <span class="country-panel__count">{{ countryPanel.regs.length }} regulation{{ countryPanel.regs.length !== 1 ? 's' : '' }}</span>
+            </div>
+            <button class="country-panel__close" @click="countryPanel = null" title="Close">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </button>
+          </div>
+          <div class="country-panel__empty" v-if="countryPanel.regs.length === 0">
+            No regulations match the current filters for this country.
+          </div>
+          <ul class="country-panel__list" v-else>
+            <li
+              v-for="reg in countryPanel.regs"
+              :key="reg.id"
+              class="country-panel__item"
+              @click="$openItem(reg, 'regulation')"
+            >
+              <div class="country-panel__item-top">
+                <span class="country-panel__item-name">{{ reg.short_name }}</span>
+                <span class="country-panel__item-region" :style="{ background: $jurisdictionColor(reg.enforcement_region) + '22', color: $jurisdictionColor(reg.enforcement_region) }">
+                  {{ $jurisdictionLabel(reg.enforcement_region) }}
+                </span>
+              </div>
+              <div class="country-panel__item-full">{{ reg.name }}</div>
+              <div class="country-panel__item-domains">
+                <span
+                  v-for="d in reg.domain" :key="d"
+                  class="country-panel__domain-chip"
+                  :style="{ background: $domainColor(d) + '22', color: $domainColor(d) }"
+                >{{ $domainLabel(d) }}</span>
+              </div>
+              <div class="country-panel__item-authority">{{ reg.authority }}</div>
+            </li>
+          </ul>
+        </div>
+
         <!-- Legend -->
         <div class="map-legend">
-          <div class="map-legend__title">Regulations</div>
+          <div class="map-legend__title">{{ mapColorMode === 'domain' ? 'Domain' : 'Regulations' }}</div>
           <div v-for="step in legendSteps" :key="step.label" class="map-legend__item">
             <span class="map-legend__swatch" :style="{ background: step.color }"></span>
             {{ step.label }}
@@ -65,12 +112,8 @@ const OverviewView = {
 
   data() {
     return {
-      legendSteps: [
-        { label: '0 regulations', color: '#e8edf2' },
-        { label: '1',            color: '#c7ddf5' },
-        { label: '2–3',          color: '#5a9dd4' },
-        { label: '4+',           color: '#1a4480' }
-      ]
+      mapColorMode: 'count',
+      countryPanel: null
     };
   },
 
@@ -78,12 +121,13 @@ const OverviewView = {
     filteredRegulations() {
       const { regulations, filters } = this.$s;
       return regulations.filter(r => {
-        const domainOk = r.domain.some(d => filters.domains.includes(d));
-        const statusOk = filters.status === 'all' || r.status === filters.status;
+        const domainOk       = r.domain.some(d => filters.domains.includes(d));
+        const jurisdictionOk = filters.jurisdictions.includes(r.enforcement_region);
+        const statusOk       = filters.status === 'all' || r.status === filters.status;
         const q = filters.search.toLowerCase();
         const searchOk = !q || r.name.toLowerCase().includes(q) ||
           r.short_name.toLowerCase().includes(q) || r.summary.toLowerCase().includes(q);
-        return domainOk && statusOk && searchOk;
+        return domainOk && jurisdictionOk && statusOk && searchOk;
       });
     },
     totalCountries() {
@@ -102,6 +146,37 @@ const OverviewView = {
         r.geography.countries.forEach(c => { counts[c] = (counts[c] || 0) + 1; });
       });
       return counts;
+    },
+    // Maps each ISO country code to its dominant domain key (most regulations in that domain)
+    domainByCountry() {
+      const byCountry = {};
+      this.filteredRegulations.forEach(r => {
+        r.geography.countries.forEach(c => {
+          if (!byCountry[c]) byCountry[c] = {};
+          r.domain.forEach(d => { byCountry[c][d] = (byCountry[c][d] || 0) + 1; });
+        });
+      });
+      const result = {};
+      Object.entries(byCountry).forEach(([iso, domainCounts]) => {
+        result[iso] = Object.entries(domainCounts).sort((a, b) => b[1] - a[1])[0][0];
+      });
+      return result;
+    },
+    legendSteps() {
+      if (this.mapColorMode === 'domain') {
+        // Show domain colors for domains that appear in filtered regulations
+        const activeDomains = new Set();
+        this.filteredRegulations.forEach(r => r.domain.forEach(d => activeDomains.add(d)));
+        return Object.entries(this.$dc)
+          .filter(([key]) => activeDomains.has(key))
+          .map(([key, cfg]) => ({ label: cfg.label, color: cfg.color }));
+      }
+      return [
+        { label: '0 regulations', color: '#e8edf2' },
+        { label: '1',             color: '#c7ddf5' },
+        { label: '2–3',           color: '#5a9dd4' },
+        { label: '4+',            color: '#1a4480' }
+      ];
     },
     domainBarData() {
       const counts = {};
@@ -123,8 +198,10 @@ const OverviewView = {
 
   mounted() {
     this.$nextTick(() => {
-      this.initMap();
-      this.initCharts();
+      setTimeout(() => {
+        this.initMap();
+        this.initCharts();
+      }, 50);
     });
   },
 
@@ -137,46 +214,61 @@ const OverviewView = {
   methods: {
     choroplethColor(count) {
       if (!count || count === 0) return '#e8edf2';
-      if (count === 1) return '#c7ddf5';
-      if (count <= 3) return '#5a9dd4';
+      if (count === 1)           return '#c7ddf5';
+      if (count <= 3)            return '#5a9dd4';
       return '#1a4480';
     },
     choroplethStroke(count) {
       if (!count || count === 0) return '#c8d0db';
-      if (count === 1) return '#a0bfe8';
-      if (count <= 3) return '#3b84c5';
+      if (count === 1)           return '#a0bfe8';
+      if (count <= 3)            return '#3b84c5';
       return '#0f2d5a';
     },
     getFeatureStyle(feature) {
-      const iso = feature.properties.ISO_A2;
+      const iso   = feature.properties.ISO_A2;
       const count = this.countByCountry[iso] || 0;
+
+      if (this.mapColorMode === 'domain') {
+        const dominant = this.domainByCountry[iso];
+        if (dominant) {
+          const base = this.$domainColor(dominant);
+          return { fillColor: base, fillOpacity: 0.70, color: base, weight: 1 };
+        }
+        return { fillColor: '#e8edf2', fillOpacity: 0.85, color: '#c8d0db', weight: 0.5 };
+      }
+
       return {
-        fillColor: this.choroplethColor(count),
+        fillColor:   this.choroplethColor(count),
         fillOpacity: 0.85,
-        color: this.choroplethStroke(count),
-        weight: 0.5
+        color:       this.choroplethStroke(count),
+        weight:      0.5
       };
     },
+    setMapMode(mode) {
+      this.mapColorMode = mode;
+      this.updateMapColors();
+    },
     async initMap() {
-      const mapEl = document.getElementById('world-map');
-      if (!mapEl || this._map) return;
-
-      this._map = L.map('world-map', {
-        center: [20, 0],
-        zoom: 2,
-        minZoom: 1,
-        maxZoom: 6,
-        scrollWheelZoom: false,
-        worldCopyJump: true
-      });
-
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 19
-      }).addTo(this._map);
-
       try {
+        if (typeof L === 'undefined') throw new Error('Leaflet library not loaded');
+        const mapEl = document.getElementById('world-map');
+        if (!mapEl || this._map) return;
+
+        this._map = L.map('world-map', {
+          center: [20, 0],
+          zoom: 2,
+          minZoom: 1,
+          maxZoom: 6,
+          scrollWheelZoom: false,
+          worldCopyJump: true
+        });
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+          subdomains: 'abcd',
+          maxZoom: 19
+        }).addTo(this._map);
+
         const res = await fetch('./data/world-countries.geo.json');
         if (!res.ok) throw new Error('GeoJSON not found');
         this._geoData = await res.json();
@@ -185,14 +277,14 @@ const OverviewView = {
           style: (feature) => this.getFeatureStyle(feature),
           onEachFeature: (feature, layer) => {
             layer.on({
-              click:     (e) => this.onCountryClick(feature, e.latlng),
-              mouseover: (e) => { layer.setStyle({ fillOpacity: 1, weight: 1.5 }); },
+              click:     ()  => this.onCountryClick(feature),
+              mouseover: ()  => { layer.setStyle({ fillOpacity: 1, weight: 1.5 }); },
               mouseout:  ()  => { this._geoLayer && this._geoLayer.resetStyle(layer); }
             });
           }
         }).addTo(this._map);
       } catch (err) {
-        console.warn('Could not load GeoJSON:', err.message);
+        console.error('[ComplianceMap] Map initialization failed:', err.message);
       }
     },
     updateMapColors() {
@@ -201,36 +293,13 @@ const OverviewView = {
         layer.setStyle(this.getFeatureStyle(layer.feature));
       });
     },
-    onCountryClick(feature, latlng) {
-      const iso   = feature.properties.ISO_A2;
-      const name  = feature.properties.ADMIN || feature.properties.NAME || iso;
-      const regs  = this.filteredRegulations.filter(r => r.geography.countries.includes(iso));
-      const count = regs.length;
-
-      const items = count === 0
-        ? '<li class="map-popup__empty">No regulations match the current filters for this country.</li>'
-        : regs.map(r => `
-            <li class="map-popup__item">
-              <span class="map-popup__item-dot" style="background:${this.$domainColor(r.domain[0])}"></span>
-              <div>
-                <div class="map-popup__item-name">${r.short_name}</div>
-                <div class="map-popup__item-domain">${r.domain.map(d => this.$domainLabel(d)).join(', ')}</div>
-              </div>
-            </li>`).join('');
-
-      const html = `
-        <div class="map-popup">
-          <div class="map-popup__country">
-            ${name}
-            ${count > 0 ? '<span class="map-popup__count">' + count + ' regulation' + (count > 1 ? 's' : '') + '</span>' : ''}
-          </div>
-          <ul class="map-popup__list">${items}</ul>
-        </div>`;
-
-      L.popup({ maxWidth: 320, closeButton: true })
-        .setLatLng(latlng)
-        .setContent(html)
-        .openOn(this._map);
+    onCountryClick(feature) {
+      const iso  = feature.properties.ISO_A2;
+      const name = feature.properties.ADMIN || feature.properties.NAME || iso;
+      const regs = this.filteredRegulations.filter(r =>
+        r.geography.type !== 'global' && r.geography.countries.includes(iso)
+      );
+      this.countryPanel = { iso, name, regs };
     },
     initCharts() {
       this.initBarChart();

@@ -1,0 +1,567 @@
+{
+  "source": "regulations_gov",
+  "scraped_at": "2026-06-09",
+  "count": 25,
+  "items": [
+    {
+      "id": "REG_GOV_HHS_FRDOC_0001-1040",
+      "short_name": "HHS_FRDOC_0001-1040",
+      "name": "Reducing Bureaucracy and Burden for Community Services Programs",
+      "authority": "HHS",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health",
+        "data_privacy"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/HHS_FRDOC_0001-1040",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5962-0001",
+      "short_name": "FDA-2026-N-5962-0001",
+      "name": "Medical Devices; Orthopedic Devices; Classification of the Absorbable Metallic Bone Fixation Fastener",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5962-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5830-0001",
+      "short_name": "FDA-2026-N-5830-0001",
+      "name": "Medical Devices; Orthopedic Devices; Classification of the Shoulder Joint Humeral (Hemi-Shoulder) Ceramic\nHead/Metallic Stem Cemented or Uncemented Prosthesis",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5830-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5195-0001",
+      "short_name": "FDA-2026-N-5195-0001",
+      "name": "Medical Devices; Orthopedic Devices; Classification of the Resorbable Calcium Salt Bone Void Filler\nContaining a Single Approved Aminoglycoside Antibacterial",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5195-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_HHS_FRDOC_0001-1039",
+      "short_name": "HHS_FRDOC_0001-1039",
+      "name": "Federal Independent Dispute Resolution Operations",
+      "authority": "HHS",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health",
+        "data_privacy"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/HHS_FRDOC_0001-1039",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2022-N-0002-0051",
+      "short_name": "FDA-2022-N-0002-0051",
+      "name": "New Animal Drugs; Approval of New Animal Drug Applications; Withdrawal of Approval of New Animal Drug\nApplications; Change of Sponsor; Change of Sponsor Address; Correction",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2022-N-0002-0051",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_HHS_FRDOC_0001-1038",
+      "short_name": "HHS_FRDOC_0001-1038",
+      "name": "Vacatur Regarding Certain Provisions of the 2024 Nondiscrimination in Health Programs and Activities Final Rule",
+      "authority": "HHS",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health",
+        "data_privacy"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/HHS_FRDOC_0001-1038",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5825-0001",
+      "short_name": "FDA-2026-N-5825-0001",
+      "name": "Medical Devices; Anesthesiology Devices; Classification of the Adjunctive Pain Measurement Device for Anesthesiology",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5825-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5722-0001",
+      "short_name": "FDA-2026-N-5722-0001",
+      "name": "Medical Devices; Anesthesiology Devices; Classification of the Real-Time Ultrasound Anatomy Visualization and Labeling Device for Ultrasound Guided Regional Anesthesia",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5722-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5724-0001",
+      "short_name": "FDA-2026-N-5724-0001",
+      "name": "Medical Devices; Dental Devices; Classification of the Intraoral Cooling Device",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5724-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5725-0001",
+      "short_name": "FDA-2026-N-5725-0001",
+      "name": "Medical Devices; Hematology and Pathology Devices; Classification of the Von Willebrand Factor Assay",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5725-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_SEC-2026-3342-0001",
+      "short_name": "SEC-2026-3342-0001",
+      "name": "Holding Foreign Insiders Accountable Act Disclosure; Correction",
+      "authority": "SEC",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "finance",
+        "cybersecurity"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/SEC-2026-3342-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5196-0001",
+      "short_name": "FDA-2026-N-5196-0001",
+      "name": "Medical Devices; Gastroenterology-Urology Devices; Classification of the Orally Ingested Transient Device for\nConstipation",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5196-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5723-0001",
+      "short_name": "FDA-2026-N-5723-0001",
+      "name": "Medical Devices; Ear, Nose, and Throat Devices; Classification of the Oropharyngeal Electrical Stimulator",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5723-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5199-0001",
+      "short_name": "FDA-2026-N-5199-0001",
+      "name": "Medical Devices; General Hospital and Personal Use Devices; Classification of the Rigid Sterilization Container With Electronic Monitoring",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5199-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_HHS_FRDOC_0001-1037",
+      "short_name": "HHS_FRDOC_0001-1037",
+      "name": "Medicare Program: Alternative Payment Model Updates and the Increasing Organ Transplant Access Model",
+      "authority": "HHS",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health",
+        "data_privacy"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/HHS_FRDOC_0001-1037",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5197-0001",
+      "short_name": "FDA-2026-N-5197-0001",
+      "name": "Medical Devices; Neurological Devices; Classification of the Transcutaneous Electrical Nerve Stimulator To Treat Fibromyalgia Symptoms",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5197-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FDA-2026-N-5200-0001",
+      "short_name": "FDA-2026-N-5200-0001",
+      "name": "Medical Devices; Gastroenterology-Urology Devices; Classification of the Endoscopic Suturing Device for Altering Gastric Anatomy for Weight Loss",
+      "authority": "FDA",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FDA-2026-N-5200-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_HHS_FRDOC_0001-1035",
+      "short_name": "HHS_FRDOC_0001-1035",
+      "name": "Control of Communicable Diseases; Foreign Quarantine",
+      "authority": "HHS",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health",
+        "data_privacy"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/HHS_FRDOC_0001-1035",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_SEC-2026-3141-0001",
+      "short_name": "SEC-2026-3141-0001",
+      "name": "Policy Regarding Denials in Settlements of Enforcement Actions",
+      "authority": "SEC",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "finance",
+        "cybersecurity"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/SEC-2026-3141-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_HHS_FRDOC_0001-1034",
+      "short_name": "HHS_FRDOC_0001-1034",
+      "name": "Patient Protection and Affordable Care Act: HHS Notice of Benefit and Payment Parameters for 2027; and Basic Health Program",
+      "authority": "HHS",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "health",
+        "data_privacy"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/HHS_FRDOC_0001-1034",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FCC-2026-1915-0001",
+      "short_name": "FCC-2026-1915-0001",
+      "name": "Broadcast Station Rule Updates",
+      "authority": "FCC",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "data_privacy",
+        "critical_infrastructure"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FCC-2026-1915-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_OCC-2025-0735-0028",
+      "short_name": "OCC-2025-0735-0028",
+      "name": "State Interest-on-Escrow Laws: Preemption Determination",
+      "authority": "OCC",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "finance"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/OCC-2025-0735-0028",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_FCC-2026-1917-0001",
+      "short_name": "FCC-2026-1917-0001",
+      "name": "Promoting Fair and Open Competitive Bidding in the E-Rate Program; Schools and Libraries Universal Service Support Mechanism",
+      "authority": "FCC",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "data_privacy",
+        "critical_infrastructure"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/FCC-2026-1917-0001",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "REG_GOV_OCC-2025-0736-0024",
+      "short_name": "OCC-2025-0736-0024",
+      "name": "Real Estate Lending Escrow Accounts",
+      "authority": "OCC",
+      "jurisdiction": "United States",
+      "enforcement_region": "us_federal",
+      "domain": [
+        "finance"
+      ],
+      "status": "proposed",
+      "effective_date": "",
+      "url": "https://www.regulations.gov/document/OCC-2025-0736-0024",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "regulations.gov",
+      "_scraped_at": "2026-06-09"
+    }
+  ]
+}

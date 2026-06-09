@@ -1,0 +1,293 @@
+{
+  "source": "uchicago",
+  "scraped_at": "2026-06-09",
+  "count": 13,
+  "items": [
+    {
+      "id": "UCH_skip_to_main_content",
+      "short_name": "Skip to Main Content",
+      "name": "Skip to Main Content",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.lib.uchicago.edu/c.php?g=1089597&p=7946266#s-lg-guide-main",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_database_finder",
+      "short_name": "Database Finder",
+      "name": "Database Finder",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://www.lib.uchicago.edu/h/atoz",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_database_trials",
+      "short_name": "Database Trials",
+      "name": "Database Trials",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.lib.uchicago.edu/az.php?t=41934",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_center_for_digital_scholarship",
+      "short_name": "Center for Digital",
+      "name": "Center for Digital Scholarship",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://www.lib.uchicago.edu/research/scholar/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_digital_collections",
+      "short_name": "Digital Collections",
+      "name": "Digital Collections",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://www.lib.uchicago.edu/collex/?digital=on&view=collections",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_law_databases",
+      "short_name": "Law Databases",
+      "name": "Law Databases",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.lib.uchicago.edu/law/lawdatabases",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_a_z_list_of_law_databases",
+      "short_name": "A - Z List of Law",
+      "name": "A - Z List of Law Databases",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.lib.uchicago.edu/az.php?s=11602",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_a_z_list_of_foreign_law_databases",
+      "short_name": "A - Z List of",
+      "name": "A - Z List of Foreign Law Databases",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.lib.uchicago.edu/az.php?s=157841",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_a_z_list_of_international_law_databases",
+      "short_name": "A - Z List of",
+      "name": "A - Z List of International Law Databases",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.lib.uchicago.edu/az.php?s=157842",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_data_sources_and_repositories",
+      "short_name": "Data Sources and",
+      "name": "Data Sources and Repositories",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.lib.uchicago.edu/lawdata",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_send_email",
+      "short_name": "Send Email",
+      "name": "Send Email",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "mailto:llou@uchicago.edu",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_heinonline_foreign_international_law_res",
+      "short_name": "HeinOnline: Foreign",
+      "name": "HeinOnline: Foreign & International Law Resources Database",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "http://www.lib.uchicago.edu/h/filrd",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "UCH_next_a_z_list_of_foreign_law_databases",
+      "short_name": "Next:A - Z List of",
+      "name": "Next:A - Z List of Foreign Law Databases >>",
+      "authority": "UChicago Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.lib.uchicago.edu/c.php?g=1089597&p=9415095",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "lib.uchicago.edu",
+      "_scraped_at": "2026-06-09"
+    }
+  ]
+}

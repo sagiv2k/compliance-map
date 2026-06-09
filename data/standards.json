@@ -12,7 +12,11 @@
       "url": "https://www.iso.org/standard/82875.html",
       "summary": "The leading international standard for information security management systems (ISMS). It specifies requirements for establishing, implementing, maintaining, and continually improving an ISMS, and includes a set of 93 security controls organized into four themes (Organizational, People, Physical, Technological). Certification is awarded by accredited third-party certification bodies.",
       "scope": "global",
-      "domains_addressed": ["cybersecurity", "data_privacy", "critical_infrastructure"],
+      "domains_addressed": [
+        "cybersecurity",
+        "data_privacy",
+        "critical_infrastructure"
+      ],
       "key_controls": [
         "Organizational controls: policies, roles, responsibilities, supplier security",
         "People controls: screening, training, awareness, disciplinary processes",
@@ -23,7 +27,13 @@
       ],
       "certification_available": true,
       "recertification_cycle_years": 3,
-      "tags": ["isms", "risk_management", "controls", "certification", "iso"]
+      "tags": [
+        "isms",
+        "risk_management",
+        "controls",
+        "certification",
+        "iso"
+      ]
     },
     {
       "id": "ISO27701",
@@ -35,7 +45,9 @@
       "url": "https://www.iso.org/standard/71670.html",
       "summary": "A privacy extension to ISO 27001/27002, establishing requirements for a Privacy Information Management System (PIMS). It specifies controls for both data controllers and data processors and is explicitly designed to support compliance with GDPR and other data protection regulations. Organizations holding ISO 27001 can extend it with ISO 27701 certification.",
       "scope": "global",
-      "domains_addressed": ["data_privacy"],
+      "domains_addressed": [
+        "data_privacy"
+      ],
       "key_controls": [
         "Privacy governance, accountability, and roles (Data Protection Officer support)",
         "Data minimization, purpose limitation, and consent management",
@@ -47,7 +59,14 @@
       ],
       "certification_available": true,
       "recertification_cycle_years": 3,
-      "tags": ["pims", "privacy", "gdpr_alignment", "data_protection", "certification", "iso"]
+      "tags": [
+        "pims",
+        "privacy",
+        "gdpr_alignment",
+        "data_protection",
+        "certification",
+        "iso"
+      ]
     },
     {
       "id": "SOC2",
@@ -59,7 +78,11 @@
       "url": "https://www.aicpa-cima.com/resources/article/soc-2-reporting-on-an-examination-of-controls-at-a-service-organization-relevant-to-security-availability-processing-integrity-confidentiality-or-privacy",
       "summary": "An auditing standard for service organizations that defines criteria for managing customer data based on five Trust Service Criteria (TSC): Security, Availability, Processing Integrity, Confidentiality, and Privacy. A Type II report covers a period of time (typically 6–12 months), demonstrating sustained control effectiveness — not just point-in-time design.",
       "scope": "global",
-      "domains_addressed": ["cybersecurity", "data_privacy", "cloud_security"],
+      "domains_addressed": [
+        "cybersecurity",
+        "data_privacy",
+        "cloud_security"
+      ],
       "key_controls": [
         "CC1–CC9: Common Criteria (COSO framework — environment, risk assessment, communications, monitoring)",
         "A1: Availability — uptime SLAs, redundancy, disaster recovery",
@@ -69,7 +92,14 @@
       ],
       "certification_available": true,
       "recertification_cycle_years": 1,
-      "tags": ["soc2", "cloud", "trust_service_criteria", "audit", "service_organization", "aicpa"]
+      "tags": [
+        "soc2",
+        "cloud",
+        "trust_service_criteria",
+        "audit",
+        "service_organization",
+        "aicpa"
+      ]
     },
     {
       "id": "NIST_CSF",
@@ -81,7 +111,10 @@
       "url": "https://www.nist.gov/cyberframework",
       "summary": "A voluntary, risk-based framework for managing cybersecurity risk, widely adopted by organizations of all sizes globally. Version 2.0 (2024) adds a new 'Govern' function to emphasize cybersecurity governance and strategy, and expands applicability beyond critical infrastructure to all sectors. The framework uses six core functions: Govern, Identify, Protect, Detect, Respond, Recover.",
       "scope": "global",
-      "domains_addressed": ["cybersecurity", "critical_infrastructure"],
+      "domains_addressed": [
+        "cybersecurity",
+        "critical_infrastructure"
+      ],
       "key_controls": [
         "GV — Govern: Cybersecurity risk governance, strategy, supply chain risk management",
         "ID — Identify: Asset management, risk assessment, risk management strategy",
@@ -92,7 +125,14 @@
       ],
       "certification_available": false,
       "recertification_cycle_years": null,
-      "tags": ["nist", "framework", "risk_management", "cybersecurity", "six_functions", "voluntary"]
+      "tags": [
+        "nist",
+        "framework",
+        "risk_management",
+        "cybersecurity",
+        "six_functions",
+        "voluntary"
+      ]
     },
     {
       "id": "NIST_800_53",
@@ -104,7 +144,11 @@
       "url": "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final",
       "summary": "The most comprehensive catalog of security and privacy controls for federal information systems and organizations. Rev. 5 integrates privacy controls directly into the security control catalog and applies to all types of computing platforms. It is mandatory for U.S. federal agencies and provides the control baseline for FedRAMP (cloud) and FISMA compliance.",
       "scope": "global",
-      "domains_addressed": ["cybersecurity", "data_privacy", "critical_infrastructure"],
+      "domains_addressed": [
+        "cybersecurity",
+        "data_privacy",
+        "critical_infrastructure"
+      ],
       "key_controls": [
         "20 control families including: Access Control (AC), Audit and Accountability (AU), Configuration Management (CM)",
         "Incident Response (IR), Maintenance (MA), Media Protection (MP), Personnel Security (PS)",
@@ -114,7 +158,14 @@
       ],
       "certification_available": false,
       "recertification_cycle_years": null,
-      "tags": ["nist", "federal", "controls_catalog", "fisma", "fedramp", "800-53"]
+      "tags": [
+        "nist",
+        "federal",
+        "controls_catalog",
+        "fisma",
+        "fedramp",
+        "800-53"
+      ]
     },
     {
       "id": "ISO9001",
@@ -126,7 +177,11 @@
       "url": "https://www.iso.org/standard/62085.html",
       "summary": "The world's most widely adopted quality management standard, with over 1 million certified organizations globally. ISO 9001 defines requirements for a Quality Management System (QMS) based on principles including customer focus, leadership, process approach, continual improvement, evidence-based decision making, and relationship management. It is industry-agnostic and applicable to any organization.",
       "scope": "global",
-      "domains_addressed": ["finance", "health", "critical_infrastructure"],
+      "domains_addressed": [
+        "finance",
+        "health",
+        "critical_infrastructure"
+      ],
       "key_controls": [
         "Context of the organization: understanding stakeholder needs and organizational scope",
         "Leadership: management commitment, quality policy, organizational roles",
@@ -138,7 +193,14 @@
       ],
       "certification_available": true,
       "recertification_cycle_years": 3,
-      "tags": ["quality", "qms", "process", "improvement", "iso", "general_purpose"]
+      "tags": [
+        "quality",
+        "qms",
+        "process",
+        "improvement",
+        "iso",
+        "general_purpose"
+      ]
     },
     {
       "id": "ISO31000",
@@ -150,7 +212,12 @@
       "url": "https://www.iso.org/standard/65694.html",
       "summary": "An international standard providing principles, a framework, and a process for managing risk in any organization. ISO 31000 is not certifiable — it is a guidance document applicable to any decision or activity in any type of organization. It provides a structured approach to risk identification, analysis, evaluation, treatment, monitoring, and communication.",
       "scope": "global",
-      "domains_addressed": ["finance", "cybersecurity", "health", "ai_governance"],
+      "domains_addressed": [
+        "finance",
+        "cybersecurity",
+        "health",
+        "ai_governance"
+      ],
       "key_controls": [
         "Risk management principles: integration, structured, inclusive, dynamic, best available information",
         "Framework: leadership commitment, integration, design, implementation, evaluation, improvement",
@@ -161,7 +228,13 @@
       ],
       "certification_available": false,
       "recertification_cycle_years": null,
-      "tags": ["risk_management", "framework", "guidance", "iso", "enterprise_risk"]
+      "tags": [
+        "risk_management",
+        "framework",
+        "guidance",
+        "iso",
+        "enterprise_risk"
+      ]
     },
     {
       "id": "CIS_CONTROLS",
@@ -173,7 +246,9 @@
       "url": "https://www.cisecurity.org/controls/v8",
       "summary": "A prioritized set of 18 cybersecurity best practices (Controls) with 153 Safeguards, developed by security experts to defend against the most prevalent cyber threats. The controls are grouped into three Implementation Groups (IG1, IG2, IG3) based on organizational resources and risk exposure — IG1 is essential cyber hygiene for all organizations.",
       "scope": "global",
-      "domains_addressed": ["cybersecurity"],
+      "domains_addressed": [
+        "cybersecurity"
+      ],
       "key_controls": [
         "CIS 1–2: Inventory and control of enterprise assets and software",
         "CIS 3–4: Data protection and secure configuration",
@@ -184,19 +259,29 @@
       ],
       "certification_available": false,
       "recertification_cycle_years": null,
-      "tags": ["cis", "controls", "safeguards", "implementation_groups", "cyber_hygiene"]
+      "tags": [
+        "cis",
+        "controls",
+        "safeguards",
+        "implementation_groups",
+        "cyber_hygiene"
+      ]
     },
     {
       "id": "PCI_DSS",
-      "name": "Payment Card Industry Data Security Standard v4.0",
-      "short_name": "PCI DSS v4.0",
+      "name": "Payment Card Industry Data Security Standard v4.0.1",
+      "short_name": "PCI DSS v4.0.1",
       "category": "financial_controls",
       "issuing_body": "PCI Security Standards Council (PCI SSC)",
       "type": "certification",
       "url": "https://www.pcisecuritystandards.org/standards/pci-dss/",
       "summary": "A mandatory security standard for all organizations that store, process, or transmit payment card data. PCI DSS v4.0 (effective March 2024) modernizes requirements with a stronger emphasis on authentication, continuous monitoring, and targeted risk analysis. Non-compliance risks contract termination by card brands (Visa, Mastercard, Amex) and significant financial penalties.",
       "scope": "global",
-      "domains_addressed": ["finance", "cybersecurity", "data_privacy"],
+      "domains_addressed": [
+        "finance",
+        "cybersecurity",
+        "data_privacy"
+      ],
       "key_controls": [
         "Req 1–2: Install and maintain network security controls; apply secure configurations",
         "Req 3–4: Protect stored account data; protect cardholder data with encryption in transit",
@@ -207,7 +292,14 @@
       ],
       "certification_available": true,
       "recertification_cycle_years": 1,
-      "tags": ["payment_card", "pci", "financial", "cardholder_data", "qsa", "annual_assessment"]
+      "tags": [
+        "payment_card",
+        "pci",
+        "financial",
+        "cardholder_data",
+        "qsa",
+        "annual_assessment"
+      ]
     },
     {
       "id": "COBIT",
@@ -219,7 +311,11 @@
       "url": "https://www.isaca.org/resources/cobit",
       "summary": "A comprehensive framework for IT governance and management of enterprise IT, published by ISACA. COBIT 2019 aligns IT strategy with business objectives, ensuring IT risks are managed effectively and resources are used responsibly. It organizes governance and management objectives into five domains and is widely used by internal audit and board-level IT governance programs.",
       "scope": "global",
-      "domains_addressed": ["finance", "cybersecurity", "ai_governance"],
+      "domains_addressed": [
+        "finance",
+        "cybersecurity",
+        "ai_governance"
+      ],
       "key_controls": [
         "Evaluate, Direct and Monitor (EDM): governance framework, benefits delivery, risk optimization, resource optimization",
         "Align, Plan and Organize (APO): strategy, architecture, innovation, portfolio, budget, HR, risk, security, compliance",
@@ -229,7 +325,14 @@
       ],
       "certification_available": true,
       "recertification_cycle_years": 3,
-      "tags": ["it_governance", "cobit", "isaca", "audit", "enterprise_it", "management"]
+      "tags": [
+        "it_governance",
+        "cobit",
+        "isaca",
+        "audit",
+        "enterprise_it",
+        "management"
+      ]
     }
   ]
 }

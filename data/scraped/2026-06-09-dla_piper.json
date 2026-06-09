@@ -1,0 +1,10 @@
+{
+  "source": "dla_piper",
+  "scraped_at": "2026-06-09",
+  "count": 1,
+  "items": [
+    {
+      "_note": "DLA Piper is a JavaScript SPA. Run with Playwright: playwright install && python scripts/dla_piper_playwright.py"
+    }
+  ]
+}

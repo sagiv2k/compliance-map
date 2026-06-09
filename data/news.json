@@ -1,0 +1,920 @@
+{
+  "last_updated": "2026-06-09",
+  "items": [
+    {
+      "id": "edf85062d9a9",
+      "title": "Financial services",
+      "summary": "",
+      "url": "https://www.pwc.com/gx/en/industries/financial-services.html",
+      "published": "2026-06-09",
+      "source": "PwC",
+      "source_url": "https://www.pwc.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "808e9d0b6d67",
+      "title": "Banking and capital markets",
+      "summary": "",
+      "url": "https://www.pwc.com/gx/en/industries/financial-services/banking-capital-markets.html",
+      "published": "2026-06-09",
+      "source": "PwC",
+      "source_url": "https://www.pwc.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "bd5f7d896a4d",
+      "title": "Public safety, justice and security",
+      "summary": "",
+      "url": "https://www.pwc.com/gx/en/industries/government-public-sector/public-safety-justice-security.html",
+      "published": "2026-06-09",
+      "source": "PwC",
+      "source_url": "https://www.pwc.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "8af4a32e0e20",
+      "title": "Aerospace, defence and security",
+      "summary": "",
+      "url": "https://www.pwc.com/gx/en/industries/aerospace-defence.html",
+      "published": "2026-06-09",
+      "source": "PwC",
+      "source_url": "https://www.pwc.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "991c88342ed3",
+      "title": "Industrial manufacturing",
+      "summary": "",
+      "url": "https://www.pwc.com/gx/en/industries/industrial-manufacturing.html",
+      "published": "2026-06-09",
+      "source": "PwC",
+      "source_url": "https://www.pwc.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "1a95fa0adaa1",
+      "title": "Human Capital Trends",
+      "summary": "",
+      "url": "https://www2.deloitte.com/us/en/insights/topics/talent/human-capital-trends.html?icid=disidenav_human-capital-trends",
+      "published": "2026-06-09",
+      "source": "Deloitte",
+      "source_url": "https://www2.deloitte.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "701e1c00cbe0",
+      "title": "Sustainability, Equity & Climate",
+      "summary": "",
+      "url": "https://www2.deloitte.com/us/en/insights/research-centers/economics/sustainability-equity-climate.html?icid=disidenav_sustainability-equity-climate",
+      "published": "2026-06-09",
+      "source": "Deloitte",
+      "source_url": "https://www2.deloitte.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "cefb50c7eed7",
+      "title": "Retail, Wholesale & Distribution",
+      "summary": "",
+      "url": "https://www2.deloitte.com/us/en/insights/industry/retail-distribution.html?icid=disidenav_retail-distribution",
+      "published": "2026-06-09",
+      "source": "Deloitte",
+      "source_url": "https://www2.deloitte.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "e1ef6692c1f5",
+      "title": "Hospitality & Airlines",
+      "summary": "",
+      "url": "https://www2.deloitte.com/us/en/insights/research-centers/consumer-industry-center/hospitality.html?icid=disidenav_hospitality",
+      "published": "2026-06-09",
+      "source": "Deloitte",
+      "source_url": "https://www2.deloitte.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "e88963250cb9",
+      "title": "Industrial Manufacturing",
+      "summary": "",
+      "url": "https://www2.deloitte.com/us/en/insights/industry/manufacturing-industrial-products.html?icid=disidenav_manufacturing-industrial-products",
+      "published": "2026-06-09",
+      "source": "Deloitte",
+      "source_url": "https://www2.deloitte.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "afe1b3df7f3f",
+      "title": "Working Capital",
+      "summary": "",
+      "url": "https://www.ey.com/en_gl/services/strategy-transactions/liquidity-working-capital-advisory",
+      "published": "2026-06-09",
+      "source": "EY",
+      "source_url": "https://www.ey.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "14667b2a1186",
+      "title": "Sustainability Strategy",
+      "summary": "",
+      "url": "https://www.ey.com/en_gl/services/strategy-transactions/sustainability-esg-strategy",
+      "published": "2026-06-09",
+      "source": "EY",
+      "source_url": "https://www.ey.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "9670dd52e15d",
+      "title": "AI Strategy Services",
+      "summary": "",
+      "url": "https://www.ey.com/en_gl/services/strategy/ai-strategy-consulting-mergers-acquisitions",
+      "published": "2026-06-09",
+      "source": "EY",
+      "source_url": "https://www.ey.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "343b3078ec29",
+      "title": "Transactions and Corporate Finance by EY-Parthenon",
+      "summary": "",
+      "url": "https://www.ey.com/en_gl/services/strategy-transactions",
+      "published": "2026-06-09",
+      "source": "EY",
+      "source_url": "https://www.ey.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "1e3eab22adb2",
+      "title": "M&A AI-powered Technology",
+      "summary": "",
+      "url": "https://www.ey.com/en_gl/services/strategy-transactions/connected-capital-technologies",
+      "published": "2026-06-09",
+      "source": "EY",
+      "source_url": "https://www.ey.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "ebc1fab075cf",
+      "title": "AI and Technology",
+      "summary": "",
+      "url": "https://kpmg.com/xx/en/our-insights/ai-and-technology.html",
+      "published": "2026-06-09",
+      "source": "KPMG",
+      "source_url": "https://kpmg.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "a6d43ce011d3",
+      "title": "Risk and Regulation",
+      "summary": "",
+      "url": "https://kpmg.com/xx/en/our-insights/risk-and-regulation.html",
+      "published": "2026-06-09",
+      "source": "KPMG",
+      "source_url": "https://kpmg.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "b69ea9fe6bfd",
+      "title": "Consumer, Retail & Leisure",
+      "summary": "",
+      "url": "https://kpmg.com/xx/en/what-we-do/industries/consumer-retail-and-leisure.html",
+      "published": "2026-06-09",
+      "source": "KPMG",
+      "source_url": "https://kpmg.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "5f1633333238",
+      "title": "Financial Services",
+      "summary": "",
+      "url": "https://kpmg.com/xx/en/what-we-do/industries/financial-services.html",
+      "published": "2026-06-09",
+      "source": "KPMG",
+      "source_url": "https://kpmg.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "c60a36a84d94",
+      "title": "AI Governance Principles for Boards",
+      "summary": "",
+      "url": "https://kpmg.com/xx/en/our-insights/ai-and-technology/ai-governance-principles-for-boards.html",
+      "published": "2026-06-09",
+      "source": "KPMG",
+      "source_url": "https://kpmg.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "70fe90520740",
+      "title": "NIST Expands Its Library of ‘Chemical Fingerprints’ to Identify Unknown Substances",
+      "summary": "Researchers and manufacturers rely on the library to identify unknown compounds in food, drugs, cosmetics, the environment, body fluids, forensic evidence and even space rocks.",
+      "url": "https://www.nist.gov/news-events/news/2026/06/nist-expands-its-library-chemical-fingerprints-identify-unknown-substances",
+      "published": "2026-06-09",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "c884fc912776",
+      "title": "NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems",
+      "summary": "The proof extends to AI the logic used by famed mathematician Kurt Gödel, whose incompleteness theorems have had a profound effect on math for nearly a century.",
+      "url": "https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update",
+      "published": "2026-06-09",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "29f69fcfa8ea",
+      "title": "FSB regulatory and supervisory modernisation symposium",
+      "summary": "FSB hosts a symposium to support members’ efforts in supervisory and regulatory modernisation.",
+      "url": "https://www.fsb.org/2026/06/fsb-regulatory-and-supervisory-modernisation-symposium/",
+      "published": "2026-06-09",
+      "source": "FSB",
+      "source_url": "https://www.fsb.org",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "399b6e316f43",
+      "title": "Capital projects and infrastructure",
+      "summary": "",
+      "url": "https://www.pwc.com/gx/en/industries/capital-projects-infrastructure.html",
+      "published": "2026-06-09",
+      "source": "PwC",
+      "source_url": "https://www.pwc.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "2f9f761a1a44",
+      "title": "Banking transformation: The new agenda",
+      "summary": "",
+      "url": "https://kpmg.com/xx/en/our-insights/transformation/operational-and-cost-transformation-in-banking.html",
+      "published": "2026-06-09",
+      "source": "KPMG",
+      "source_url": "https://kpmg.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "8229d2989cb9",
+      "title": "EBA E-mail alert 8 June, 2026",
+      "summary": "EBA E-mail alert 8 June, 2026 Date 08/06/2026 Anonymous (not verified) Mon, 06/08/2026 - 17:00 News &amp; Press ​The EBA launches Discussion Paper on Pillar 3 Data Hub for small banks Consultations Discussion on Pillar 3 Data Hub process to SNCIs",
+      "url": "https://www.eba.europa.eu/node/19729",
+      "published": "2026-06-08",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "96ca5ae469d0",
+      "title": "EBA E-mail alert 5 June, 2026",
+      "summary": "EBA E-mail alert 5 June, 2026 Date 05/06/2026 Anonymous (not verified) Fri, 06/05/2026 - 17:00 Final Q&amp;As 2025_7588 Access to national credit databases for all EU creditors for both cross-border and domestic mortgage loan transactions 2026_7807 Clarification on validation v30…",
+      "url": "https://www.eba.europa.eu/node/19723",
+      "published": "2026-06-05",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "913c4d9d555a",
+      "title": "New AI Model Shows How to Evacuate for Fires One Safe Step at a Time",
+      "summary": "A NIST-led team has created a new AI model that can identify safe evacuation routes in a single-story floor plan during a fire, with a multilevel version in the works.",
+      "url": "https://www.nist.gov/news-events/news/2026/06/new-ai-model-shows-how-evacuate-fires-one-safe-step-time",
+      "published": "2026-06-04",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "bc9ff8c2c90e",
+      "title": "EBA E-mail alert 3 June, 2026",
+      "summary": "EBA E-mail alert 3 June, 2026 Date 03/06/2026 Anonymous (not verified) Wed, 06/03/2026 - 17:00 News &amp; Press ESAs publish the first report on DORA major ICT-related incidents",
+      "url": "https://www.eba.europa.eu/node/19720",
+      "published": "2026-06-03",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "4e25591c8075",
+      "title": "EBA E-mail alert 2 June, 2026",
+      "summary": "EBA E-mail alert 2 June, 2026 Date 02/06/2026 Anonymous (not verified) Tue, 06/02/2026 - 17:00 News &amp; Press ​The EBA updates list of other systemically important institutions ​The EBA and the New York State Department of Financial Services sign a Memorandum of Understanding t…",
+      "url": "https://www.eba.europa.eu/node/19715",
+      "published": "2026-06-02",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "a1480047faf6",
+      "title": "NIST Expands AI Consortium’s Scope, Calls for New Members",
+      "summary": "The consortium will focus on AI innovation and adoption, with six task groups concentrating on different aspects of AI measurement science and evaluation.",
+      "url": "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members",
+      "published": "2026-05-29",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "36b8fc25e073",
+      "title": "EBA E-mail alert 29 May, 2026",
+      "summary": "EBA E-mail alert 29 May, 2026 Date 29/05/2026 Anonymous (not verified) Fri, 05/29/2026 - 17:00 Final Q&amp;As 2025_7575 SPV repack transactions 2025_7576 Application of Article 207(2) of the CRR to financial collateral under the counterparty credit risk framework 2026_7744 Report…",
+      "url": "https://www.eba.europa.eu/node/19706",
+      "published": "2026-05-29",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "24101da69459",
+      "title": "Federal Reserve Board issues enforcement actions with former employee of Atlantic Union Bank and former employee of Frost Bank",
+      "summary": "Federal Reserve Board issues enforcement actions with former employee of Atlantic Union Bank and former employee of Frost Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260528a.htm",
+      "published": "2026-05-28",
+      "source": "FED",
+      "source_url": "https://www.federalreserve.gov",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "56e0ffe38300",
+      "title": "Building resilience in an uncertain world",
+      "summary": "In this speech at Insurance Europe’s 16th International Conference, John Schindler discusses the current outlook for financial stability and vulnerabilities related to the conflict in the Middle East, financial market volatility, and private credit.",
+      "url": "https://www.fsb.org/2026/05/building-resilience-in-an-uncertain-world/",
+      "published": "2026-05-28",
+      "source": "FSB",
+      "source_url": "https://www.fsb.org",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "630495d275f6",
+      "title": "Kevin Warsh takes oath of office as chairman and a member of the Board of Governors of the Federal Reserve System, and the Federal Open Market Committee unanimously selects Warsh as its chairman",
+      "summary": "Kevin Warsh takes oath of office as chairman and a member of the Board of Governors of the Federal Reserve System, and the Federal Open Market Committee unanimously selects Warsh as its chairman",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+      "published": "2026-05-22",
+      "source": "FED",
+      "source_url": "https://www.federalreserve.gov",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "c8e21a9a44d2",
+      "title": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
+      "summary": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260522a.htm",
+      "published": "2026-05-22",
+      "source": "FED",
+      "source_url": "https://www.federalreserve.gov",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "76bb22a77301",
+      "title": "EBA E-mail alert 22 May, 2026",
+      "summary": "EBA E-mail alert 22 May, 2026 Date 22/05/2026 Anonymous (not verified) Fri, 05/22/2026 - 17:00 Final Q&amp;As 2024_7078 Issuers of EMTs and scope of application AML requirements 2024_7172 Lightning Network (LN) Transactions and whether they fall within the scope of the TFR and Tr…",
+      "url": "https://www.eba.europa.eu/node/19696",
+      "published": "2026-05-22",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "71f8ff80b17a",
+      "title": "Federal Reserve Board issues enforcement action with former employee of Commerce Bank",
+      "summary": "Federal Reserve Board issues enforcement action with former employee of Commerce Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260521a.htm",
+      "published": "2026-05-21",
+      "source": "FED",
+      "source_url": "https://www.federalreserve.gov",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "809ac88b008b",
+      "title": "Federal Reserve Board names Jerome H. Powell as chair pro tempore; Powell will serve as chair pro tempore until Kevin M. Warsh is sworn in as the new chair",
+      "summary": "Federal Reserve Board names Jerome H. Powell as chair pro tempore; Powell will serve as chair pro tempore until Kevin M. Warsh is sworn in as the new chair",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260515a.htm",
+      "published": "2026-05-15",
+      "source": "FED",
+      "source_url": "https://www.federalreserve.gov",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "f8236406828d",
+      "title": "Federal Reserve Board announces termination of enforcement actions with UBS Group AG, Credit Suisse AG, Credit Suisse Holdings (USA), Inc., and Credit Suisse AG, New York Branch",
+      "summary": "Federal Reserve Board announces termination of enforcement actions with UBS Group AG, Credit Suisse AG, Credit Suisse Holdings (USA), Inc., and Credit Suisse AG, New York Branch",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260515a.htm",
+      "published": "2026-05-15",
+      "source": "FED",
+      "source_url": "https://www.federalreserve.gov",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "6a5f44c5d6cb",
+      "title": "Federal Reserve Board releases results from two surveys of senior financial officers at banks about their views on discount window operating days and their strategies and practices for managing reserve balances",
+      "summary": "Federal Reserve Board releases results from two surveys of senior financial officers at banks about their views on discount window operating days and their strategies and practices for managing reserve balances",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260514a.htm",
+      "published": "2026-05-14",
+      "source": "FED",
+      "source_url": "https://www.federalreserve.gov",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "2c7c893ca39d",
+      "title": "Federal Reserve Board announces termination of enforcement actions with F & M Holding Company, Inc. and Thread Bancorp, Inc.",
+      "summary": "Federal Reserve Board announces termination of enforcement actions with F &amp; M Holding Company, Inc. and Thread Bancorp, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260512a.htm",
+      "published": "2026-05-12",
+      "source": "FED",
+      "source_url": "https://www.federalreserve.gov",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "bffc42f2bcb8",
+      "title": "EBA E-mail alert 12 May, 2026",
+      "summary": "EBA E-mail alert 12 May, 2026 Date 12/05/2026 Anonymous (not verified) Tue, 05/12/2026 - 17:00 News &amp; Press European Commission launches call for candidates for the ESAs’ Board of Appeal The EBA issues an opinion about an Austrian macroprudential measure",
+      "url": "https://www.eba.europa.eu/node/19674",
+      "published": "2026-05-12",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "ec1635a3ff71",
+      "title": "EBA E-mail alert 8 May, 2026",
+      "summary": "EBA E-mail alert 8 May, 2026 Date 08/05/2026 Anonymous (not verified) Fri, 05/08/2026 - 17:00 Final Q&amp;As 2024_7084 Qualification of crypto-asset service in case of exchange of electronic money tokens for other crypto-assets 2024_7166 Publication of white papers 2024_7168 Pass…",
+      "url": "https://www.eba.europa.eu/node/19661",
+      "published": "2026-05-08",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "566a65e605ea",
+      "title": "EBA E-mail alert 7 May, 2026",
+      "summary": "EBA E-mail alert 7 May, 2026 Date 07/05/2026 Anonymous (not verified) Thu, 05/07/2026 - 17:00 News &amp; Press The EBA amends Guidelines on the definition of default The EBA consults on amendments to the RTS on the assignment of risk weights to specialised lending exposures under…",
+      "url": "https://www.eba.europa.eu/node/19648",
+      "published": "2026-05-07",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "861574e5f5ae",
+      "title": "Defending Against China-Nexus Covert Networks of Compromised Devices",
+      "summary": "Defending against china-nexus covert networks of compromised devices executive summary Defending against China-nexus covert networks of compromised devices&nbsp; Explaining the widespread shift in tactics, techniques and procedures (TTPs) towards networks of compromised infrastru…",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-113a",
+      "published": "2026-04-21",
+      "source": "CISA",
+      "source_url": "https://www.cisa.gov",
+      "categories": [
+        "cybersecurity",
+        "critical_infrastructure"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "7958de2d1ac1",
+      "title": "Any Color You Like: NIST Scientists Create ‘Any Wavelength’ Lasers in Tiny Circuits for Light",
+      "summary": "NIST scientists and collaborators have pioneered a way to make integrated circuits for light by depositing complex patterns of specialized materials onto silicon wafers.",
+      "url": "https://www.nist.gov/news-events/news/2026/04/any-color-you-nist-scientists-create-any-wavelength-lasers-tiny-circuits",
+      "published": "2026-04-15",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "86c9855e7c5c",
+      "title": "Iranian-Affiliated Cyber Actors Exploit Programmable Logic Controllers Across US Critical Infrastructure",
+      "summary": "Advisory at a Glance Title Iranian-Affiliated Cyber Actors Exploit Programmable Logic Controllers Across US Critical Infrastructure Original Publication April 7, 2026 Executive Summary Iran-affiliated advanced persistent threat (APT) actors are conducting exploitation activity ta…",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a",
+      "published": "2026-04-06",
+      "source": "CISA",
+      "source_url": "https://www.cisa.gov",
+      "categories": [
+        "cybersecurity",
+        "critical_infrastructure"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "040b075a95bd",
+      "title": "2025 HMDA Data on Mortgage Lending Now Available",
+      "summary": "The 2025 HMDA Loan Application Register data can be found on the FFIEC's HMDA Platform.",
+      "url": "https://www.consumerfinance.gov/about-us/newsroom/2025-hmda-data-on-mortgage-lending-now-available/",
+      "published": "2026-03-31",
+      "source": "CFPB",
+      "source_url": "https://www.consumerfinance.gov",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "36c6dec610f8",
+      "title": "NIST Researchers Develop Photonic Chip Packaging That Can Withstand Extreme Environments",
+      "summary": "The advance could allow these technologies to operate in deep-space probes, inside nuclear reactors, in ultrahigh vacuum systems, and at temperatures both near absolute zero and in scorchingly hot industrial settings.",
+      "url": "https://www.nist.gov/news-events/news/2026/03/nist-researchers-develop-photonic-chip-packaging-can-withstand-extreme",
+      "published": "2026-03-30",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "a93539848b20",
+      "title": "NIST Submits Annual Report to Congress Summarizing FY 2025 Progress on National Construction Safety Team Investigations",
+      "summary": "The report includes an overview of work completed on the Champlain Towers South investigation.",
+      "url": "https://www.nist.gov/news-events/news/2026/03/nist-submits-annual-report-congress-summarizing-fy-2025-progress-national",
+      "published": "2026-03-19",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "fc3754ca6900",
+      "title": "Announcing the &quot;AI Agent Standards Initiative&quot; for Interoperable and Secure Innovation",
+      "summary": "The Initiative will ensure that the next generation of AI is widely adopted with confidence, can function securely on behalf of its users, and can interoperate smoothly across the digital ecosystem.",
+      "url": "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure",
+      "published": "2026-02-17",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "ae49427bef3f",
+      "title": "NIST Releases New Forensic Genetic Reference Material to Help Crime Laboratories Analyze Challenging Cases",
+      "summary": "The reference material is the first to include mixtures of high-quality and degraded DNA from different individuals.",
+      "url": "https://www.nist.gov/news-events/news/2026/02/nist-releases-new-forensic-genetic-reference-material-help-crime",
+      "published": "2026-02-17",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "dee85ba4ff5d",
+      "title": "NIST Allocates Over $3 Million to Small Businesses Advancing AI, Biotechnology, Semiconductors, Quantum and More",
+      "summary": "NIST is allocating funding to eight small businesses in seven states under the Small Business Innovation Research (SBIR) program.",
+      "url": "https://www.nist.gov/news-events/news/2026/02/nist-allocates-over-3-million-small-businesses-advancing-ai-biotechnology",
+      "published": "2026-02-10",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "ef8e699aff21",
+      "title": "Space: The Final Frontier for Standards",
+      "summary": "Seven NIST reference materials, including house dust and freeze-dried human liver tissue, have been flown to the International Space Station.",
+      "url": "https://www.nist.gov/news-events/news/2026/02/space-final-frontier-standards",
+      "published": "2026-02-09",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "208c2512eb49",
+      "title": "CAISI Issues Request for Information About Securing AI Agent Systems",
+      "summary": "The Center for AI Standards and Innovation (CAISI) at the U.S. Department of Commerce’s National Institute of Standards and Technology (NIST) has published a Request for Information (RFI) seeking insights from industry, academia, and the security",
+      "url": "https://www.nist.gov/news-events/news/2026/01/caisi-issues-request-information-about-securing-ai-agent-systems",
+      "published": "2026-01-12",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "80cb71ec1ff4",
+      "title": "Consumer Financial Protection Bureau and the Department of Justice Withdraw Joint Statement on Fair Lending and Credit Opportunities for Noncitizen Borrowers",
+      "summary": "CFPB and Justice have withdrawn a joint statement linked to a creditor’s consideration of an individual’s immigration status under the Equal Credit Opportunity Act.",
+      "url": "https://www.consumerfinance.gov/about-us/newsroom/consumer-financial-protection-bureau-and-the-department-of-justice-withdraw-joint-statement-on-fair-lending-and-credit-opportunities-for-noncitizen-borrowers/",
+      "published": "2026-01-12",
+      "source": "CFPB",
+      "source_url": "https://www.consumerfinance.gov",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "563d1d66cd66",
+      "title": "NIST Launches Centers for AI in Manufacturing and Critical Infrastructure",
+      "summary": "NIST has expanded its collaboration with the nonprofit MITRE Corporation as part of its efforts to ensure U.S. leadership in artificial intelligence.",
+      "url": "https://www.nist.gov/news-events/news/2025/12/nist-launches-centers-ai-manufacturing-and-critical-infrastructure",
+      "published": "2025-12-22",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "e21a64f36bab",
+      "title": "Securing Smart Speakers for Home Health Care: NIST Offers New Guidelines",
+      "summary": "Cybersecurity and privacy risks can threaten patient confidentiality.",
+      "url": "https://www.nist.gov/news-events/news/2025/12/securing-smart-speakers-home-health-care-nist-offers-new-guidelines",
+      "published": "2025-12-17",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "579ec2c3e039",
+      "title": "Draft NIST Guidelines Rethink Cybersecurity for the AI Era",
+      "summary": "New guidelines can help an organization determine ways to incorporate AI into its operations while mitigating cybersecurity risks.",
+      "url": "https://www.nist.gov/news-events/news/2025/12/draft-nist-guidelines-rethink-cybersecurity-ai-era",
+      "published": "2025-12-16",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    }
+  ]
+}

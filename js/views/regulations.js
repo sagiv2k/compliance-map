@@ -37,14 +37,15 @@ const RegulationsView = {
     filteredRegulations() {
       const { regulations, filters } = this.$s;
       return regulations.filter(r => {
-        const domainOk = r.domain.some(d => filters.domains.includes(d));
-        const statusOk = filters.status === 'all' || r.status === filters.status;
+        const domainOk        = r.domain.some(d => filters.domains.includes(d));
+        const jurisdictionOk  = filters.jurisdictions.includes(r.enforcement_region);
+        const statusOk        = filters.status === 'all' || r.status === filters.status;
         const q = filters.search.toLowerCase();
         const searchOk = !q || r.name.toLowerCase().includes(q) ||
           r.short_name.toLowerCase().includes(q) ||
           r.summary.toLowerCase().includes(q) ||
           r.jurisdiction.toLowerCase().includes(q);
-        return domainOk && statusOk && searchOk;
+        return domainOk && jurisdictionOk && statusOk && searchOk;
       });
     }
   }

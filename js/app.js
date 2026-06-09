@@ -7,7 +7,8 @@ const DOMAIN_CONFIG = {
   ai_governance:          { label: 'AI Governance',            color: '#f59e0b' },
   environment:            { label: 'Environment',              color: '#0d9488' },
   labor:                  { label: 'Labor',                    color: '#ea580c' },
-  critical_infrastructure:{ label: 'Critical Infrastructure', color: '#64748b' }
+  critical_infrastructure:{ label: 'Critical Infrastructure', color: '#64748b' },
+  maritime:               { label: 'Maritime Shipping',        color: '#0e7490' }
 };
 
 const CATEGORY_CONFIG = {
@@ -20,8 +21,24 @@ const CATEGORY_CONFIG = {
   it_governance:        { label: 'IT Governance' }
 };
 
-const ALL_DOMAINS = Object.keys(DOMAIN_CONFIG);
-const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix'];
+const JURISDICTION_CONFIG = {
+  eu:            { label: 'European Union',          color: '#003399' },
+  us_federal:    { label: 'US Federal',              color: '#B22234' },
+  us_state:      { label: 'US State / Territory',    color: '#e05c5c' },
+  china:         { label: 'China',                   color: '#DE2910' },
+  brazil:        { label: 'Brazil',                  color: '#009C3B' },
+  mena:          { label: 'Middle East & N. Africa', color: '#006C35' },
+  israel:        { label: 'Israel',                  color: '#0038b8' },
+  canada:        { label: 'Canada',                  color: '#C41E3A' },
+  australia:     { label: 'Australia',               color: '#00843D' },
+  africa:        { label: 'Sub-Saharan Africa',      color: '#E07B39' },
+  latam:         { label: 'Latin America',           color: '#7C3AED' },
+  international: { label: 'International / IMO',     color: '#0891B2' }
+};
+
+const ALL_DOMAINS       = Object.keys(DOMAIN_CONFIG);
+const ALL_JURISDICTIONS = Object.keys(JURISDICTION_CONFIG);
+const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix', 'news'];
 
 /* ===== Global Reactive State ===== */
 const AppState = Vue.reactive({
@@ -31,10 +48,13 @@ const AppState = Vue.reactive({
   loading:          true,
   error:            null,
   filters: {
-    domains: [...ALL_DOMAINS],
-    search:  '',
-    status:  'active'
+    domains:       [...ALL_DOMAINS],
+    jurisdictions: [...ALL_JURISDICTIONS],
+    search:        '',
+    status:        'active'
   },
+  news:             [],
+  newsLastUpdated:  '—',
   selectedItem:     null,
   selectedItemType: null,
   activeView:       'overview',
@@ -150,6 +170,10 @@ const RootComponent = {
         {
           id: 'matrix', label: 'Coverage Matrix',
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>'
+        },
+        {
+          id: 'news', label: 'Regulatory News',
+          icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6z"/></svg>'
         }
       ]
     };
@@ -161,7 +185,8 @@ const RootComponent = {
         overview:    OverviewView,
         regulations: RegulationsView,
         standards:   StandardsView,
-        matrix:      MatrixView
+        matrix:      MatrixView,
+        news:        NewsView
       }[this.$s.activeView] || OverviewView;
     },
     totalCountries() {
@@ -194,12 +219,14 @@ const RootComponent = {
     // Load all data
     DataLoader.loadAll()
       .then(data => {
-        AppState.regulations  = data.regulations;
-        AppState.standards    = data.standards;
-        AppState.mappings     = data.mappings;
-        AppState.version      = data.version || '1.0.0';
-        AppState.lastUpdated  = data.last_updated || '—';
-        AppState.loading      = false;
+        AppState.regulations      = data.regulations;
+        AppState.standards        = data.standards;
+        AppState.mappings         = data.mappings;
+        AppState.news             = data.news || [];
+        AppState.newsLastUpdated  = data.news_last_updated || '—';
+        AppState.version          = data.version || '1.1.0';
+        AppState.lastUpdated      = data.last_updated || '—';
+        AppState.loading          = false;
       })
       .catch(err => {
         AppState.error   = err.message;
@@ -212,12 +239,15 @@ const RootComponent = {
 const app = Vue.createApp(RootComponent);
 
 /* Global properties — accessible as this.$xxx in all components */
-app.config.globalProperties.$s            = AppState;
-app.config.globalProperties.$dc           = DOMAIN_CONFIG;
-app.config.globalProperties.$cc           = CATEGORY_CONFIG;
-app.config.globalProperties.$domainLabel  = (key) => DOMAIN_CONFIG[key]?.label || key;
-app.config.globalProperties.$domainColor  = (key) => DOMAIN_CONFIG[key]?.color || '#64748b';
-app.config.globalProperties.$categoryLabel = (key) => CATEGORY_CONFIG[key]?.label || key;
+app.config.globalProperties.$s                  = AppState;
+app.config.globalProperties.$dc                 = DOMAIN_CONFIG;
+app.config.globalProperties.$cc                 = CATEGORY_CONFIG;
+app.config.globalProperties.$jc                 = JURISDICTION_CONFIG;
+app.config.globalProperties.$domainLabel        = (key) => DOMAIN_CONFIG[key]?.label || key;
+app.config.globalProperties.$domainColor        = (key) => DOMAIN_CONFIG[key]?.color || '#64748b';
+app.config.globalProperties.$categoryLabel      = (key) => CATEGORY_CONFIG[key]?.label || key;
+app.config.globalProperties.$jurisdictionLabel  = (key) => JURISDICTION_CONFIG[key]?.label || key;
+app.config.globalProperties.$jurisdictionColor  = (key) => JURISDICTION_CONFIG[key]?.color || '#64748b';
 app.config.globalProperties.$openItem     = (item, type) => {
   AppState.selectedItem     = item;
   AppState.selectedItemType = type;
@@ -232,6 +262,7 @@ app.component('filter-panel',  FilterPanelComponent);
 app.component('reg-card',      RegCardComponent);
 app.component('std-card',      StdCardComponent);
 app.component('detail-modal',  DetailModalComponent);
+app.component('news-view',     NewsView);
 
 /* Mount */
 app.mount('#app');

@@ -1,0 +1,337 @@
+{
+  "source": "library_of_congress",
+  "scraped_at": "2026-06-09",
+  "count": 15,
+  "items": [
+    {
+      "id": "LOC_australia_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "Australia",
+      "enforcement_region": "australia",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_brazil_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "Brazil",
+      "enforcement_region": "latam",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_canada_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "Canada",
+      "enforcement_region": "canada",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_china_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "China",
+      "enforcement_region": "china",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_european_union_ask_a_librarian_law_libra",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "European Union",
+      "enforcement_region": "eu",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_france_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "France",
+      "enforcement_region": "eu",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_germany_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "Germany",
+      "enforcement_region": "eu",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_india_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "India",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_israel_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "Israel",
+      "enforcement_region": "israel",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_japan_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "Japan",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_mexico_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "Mexico",
+      "enforcement_region": "latam",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_russia_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "Russia",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_saudi_arabia_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "Saudi Arabia",
+      "enforcement_region": "mena",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_south_africa_ask_a_librarian_law_library",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "South Africa",
+      "enforcement_region": "africa",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "LOC_united_kingdom_ask_a_librarian_law_libra",
+      "short_name": "Ask a Librarian: Law",
+      "name": "Ask a Librarian: Law Library",
+      "authority": "LOC Nations",
+      "jurisdiction": "United Kingdom",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://ask.loc.gov/law/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "loc.nations",
+      "_scraped_at": "2026-06-09"
+    }
+  ]
+}

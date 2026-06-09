@@ -1,4 +1,4 @@
-/* Data loader — fetches all three JSON files and returns a combined object */
+/* Data loader — fetches all JSON data files and returns a combined object */
 const DataLoader = {
   async loadAll() {
     const cb = Date.now();
@@ -23,12 +23,21 @@ const DataLoader = {
 
     const [regs, stds, maps] = await Promise.all(responses.map(r => r.json()));
 
+    // News is optional — if missing just return empty array
+    let newsData = { items: [], last_updated: '—' };
+    try {
+      const newsRes = await fetch('./data/news.json?cb=' + cb);
+      if (newsRes.ok) newsData = await newsRes.json();
+    } catch (_) { /* news.json not yet present */ }
+
     return {
-      regulations:  regs.regulations,
-      standards:    stds.standards,
-      mappings:     maps.mappings,
-      version:      regs.version,
-      last_updated: regs.last_updated
+      regulations:        regs.regulations,
+      standards:          stds.standards,
+      mappings:           maps.mappings,
+      news:               newsData.items || [],
+      news_last_updated:  newsData.last_updated || '—',
+      version:            regs.version,
+      last_updated:       regs.last_updated
     };
   }
 };

@@ -41,6 +41,7 @@
   --domain-environment: #0d9488;
   --domain-labor: #ea580c;
   --domain-critical_infrastructure: #64748b;
+  --domain-maritime: #0e7490;
 
   /* Domain bg Colors (lighter) */
   --domain-data_privacy-bg: #dbeafe;
@@ -51,6 +52,7 @@
   --domain-environment-bg: #ccfbf1;
   --domain-labor-bg: #ffedd5;
   --domain-critical_infrastructure-bg: #f1f5f9;
+  --domain-maritime-bg: #cffafe;
 
   /* Spacing */
   --space-1: 4px;
@@ -266,6 +268,30 @@ a:hover { color: var(--color-primary-dark); text-decoration: underline; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: var(--space-3);
+}
+
+.sidebar-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+.sidebar-label-row .sidebar-label {
+  margin-bottom: 0;
+}
+.sidebar-label-action {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 1px 8px;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  line-height: 1.6;
+}
+.sidebar-label-action:hover {
+  background: var(--color-bg-hover, #f1f5f9);
+  color: var(--color-text);
 }
 
 /* ===== Main Content ===== */

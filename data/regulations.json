@@ -1,17 +1,53 @@
 {
-  "version": "1.0.0",
+  "version": "1.2.0",
   "last_updated": "2026-06-09",
   "regulations": [
     {
       "id": "GDPR",
       "name": "General Data Protection Regulation",
       "short_name": "GDPR",
-      "domain": ["data_privacy"],
+      "domain": [
+        "data_privacy"
+      ],
       "jurisdiction": "European Union",
+      "enforcement_region": "eu",
       "geography": {
         "type": "regional",
-        "regions": ["EU"],
-        "countries": ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE"]
+        "regions": [
+          "EU"
+        ],
+        "countries": [
+          "AT",
+          "BE",
+          "BG",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "NL",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SI",
+          "SK"
+        ]
       },
       "status": "active",
       "effective_date": "2018-05-25",
@@ -20,7 +56,7 @@
       "summary": "The world's most comprehensive data protection law, governing how organizations collect, store, process, and transfer personal data of individuals in the EU. It applies to any organization worldwide that handles EU resident data, regardless of where the organization is based.",
       "key_requirements": [
         "Establish a lawful basis for every processing activity",
-        "Respect data subject rights: access, erasure ('right to be forgotten'), portability, rectification, objection",
+        "Respect data subject rights: access, erasure, portability, rectification, objection",
         "Report personal data breaches to supervisory authority within 72 hours",
         "Appoint a Data Protection Officer (DPO) for high-risk processing activities",
         "Implement Privacy by Design and Privacy by Default",
@@ -28,19 +64,63 @@
         "Ensure valid consent is freely given, specific, informed, and unambiguous",
         "Restrict transfers of personal data outside the EEA without adequate safeguards"
       ],
-      "penalties": "Up to €20 million or 4% of global annual turnover (whichever is higher)",
-      "tags": ["privacy", "data_protection", "consent", "breach_notification", "dpo", "dpia"]
+      "penalties": "Up to 20 million EUR or 4% of global annual turnover (whichever is higher)",
+      "tags": [
+        "privacy",
+        "data_protection",
+        "consent",
+        "breach_notification",
+        "dpo",
+        "dpia"
+      ]
     },
     {
       "id": "NIS2",
       "name": "Network and Information Security Directive 2",
       "short_name": "NIS2",
-      "domain": ["cybersecurity", "critical_infrastructure"],
+      "domain": [
+        "cybersecurity",
+        "critical_infrastructure"
+      ],
       "jurisdiction": "European Union",
+      "enforcement_region": "eu",
       "geography": {
         "type": "regional",
-        "regions": ["EU"],
-        "countries": ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE"]
+        "regions": [
+          "EU"
+        ],
+        "countries": [
+          "AT",
+          "BE",
+          "BG",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "NL",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SI",
+          "SK"
+        ]
       },
       "status": "active",
       "effective_date": "2024-10-17",
@@ -55,21 +135,64 @@
         "Implement vulnerability handling and disclosure processes",
         "Train staff and promote cybersecurity awareness",
         "Ensure security of network and information systems including encryption",
-        "Senior management accountability for compliance — fines can target executives personally"
+        "Senior management accountability for compliance"
       ],
-      "penalties": "Up to €10 million or 2% of global annual turnover for essential entities",
-      "tags": ["cybersecurity", "incident_reporting", "supply_chain", "critical_infrastructure", "risk_management"]
+      "penalties": "Up to 10 million EUR or 2% of global annual turnover for essential entities",
+      "tags": [
+        "cybersecurity",
+        "incident_reporting",
+        "supply_chain",
+        "critical_infrastructure",
+        "risk_management"
+      ]
     },
     {
       "id": "DORA",
       "name": "Digital Operational Resilience Act",
       "short_name": "DORA",
-      "domain": ["finance", "cybersecurity"],
+      "domain": [
+        "finance",
+        "cybersecurity"
+      ],
       "jurisdiction": "European Union",
+      "enforcement_region": "eu",
       "geography": {
         "type": "regional",
-        "regions": ["EU"],
-        "countries": ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE"]
+        "regions": [
+          "EU"
+        ],
+        "countries": [
+          "AT",
+          "BE",
+          "BG",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "NL",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SI",
+          "SK"
+        ]
       },
       "status": "active",
       "effective_date": "2025-01-17",
@@ -78,7 +201,7 @@
       "summary": "A regulation that establishes uniform requirements for the digital operational resilience of financial entities in the EU. DORA consolidates and upgrades ICT risk requirements previously scattered across multiple sectoral regulations, specifically for banks, insurers, investment firms, and their critical ICT third-party providers.",
       "key_requirements": [
         "Establish an ICT Risk Management Framework with governance and accountability",
-        "Conduct regular Digital Operational Resilience Testing (DORA testing) including advanced threat-led penetration testing (TLPT)",
+        "Conduct regular Digital Operational Resilience Testing including advanced threat-led penetration testing (TLPT)",
         "Detect, manage, classify, and report major ICT-related incidents",
         "Manage ICT third-party risk with robust contractual requirements and exit strategies",
         "Share cybersecurity threat intelligence among financial entities",
@@ -86,26 +209,69 @@
         "Critical ICT third-party providers (CTPPs) must register and comply with ENISA oversight"
       ],
       "penalties": "Up to 2% of global annual turnover; periodic penalty payments up to 1% of average daily turnover",
-      "tags": ["finance", "resilience", "ict_risk", "third_party_risk", "penetration_testing", "incident_management"]
+      "tags": [
+        "finance",
+        "resilience",
+        "ict_risk",
+        "third_party_risk",
+        "penetration_testing",
+        "incident_management"
+      ]
     },
     {
       "id": "AI_ACT",
       "name": "EU Artificial Intelligence Act",
       "short_name": "EU AI Act",
-      "domain": ["ai_governance"],
+      "domain": [
+        "ai_governance"
+      ],
       "jurisdiction": "European Union",
+      "enforcement_region": "eu",
       "geography": {
         "type": "regional",
-        "regions": ["EU"],
-        "countries": ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE"]
+        "regions": [
+          "EU"
+        ],
+        "countries": [
+          "AT",
+          "BE",
+          "BG",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "NL",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SI",
+          "SK"
+        ]
       },
       "status": "active",
-      "effective_date": "2026-08-02",
+      "effective_date": "2024-08-01",
       "authority": "EU AI Office (European Commission)",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689",
-      "summary": "The world's first comprehensive legal framework for artificial intelligence, classifying AI systems by risk level and imposing corresponding obligations. Unacceptable-risk AI (e.g., social scoring) is banned; high-risk AI (e.g., CV screening, credit scoring, biometric identification) must meet strict requirements before deployment.",
+      "summary": "The EU Artificial Intelligence Act is the world's first comprehensive AI regulation, entered into force on 1 August 2024. It applies a risk-based approach: prohibited AI practices banned from 2 February 2025; rules for General-Purpose AI (GPAI) models apply from 2 August 2025; high-risk AI system requirements apply from 2 August 2026. The AI Act covers providers, deployers, and importers of AI systems in the EU/EEA regardless of where the provider is established.",
       "key_requirements": [
-        "Prohibit unacceptable-risk AI systems including real-time biometric surveillance in public spaces, social scoring, and manipulative AI",
+        "Prohibit unacceptable-risk AI systems including real-time biometric surveillance in public spaces and social scoring",
         "High-risk AI systems must undergo conformity assessments and register in EU database",
         "Maintain technical documentation, logs, and human oversight for high-risk AI",
         "Ensure transparency: users must know when interacting with AI (chatbots, deepfakes)",
@@ -113,238 +279,2796 @@
         "Establish a quality management system for high-risk AI systems",
         "Post-market monitoring and incident reporting for high-risk AI"
       ],
-      "penalties": "Up to €35 million or 7% of global annual turnover for prohibited AI violations",
-      "tags": ["ai_governance", "transparency", "high_risk_ai", "conformity_assessment", "gpai"]
+      "penalties": "Up to 35 million EUR or 7% of global annual turnover for prohibited AI violations",
+      "tags": [
+        "ai_governance",
+        "transparency",
+        "high_risk_ai",
+        "conformity_assessment",
+        "gpai"
+      ]
     },
     {
       "id": "CYBER_ACT",
       "name": "EU Cybersecurity Act",
       "short_name": "EU Cyber Act",
-      "domain": ["cybersecurity"],
+      "domain": [
+        "cybersecurity"
+      ],
       "jurisdiction": "European Union",
+      "enforcement_region": "eu",
       "geography": {
         "type": "regional",
-        "regions": ["EU"],
-        "countries": ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE"]
+        "regions": [
+          "EU"
+        ],
+        "countries": [
+          "AT",
+          "BE",
+          "BG",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "NL",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SI",
+          "SK"
+        ]
       },
       "status": "active",
       "effective_date": "2019-06-27",
       "authority": "European Union Agency for Cybersecurity (ENISA)",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0881",
-      "summary": "A regulation that grants ENISA a permanent mandate and establishes an EU-wide cybersecurity certification framework for ICT products, services, and processes. It enables the creation of European cybersecurity certification schemes to replace the current patchwork of national schemes.",
+      "summary": "A regulation that grants ENISA a permanent mandate and establishes an EU-wide cybersecurity certification framework for ICT products, services, and processes.",
       "key_requirements": [
         "Voluntary European cybersecurity certification schemes for ICT products, services, and processes",
-        "Three assurance levels: basic, substantial, and high — based on risk profile",
+        "Three assurance levels: basic, substantial, and high based on risk profile",
         "Manufacturers can self-declare conformity at the basic level; independent assessment required for high level",
         "National certification supervisory authorities must be designated by each member state",
         "ENISA maintains a database of all issued, amended, and withdrawn certificates",
         "Cybersecurity certification does not replace sector-specific requirements (e.g., NIS2, DORA)"
       ],
       "penalties": "Defined by national laws; administrative fines for misleading certification claims",
-      "tags": ["cybersecurity", "certification", "enisa", "ict_products", "assurance_levels"]
+      "tags": [
+        "cybersecurity",
+        "certification",
+        "enisa",
+        "ict_products",
+        "assurance_levels"
+      ]
     },
     {
       "id": "CCPA",
       "name": "California Consumer Privacy Act (as amended by CPRA)",
       "short_name": "CCPA / CPRA",
-      "domain": ["data_privacy"],
-      "jurisdiction": "United States — California",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "United States - California",
+      "enforcement_region": "us_state",
       "geography": {
         "type": "state",
-        "regions": ["US"],
-        "countries": ["US"]
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
       },
       "status": "active",
       "effective_date": "2023-01-01",
       "authority": "California Privacy Protection Agency (CPPA)",
       "url": "https://oag.ca.gov/privacy/ccpa",
-      "summary": "California's comprehensive privacy law (originally 2020, expanded by CPRA in 2023) gives California residents broad rights over their personal information held by businesses. It is considered the most stringent U.S. state privacy law and a model for other states. It applies to for-profit businesses meeting certain thresholds.",
+      "summary": "California's comprehensive privacy law giving residents broad rights over their personal information. Considered the most stringent U.S. state privacy law and a model for other states.",
       "key_requirements": [
         "Disclose categories of personal information collected and purposes for processing",
         "Honor consumer rights: access, deletion, correction, and opt-out of sale/sharing",
         "Right to limit use of sensitive personal information (SPI)",
         "Opt-out of automated decision-making, including profiling",
         "Conduct and document risk assessments for high-risk processing activities",
-        "Enter into contracts with service providers and contractors limiting data use",
         "Honor opt-out preference signals (Global Privacy Control) automatically",
         "No retaliation for exercising privacy rights"
       ],
-      "penalties": "Up to $2,500 per unintentional violation; $7,500 per intentional violation; $150–$750 per consumer per data breach incident",
-      "tags": ["privacy", "consumer_rights", "opt_out", "california", "us_state_law"]
+      "penalties": "Up to $2,500 per unintentional violation; $7,500 per intentional violation",
+      "tags": [
+        "privacy",
+        "consumer_rights",
+        "opt_out",
+        "california",
+        "us_state_law"
+      ]
     },
     {
       "id": "HIPAA",
       "name": "Health Insurance Portability and Accountability Act",
       "short_name": "HIPAA",
-      "domain": ["health", "data_privacy"],
-      "jurisdiction": "United States — Federal",
+      "domain": [
+        "health",
+        "data_privacy"
+      ],
+      "jurisdiction": "United States - Federal",
+      "enforcement_region": "us_federal",
       "geography": {
         "type": "national",
-        "regions": ["US"],
-        "countries": ["US"]
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
       },
       "status": "active",
       "effective_date": "2003-04-14",
-      "authority": "U.S. Department of Health and Human Services (HHS) — Office for Civil Rights (OCR)",
+      "authority": "U.S. Department of Health and Human Services (HHS) - Office for Civil Rights (OCR)",
       "url": "https://www.hhs.gov/hipaa/index.html",
-      "summary": "U.S. federal law that establishes national standards for protecting the privacy and security of protected health information (PHI). It applies to covered entities (healthcare providers, health plans, clearinghouses) and their business associates who handle PHI on their behalf.",
+      "summary": "U.S. federal law establishing national standards for protecting the privacy and security of protected health information (PHI). Applies to covered entities and business associates.",
       "key_requirements": [
         "Privacy Rule: Safeguard PHI and give patients rights to access and amend their health records",
         "Security Rule: Implement administrative, physical, and technical safeguards for electronic PHI (ePHI)",
         "Breach Notification Rule: Notify affected individuals, HHS, and media within 60 days of a breach",
-        "Minimum Necessary standard: only access or disclose the minimum PHI needed for the purpose",
+        "Minimum Necessary standard: only access or disclose the minimum PHI needed",
         "Business Associate Agreements (BAAs) required for all third-party PHI handlers",
         "Conduct a comprehensive risk analysis and implement a risk management plan",
-        "Designate a Privacy Officer and a Security Officer",
-        "Prohibit the sale of PHI without specific authorization"
+        "Designate a Privacy Officer and a Security Officer"
       ],
-      "penalties": "Tiered: $100–$50,000 per violation; maximum $1.9 million per violation category per year; criminal penalties up to 10 years imprisonment",
-      "tags": ["health", "phi", "privacy", "security", "breach_notification", "hipaa_baa"]
+      "penalties": "Tiered: $100-$50,000 per violation; maximum $1.9 million per violation category per year",
+      "tags": [
+        "health",
+        "phi",
+        "privacy",
+        "security",
+        "breach_notification",
+        "hipaa_baa"
+      ]
     },
     {
       "id": "SOX",
       "name": "Sarbanes-Oxley Act",
       "short_name": "SOX",
-      "domain": ["finance"],
-      "jurisdiction": "United States — Federal",
+      "domain": [
+        "finance"
+      ],
+      "jurisdiction": "United States - Federal",
+      "enforcement_region": "us_federal",
       "geography": {
         "type": "national",
-        "regions": ["US"],
-        "countries": ["US"]
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
       },
       "status": "active",
       "effective_date": "2002-07-30",
       "authority": "U.S. Securities and Exchange Commission (SEC) and Public Company Accounting Oversight Board (PCAOB)",
       "url": "https://www.govinfo.gov/app/details/PLAW-107publ204",
-      "summary": "A U.S. federal law enacted in response to the Enron and WorldCom scandals that establishes enhanced standards for all U.S. publicly traded companies and their auditors. SOX Section 404 requires management and auditors to assess and attest to the effectiveness of internal controls over financial reporting (ICFR).",
+      "summary": "U.S. federal law establishing enhanced standards for all U.S. publicly traded companies and their auditors, focused on financial reporting integrity and internal controls.",
       "key_requirements": [
-        "CEO and CFO must personally certify the accuracy of financial reports (Sections 302 and 906)",
+        "CEO and CFO must personally certify the accuracy of financial reports",
         "Assess and document internal controls over financial reporting (ICFR) annually (Section 404)",
-        "External auditor must independently attest to management's ICFR assessment (larger companies)",
+        "External auditor must independently attest to management's ICFR assessment",
         "Establish and maintain an audit committee with financial expert requirements",
         "Maintain document retention policies; destruction of audit records is a criminal offense",
-        "Establish whistleblower protection programs and anonymous reporting mechanisms",
-        "Prohibit loans to executives and directors",
-        "Auditor independence requirements: prohibit certain non-audit services for audit clients"
+        "Establish whistleblower protection programs and anonymous reporting mechanisms"
       ],
-      "penalties": "Up to $5 million in fines and 20 years imprisonment for securities fraud; SEC enforcement actions",
-      "tags": ["finance", "internal_controls", "financial_reporting", "audit", "public_company", "sec"]
+      "penalties": "Up to $5 million in fines and 20 years imprisonment for securities fraud",
+      "tags": [
+        "finance",
+        "internal_controls",
+        "financial_reporting",
+        "audit",
+        "public_company",
+        "sec"
+      ]
     },
     {
       "id": "EO14028",
-      "name": "Executive Order 14028 — Improving the Nation's Cybersecurity",
+      "name": "Executive Order 14028 - Improving the Nation's Cybersecurity",
       "short_name": "EO 14028",
-      "domain": ["cybersecurity"],
-      "jurisdiction": "United States — Federal",
+      "domain": [
+        "cybersecurity"
+      ],
+      "jurisdiction": "United States - Federal",
+      "enforcement_region": "us_federal",
       "geography": {
         "type": "national",
-        "regions": ["US"],
-        "countries": ["US"]
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
       },
       "status": "active",
       "effective_date": "2021-05-12",
       "authority": "U.S. Office of Management and Budget (OMB), CISA, NIST",
       "url": "https://www.federalregister.gov/executive-order/14028",
-      "summary": "A U.S. presidential executive order that mandates sweeping cybersecurity improvements across the federal government and its contractors. It directly catalyzed the creation of the NIST Secure Software Development Framework (SSDF), Zero Trust architecture requirements, and software bill of materials (SBOM) requirements.",
+      "summary": "U.S. presidential executive order mandating sweeping cybersecurity improvements across the federal government, catalyzing Zero Trust architecture, SBOM requirements, and software supply chain security.",
       "key_requirements": [
         "Federal agencies must adopt Zero Trust Architecture (ZTA) following NIST SP 800-207",
         "Software vendors selling to the federal government must provide a Software Bill of Materials (SBOM)",
         "Implement multi-factor authentication (MFA) and encryption for federal systems within 180 days",
         "Establish a Cyber Safety Review Board (CSRB) to review significant cyber incidents",
         "Mandate use of endpoint detection and response (EDR) solutions across federal agencies",
-        "Require cloud service providers to share cyber threat and incident data",
-        "Standardize cybersecurity incident playbooks across federal agencies",
-        "Remove barriers to sharing threat information between government and private sector"
+        "Standardize cybersecurity incident playbooks across federal agencies"
       ],
-      "penalties": "N/A (executive order — non-compliance risks contract termination for federal vendors)",
-      "tags": ["cybersecurity", "zero_trust", "sbom", "mfa", "federal_government", "us_policy"]
+      "penalties": "N/A (executive order - non-compliance risks contract termination for federal vendors)",
+      "tags": [
+        "cybersecurity",
+        "zero_trust",
+        "sbom",
+        "mfa",
+        "federal_government",
+        "us_policy"
+      ]
     },
     {
       "id": "PIPL",
       "name": "Personal Information Protection Law",
       "short_name": "PIPL",
-      "domain": ["data_privacy"],
+      "domain": [
+        "data_privacy"
+      ],
       "jurisdiction": "People's Republic of China",
+      "enforcement_region": "china",
       "geography": {
         "type": "national",
-        "regions": ["APAC"],
-        "countries": ["CN"]
+        "regions": [
+          "APAC"
+        ],
+        "countries": [
+          "CN"
+        ]
       },
       "status": "active",
       "effective_date": "2021-11-01",
       "authority": "Cyberspace Administration of China (CAC)",
       "url": "http://www.npc.gov.cn/npc/c30834/202108/a8c4e3672c74491a80b53a172bb753fe.shtml",
-      "summary": "China's first comprehensive personal information protection law, drawing inspiration from the GDPR while incorporating distinctive Chinese characteristics. PIPL applies to organizations processing personal information of Chinese individuals, both within China and offshore, and imposes strict requirements for cross-border data transfers.",
+      "summary": "China's first comprehensive personal information protection law, drawing inspiration from the GDPR while incorporating distinctive Chinese characteristics. Imposes strict cross-border data transfer restrictions and data localization requirements.",
       "key_requirements": [
         "Obtain separate consent for each processing purpose; bundled consents are invalid",
         "Conduct Personal Information Protection Impact Assessments (PIPIAs) before high-risk processing",
         "Designate a Personal Information Protection Officer (PIPO)",
         "Strict cross-border data transfer restrictions: standard contracts, security assessments, or certification required",
         "Critical information infrastructure operators and large-scale processors must store data in China",
-        "Notify authorities and individuals within specified timeframes of personal information breaches",
-        "Implement technical and organizational security measures proportionate to risk",
-        "Individuals have the right to access, copy, correct, delete, and transfer their personal information"
+        "Notify authorities and individuals within specified timeframes of breaches"
       ],
       "penalties": "Up to RMB 50 million (approx. USD 7 million) or 5% of prior year's annual turnover",
-      "tags": ["privacy", "china", "cross_border_transfer", "data_localization", "consent", "pipia"]
+      "tags": [
+        "privacy",
+        "china",
+        "cross_border_transfer",
+        "data_localization",
+        "consent",
+        "pipia"
+      ]
     },
     {
       "id": "LGPD",
-      "name": "Lei Geral de Proteção de Dados (Brazilian General Data Protection Law)",
+      "name": "Lei Geral de Protecao de Dados (Brazilian General Data Protection Law)",
       "short_name": "LGPD",
-      "domain": ["data_privacy"],
+      "domain": [
+        "data_privacy"
+      ],
       "jurisdiction": "Brazil",
+      "enforcement_region": "brazil",
       "geography": {
         "type": "national",
-        "regions": ["LATAM"],
-        "countries": ["BR"]
+        "regions": [
+          "LATAM"
+        ],
+        "countries": [
+          "BR"
+        ]
       },
       "status": "active",
       "effective_date": "2020-09-18",
-      "authority": "Autoridade Nacional de Proteção de Dados (ANPD)",
+      "authority": "Autoridade Nacional de Protecao de Dados (ANPD)",
       "url": "https://www.gov.br/secretariageral/pt-br/legislacao/lei/2018/2018-lei-13709",
-      "summary": "Brazil's comprehensive data protection law, heavily influenced by the GDPR. It applies to any processing of personal data performed in Brazil or where the purpose of processing is to offer goods or services to individuals located in Brazil. LGPD establishes a rights-based approach to data protection.",
+      "summary": "Brazil's comprehensive data protection law, heavily influenced by the GDPR. Applies to any processing of personal data performed in Brazil or directed at individuals in Brazil.",
       "key_requirements": [
-        "Establish a lawful basis for processing (10 legal bases similar to GDPR's 6)",
-        "Respect data subject rights including access, correction, deletion, portability, and information on third parties",
-        "Report data security incidents that may cause risk or harm to data subjects to the ANPD",
-        "Appoint a Data Protection Officer (Encarregado) — name and contact must be publicly available",
-        "Conduct Data Protection Impact Reports (Relatório de Impacto) for high-risk processing",
-        "Implement security, technical, and administrative measures to protect personal data",
-        "International data transfers require adequate protection or specific safeguards",
-        "Sensitive data (health, race, religion, etc.) requires specific consent or legal basis"
+        "Establish a lawful basis for processing (10 legal bases)",
+        "Respect data subject rights including access, correction, deletion, portability",
+        "Report data security incidents that may cause risk or harm to the ANPD",
+        "Appoint a Data Protection Officer (Encarregado)",
+        "Conduct Data Protection Impact Reports for high-risk processing",
+        "International data transfers require adequate protection or specific safeguards"
       ],
-      "penalties": "Up to R$50 million (~USD 10 million) per violation or 2% of Brazilian revenue, capped at R$50 million per infraction",
-      "tags": ["privacy", "brazil", "latam", "data_protection", "lgpd", "anpd"]
+      "penalties": "Up to R$50 million (~USD 10 million) per violation or 2% of Brazilian revenue",
+      "tags": [
+        "privacy",
+        "brazil",
+        "latam",
+        "data_protection",
+        "lgpd",
+        "anpd"
+      ]
     },
     {
       "id": "PDPL",
       "name": "Personal Data Protection Law",
       "short_name": "PDPL",
-      "domain": ["data_privacy"],
+      "domain": [
+        "data_privacy"
+      ],
       "jurisdiction": "Kingdom of Saudi Arabia",
+      "enforcement_region": "mena",
       "geography": {
         "type": "national",
-        "regions": ["MENA"],
-        "countries": ["SA"]
+        "regions": [
+          "MENA"
+        ],
+        "countries": [
+          "SA"
+        ]
       },
       "status": "active",
       "effective_date": "2023-09-14",
       "authority": "Saudi Data and AI Authority (SDAIA) / National Data Management Office (NDMO)",
       "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023.pdf",
-      "summary": "Saudi Arabia's first comprehensive data protection law establishing rights for individuals regarding their personal data and obligations for organizations processing it. The PDPL applies to data controllers processing personal data of individuals located in Saudi Arabia, regardless of where the controller is based.",
+      "summary": "Saudi Arabia's first comprehensive data protection law establishing rights for individuals and obligations for organizations processing personal data of individuals in Saudi Arabia.",
       "key_requirements": [
         "Obtain explicit consent for processing personal data or rely on alternative legal bases",
-        "Notify data subjects of processing purposes, types of data collected, and their rights",
-        "Respect individual rights: access, correction, erasure, and objection to processing",
+        "Notify data subjects of processing purposes and their rights",
+        "Respect individual rights: access, correction, erasure, and objection",
         "Report data breaches to SDAIA and affected individuals within 72 hours",
-        "Conduct Data Transfer Impact Assessments (DTIAs) before cross-border transfers",
+        "Conduct Data Transfer Impact Assessments before cross-border transfers",
         "Store data relating to Saudi citizens or residents within Saudi Arabia (data localization)",
-        "Sensitive data (health, financial, biometric) requires heightened protection and explicit consent",
         "Appoint a Data Protection Officer for high-risk processing activities"
       ],
-      "penalties": "Up to SAR 5 million (~USD 1.3 million) for violations; SAR 3 million for confidentiality breaches; criminal penalties for intentional violations",
-      "tags": ["privacy", "saudi_arabia", "mena", "data_localization", "consent", "breach_notification"]
+      "penalties": "Up to SAR 5 million (~USD 1.3 million) for violations; criminal penalties for intentional violations",
+      "tags": [
+        "privacy",
+        "saudi_arabia",
+        "mena",
+        "data_localization",
+        "consent",
+        "breach_notification"
+      ]
+    },
+    {
+      "id": "PPL_ISRAEL",
+      "name": "Protection of Privacy Law and Privacy Protection Regulations (Data Security)",
+      "short_name": "Israel PPL",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "State of Israel",
+      "enforcement_region": "israel",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "MENA"
+        ],
+        "countries": [
+          "IL"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2017-05-08",
+      "authority": "Privacy Protection Authority (PPA)",
+      "url": "https://www.gov.il/en/departments/legalInfo/computer_security_regulations",
+      "summary": "Israel's foundational data protection framework combining the Protection of Privacy Law (1981) with the comprehensive 2017 Data Security Regulations, adding prescriptive security requirements including database classification, security officer requirements, risk assessments, and breach notification obligations.",
+      "key_requirements": [
+        "Register databases containing personal information with the Registrar of Databases (PPA)",
+        "Classify data sensitivity level and implement proportionate security controls",
+        "Appoint a Database Security Officer for medium and high-security databases",
+        "Conduct annual internal audits and risk assessments",
+        "Report severe security incidents to PPA and affected individuals within 72 hours",
+        "Implement access controls, logging, and user authorization procedures",
+        "Data subject rights: access, correction, and deletion of personal information",
+        "Restrict transfer of data to countries without adequate protection"
+      ],
+      "penalties": "Fines up to NIS 70,000 per violation; criminal liability for willful violations; civil damages",
+      "tags": [
+        "israel",
+        "data_privacy",
+        "database_registration",
+        "breach_notification",
+        "ppa",
+        "data_security"
+      ]
+    },
+    {
+      "id": "ISRAEL_CYBER",
+      "name": "Israel National Cyber Directorate Cyber Defense Directive",
+      "short_name": "INCD Directive",
+      "domain": [
+        "cybersecurity",
+        "critical_infrastructure"
+      ],
+      "jurisdiction": "State of Israel",
+      "enforcement_region": "israel",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "MENA"
+        ],
+        "countries": [
+          "IL"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2017-01-01",
+      "authority": "Israel National Cyber Directorate (INCD)",
+      "url": "https://www.gov.il/en/Departments/israel_national_cyber_directorate",
+      "summary": "Framework issued by the Israel National Cyber Directorate establishing binding cybersecurity requirements for critical infrastructure organizations across all sectors including energy, water, finance, health, transportation, and communications.",
+      "key_requirements": [
+        "Annual cyber risk assessment and security program update",
+        "Appoint a Chief Information Security Officer (CISO) with defined authorities",
+        "Implement network segmentation between operational technology (OT) and IT systems",
+        "Report significant cybersecurity incidents to INCD within 24 hours",
+        "Maintain and test business continuity and disaster recovery plans",
+        "Employee cybersecurity awareness training program",
+        "Third-party and supply chain risk management requirements",
+        "Vulnerability management and patching program with defined timelines"
+      ],
+      "penalties": "Administrative sanctions from sector regulators; critical infrastructure operators may face license restrictions",
+      "tags": [
+        "israel",
+        "cybersecurity",
+        "critical_infrastructure",
+        "incd",
+        "ot_security",
+        "ciso"
+      ]
+    },
+    {
+      "id": "ISRAEL_AML",
+      "name": "Prohibition on Money Laundering Law",
+      "short_name": "Israel AML Law",
+      "domain": [
+        "finance"
+      ],
+      "jurisdiction": "State of Israel",
+      "enforcement_region": "israel",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "MENA"
+        ],
+        "countries": [
+          "IL"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2000-08-07",
+      "authority": "Israel Money Laundering and Terror Financing Prohibition Authority (IMPA)",
+      "url": "https://www.impa.gov.il/Eng/Pages/impa_about.aspx",
+      "summary": "Israeli law prohibiting money laundering and the financing of terrorism, requiring financial institutions, money service businesses, insurance companies, attorneys, and accountants to implement AML/CFT programs. Israel is a FATF member and aligns its regime with FATF recommendations.",
+      "key_requirements": [
+        "Customer due diligence (CDD/KYC) for all customers prior to establishing a business relationship",
+        "Enhanced due diligence for high-risk customers, politically exposed persons (PEPs), and complex transactions",
+        "File suspicious transaction reports (STRs) with IMPA without tipping off the customer",
+        "Maintain records of all transactions and customer identification for at least 7 years",
+        "Appoint an AML compliance officer and implement an internal AML program",
+        "Staff training on recognizing and reporting suspicious activity",
+        "Comply with FATF Recommendations and UN Security Council resolutions on terrorism financing"
+      ],
+      "penalties": "Up to 10 years imprisonment for money laundering; fines up to 3x the laundered amount; regulatory sanctions for entities",
+      "tags": [
+        "israel",
+        "aml",
+        "finance",
+        "kyc",
+        "fatf",
+        "impa",
+        "cft"
+      ]
+    },
+    {
+      "id": "POPIA",
+      "name": "Protection of Personal Information Act",
+      "short_name": "POPIA",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Republic of South Africa",
+      "enforcement_region": "africa",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "Africa"
+        ],
+        "countries": [
+          "ZA"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2021-07-01",
+      "authority": "Information Regulator (South Africa)",
+      "url": "https://www.inforegulator.org.za/",
+      "summary": "South Africa's comprehensive data protection law establishing eight lawful conditions for processing personal information. Closely modeled on the EU GDPR, POPIA applies to all public and private bodies that process personal information and creates the independent Information Regulator as enforcement authority.",
+      "key_requirements": [
+        "Accountability: designate and register an Information Officer with the Information Regulator",
+        "Processing limitation: collect only for lawful, specific, explicitly defined, and legitimate purposes",
+        "Purpose specification: retain information only as long as necessary",
+        "Further processing limitation: must be compatible with original purpose",
+        "Information quality: take steps to ensure personal information is complete, accurate, and up to date",
+        "Security safeguards: implement appropriate technical and organizational security measures",
+        "Data subject participation: rights to access, correction, and deletion of personal information",
+        "Notify the Information Regulator and affected data subjects of security compromises"
+      ],
+      "penalties": "Up to ZAR 10 million fine or 10 years imprisonment for certain offenses; civil damages available",
+      "tags": [
+        "south_africa",
+        "africa",
+        "data_privacy",
+        "popia",
+        "information_regulator",
+        "gdpr_equivalent"
+      ]
+    },
+    {
+      "id": "FICA_SA",
+      "name": "Financial Intelligence Centre Act",
+      "short_name": "FICA",
+      "domain": [
+        "finance"
+      ],
+      "jurisdiction": "Republic of South Africa",
+      "enforcement_region": "africa",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "Africa"
+        ],
+        "countries": [
+          "ZA"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2003-07-01",
+      "authority": "Financial Intelligence Centre (FIC)",
+      "url": "https://www.fic.gov.za/",
+      "summary": "South Africa's primary AML/CFT legislation requiring accountable institutions (banks, insurers, estate agents, legal practitioners, accountants, casinos) to implement customer due diligence and suspicious transaction reporting. The 2017 amendments introduced a risk-based approach to combat money laundering, terrorist financing, and proliferation financing.",
+      "key_requirements": [
+        "Risk-based customer due diligence (CDD) including identification and verification of beneficial owners",
+        "Enhanced due diligence for high-risk customers, complex transactions, and PEPs",
+        "File suspicious and unusual transaction reports (SUTRs) to the FIC",
+        "File cash threshold reports (CTRs) for cash transactions exceeding ZAR 49,999",
+        "Keep records of client identification and transactions for at least 5 years",
+        "Appoint a Compliance Officer and maintain an AML/CFT risk management and compliance program",
+        "Ongoing staff training on AML/CFT obligations"
+      ],
+      "penalties": "Up to ZAR 100 million fine or 15 years imprisonment; administrative sanctions by FIC",
+      "tags": [
+        "south_africa",
+        "africa",
+        "aml",
+        "finance",
+        "fic",
+        "kyc",
+        "fatf",
+        "beneficial_ownership"
+      ]
+    },
+    {
+      "id": "KENYA_DPA",
+      "name": "Kenya Data Protection Act",
+      "short_name": "Kenya DPA",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Republic of Kenya",
+      "enforcement_region": "africa",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "Africa"
+        ],
+        "countries": [
+          "KE"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2019-11-08",
+      "authority": "Office of the Data Protection Commissioner (ODPC)",
+      "url": "https://www.odpc.go.ke/",
+      "summary": "Kenya's first comprehensive data protection law establishing principles for the processing of personal data, rights of data subjects, and obligations of data controllers and processors. Applies to any person who processes personal data about Kenyan residents.",
+      "key_requirements": [
+        "Register as a data controller or processor with the ODPC if processing above prescribed thresholds",
+        "Appoint a Data Protection Officer (DPO)",
+        "Provide privacy notices disclosing processing purposes and data subject rights",
+        "Data subject rights: access, rectification, erasure, portability, restriction, and objection",
+        "Obtain consent or establish lawful basis for processing personal data",
+        "Notify the ODPC and data subjects of data breaches within 72 hours",
+        "Conduct privacy impact assessments for high-risk processing",
+        "Restrict cross-border transfers unless adequate protection is ensured"
+      ],
+      "penalties": "Up to KES 3 million (~USD 23,000) or 10 years imprisonment per violation",
+      "tags": [
+        "kenya",
+        "africa",
+        "data_privacy",
+        "odpc",
+        "breach_notification",
+        "dpo"
+      ]
+    },
+    {
+      "id": "NDPA",
+      "name": "Nigeria Data Protection Act",
+      "short_name": "Nigeria NDPA",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Federal Republic of Nigeria",
+      "enforcement_region": "africa",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "Africa"
+        ],
+        "countries": [
+          "NG"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2023-06-12",
+      "authority": "Nigeria Data Protection Commission (NDPC)",
+      "url": "https://ndpc.gov.ng/",
+      "summary": "Nigeria's comprehensive data protection law replacing the Nigeria Data Protection Regulation (NDPR) 2019. Creates the Nigeria Data Protection Commission with independent status and introduces significant penalties for non-compliance.",
+      "key_requirements": [
+        "Establish a lawful basis for processing personal data",
+        "Data subject rights: access, rectification, erasure, portability, restriction, and objection",
+        "Notify the NDPC and affected data subjects of data breaches within 72 hours",
+        "Data protection compliance audit annually for high-volume data processors",
+        "Appoint a Data Protection Officer (DPO)",
+        "Cross-border data transfer safeguards or NDPC authorization required",
+        "Privacy notices in plain language at point of collection",
+        "Children's data requires parental or guardian consent"
+      ],
+      "penalties": "Up to 2% of annual gross revenue in Nigeria or NGN 10 million (~USD 6,500) whichever is higher",
+      "tags": [
+        "nigeria",
+        "africa",
+        "data_privacy",
+        "ndpc",
+        "ndpr",
+        "breach_notification",
+        "dpo"
+      ]
+    },
+    {
+      "id": "GHANA_DPA",
+      "name": "Ghana Data Protection Act",
+      "short_name": "Ghana DPA",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Republic of Ghana",
+      "enforcement_region": "africa",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "Africa"
+        ],
+        "countries": [
+          "GH"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2012-10-16",
+      "authority": "Data Protection Commission (DPC) of Ghana",
+      "url": "https://www.dataprotection.org.gh/",
+      "summary": "One of Africa's earliest comprehensive data protection laws, requiring organizations to register with the Data Protection Commission and comply with data protection principles. Establishes individual rights over personal data and imposes obligations on data controllers.",
+      "key_requirements": [
+        "Register data processing systems with the Data Protection Commission",
+        "Appoint a data controller responsible for compliance",
+        "Comply with data protection principles: collection limitation, data quality, purpose specification, use limitation, security safeguards, openness",
+        "Data subject rights: access to personal information and correction of inaccuracies",
+        "Obtain consent of data subjects for processing personal data",
+        "Implement security measures to protect against unauthorized access and data breaches",
+        "Cross-border data transfers only to countries with adequate protection"
+      ],
+      "penalties": "Fines and possible imprisonment for serious breaches; DPC can issue enforcement notices",
+      "tags": [
+        "ghana",
+        "africa",
+        "data_privacy",
+        "dpc_ghana",
+        "registration"
+      ]
+    },
+    {
+      "id": "RWANDA_DPPPA",
+      "name": "Rwanda Law on Protection of Personal Data and Privacy",
+      "short_name": "Rwanda DPPPA",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Republic of Rwanda",
+      "enforcement_region": "africa",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "Africa"
+        ],
+        "countries": [
+          "RW"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2021-10-15",
+      "authority": "Rwanda National Cyber Security Authority (NCSA)",
+      "url": "https://www.ncsa.rw/",
+      "summary": "Rwanda's comprehensive law on the protection of personal data and privacy, aligning with international data protection standards. Establishes principles for data processing, individual rights, and obligations for data controllers and processors operating in Rwanda.",
+      "key_requirements": [
+        "Process personal data only for specified, explicit, and legitimate purposes",
+        "Obtain consent of data subjects or rely on another lawful basis",
+        "Data subject rights: access, rectification, erasure, restriction, and objection",
+        "Implement appropriate technical and organizational security measures",
+        "Notify data subjects of data breaches that may cause significant harm",
+        "Conduct Privacy Impact Assessments for high-risk processing activities",
+        "Appoint a Data Protection Officer for large-scale processing",
+        "Cross-border data transfers require adequate protection safeguards"
+      ],
+      "penalties": "Fines and criminal penalties per Rwanda Penal Code; NCSA can issue compliance orders",
+      "tags": [
+        "rwanda",
+        "africa",
+        "data_privacy",
+        "ncsa",
+        "privacy_impact_assessment"
+      ]
+    },
+    {
+      "id": "EGYPT_PDPL",
+      "name": "Egypt Personal Data Protection Law",
+      "short_name": "Egypt PDPL",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Arab Republic of Egypt",
+      "enforcement_region": "mena",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "MENA"
+        ],
+        "countries": [
+          "EG"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2020-07-15",
+      "authority": "Personal Data Protection Centre (PDPC) - Ministry of Communications and IT",
+      "url": "https://mcit.gov.eg/en/",
+      "summary": "Egypt's first comprehensive personal data protection law establishing a legal framework for the collection, storage, processing, and transfer of personal data. Requires explicit consent as the primary basis for processing and introduces a licensing regime for data controllers.",
+      "key_requirements": [
+        "Obtain explicit consent for processing personal data (consent is primary legal basis)",
+        "Provide privacy notices in Arabic covering processing purposes and data subject rights",
+        "Data subject rights: access, rectification, erasure, and data portability",
+        "Notify the PDPC of data breaches in a timely manner",
+        "Restrictions on cross-border data transfers - requires prior PDPC authorization",
+        "Obtain license from PDPC before processing sensitive or biometric data",
+        "Appoint a Data Protection Officer for processors licensed by the PDPC",
+        "Implement technical and organizational security measures proportionate to risk"
+      ],
+      "penalties": "Fines from EGP 50,000 to EGP 2 million (~USD 1,600-65,000); criminal penalties up to 3 years imprisonment",
+      "tags": [
+        "egypt",
+        "mena",
+        "data_privacy",
+        "pdpc",
+        "consent",
+        "licensing",
+        "breach_notification"
+      ]
+    },
+    {
+      "id": "MOROCCO_L0908",
+      "name": "Morocco Law on Protection of Personal Data (Law 09-08)",
+      "short_name": "Morocco Law 09-08",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Kingdom of Morocco",
+      "enforcement_region": "mena",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "MENA"
+        ],
+        "countries": [
+          "MA"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2009-02-22",
+      "authority": "Commission Nationale de controle de la protection des Donnees a caractere Personnel (CNDP)",
+      "url": "https://www.cndp.ma/",
+      "summary": "Morocco's foundational data protection law establishing principles for processing personal data, individual rights, and obligations for data controllers. Requires organizations to declare or obtain authorization for data processing activities from the CNDP.",
+      "key_requirements": [
+        "Declare or obtain prior authorization from CNDP for data processing activities",
+        "Lawful basis for processing required - consent is primary",
+        "Data subject rights: access, correction, deletion, and objection to processing",
+        "Cross-border data transfers restricted to countries with adequate protection",
+        "Special category data (health, biometric, religion, political opinion) requires CNDP prior authorization",
+        "Security measures to protect personal data from unauthorized access or disclosure",
+        "Retention limitation: data must not be kept longer than necessary"
+      ],
+      "penalties": "Fines up to MAD 300,000 (~USD 30,000) and imprisonment 3-12 months; CNDP can issue compliance orders",
+      "tags": [
+        "morocco",
+        "mena",
+        "data_privacy",
+        "cndp",
+        "registration",
+        "adequacy"
+      ]
+    },
+    {
+      "id": "UAE_PDPL",
+      "name": "UAE Federal Personal Data Protection Law",
+      "short_name": "UAE PDPL",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "United Arab Emirates",
+      "enforcement_region": "mena",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "MENA"
+        ],
+        "countries": [
+          "AE"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2023-09-20",
+      "authority": "UAE Data Office",
+      "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-personal-data-in-uae",
+      "summary": "The UAE's first federal personal data protection law (Federal Decree-Law No. 45 of 2021) applying to all entities processing personal data of UAE residents outside of free zones. Establishes data protection principles, individual rights, and creates the UAE Data Office.",
+      "key_requirements": [
+        "Lawful basis for processing: consent, contractual necessity, legitimate interests, or legal obligation",
+        "Data subject rights: access, correction, erasure, restriction, and objection",
+        "Appoint a Data Protection Officer (DPO) if processing personal data on a large scale",
+        "Notify the UAE Data Office of personal data breaches within 72 hours",
+        "Cross-border data transfers only to approved countries or with appropriate safeguards",
+        "Data minimization and purpose limitation principles apply to all processing",
+        "Implement appropriate technical and organizational security measures"
+      ],
+      "penalties": "Fines up to AED 5 million (~USD 1.4 million) for violations; serious violations up to AED 20 million",
+      "tags": [
+        "uae",
+        "mena",
+        "data_privacy",
+        "uae_data_office",
+        "dpo",
+        "breach_notification"
+      ]
+    },
+    {
+      "id": "PIPEDA",
+      "name": "Personal Information Protection and Electronic Documents Act",
+      "short_name": "PIPEDA",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Canada - Federal",
+      "enforcement_region": "canada",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "NA"
+        ],
+        "countries": [
+          "CA"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2001-01-01",
+      "authority": "Office of the Privacy Commissioner of Canada (OPC)",
+      "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/",
+      "summary": "Canada's federal private-sector privacy law governing the collection, use, and disclosure of personal information in commercial activities. Based on 10 Fair Information Principles from the CSA Model Code. Mandatory breach reporting was added in 2018.",
+      "key_requirements": [
+        "10 Fair Information Principles: accountability, identifying purposes, consent, limiting collection, limiting use/disclosure/retention, accuracy, safeguards, openness, individual access, challenging compliance",
+        "Obtain meaningful consent before collecting, using, or disclosing personal information",
+        "Mandatory breach reporting to OPC for breaches posing real risk of significant harm",
+        "Notify affected individuals of breaches posing real risk of significant harm",
+        "Maintain breach records for at least 24 months",
+        "Appoint a Privacy Officer and make their contact information available",
+        "Honor individual access requests within 30 days"
+      ],
+      "penalties": "Up to CAD 100,000 for willful contraventions; enforcement via OPC investigation and Federal Court orders",
+      "tags": [
+        "canada",
+        "data_privacy",
+        "pipeda",
+        "opc",
+        "federal_privacy",
+        "fair_information_principles"
+      ]
+    },
+    {
+      "id": "QUEBEC_LAW25",
+      "name": "Quebec Act to Modernize Privacy Laws (Law 25)",
+      "short_name": "Quebec Law 25",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Canada - Quebec Province",
+      "enforcement_region": "canada",
+      "geography": {
+        "type": "provincial",
+        "regions": [
+          "NA"
+        ],
+        "countries": [
+          "CA"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2022-09-22",
+      "authority": "Commission d'acces a l'information du Quebec (CAI)",
+      "url": "https://www.cai.gouv.qc.ca/",
+      "summary": "Quebec's sweeping modernization of its privacy law, often described as the strictest privacy law in Canada and closely aligned with the GDPR. Implemented in three phases (2022-2024), introduces mandatory PIAs, right to erasure, data portability, and GDPR-level penalties.",
+      "key_requirements": [
+        "Mandatory Privacy Impact Assessments (PIAs) before implementing technology involving personal information",
+        "Right to erasure (be forgotten) for individuals",
+        "Right to data portability in a commonly used technological format",
+        "Disclosure of automated decision-making when exclusively based on personal information",
+        "Explicit consent in clear and simple language; bundled consent not permitted",
+        "Appoint a Privacy Officer and publish their contact information on the organization's website",
+        "Notify the CAI and individuals of confidentiality incidents within 72 hours",
+        "Cross-border transfer safeguards assessed through Privacy Impact Assessments"
+      ],
+      "penalties": "Up to CAD 25 million or 4% of worldwide turnover - equivalent to GDPR penalties",
+      "tags": [
+        "canada",
+        "quebec",
+        "data_privacy",
+        "law25",
+        "cai",
+        "gdpr_equivalent",
+        "pia",
+        "right_to_erasure"
+      ]
+    },
+    {
+      "id": "CASL",
+      "name": "Canada's Anti-Spam Legislation",
+      "short_name": "CASL",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Canada - Federal",
+      "enforcement_region": "canada",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "NA"
+        ],
+        "countries": [
+          "CA"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2014-07-01",
+      "authority": "Canadian Radio-television and Telecommunications Commission (CRTC), Competition Bureau, OPC",
+      "url": "https://crtc.gc.ca/eng/internet/anti.htm",
+      "summary": "One of the world's strictest anti-spam laws, requiring express or implied consent before sending commercial electronic messages (CEMs), installing computer programs, or collecting email addresses through electronic means.",
+      "key_requirements": [
+        "Express or implied consent required before sending commercial electronic messages (CEMs)",
+        "Identify the sender clearly in every message including name and contact information",
+        "Provide a functioning unsubscribe mechanism in every CEM",
+        "Honor unsubscribe requests within 10 business days",
+        "Express consent required before installing computer programs on third-party devices",
+        "Maintain records proving consent for at least 3 years",
+        "Implied consent expires after 2 years (for most business relationships)"
+      ],
+      "penalties": "Up to CAD 10 million per violation for organizations; CAD 1 million for individuals",
+      "tags": [
+        "canada",
+        "anti_spam",
+        "casl",
+        "email_marketing",
+        "crtc",
+        "consent",
+        "commercial_messages"
+      ]
+    },
+    {
+      "id": "OSFI_B13",
+      "name": "OSFI Guideline B-13: Technology and Cyber Risk Management",
+      "short_name": "OSFI B-13",
+      "domain": [
+        "cybersecurity",
+        "finance"
+      ],
+      "jurisdiction": "Canada - Federal",
+      "enforcement_region": "canada",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "NA"
+        ],
+        "countries": [
+          "CA"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2024-01-01",
+      "authority": "Office of the Superintendent of Financial Institutions (OSFI)",
+      "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/technology-cyber-risk-management",
+      "summary": "OSFI's binding guideline setting out technology and cyber risk management expectations for all federally regulated financial institutions (FRFIs) in Canada including banks, insurance companies, and trust companies.",
+      "key_requirements": [
+        "Board-level cyber risk oversight, accountability, and risk appetite definition",
+        "Technology and cyber risk identification, assessment, and management program",
+        "Cyber resilience testing including penetration testing and cyber war-gaming exercises",
+        "Third-party and supply chain technology risk management requirements",
+        "Notify OSFI of technology or cyber incidents within 72 hours",
+        "Scenario-based stress testing for technology and cyber incidents",
+        "Data security classification and encryption standards implementation",
+        "Annual board report on technology and cyber risk"
+      ],
+      "penalties": "OSFI may issue compliance orders, increase capital requirements, or restrict activities for non-compliant FRFIs",
+      "tags": [
+        "canada",
+        "cybersecurity",
+        "finance",
+        "osfi",
+        "banks",
+        "insurance",
+        "federally_regulated",
+        "frfi"
+      ]
+    },
+    {
+      "id": "ARGENTINA_PDPA",
+      "name": "Argentina Personal Data Protection Act (Ley 25.326)",
+      "short_name": "Argentina PDPA",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Argentine Republic",
+      "enforcement_region": "latam",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "LATAM"
+        ],
+        "countries": [
+          "AR"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2001-10-30",
+      "authority": "Agencia de Acceso a la Informacion Publica (AAIP)",
+      "url": "https://www.argentina.gob.ar/aaip/datospersonales",
+      "summary": "Argentina's foundational data protection law and one of the first in Latin America to receive EU adequacy recognition (2003). Establishes principles for processing personal data, rights of data subjects, and requires registration of databases.",
+      "key_requirements": [
+        "Register personal information databases with the AAIP's Registro Nacional de Bases de Datos",
+        "Obtain informed consent for the processing of personal data",
+        "Data subject rights: access, rectification, suppression, and confidentiality",
+        "Special protection for sensitive data (health, political opinions, religion, race, sexual orientation)",
+        "Cross-border transfers only to countries with adequate protection levels or with AAIP authorization",
+        "Security measures proportionate to the nature and amount of data stored",
+        "Prohibition on selling databases to unauthorized third parties"
+      ],
+      "penalties": "Fines up to ARS 3 million per violation (law under modernization with much higher proposed fines)",
+      "tags": [
+        "argentina",
+        "latam",
+        "data_privacy",
+        "aaip",
+        "gdpr_adequacy",
+        "database_registration"
+      ]
+    },
+    {
+      "id": "COLOMBIA_L1581",
+      "name": "Colombia Statutory Law 1581 on Personal Data Protection",
+      "short_name": "Colombia Law 1581",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Republic of Colombia",
+      "enforcement_region": "latam",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "LATAM"
+        ],
+        "countries": [
+          "CO"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2012-10-17",
+      "authority": "Superintendencia de Industria y Comercio (SIC)",
+      "url": "https://www.sic.gov.co/datos-personales",
+      "summary": "Colombia's comprehensive data protection law guaranteeing the fundamental constitutional right to habeas data. Requires prior express authorization (consent) as the primary lawful basis. The SIC supervises compliance.",
+      "key_requirements": [
+        "Obtain prior express authorization (consent) from data subjects before processing personal data",
+        "Register databases with the National Registry of Databases (RNBD) administered by SIC",
+        "Privacy notices informing data subjects of their rights and processing purposes",
+        "Data subject rights: access, update, rectification, deletion, and revocation of authorization",
+        "Appoint a Data Protection Officer (internal or external)",
+        "Sign data processor agreements with all third-party processors",
+        "Sensitive data (race, political opinion, health, sexual orientation) requires explicit consent",
+        "Cross-border transfers require guarantees of adequate protection"
+      ],
+      "penalties": "Fines up to COP 2,000 million (~USD 500,000); suspension of data processing activities",
+      "tags": [
+        "colombia",
+        "latam",
+        "data_privacy",
+        "sic",
+        "habeas_data",
+        "consent",
+        "rnbd"
+      ]
+    },
+    {
+      "id": "CHILE_DPL",
+      "name": "Chile Personal Data Protection Law (Ley 19.628 reformed by Ley 21.719)",
+      "short_name": "Chile DPL",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Republic of Chile",
+      "enforcement_region": "latam",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "LATAM"
+        ],
+        "countries": [
+          "CL"
+        ]
+      },
+      "status": "active",
+      "effective_date": "1999-08-28",
+      "authority": "Agencia de Proteccion de Datos Personales (APDP - established under Ley 21.719)",
+      "url": "https://www.bcn.cl/leychile/navegar?idNorma=141599",
+      "summary": "Chile's personal data protection law. A landmark reform (Ley 21.719, enacted December 2024) takes full effect in 2026-2027, introducing GDPR-level rights and creating a dedicated Agencia de Proteccion de Datos.",
+      "key_requirements": [
+        "Lawful basis for processing - consent is primary lawful basis under current law",
+        "Data subject rights: access, correction, deletion, blocking, and transfer",
+        "Data accuracy principle: data must be exact, complete, and current",
+        "Security obligations to protect personal data from unauthorized access",
+        "Sensitive data categories require express consent",
+        "Under Ley 21.719 (from 2026): GDPR-like rights including portability; mandatory DPO; PIAs; 72-hour breach notification"
+      ],
+      "penalties": "Current law: civil damages only; Ley 21.719 (from 2026): up to 2% of annual revenue for serious violations",
+      "tags": [
+        "chile",
+        "latam",
+        "data_privacy",
+        "apdp",
+        "ley_21719",
+        "reform"
+      ]
+    },
+    {
+      "id": "MEXICO_LFPDPPP",
+      "name": "Mexico Federal Law on Protection of Personal Data Held by Private Parties",
+      "short_name": "Mexico LFPDPPP",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "United Mexican States",
+      "enforcement_region": "latam",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "LATAM"
+        ],
+        "countries": [
+          "MX"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2010-07-05",
+      "authority": "Instituto Nacional de Transparencia, Acceso a la Informacion y Proteccion de Datos (INAI)",
+      "url": "https://home.inai.org.mx/",
+      "summary": "Mexico's federal data protection law for the private sector. Mexico is one of only three non-EU countries with limited EU adequacy recognition. Requires organizations to publish privacy notices (avisos de privacidad) and respond to ARCO rights requests.",
+      "key_requirements": [
+        "Publish a Privacy Notice (aviso de privacidad) at or before the point of data collection",
+        "Obtain consent for data processing; explicit consent for sensitive data",
+        "Honor ARCO rights - Access, Rectification, Cancellation, Opposition - within 20 business days",
+        "Sensitive data (health, biometric, racial origin, beliefs) requires explicit consent",
+        "Implement appropriate security measures based on data volume and sensitivity",
+        "Notify INAI and affected individuals of data security breaches",
+        "Sign data processing agreements with third-party processors",
+        "Designate a data protection department or person responsible for compliance"
+      ],
+      "penalties": "Fines up to MXN 320 million (~USD 16 million); criminal sanctions for egregious violations",
+      "tags": [
+        "mexico",
+        "latam",
+        "data_privacy",
+        "inai",
+        "arco_rights",
+        "aviso_de_privacidad",
+        "eu_adequacy"
+      ]
+    },
+    {
+      "id": "ECUADOR_LOPDP",
+      "name": "Ecuador Organic Law on Personal Data Protection",
+      "short_name": "Ecuador LOPDP",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Republic of Ecuador",
+      "enforcement_region": "latam",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "LATAM"
+        ],
+        "countries": [
+          "EC"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2021-05-26",
+      "authority": "Superintendencia de Proteccion de Datos Personales",
+      "url": "https://www.protecciondatos.gob.ec/",
+      "summary": "Ecuador's comprehensive data protection law closely modeled on the GDPR, establishing rights for data subjects and obligations for controllers and processors. Applies to any organization processing personal data of individuals located in Ecuador.",
+      "key_requirements": [
+        "Lawful basis for processing required - consent, contractual necessity, legitimate interests, legal obligation",
+        "Data subject rights: access, rectification, deletion, portability, objection, restriction, and right not to be subject to automated decisions",
+        "Notify the Superintendencia of data breaches within 72 hours",
+        "Appoint a Data Protection Delegate (DPO equivalent) for large-scale processing",
+        "Conduct Data Protection Impact Assessments (DPIAs) for high-risk processing",
+        "Cross-border data transfer restrictions with adequate protection requirement",
+        "Privacy by design and privacy by default principles"
+      ],
+      "penalties": "Up to 1% of annual gross turnover for minor violations; up to 2% for serious violations",
+      "tags": [
+        "ecuador",
+        "latam",
+        "data_privacy",
+        "gdpr_equivalent",
+        "dpo",
+        "dpia",
+        "data_portability"
+      ]
+    },
+    {
+      "id": "URUGUAY_L18331",
+      "name": "Uruguay Law on Personal Data Protection and Habeas Data Action",
+      "short_name": "Uruguay Law 18.331",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Oriental Republic of Uruguay",
+      "enforcement_region": "latam",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "LATAM"
+        ],
+        "countries": [
+          "UY"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2008-08-18",
+      "authority": "Unidad Reguladora y de Control de Datos Personales (URCDP)",
+      "url": "https://www.gub.uy/unidad-reguladora-control-datos-personales/",
+      "summary": "Uruguay's data protection law, the first in Latin America to receive EU adequacy recognition (2012). Establishes principles for data processing, individual rights including a constitutional habeas data action, and requires database registration.",
+      "key_requirements": [
+        "Register databases containing personal data with the URCDP",
+        "Data subject rights: access, rectification, suppression, and the constitutional habeas data action",
+        "Informed consent for collecting and processing personal data",
+        "Sensitive data protection requirements",
+        "International data transfers only to countries with adequate protection or URCDP authorization",
+        "Appoint a representative contact for data subjects",
+        "Security measures appropriate to the nature and volume of data stored"
+      ],
+      "penalties": "Administrative sanctions by URCDP; judicial remedies through habeas data action; civil damages",
+      "tags": [
+        "uruguay",
+        "latam",
+        "data_privacy",
+        "urcdp",
+        "eu_adequacy",
+        "habeas_data",
+        "database_registration"
+      ]
+    },
+    {
+      "id": "GLBA",
+      "name": "Gramm-Leach-Bliley Act - FTC Safeguards Rule",
+      "short_name": "GLBA / Safeguards Rule",
+      "domain": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdiction": "United States - Federal",
+      "enforcement_region": "us_federal",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2023-06-09",
+      "authority": "Federal Trade Commission (FTC), federal banking regulators (OCC, FDIC, Federal Reserve)",
+      "url": "https://www.ftc.gov/tips-advice/business-center/guidance/financial-institutions-customer-information-complying-safeguards",
+      "summary": "Federal law requiring financial institutions to protect the privacy and security of customers' non-public personal financial information. The FTC's updated 2023 Safeguards Rule strengthened security requirements for non-banking financial institutions including auto dealers, mortgage brokers, payday lenders, tax preparers, and financial advisors.",
+      "key_requirements": [
+        "Designate a qualified individual to oversee the information security program",
+        "Conduct annual risk assessments identifying reasonably foreseeable threats",
+        "Implement access controls, multi-factor authentication, and encryption for customer information",
+        "Develop and test an incident response plan",
+        "Notify the FTC within 30 days of a data breach affecting 500+ customers",
+        "Oversee third-party service providers with security requirements in contracts",
+        "Board-level annual report on the status of the information security program",
+        "Monitor and test effectiveness of security controls annually"
+      ],
+      "penalties": "FTC enforcement; civil penalties up to $100,000 per violation for institutions; $10,000 per violation for officers and directors",
+      "tags": [
+        "us_federal",
+        "finance",
+        "data_privacy",
+        "glba",
+        "ftc",
+        "safeguards_rule",
+        "financial_institutions"
+      ]
+    },
+    {
+      "id": "COPPA",
+      "name": "Children's Online Privacy Protection Act",
+      "short_name": "COPPA",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "United States - Federal",
+      "enforcement_region": "us_federal",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2000-04-21",
+      "authority": "Federal Trade Commission (FTC)",
+      "url": "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa",
+      "summary": "U.S. federal law placing parents in control over the online collection of personal information from children under 13. Applies to operators of commercial websites, online services, and apps directed at children or with actual knowledge they are collecting information from children under 13.",
+      "key_requirements": [
+        "Post a clear and comprehensive privacy policy describing information collection practices",
+        "Obtain verifiable parental consent before collecting personal information from children under 13",
+        "Allow parents to review, correct, and delete their child's personal information",
+        "Not condition a child's participation on providing more information than necessary",
+        "Maintain reasonable security procedures to protect children's personal information",
+        "Retain personal information only as long as reasonably necessary",
+        "Verify age before collecting data - COPPA 2.0 expands protections to under 16"
+      ],
+      "penalties": "Civil penalties up to $51,744 per violation per day (adjusted for inflation); multi-million dollar FTC settlements common",
+      "tags": [
+        "us_federal",
+        "data_privacy",
+        "coppa",
+        "ftc",
+        "children",
+        "parental_consent",
+        "under_13"
+      ]
+    },
+    {
+      "id": "FISMA",
+      "name": "Federal Information Security Modernization Act",
+      "short_name": "FISMA 2014",
+      "domain": [
+        "cybersecurity"
+      ],
+      "jurisdiction": "United States - Federal",
+      "enforcement_region": "us_federal",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2014-12-18",
+      "authority": "CISA, Office of Management and Budget (OMB), NIST, Agency Inspector Generals",
+      "url": "https://www.cisa.gov/fisma",
+      "summary": "U.S. federal law requiring all federal agencies and their contractors to develop, document, and implement information security programs protecting government information and systems. Mandates use of the NIST Risk Management Framework.",
+      "key_requirements": [
+        "Develop an agency-wide information security program using the NIST Risk Management Framework (RMF)",
+        "Categorize systems as low, moderate, or high impact per FIPS 199",
+        "Select and implement security controls from NIST SP 800-53",
+        "Conduct independent security assessments and obtain Authorization to Operate (ATO)",
+        "Continuously monitor all security controls via Continuous Diagnostics and Mitigation (CDM)",
+        "Report cybersecurity metrics annually to OMB and DHS",
+        "Contractor systems holding federal data must comply with FISMA requirements",
+        "Inspector General conducts annual independent evaluation of agency security programs"
+      ],
+      "penalties": "Non-criminal; non-compliance may result in reduced agency funding, Inspector General findings, and binding operational directives from CISA",
+      "tags": [
+        "us_federal",
+        "cybersecurity",
+        "fisma",
+        "nist_rmf",
+        "federal_agencies",
+        "contractors",
+        "ato"
+      ]
+    },
+    {
+      "id": "SEC_CYBER_2023",
+      "name": "SEC Cybersecurity Risk Management and Incident Disclosure Rules",
+      "short_name": "SEC Cyber Rules",
+      "domain": [
+        "cybersecurity",
+        "finance"
+      ],
+      "jurisdiction": "United States - Federal",
+      "enforcement_region": "us_federal",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2023-12-15",
+      "authority": "U.S. Securities and Exchange Commission (SEC)",
+      "url": "https://www.sec.gov/rules-regulations/2023/07/33-11216",
+      "summary": "SEC rules requiring public companies to disclose material cybersecurity incidents within 4 business days on Form 8-K, and to provide annual disclosures (Form 10-K) about cybersecurity risk management, strategy, and board governance.",
+      "key_requirements": [
+        "Report material cybersecurity incidents on Form 8-K within 4 business days of materiality determination",
+        "Annual 10-K disclosures of cybersecurity risk management processes and strategy",
+        "Describe board oversight of cybersecurity risks and management's cybersecurity expertise and role",
+        "Disclose material effects of past cybersecurity incidents on financial condition and operations",
+        "Foreign private issuers must use Form 20-F/6-K equivalents",
+        "Define materiality using the same standard as other securities disclosures"
+      ],
+      "penalties": "SEC enforcement actions; material misstatements in public filings subject to securities fraud liability; penalties up to $5 million per violation",
+      "tags": [
+        "us_federal",
+        "cybersecurity",
+        "finance",
+        "sec",
+        "public_company",
+        "materiality",
+        "incident_disclosure",
+        "8k"
+      ]
+    },
+    {
+      "id": "CMMC",
+      "name": "Cybersecurity Maturity Model Certification 2.0",
+      "short_name": "CMMC 2.0",
+      "domain": [
+        "cybersecurity"
+      ],
+      "jurisdiction": "United States - Federal",
+      "enforcement_region": "us_federal",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2024-12-16",
+      "authority": "U.S. Department of Defense (DoD)",
+      "url": "https://dodcio.defense.gov/CMMC/",
+      "summary": "DoD's cybersecurity certification program requiring defense contractors and subcontractors handling Federal Contract Information (FCI) or Controlled Unclassified Information (CUI) to achieve and maintain certified cybersecurity postures.",
+      "key_requirements": [
+        "Level 1 (Foundational): 17 basic practices per FAR 52.204-21; annual self-assessment and senior official affirmation",
+        "Level 2 (Advanced): 110 practices per NIST SP 800-171; triennial C3PAO third-party assessment for critical programs",
+        "Level 3 (Expert): 24 additional practices per NIST SP 800-172; government-led assessment by DCSA",
+        "Plans of Action and Milestones (POA&Ms) allowed for Level 1 and 2 assessment gaps",
+        "Affirmation by a senior official confirming compliance annually",
+        "Flow-down requirements: prime contractors must impose CMMC on subcontractors handling FCI/CUI"
+      ],
+      "penalties": "False claims on contractor attestations may trigger False Claims Act liability (treble damages); contract disqualification for non-compliant vendors",
+      "tags": [
+        "us_federal",
+        "cybersecurity",
+        "cmmc",
+        "dod",
+        "defense_contractors",
+        "cui",
+        "nist_800_171"
+      ]
+    },
+    {
+      "id": "NYDFS_500",
+      "name": "New York DFS Cybersecurity Regulation (23 NYCRR Part 500) — 2023 Amendment",
+      "short_name": "NYDFS 23 NYCRR 500",
+      "domain": [
+        "cybersecurity",
+        "finance"
+      ],
+      "jurisdiction": "United States - New York State",
+      "enforcement_region": "us_state",
+      "geography": {
+        "type": "state",
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2023-11-01",
+      "authority": "New York Department of Financial Services (NYDFS)",
+      "url": "https://www.dfs.ny.gov/industry_guidance/cybersecurity",
+      "summary": "The New York Department of Financial Services cybersecurity regulation (23 NYCRR Part 500) imposes prescriptive security requirements on all DFS-licensed entities. Originally effective March 2017, a major amendment effective November 1, 2023 substantially expanded requirements: mandatory multi-factor authentication for all systems, 24-hour incident notification to NYDFS, enhanced CISO requirements, annual penetration testing, vulnerability management, and board-level cybersecurity accountability.",
+      "key_requirements": [
+        "Implement a cybersecurity program based on a formal risk assessment",
+        "Appoint a Chief Information Security Officer (CISO) responsible for cybersecurity program",
+        "Annual penetration testing and bi-annual vulnerability assessments",
+        "Multi-factor authentication (MFA) for all remote access, privileged accounts, and email systems",
+        "Notify NYDFS of a cybersecurity event within 72 hours if it has a reasonable likelihood of materially harming the business",
+        "Annual certification of compliance by a senior officer or the board",
+        "Third-party service provider security policy with contractual security requirements",
+        "Large covered entities must have independent audits and board cybersecurity expertise"
+      ],
+      "penalties": "Up to $250,000 per violation; up to $2,500 per day for extended violations; up to $1 million for serious or systemic violations (2023 amendments)",
+      "tags": [
+        "us_state",
+        "cybersecurity",
+        "finance",
+        "nydfs",
+        "new_york",
+        "ciso",
+        "mfa",
+        "financial_services"
+      ]
+    },
+    {
+      "id": "ILLINOIS_BIPA",
+      "name": "Illinois Biometric Information Privacy Act",
+      "short_name": "Illinois BIPA",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "United States - Illinois",
+      "enforcement_region": "us_state",
+      "geography": {
+        "type": "state",
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2008-10-03",
+      "authority": "Private right of action - enforced by courts (no state agency)",
+      "url": "https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3004",
+      "summary": "The nation's most powerful biometric privacy law, prohibiting private entities from collecting, storing, or profiting from biometric identifiers (fingerprints, retinal scans, facial geometry, voiceprints, handprints) without prior informed written consent.",
+      "key_requirements": [
+        "Obtain written informed consent before collecting any biometric identifier or biometric information",
+        "Publish a publicly available written retention and destruction policy",
+        "Destroy biometric data when the original purpose expires or within 3 years of collection",
+        "No sale or other profit from biometric data under any circumstances",
+        "No disclosure of biometric data without consent or court order",
+        "Provide individuals with the right to know what biometric data is being collected and why"
+      ],
+      "penalties": "$1,000 per negligent violation or $5,000 per intentional/reckless violation per person; no actual harm required; class actions regularly produce settlements exceeding $100 million",
+      "tags": [
+        "us_state",
+        "illinois",
+        "data_privacy",
+        "bipa",
+        "biometric",
+        "fingerprint",
+        "facial_recognition",
+        "private_right_of_action"
+      ]
+    },
+    {
+      "id": "VIRGINIA_CDPA",
+      "name": "Virginia Consumer Data Protection Act",
+      "short_name": "Virginia CDPA",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "United States - Virginia",
+      "enforcement_region": "us_state",
+      "geography": {
+        "type": "state",
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2023-01-01",
+      "authority": "Virginia Attorney General",
+      "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/",
+      "summary": "Virginia's comprehensive privacy law applying to controllers processing personal data of 100,000+ Virginia consumers annually. Modeled after the GDPR, establishes consumer rights and controller obligations with AG-only enforcement.",
+      "key_requirements": [
+        "Data minimization - limit collection to what is adequate, relevant, and reasonably necessary",
+        "Purpose limitation - process data only for disclosed and compatible purposes",
+        "Consumer rights: access, correction, deletion, portability, opt-out of targeted advertising/sale/profiling",
+        "Data protection assessments for high-risk processing activities",
+        "Controller-processor agreements required",
+        "Respond to consumer requests within 45 days (with 45-day extension if needed)",
+        "Opt-in consent required for processing sensitive data categories",
+        "Recognize universal opt-out mechanisms (GPC) from 2024"
+      ],
+      "penalties": "Up to $7,500 per violation; Attorney General enforcement only (no private right of action)",
+      "tags": [
+        "us_state",
+        "virginia",
+        "data_privacy",
+        "cdpa",
+        "consumer_rights",
+        "opt_out",
+        "ag_enforcement"
+      ]
+    },
+    {
+      "id": "COLORADO_CPA",
+      "name": "Colorado Privacy Act",
+      "short_name": "Colorado CPA",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "United States - Colorado",
+      "enforcement_region": "us_state",
+      "geography": {
+        "type": "state",
+        "regions": [
+          "US"
+        ],
+        "countries": [
+          "US"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2023-07-01",
+      "authority": "Colorado Attorney General and District Attorneys",
+      "url": "https://coag.gov/resources/colorado-privacy-act/",
+      "summary": "Colorado's comprehensive privacy law requiring organizations to recognize universal opt-out mechanisms like Global Privacy Control (GPC). Applies to organizations controlling or processing personal data of 100,000+ Colorado consumers annually.",
+      "key_requirements": [
+        "Consumer rights: access, correction, deletion, portability, opt-out of targeted advertising/sale/profiling",
+        "Mandatory recognition of universal opt-out mechanisms (GPC) since July 2024",
+        "Process opt-out signals from authorized agents without verification of the agent",
+        "Data protection assessments required for high-risk processing activities",
+        "Heightened consent requirements for sensitive data categories",
+        "Controller-processor data processing agreements required",
+        "Respond to consumer requests within 45 days (with 45-day extension available)"
+      ],
+      "penalties": "Up to $20,000 per violation; AG and District Attorney enforcement (no private right of action)",
+      "tags": [
+        "us_state",
+        "colorado",
+        "data_privacy",
+        "cpa",
+        "gpc",
+        "opt_out",
+        "universal_opt_out"
+      ]
+    },
+    {
+      "id": "AUSTRALIA_PRIVACY_ACT",
+      "name": "Australian Privacy Act 1988 with Australian Privacy Principles and NDB Scheme",
+      "short_name": "Australia Privacy Act",
+      "domain": [
+        "data_privacy"
+      ],
+      "jurisdiction": "Commonwealth of Australia",
+      "enforcement_region": "australia",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "APAC"
+        ],
+        "countries": [
+          "AU"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2018-02-22",
+      "authority": "Office of the Australian Information Commissioner (OAIC)",
+      "url": "https://www.oaic.gov.au/privacy/the-privacy-act",
+      "summary": "Australia's primary privacy law applying to Australian Government agencies and most private-sector organizations with annual turnover over AUD 3 million. The 13 Australian Privacy Principles (APPs) govern all aspects of personal information handling. The Notifiable Data Breaches (NDB) Scheme requires notification of eligible breaches.",
+      "key_requirements": [
+        "13 Australian Privacy Principles (APPs): open and transparent management, anonymity, collection limitations, use/disclosure limitations, direct marketing opt-out, cross-border disclosure safeguards, data quality, security safeguards, access and correction rights",
+        "Notify the OAIC and affected individuals of eligible data breaches within 30 days of becoming aware",
+        "Eligible breach: likely to result in serious harm to individuals whose information is involved",
+        "Obtain meaningful consent for sensitive information (health, genetic, racial, political, religious, sexual orientation)",
+        "Privacy Impact Assessments recommended for high-privacy-risk activities",
+        "Cross-border data disclosures: must ensure overseas recipient provides substantially similar protections",
+        "2024 amendments: new right to erasure, enhanced OAIC powers, statutory tort for serious invasions of privacy"
+      ],
+      "penalties": "Up to AUD 50 million per violation for serious or repeated breaches; individual penalties also apply under 2024 amendments",
+      "tags": [
+        "australia",
+        "data_privacy",
+        "privacy_act",
+        "oaic",
+        "apps",
+        "ndb_scheme",
+        "breach_notification"
+      ]
+    },
+    {
+      "id": "AUSTRALIA_SOCI",
+      "name": "Security of Critical Infrastructure Act 2018 (SOCI)",
+      "short_name": "Australia SOCI Act",
+      "domain": [
+        "cybersecurity",
+        "critical_infrastructure"
+      ],
+      "jurisdiction": "Commonwealth of Australia",
+      "enforcement_region": "australia",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "APAC"
+        ],
+        "countries": [
+          "AU"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2022-04-08",
+      "authority": "Australian Signals Directorate (ASD) / Cyber and Infrastructure Security Centre (CISC)",
+      "url": "https://www.cisc.gov.au/",
+      "summary": "Australian law imposing security obligations on owners and operators of critical infrastructure across 11 sectors: electricity, gas, water and sewerage, ports, data storage and processing, financial market infrastructure, food and grocery, healthcare and medical, space technology, broadcasting, and transport.",
+      "key_requirements": [
+        "Register critical infrastructure assets with the Register of Critical Infrastructure Assets",
+        "Develop and maintain a Critical Infrastructure Risk Management Program (CIRMP) reviewed annually by the board",
+        "Report cybersecurity incidents to ASD within 12 hours for critical infrastructure systems",
+        "Report other serious security incidents within 72 hours",
+        "Disclose offshore ownership interests and notify of changes to ownership above thresholds",
+        "Enhanced cybersecurity obligations for designated Systems of National Significance",
+        "Government has step-in rights to direct response to major national cyber incidents",
+        "Notify ASD of system vulnerabilities that could result in significant harm"
+      ],
+      "penalties": "Civil penalties up to AUD 250,000 per contravention; criminal penalties for most serious breaches",
+      "tags": [
+        "australia",
+        "cybersecurity",
+        "critical_infrastructure",
+        "soci",
+        "asd",
+        "cirmp",
+        "incident_reporting"
+      ]
+    },
+    {
+      "id": "AUSTRALIA_AMLCTF",
+      "name": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006",
+      "short_name": "Australia AML/CTF Act",
+      "domain": [
+        "finance"
+      ],
+      "jurisdiction": "Commonwealth of Australia",
+      "enforcement_region": "australia",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "APAC"
+        ],
+        "countries": [
+          "AU"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2006-12-12",
+      "authority": "Australian Transaction Reports and Analysis Centre (AUSTRAC)",
+      "url": "https://www.austrac.gov.au/",
+      "summary": "Australia's AML/CTF regime applying to reporting entities providing designated services including banks, credit unions, money remitters, casinos, bullion dealers, and digital currency exchanges. Major 2024 reforms extended obligations to Tranche 2 entities including lawyers, accountants, and real estate agents.",
+      "key_requirements": [
+        "Enroll or register with AUSTRAC as a reporting entity",
+        "Develop and maintain an AML/CTF program including risk assessment and customer due diligence procedures",
+        "Know Your Customer (KYC) / Customer Identification Program (CIP) for all customers",
+        "Transaction monitoring program to identify suspicious activity",
+        "File Suspicious Matter Reports (SMRs) to AUSTRAC within 24 hours of suspicion",
+        "File Threshold Transaction Reports (TTRs) for cash transactions of AUD 10,000+",
+        "File International Funds Transfer Instructions (IFTIs) for all international transfers",
+        "Tranche 2 entities (lawyers, accountants, real estate) must enroll from 2026"
+      ],
+      "penalties": "Civil penalties up to AUD 22 million per contravention; AUSTRAC fined Commonwealth Bank AUD 700M (2018), Westpac AUD 1.3B (2020)",
+      "tags": [
+        "australia",
+        "aml",
+        "finance",
+        "austrac",
+        "kyc",
+        "suspicious_matter_reports",
+        "tranche_2"
+      ]
+    },
+    {
+      "id": "AUSTRALIA_CYBER_ACT",
+      "name": "Cyber Security Act 2024",
+      "short_name": "Australia Cyber Act",
+      "domain": [
+        "cybersecurity"
+      ],
+      "jurisdiction": "Commonwealth of Australia",
+      "enforcement_region": "australia",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "APAC"
+        ],
+        "countries": [
+          "AU"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2025-03-04",
+      "authority": "Australian Signals Directorate (ASD) / Department of Home Affairs",
+      "url": "https://www.legislation.gov.au/details/C2025A00003",
+      "summary": "Australia's first dedicated cybersecurity act, part of the 2023-2030 Australian Cyber Security Strategy. Establishes mandatory ransomware payment reporting, minimum security standards for smart connected devices (IoT), and a new Cyber Incident Review Board.",
+      "key_requirements": [
+        "Mandatory reporting of ransomware payments to ASD within 72 hours (immunity from regulatory use of the report)",
+        "Minimum security standards for smart connected devices (IoT) sold in Australia - aligned with ETSI EN 303 645",
+        "Suppliers of smart devices must publish statements of compliance and support periods",
+        "Cyber Incident Review Board reviews significant cyber incidents to identify systemic improvements",
+        "Limited-use obligations: government assistance data can only be used to manage the incident, not for prosecution",
+        "Cyber security obligations for critical infrastructure interconnected with SOCI Act requirements"
+      ],
+      "penalties": "Civil penalties for non-reporting of ransomware payments; product liability for non-compliant smart devices",
+      "tags": [
+        "australia",
+        "cybersecurity",
+        "cyber_act",
+        "ransomware",
+        "iot",
+        "smart_devices",
+        "asd",
+        "incident_review"
+      ]
+    },
+    {
+      "id": "IMO_SOLAS",
+      "name": "International Convention for the Safety of Life at Sea (SOLAS)",
+      "short_name": "SOLAS 1974",
+      "domain": [
+        "critical_infrastructure",
+        "maritime"
+      ],
+      "jurisdiction": "International (IMO)",
+      "enforcement_region": "international",
+      "geography": {
+        "type": "global",
+        "regions": [
+          "GLOBAL"
+        ],
+        "countries": [
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CL",
+          "CN",
+          "CO",
+          "HR",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "EG",
+          "FI",
+          "FR",
+          "DE",
+          "GH",
+          "GR",
+          "HU",
+          "IE",
+          "IN",
+          "ID",
+          "IL",
+          "IT",
+          "JP",
+          "KE",
+          "KR",
+          "KW",
+          "LV",
+          "LR",
+          "LT",
+          "LU",
+          "MY",
+          "MT",
+          "MH",
+          "MX",
+          "MA",
+          "NL",
+          "NZ",
+          "NG",
+          "NO",
+          "OM",
+          "PK",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "QA",
+          "RO",
+          "RU",
+          "SA",
+          "SG",
+          "SK",
+          "SI",
+          "ZA",
+          "ES",
+          "SE",
+          "TZ",
+          "TH",
+          "TR",
+          "UA",
+          "AE",
+          "GB",
+          "US",
+          "UY",
+          "VN",
+          "BD",
+          "BS",
+          "DZ",
+          "TN",
+          "AO",
+          "MZ",
+          "MG"
+        ]
+      },
+      "status": "active",
+      "effective_date": "1980-05-25",
+      "authority": "International Maritime Organization (IMO)",
+      "url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Safety-of-Life-at-Sea-(SOLAS),-1974.aspx",
+      "summary": "The most important international treaty on maritime safety, prescribing minimum standards for the construction, equipment, and operation of merchant ships. Covers fire safety, life-saving appliances, radio communications, navigational safety, carriage of cargoes and dangerous goods, ISM Code, and ISPS Code.",
+      "key_requirements": [
+        "Construction standards: watertight integrity, stability, subdivision, and fire safety systems",
+        "Life-saving appliances: sufficient lifeboats, liferafts, EPIRBs, immersion suits, and fire extinguishers",
+        "Radio communications: GMDSS (Global Maritime Distress and Safety System) equipment installation",
+        "Navigation: mandatory ECDIS, AIS, voyage data recorder (VDR), and ARPA radar on applicable vessels",
+        "Chapter IX - ISM Code: mandatory Safety Management System for company and ships",
+        "Chapter XI-2 - ISPS Code: Ship Security Plan and continuous Synopsis Record",
+        "Five-year SOLAS certificates renewed via annual, intermediate, and renewal surveys",
+        "Port State Control: non-compliant ships may be detained until deficiencies are corrected"
+      ],
+      "penalties": "Port State Control detention of vessels; flag state may suspend, withdraw, or refuse to issue certificates; criminal liability under national law",
+      "tags": [
+        "maritime",
+        "imo",
+        "solas",
+        "shipping",
+        "life_safety",
+        "psc",
+        "critical_infrastructure",
+        "international"
+      ]
+    },
+    {
+      "id": "IMO_MARPOL",
+      "name": "International Convention for the Prevention of Pollution from Ships (MARPOL)",
+      "short_name": "MARPOL 73/78",
+      "domain": [
+        "environment",
+        "maritime"
+      ],
+      "jurisdiction": "International (IMO)",
+      "enforcement_region": "international",
+      "geography": {
+        "type": "global",
+        "regions": [
+          "GLOBAL"
+        ],
+        "countries": [
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CL",
+          "CN",
+          "CO",
+          "HR",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "EG",
+          "FI",
+          "FR",
+          "DE",
+          "GH",
+          "GR",
+          "HU",
+          "IE",
+          "IN",
+          "ID",
+          "IL",
+          "IT",
+          "JP",
+          "KE",
+          "KR",
+          "KW",
+          "LV",
+          "LR",
+          "LT",
+          "LU",
+          "MY",
+          "MT",
+          "MH",
+          "MX",
+          "MA",
+          "NL",
+          "NZ",
+          "NG",
+          "NO",
+          "OM",
+          "PK",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "QA",
+          "RO",
+          "RU",
+          "SA",
+          "SG",
+          "SK",
+          "SI",
+          "ZA",
+          "ES",
+          "SE",
+          "TZ",
+          "TH",
+          "TR",
+          "UA",
+          "AE",
+          "GB",
+          "US",
+          "UY",
+          "VN",
+          "BD",
+          "BS",
+          "DZ",
+          "TN",
+          "AO",
+          "MZ",
+          "MG"
+        ]
+      },
+      "status": "active",
+      "effective_date": "1983-10-02",
+      "authority": "International Maritime Organization (IMO)",
+      "url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Prevention-of-Pollution-from-Ships-(MARPOL).aspx",
+      "summary": "The primary international convention preventing pollution from ships, covering six annexes (oil, noxious liquids, harmful packaged substances, sewage, garbage, air pollution). Key requirements include the 2020 global 0.5% sulfur cap on marine fuels and Carbon Intensity Indicator (CII) ratings from 2023.",
+      "key_requirements": [
+        "Annex I: maintain Oil Record Book; prohibit oil discharges except compliant bilge water via OCM",
+        "Annex II: chemical tankers must comply with IBC Code; pre-washing procedures before port discharge",
+        "Annex V: Garbage Management Plan; prohibited from discharging plastics and food waste in special areas",
+        "Annex VI: global sulfur cap 0.5% (0.1% in Emission Control Areas - North Sea, Baltic, North America, US Caribbean)",
+        "Annex VI: NOx Tier III standards for new ships in ECAs",
+        "Ship Energy Efficiency Management Plan (SEEMP) and Carbon Intensity Indicator (CII) rating A-E from 2023",
+        "EEDI/EEXI requirements for new and existing ships to improve energy efficiency",
+        "IMO 2030/2050 GHG Strategy: 50% total GHG reduction by 2050 vs 2008"
+      ],
+      "penalties": "Port State Control detention; flag state criminal/civil penalties; national law penalties (U.S. Act to Prevent Pollution from Ships allows fines up to $25,000 per day)",
+      "tags": [
+        "maritime",
+        "imo",
+        "marpol",
+        "environment",
+        "oil_pollution",
+        "sulfur_cap",
+        "ghg",
+        "cii",
+        "international"
+      ]
+    },
+    {
+      "id": "IMO_ISPS",
+      "name": "International Ship and Port Facility Security (ISPS) Code",
+      "short_name": "ISPS Code",
+      "domain": [
+        "critical_infrastructure",
+        "cybersecurity",
+        "maritime"
+      ],
+      "jurisdiction": "International (IMO)",
+      "enforcement_region": "international",
+      "geography": {
+        "type": "global",
+        "regions": [
+          "GLOBAL"
+        ],
+        "countries": [
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CL",
+          "CN",
+          "CO",
+          "HR",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "EG",
+          "FI",
+          "FR",
+          "DE",
+          "GH",
+          "GR",
+          "HU",
+          "IE",
+          "IN",
+          "ID",
+          "IL",
+          "IT",
+          "JP",
+          "KE",
+          "KR",
+          "KW",
+          "LV",
+          "LR",
+          "LT",
+          "LU",
+          "MY",
+          "MT",
+          "MH",
+          "MX",
+          "MA",
+          "NL",
+          "NZ",
+          "NG",
+          "NO",
+          "OM",
+          "PK",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "QA",
+          "RO",
+          "RU",
+          "SA",
+          "SG",
+          "SK",
+          "SI",
+          "ZA",
+          "ES",
+          "SE",
+          "TZ",
+          "TH",
+          "TR",
+          "UA",
+          "AE",
+          "GB",
+          "US",
+          "UY",
+          "VN",
+          "BD",
+          "BS",
+          "DZ",
+          "TN",
+          "AO",
+          "MZ",
+          "MG"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2004-07-01",
+      "authority": "International Maritime Organization (IMO) - implemented via SOLAS Chapter XI-2",
+      "url": "https://www.imo.org/en/OurWork/Security/Pages/SOLAS-XI-2%20ISPS%20Code.aspx",
+      "summary": "International code for the security of ships and port facilities adopted after 9/11, applying to international cargo ships of 500 GT or more, all passenger ships, and port facilities serving international ships. IMO MSC-FAL.1/Circ.3 (2017) integrates cybersecurity into ISPS requirements.",
+      "key_requirements": [
+        "Ship Security Assessment (SSA) identifying vulnerabilities and security risks",
+        "Implement a Ship Security Plan (SSP) addressing three security levels",
+        "Designate a Ship Security Officer (SSO) and a Company Security Officer (CSO)",
+        "Install a Ship Security Alert System (SSAS) transmitting covert distress alert",
+        "Maintain an International Ship Security Certificate (ISSC) - issued by flag state",
+        "Port facilities must have a Port Facility Security Plan (PFSP) and Port Facility Security Officer (PFSO)",
+        "Port and ship security drills and exercises annually",
+        "Cyber risk incorporated into Ship Security Plans per IMO 2017 guidance"
+      ],
+      "penalties": "Detention by Port State Control; denial of entry to port; flag state may invalidate ISSC; criminal penalties under national law",
+      "tags": [
+        "maritime",
+        "imo",
+        "isps",
+        "ship_security",
+        "port_security",
+        "issc",
+        "sso",
+        "international"
+      ]
+    },
+    {
+      "id": "IMO_MLC",
+      "name": "Maritime Labour Convention 2006 (MLC 2006) — ILO Convention C186",
+      "short_name": "MLC 2006",
+      "domain": [
+        "labor",
+        "maritime"
+      ],
+      "jurisdiction": "International (ILO)",
+      "enforcement_region": "international",
+      "geography": {
+        "type": "global",
+        "regions": [
+          "GLOBAL"
+        ],
+        "countries": [
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CL",
+          "CN",
+          "CO",
+          "HR",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "EG",
+          "FI",
+          "FR",
+          "DE",
+          "GH",
+          "GR",
+          "HU",
+          "IE",
+          "IN",
+          "ID",
+          "IL",
+          "IT",
+          "JP",
+          "KE",
+          "KR",
+          "KW",
+          "LV",
+          "LR",
+          "LT",
+          "LU",
+          "MY",
+          "MT",
+          "MH",
+          "MX",
+          "MA",
+          "NL",
+          "NZ",
+          "NG",
+          "NO",
+          "OM",
+          "PK",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "QA",
+          "RO",
+          "RU",
+          "SA",
+          "SG",
+          "SK",
+          "SI",
+          "ZA",
+          "ES",
+          "SE",
+          "TZ",
+          "TH",
+          "TR",
+          "UA",
+          "AE",
+          "GB",
+          "US",
+          "UY",
+          "VN",
+          "BD",
+          "BS",
+          "DZ",
+          "TN",
+          "AO",
+          "MZ",
+          "MG"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2013-08-20",
+      "authority": "International Labour Organization (ILO)",
+      "url": "https://www.ilo.org/global/standards/maritime-labour-convention/lang--en/index.htm",
+      "summary": "The Maritime Labour Convention 2006 (MLC 2006) is an International Labour Organization (ILO) Convention (C186), often called the 'Seafarers' Bill of Rights.' Administered by the ILO — not the IMO — it consolidates 68 previous ILO maritime standards into a single instrument covering seafarers' employment conditions, working hours, accommodation, health protection, medical care, welfare, and social security. Port state control inspections are coordinated with IMO conventions. Entered into force 20 August 2013; ratified by states representing over 96% of gross tonnage.",
+      "key_requirements": [
+        "Seafarer Employment Agreement (SEA) must be provided to every seafarer before joining the ship",
+        "Minimum age: 16 years (18 for hazardous work and night work)",
+        "Minimum wages per ILO/MLC guidelines (USD 673/month basic rate as of 2024)",
+        "Maximum work hours: 14 hours in any 24-hour period and 72 hours in any 7-day period",
+        "Minimum rest: 10 hours in any 24-hour period and 77 hours in any 7-day period",
+        "Annual paid leave of at least 2.5 calendar days per month of service",
+        "Medical care on board and ashore; medical examination certificates",
+        "Maritime Labour Certificate (MLC certificate) and Declaration of Maritime Labour Compliance (DMLC) for ships 500 GT+"
+      ],
+      "penalties": "Port State Control detention; flag state penalties; ship owner financial liability for medical costs and repatriation",
+      "tags": [
+        "maritime",
+        "ilo",
+        "mlc",
+        "labor",
+        "seafarers",
+        "employment",
+        "working_conditions",
+        "wages",
+        "international"
+      ]
+    },
+    {
+      "id": "IMO_ISM",
+      "name": "International Safety Management (ISM) Code",
+      "short_name": "ISM Code",
+      "domain": [
+        "critical_infrastructure",
+        "maritime"
+      ],
+      "jurisdiction": "International (IMO)",
+      "enforcement_region": "international",
+      "geography": {
+        "type": "global",
+        "regions": [
+          "GLOBAL"
+        ],
+        "countries": [
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CL",
+          "CN",
+          "CO",
+          "HR",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "EG",
+          "FI",
+          "FR",
+          "DE",
+          "GH",
+          "GR",
+          "HU",
+          "IE",
+          "IN",
+          "ID",
+          "IL",
+          "IT",
+          "JP",
+          "KE",
+          "KR",
+          "KW",
+          "LV",
+          "LR",
+          "LT",
+          "LU",
+          "MY",
+          "MT",
+          "MH",
+          "MX",
+          "MA",
+          "NL",
+          "NZ",
+          "NG",
+          "NO",
+          "OM",
+          "PK",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "QA",
+          "RO",
+          "RU",
+          "SA",
+          "SG",
+          "SK",
+          "SI",
+          "ZA",
+          "ES",
+          "SE",
+          "TZ",
+          "TH",
+          "TR",
+          "UA",
+          "AE",
+          "GB",
+          "US",
+          "UY",
+          "VN",
+          "BD",
+          "BS",
+          "DZ",
+          "TN",
+          "AO",
+          "MZ",
+          "MG"
+        ]
+      },
+      "status": "active",
+      "effective_date": "1998-07-01",
+      "authority": "International Maritime Organization (IMO) - mandatory via SOLAS Chapter IX",
+      "url": "https://www.imo.org/en/OurWork/HumanElement/Pages/ISMCode.aspx",
+      "summary": "An international standard for the safe management and operation of ships and for pollution prevention. Requires shipping companies to establish a Safety Management System (SMS), appoint a Designated Person Ashore (DPA), and demonstrate compliance through Document of Compliance (DOC) and Safety Management Certificate (SMC).",
+      "key_requirements": [
+        "Implement and maintain a Safety Management System (SMS) covering safety policy, procedures, and emergency preparedness",
+        "Appoint a Designated Person Ashore (DPA) ensuring safe ship operations and providing a link between the company and those on board",
+        "Define and document responsibilities and authorities under the SMS",
+        "Procedures for hazard identification, risk assessment, and accident investigation",
+        "Planned Maintenance System (PMS) for hull, machinery, and safety equipment",
+        "Emergency response procedures including contingency plans",
+        "Document of Compliance (DOC) for the company and Safety Management Certificate (SMC) for each ship, renewed every 5 years",
+        "Internal audits and management review of the SMS annually"
+      ],
+      "penalties": "Port State Control detention; flag state may suspend or withdraw DOC/SMC; criminal liability under national law for negligence",
+      "tags": [
+        "maritime",
+        "imo",
+        "ism",
+        "safety_management",
+        "sms",
+        "dpa",
+        "doc",
+        "smc",
+        "international"
+      ]
+    },
+    {
+      "id": "IMO_BWM",
+      "name": "International Convention for the Control and Management of Ships' Ballast Water and Sediments",
+      "short_name": "Ballast Water Convention (BWM)",
+      "domain": [
+        "environment",
+        "maritime"
+      ],
+      "jurisdiction": "International (IMO)",
+      "enforcement_region": "international",
+      "geography": {
+        "type": "global",
+        "regions": [
+          "GLOBAL"
+        ],
+        "countries": [
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CL",
+          "CN",
+          "CO",
+          "HR",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "EG",
+          "FI",
+          "FR",
+          "DE",
+          "GH",
+          "GR",
+          "HU",
+          "IE",
+          "IN",
+          "ID",
+          "IL",
+          "IT",
+          "JP",
+          "KE",
+          "KR",
+          "KW",
+          "LV",
+          "LR",
+          "LT",
+          "LU",
+          "MY",
+          "MT",
+          "MH",
+          "MX",
+          "MA",
+          "NL",
+          "NZ",
+          "NG",
+          "NO",
+          "OM",
+          "PK",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "QA",
+          "RO",
+          "RU",
+          "SA",
+          "SG",
+          "SK",
+          "SI",
+          "ZA",
+          "ES",
+          "SE",
+          "TZ",
+          "TH",
+          "TR",
+          "UA",
+          "AE",
+          "GB",
+          "US",
+          "UY",
+          "VN",
+          "BD",
+          "BS",
+          "DZ",
+          "TN",
+          "AO",
+          "MZ",
+          "MG"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2017-09-08",
+      "authority": "International Maritime Organization (IMO)",
+      "url": "https://www.imo.org/en/OurWork/Environment/Pages/BallastWaterManagement.aspx",
+      "summary": "International convention preventing the spread of harmful aquatic organisms, bacteria, and pathogens transported in ships' ballast water. Ships must implement approved ballast water management measures using either ballast water exchange (D-1 Standard) or a type-approved Ballast Water Treatment System (BWTS).",
+      "key_requirements": [
+        "Develop and implement a Ballast Water Management Plan (BWMP) approved by the flag administration",
+        "Maintain a Ballast Water Record Book (BWRB) documenting all ballast water operations",
+        "Install an IMO type-approved Ballast Water Treatment System (BWTS) meeting D-2 Performance Standard by the IOPP renewal survey date",
+        "D-2 Standard: less than 10 viable organisms per cubic meter (more than 50 microns); less than 10 viable organisms per ml (10-50 microns)",
+        "Alternative: ballast water exchange in open ocean at least 200 nautical miles from land and 200m depth (D-1 Standard)",
+        "IMO Ballast Water Management Convention (BWM) Certificate issued by flag state",
+        "Port State Control may inspect Ballast Water Record Book and sample ballast water"
+      ],
+      "penalties": "Port State Control detention until BWTS installed; fines under national law (U.S. fines up to USD 27,500 per day); flag state penalties",
+      "tags": [
+        "maritime",
+        "imo",
+        "ballast_water",
+        "environment",
+        "invasive_species",
+        "bwts",
+        "d2_standard",
+        "international"
+      ]
+    },
+    {
+      "id": "BOI_357",
+      "name": "Bank of Israel Directive 357 — Technology and Information Systems Risk Management",
+      "short_name": "BOI Directive 357",
+      "domain": [
+        "cybersecurity",
+        "finance"
+      ],
+      "jurisdiction": "State of Israel",
+      "enforcement_region": "israel",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "MENA"
+        ],
+        "countries": [
+          "IL"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2014-06-01",
+      "authority": "Bank of Israel — Banking Supervision Department",
+      "url": "https://www.boi.org.il/en/banking-supervision/supervised-entities/banking-corporations-and-credit-card-companies/technology-information-and-cyber/",
+      "summary": "Bank of Israel Directive 357 on Technology and Information Systems Risk Management establishes binding cybersecurity and IT governance requirements for all Israeli banking corporations. It mandates risk management frameworks covering IT systems, cyber defense, business continuity, and outsourcing of technology services including cloud.",
+      "key_requirements": [
+        "Establish a board-approved technology and cyber risk management policy",
+        "Appoint a CISO with direct board reporting line and defined authorities",
+        "Conduct annual cyber risk assessment aligned with NIST or equivalent frameworks",
+        "Implement multi-layered defense-in-depth controls for critical banking systems",
+        "Report material cyber incidents to the Bank of Israel Supervisor within 24 hours",
+        "Maintain a tested cyber incident response and business continuity plan",
+        "Manage technology outsourcing risk including cloud providers with enhanced due diligence",
+        "Employee cybersecurity awareness training and phishing simulation exercises"
+      ],
+      "penalties": "Bank of Israel may impose supervisory measures including directives, fines, and license restrictions on non-compliant banking corporations",
+      "tags": [
+        "israel",
+        "finance",
+        "cybersecurity",
+        "banking",
+        "boi",
+        "ciso",
+        "it_risk"
+      ]
+    },
+    {
+      "id": "CMISA_CYBER",
+      "name": "Israeli Capital Market, Insurance and Savings Authority Cyber Risk Management Circular",
+      "short_name": "CMISA Cyber Circular",
+      "domain": [
+        "cybersecurity",
+        "finance"
+      ],
+      "jurisdiction": "State of Israel",
+      "enforcement_region": "israel",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "MENA"
+        ],
+        "countries": [
+          "IL"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2019-11-01",
+      "authority": "Capital Market, Insurance and Savings Authority (CMISA)",
+      "url": "https://www.gov.il/en/departments/capital_market",
+      "summary": "The CMISA Cyber Risk Management Circular mandates that all entities regulated by the Israeli Capital Market Authority — insurance companies, pension funds, provident funds, and investment managers — implement a comprehensive cyber risk management program proportionate to their size and systemic importance.",
+      "key_requirements": [
+        "Board-level accountability for cyber risk governance and annual cyber risk reporting",
+        "Appoint a CISO or designate a senior responsible officer for cyber",
+        "Implement a cyber risk management framework covering identification, protection, detection, response, and recovery (NIST CSF-aligned)",
+        "Conduct annual penetration testing and vulnerability assessments",
+        "Report significant cyber incidents to CMISA within 12 hours of detection",
+        "Maintain cyber insurance coverage proportionate to risk exposure",
+        "Establish third-party cyber risk management including InsurTech vendors",
+        "Business continuity and disaster recovery planning with annual testing"
+      ],
+      "penalties": "Administrative fines, public censure, and license suspension by CMISA for material non-compliance",
+      "tags": [
+        "israel",
+        "finance",
+        "cybersecurity",
+        "insurance",
+        "pension",
+        "cmisa",
+        "capital_market"
+      ]
+    },
+    {
+      "id": "ISA_CYBER_IL",
+      "name": "Israel Securities Authority Cyber Disclosure and Risk Management Directive for Public Companies",
+      "short_name": "ISA Cyber Directive",
+      "domain": [
+        "cybersecurity",
+        "finance"
+      ],
+      "jurisdiction": "State of Israel",
+      "enforcement_region": "israel",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "MENA"
+        ],
+        "countries": [
+          "IL"
+        ]
+      },
+      "status": "active",
+      "effective_date": "2021-04-01",
+      "authority": "Israel Securities Authority (ISA)",
+      "url": "https://www.isa.gov.il/en",
+      "summary": "The Israel Securities Authority directive requires all companies publicly listed on the Tel Aviv Stock Exchange (TASE) to disclose material cybersecurity risks and incidents in periodic reports, appoint a board-level cyber committee, and establish documented cyber risk management processes.",
+      "key_requirements": [
+        "Disclose material cybersecurity risks in annual and periodic reports to ISA",
+        "Immediately report material cybersecurity events affecting company operations or data to ISA",
+        "Board of directors must establish a cyber committee or assign cyber oversight to existing committee",
+        "Management must conduct annual review of cyber risk posture and report findings to board",
+        "Describe the company cyber risk management framework and key controls in annual reports",
+        "Disclose third-party cyber incidents where the vendor holds material company data",
+        "CISO role recommended; cyber expertise on board or access to external advisors required"
+      ],
+      "penalties": "ISA may impose civil fines, require corrections, or bring enforcement actions for material non-disclosure",
+      "tags": [
+        "israel",
+        "cybersecurity",
+        "finance",
+        "isa",
+        "tase",
+        "disclosure",
+        "public_companies"
+      ]
+    },
+    {
+      "id": "IL_COMPUTER_LAW",
+      "name": "Israeli Computer Law (Hok HaMahshevim) 1995",
+      "short_name": "Israel Computer Law",
+      "domain": [
+        "cybersecurity",
+        "data_privacy"
+      ],
+      "jurisdiction": "State of Israel",
+      "enforcement_region": "israel",
+      "geography": {
+        "type": "national",
+        "regions": [
+          "MENA"
+        ],
+        "countries": [
+          "IL"
+        ]
+      },
+      "status": "active",
+      "effective_date": "1995-06-05",
+      "authority": "Israeli Ministry of Justice / Israel Police Lahav 433 Cybercrime Unit",
+      "url": "https://www.nevo.co.il/law_html/law01/099_001.htm",
+      "summary": "Israel foundational computer crime law prohibiting unauthorized access to computer systems, data theft, and computer fraud. Establishes criminal liability for hacking, malware distribution, and cybersabotage. Subsequent amendments aligned Israel with the Budapest Convention on Cybercrime.",
+      "key_requirements": [
+        "Prohibition on unauthorized intrusion into computer systems (criminal offence)",
+        "Prohibition on disruption, damage, or destruction of computer data or systems",
+        "Prohibition on fraudulent use of computers to obtain money, goods, or services",
+        "Prohibition on creating, distributing, or possessing malicious software with criminal intent",
+        "Organizations must implement reasonable access controls to avoid liability for inadequate protection",
+        "Mandatory reporting of unauthorized access affecting critical infrastructure to INCD",
+        "Israel is a signatory to the Budapest Convention on Cybercrime — cross-border cooperation"
+      ],
+      "penalties": "Up to 5 years imprisonment for unauthorized access; up to 7 years for computer fraud or sabotage; corporate fines",
+      "tags": [
+        "israel",
+        "cybersecurity",
+        "cybercrime",
+        "computer_law",
+        "criminal_law",
+        "budapest_convention"
+      ]
     }
   ]
 }

@@ -7,8 +7,8 @@ const MatrixView = {
           <div>
             <h1 class="view-title">Coverage Matrix</h1>
             <p class="view-subtitle">
-              Shows which compliance standards cover each regulation.
-              Click any cell for details. Click a regulation or standard name to open its full detail view.
+              Shows whether each compliance standard satisfies or covers a given regulation.
+              Click any regulation name to view full details; click a cell to see coverage notes.
             </p>
           </div>
           <button class="btn-export" @click="exportCsv">
@@ -24,25 +24,25 @@ const MatrixView = {
 
       <!-- Legend -->
       <div class="matrix-legend">
-        <div class="matrix-legend-item">
-          <span class="coverage-dot coverage-full" style="width:12px;height:12px;border-radius:50%;display:inline-block;flex-shrink:0;"></span>
-          Full coverage
-        </div>
-        <div class="matrix-legend-item">
-          <span class="coverage-dot coverage-substantial" style="width:12px;height:12px;border-radius:50%;display:inline-block;flex-shrink:0;"></span>
-          Substantial coverage
-        </div>
-        <div class="matrix-legend-item">
-          <span class="coverage-dot coverage-partial" style="width:12px;height:12px;border-radius:50%;display:inline-block;flex-shrink:0;"></span>
-          Partial coverage
-        </div>
-        <div class="matrix-legend-item">
-          <span class="coverage-dot coverage-minimal" style="width:12px;height:12px;border-radius:50%;display:inline-block;flex-shrink:0;"></span>
-          Minimal coverage
-        </div>
-        <div class="matrix-legend-item" style="color:var(--color-text-muted);">
-          Empty = not mapped
-        </div>
+        <span class="matrix-legend-item">
+          <span class="coverage-badge coverage-full">Full</span>
+          Standard fully satisfies regulation
+        </span>
+        <span class="matrix-legend-item">
+          <span class="coverage-badge coverage-substantial">Sub</span>
+          Substantial — minor gaps remain
+        </span>
+        <span class="matrix-legend-item">
+          <span class="coverage-badge coverage-partial">Part</span>
+          Partial — key areas uncovered
+        </span>
+        <span class="matrix-legend-item">
+          <span class="coverage-badge coverage-minimal">Min</span>
+          Minimal — addresses a few aspects
+        </span>
+        <span class="matrix-legend-item" style="color:var(--color-text-muted);">
+          Empty cell = not mapped
+        </span>
       </div>
 
       <!-- Table -->
@@ -66,19 +66,26 @@ const MatrixView = {
                 <span class="matrix-reg-domain">
                   {{ reg.domain.map(d => $domainLabel(d)).join(', ') }}
                 </span>
+                <span class="matrix-coverage-summary">
+                  {{ coveredByCount(reg.id) }}/{{ $s.standards.length }} covered
+                </span>
+                <span v-if="coveredByCount(reg.id) > 0" class="matrix-covered-by">
+                  {{ coveredByNames(reg.id) }}
+                </span>
               </td>
               <td
                 v-for="std in $s.standards"
                 :key="std.id"
                 class="matrix-cell"
+                :class="{ 'matrix-cell--mapped': !!getMapping(reg.id, std.id) }"
                 :title="getCellTooltip(reg.id, std.id)"
                 @click="onCellClick(reg, std)"
               >
                 <span
                   v-if="getMapping(reg.id, std.id)"
-                  class="matrix-dot"
+                  class="coverage-badge"
                   :class="'coverage-' + getMapping(reg.id, std.id).coverage_level"
-                ></span>
+                >{{ coverageAbbr(getMapping(reg.id, std.id).coverage_level) }}</span>
               </td>
             </tr>
           </tbody>
@@ -91,12 +98,13 @@ const MatrixView = {
     filteredRegulations() {
       const { regulations, filters } = this.$s;
       return regulations.filter(r => {
-        const domainOk = r.domain.some(d => filters.domains.includes(d));
-        const statusOk = filters.status === 'all' || r.status === filters.status;
+        const domainOk       = r.domain.some(d => filters.domains.includes(d));
+        const jurisdictionOk = filters.jurisdictions.includes(r.enforcement_region);
+        const statusOk       = filters.status === 'all' || r.status === filters.status;
         const q = filters.search.toLowerCase();
         const searchOk = !q || r.name.toLowerCase().includes(q) ||
           r.short_name.toLowerCase().includes(q) || r.summary.toLowerCase().includes(q);
-        return domainOk && statusOk && searchOk;
+        return domainOk && jurisdictionOk && statusOk && searchOk;
       });
     },
     mappingIndex() {
@@ -112,10 +120,29 @@ const MatrixView = {
     getMapping(regId, stdId) {
       return this.mappingIndex[regId + '|' + stdId] || null;
     },
+    coverageAbbr(level) {
+      return { full: 'Full', substantial: 'Sub', partial: 'Part', minimal: 'Min' }[level] || level;
+    },
+    coveredByCount(regId) {
+      return this.$s.standards.filter(s => !!this.getMapping(regId, s.id)).length;
+    },
+    coveredByNames(regId) {
+      return this.$s.standards
+        .filter(s => !!this.getMapping(regId, s.id))
+        .map(s => s.short_name)
+        .join(' · ');
+    },
+    coverageSummaryTitle(regId) {
+      const covered = this.$s.standards
+        .filter(s => !!this.getMapping(regId, s.id))
+        .map(s => s.short_name).join(', ');
+      return covered ? `Covered by: ${covered}` : 'No standards mapped yet';
+    },
     getCellTooltip(regId, stdId) {
       const m = this.getMapping(regId, stdId);
-      if (!m) return 'No mapping defined';
-      return `${m.coverage_level.charAt(0).toUpperCase() + m.coverage_level.slice(1)} coverage — ${m.notes}`;
+      if (!m) return 'Not mapped — this standard does not address this regulation';
+      const level = m.coverage_level.charAt(0).toUpperCase() + m.coverage_level.slice(1);
+      return `${level} coverage\n${m.notes}`;
     },
     onCellClick(reg, std) {
       const m = this.getMapping(reg.id, std.id);

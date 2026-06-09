@@ -1,0 +1,494 @@
+{
+  "source": "georgetown_law",
+  "scraped_at": "2026-06-09",
+  "count": 22,
+  "items": [
+    {
+      "id": "GEO_georgetown_law_library",
+      "short_name": "Georgetown Law",
+      "name": "Georgetown Law Library",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "http://www.law.georgetown.edu/library",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_foreign_international_law",
+      "short_name": "Foreign &",
+      "name": "Foreign & International Law",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.ll.georgetown.edu?group_id=3787",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_international_and_foreign_cyberspace_law",
+      "short_name": "International and",
+      "name": "International and Foreign Cyberspace Law Research Guide",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.ll.georgetown.edu/cyberspace",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_uncitral_treaty_model_laws",
+      "short_name": "UNCITRAL Treaty &",
+      "name": "UNCITRAL Treaty & Model Laws",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.ll.georgetown.edu/cyberspace/uncitral",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_national_law",
+      "short_name": "National Law",
+      "name": "National Law",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.ll.georgetown.edu/cyberspace/e-commerce-national-law",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_data_protection_privacy",
+      "short_name": "Data Protection &",
+      "name": "Data Protection & Privacy",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.ll.georgetown.edu/cyberspace/data-protection",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_national_law",
+      "short_name": "National Law",
+      "name": "National Law",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.ll.georgetown.edu/cyberspace/data-protection-national-laws",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_cyber_crime",
+      "short_name": "Cyber Crime",
+      "name": "Cyber Crime",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.ll.georgetown.edu/cyberspace/cybercrime",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_national_law",
+      "short_name": "National Law",
+      "name": "National Law",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.ll.georgetown.edu/cyberspace/cyber-crime-national-law",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_cyber_warfare_terrorism",
+      "short_name": "Cyber Warfare &",
+      "name": "Cyber Warfare & Terrorism",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.ll.georgetown.edu/cyberspace/cyber-warfare",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_tallinn_manual_primary_law_applicable_to",
+      "short_name": "Tallinn Manual &",
+      "name": "Tallinn Manual & Primary Law Applicable to Cyber Conflicts",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://guides.ll.georgetown.edu/cyberspace/cyber-conflicts",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_bloomberg_law_privacy_data_security_prac",
+      "short_name": "Bloomberg Law:",
+      "name": "Bloomberg Law: Privacy & Data Security Practice Center",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://www.bloomberglaw.com/product/privacy/page/pds_home",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_international_privacy_portfolios",
+      "short_name": "International",
+      "name": "International Privacy Portfolios",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://www.bloomberglaw.com/product/privacy/toc/source/496166/2238",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_international_data_protection_chart_buil",
+      "short_name": "International Data",
+      "name": "International Data Protection Chart Builder",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://www.bloomberglaw.com/product/privacy/bbna/chart/25/3050",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_global_workplace_privacy_requirements_ch",
+      "short_name": "Global Workplace",
+      "name": "Global Workplace Privacy Requirements Chart Builder",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy",
+        "labor"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://www.bloomberglaw.com/product/privacy/bbna/chart/42/10098",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_vitallaw_cybersecurity_privacy",
+      "short_name": "VitalLaw:",
+      "name": "VitalLaw: Cybersecurity & Privacy",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy",
+        "cybersecurity"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://my-vitallaw-com.proxygt-law.wrlc.org/#/home/CybersecurityPrivacy",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_global_privacy_security_law",
+      "short_name": "Global Privacy &",
+      "name": "Global Privacy & Security Law",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://prod-resource-cch-com.proxygt-law.wrlc.org/resource/scion/id/fTr982cTXNFfS-4DIkYvjUCOKMRWc_e_tSt4ul17hZU?cpid=WKUS-Legal-Cheetah&uAppCtx=cheetah",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_international_cybersecurity_privacy_law",
+      "short_name": "International",
+      "name": "International Cybersecurity & Privacy Law in Practice",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy",
+        "cybersecurity"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://prod-resource-cch-com.proxygt-law.wrlc.org/resource/scion/id/vciBjmSNxgMpvq4aZ-ww2FdcMwfTBZcZrOVLn9mLH3o?cpid=WKUS-Legal-Cheetah&uAppCtx=cheetah",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_council_of_europe_national_data_protecti",
+      "short_name": "Council of Europe:",
+      "name": "Council of Europe: National Data Protection Laws",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "http://www.coe.int/en/web/data-protection/national-information",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_foreign_law_guide",
+      "short_name": "Foreign Law Guide",
+      "name": "Foreign Law Guide",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "http://referenceworks.brillonline.com.proxygt-law.wrlc.org/browse/foreign-law-guide",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_global_regulation",
+      "short_name": "Global-Regulation",
+      "name": "Global-Regulation",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://www-global-regulation-com.proxygt-law.wrlc.org/",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    },
+    {
+      "id": "GEO_international_encyclopaedia_of_laws_cybe",
+      "short_name": "International",
+      "name": "International Encyclopaedia of Laws: Cyber Law Online",
+      "authority": "Georgetown Law Library",
+      "jurisdiction": "Multiple",
+      "enforcement_region": "international",
+      "domain": [
+        "data_privacy"
+      ],
+      "status": "active",
+      "effective_date": "",
+      "url": "https://kluwerlawonline-com.proxygt-law.wrlc.org/Encyclopedias/IEL+Cyber+Law/714",
+      "summary": "",
+      "geography": {
+        "countries": [],
+        "regions": []
+      },
+      "key_requirements": [],
+      "_source": "georgetown.edu",
+      "_scraped_at": "2026-06-09"
+    }
+  ]
+}
