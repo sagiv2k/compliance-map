@@ -1,6 +1,81 @@
 {
-  "last_updated": "2026-06-09",
+  "last_updated": "2026-06-10",
   "items": [
+    {
+      "id": "9f1a110c1c18",
+      "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Consultation Report",
+      "summary": "The FSB has developed sound practices to help all types of financial institutions navigate benefits and risks responsibly as they adopt AI.",
+      "url": "https://www.fsb.org/2026/06/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-consultation-report/",
+      "published": "2026-06-10",
+      "source": "FSB",
+      "source_url": "https://www.fsb.org",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "be2b25885df8",
+      "title": "FSB consults on sound practices for the responsible adoption of artificial intelligence (AI)",
+      "summary": "FSB seeks feedback on proposed sound practices for financial institutions to adopt, use, and innovate with AI in a responsible manner.",
+      "url": "https://www.fsb.org/2026/06/fsb-consults-on-sound-practices-for-the-responsible-adoption-of-artificial-intelligence-ai/",
+      "published": "2026-06-10",
+      "source": "FSB",
+      "source_url": "https://www.fsb.org",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
+    {
+      "id": "70fe90520740",
+      "title": "NIST Expands Its Library of ‘Chemical Fingerprints’ to Identify Unknown Substances",
+      "summary": "Researchers and manufacturers rely on the library to identify unknown compounds in food, drugs, cosmetics, the environment, body fluids, forensic evidence and even space rocks.",
+      "url": "https://www.nist.gov/news-events/news/2026/06/nist-expands-its-library-chemical-fingerprints-identify-unknown-substances",
+      "published": "2026-06-09",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "c884fc912776",
+      "title": "NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems",
+      "summary": "The proof extends to AI the logic used by famed mathematician Kurt Gödel, whose incompleteness theorems have had a profound effect on math for nearly a century.",
+      "url": "https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update",
+      "published": "2026-06-09",
+      "source": "NIST",
+      "source_url": "https://www.nist.gov",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "us_federal"
+      ]
+    },
+    {
+      "id": "29f69fcfa8ea",
+      "title": "FSB regulatory and supervisory modernisation symposium",
+      "summary": "FSB hosts a symposium to support members’ efforts in supervisory and regulatory modernisation.",
+      "url": "https://www.fsb.org/2026/06/fsb-regulatory-and-supervisory-modernisation-symposium/",
+      "published": "2026-06-09",
+      "source": "FSB",
+      "source_url": "https://www.fsb.org",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ]
+    },
     {
       "id": "edf85062d9a9",
       "title": "Financial services",
@@ -304,51 +379,6 @@
       "published": "2026-06-09",
       "source": "KPMG",
       "source_url": "https://kpmg.com",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "international"
-      ]
-    },
-    {
-      "id": "70fe90520740",
-      "title": "NIST Expands Its Library of ‘Chemical Fingerprints’ to Identify Unknown Substances",
-      "summary": "Researchers and manufacturers rely on the library to identify unknown compounds in food, drugs, cosmetics, the environment, body fluids, forensic evidence and even space rocks.",
-      "url": "https://www.nist.gov/news-events/news/2026/06/nist-expands-its-library-chemical-fingerprints-identify-unknown-substances",
-      "published": "2026-06-09",
-      "source": "NIST",
-      "source_url": "https://www.nist.gov",
-      "categories": [
-        "cybersecurity"
-      ],
-      "jurisdictions": [
-        "us_federal"
-      ]
-    },
-    {
-      "id": "c884fc912776",
-      "title": "NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems",
-      "summary": "The proof extends to AI the logic used by famed mathematician Kurt Gödel, whose incompleteness theorems have had a profound effect on math for nearly a century.",
-      "url": "https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update",
-      "published": "2026-06-09",
-      "source": "NIST",
-      "source_url": "https://www.nist.gov",
-      "categories": [
-        "cybersecurity"
-      ],
-      "jurisdictions": [
-        "us_federal"
-      ]
-    },
-    {
-      "id": "29f69fcfa8ea",
-      "title": "FSB regulatory and supervisory modernisation symposium",
-      "summary": "FSB hosts a symposium to support members’ efforts in supervisory and regulatory modernisation.",
-      "url": "https://www.fsb.org/2026/06/fsb-regulatory-and-supervisory-modernisation-symposium/",
-      "published": "2026-06-09",
-      "source": "FSB",
-      "source_url": "https://www.fsb.org",
       "categories": [
         "finance"
       ],
@@ -688,6 +718,51 @@
       ]
     },
     {
+      "id": "09b928379a69",
+      "title": "Europe Day 2026: let’s celebrate together",
+      "summary": "Brussels, 5 May – On 9 May each year, Europeans celebrate the anniversary of the Schuman Declaration, the key moment which led to the creation of the EU as we know it today. To mark this special occasion, the European institutions will open their doors to the public on 9 May 2026…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/europe-day-2026-lets-celebrate-together_en",
+      "published": "2026-05-05",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "7e09689e74fa",
+      "title": "Marking 10 years of the GDPR: the evolution of the European data protection landscape",
+      "summary": "Brussels, 27 April – Today marks the 10th anniversary of the GDPR’s adoption, the first comprehensive data protection framework spanning an entire continent, establishing clear rights for individuals and obligations for organisations across Europe. The moment that led to the crea…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/marking-10-years-gdpr-evolution-european-data-protection-landscape_en",
+      "published": "2026-04-27",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "ff3ebc796297",
+      "title": "Stakeholder event on competition and data protection",
+      "summary": "Brussels, 23 April – The EDPB is organising a remote stakeholder event in the context of its joint work with the European Commission on upcoming guidelines on the interplay between competition and data protection .&nbsp; The event is an opportunity for stakeholders to inform and …",
+      "url": "https://www.edpb.europa.eu/news/news/2026/stakeholder-event-competition-and-data-protection_en",
+      "published": "2026-04-23",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
       "id": "861574e5f5ae",
       "title": "Defending Against China-Nexus Covert Networks of Compromised Devices",
       "summary": "Defending against china-nexus covert networks of compromised devices executive summary Defending against China-nexus covert networks of compromised devices&nbsp; Explaining the widespread shift in tactics, techniques and procedures (TTPs) towards networks of compromised infrastru…",
@@ -704,6 +779,21 @@
       ]
     },
     {
+      "id": "8d0cf637315a",
+      "title": "EDPB brings clarity to data processing for scientific research, speeds up the finalisation of the anonymisation guidelines and approves first European data protection seal as a tool for transfers",
+      "summary": "Brussels, 16 April – During its latest plenary, the EDPB has adopted Guidelines on processing of personal data for scientific research purposes . In addition, the Board has created a team to speed up the finalisation of the guidelines on anonymisation. The EDPB has also adopted t…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-brings-clarity-data-processing-scientific-research-speeds-finalisation_en",
+      "published": "2026-04-16",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
       "id": "7958de2d1ac1",
       "title": "Any Color You Like: NIST Scientists Create ‘Any Wavelength’ Lasers in Tiny Circuits for Light",
       "summary": "NIST scientists and collaborators have pioneered a way to make integrated circuits for light by depositing complex patterns of specialized materials onto silicon wafers.",
@@ -716,6 +806,36 @@
       ],
       "jurisdictions": [
         "us_federal"
+      ]
+    },
+    {
+      "id": "683b77dda0a2",
+      "title": "Enhancing compliance and consistency: EDPB adopts DPIA template",
+      "summary": "Brussels, 14 April - In line with the EDPB’s Helsinki Statement to make GDPR compliance easier and strengthen consistency across Europe, the EDPB has adopted a template for Data Protection Impact Assessments (DPIA) . The template will help organisations structure, harmonise and e…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/enhancing-compliance-and-consistency-edpb-adopts-dpia-template_en",
+      "published": "2026-04-14",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
+      "id": "114ae4822db1",
+      "title": "EDPB annual report 2025: supporting stakeholders through guidance and dialogue",
+      "summary": "Brussels, 09 April - The European Data Protection Board (EDPB) has published its&nbsp; 2025 Annual Report . The report provides an overview of the EDPB work carried out in 2025 and reflects on important milestones, such as the adoption of the&nbsp; Helsinki Statement on Enhanced …",
+      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-annual-report-2025-supporting-stakeholders-through-guidance-and-dialogue_en",
+      "published": "2026-04-09",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
       ]
     },
     {
@@ -766,154 +886,33 @@
       ]
     },
     {
-      "id": "a93539848b20",
-      "title": "NIST Submits Annual Report to Congress Summarizing FY 2025 Progress on National Construction Safety Team Investigations",
-      "summary": "The report includes an overview of work completed on the Champlain Towers South investigation.",
-      "url": "https://www.nist.gov/news-events/news/2026/03/nist-submits-annual-report-congress-summarizing-fy-2025-progress-national",
-      "published": "2026-03-19",
-      "source": "NIST",
-      "source_url": "https://www.nist.gov",
+      "id": "e2237d20e094",
+      "title": "EDPB conference on cross-regulatory cooperation: what we learned",
+      "summary": "Brussels, 23 March - On 17 March 2026, the EDPB conference “Cross-regulatory interplay and cooperation in the EU: a data protection perspective” took place in Brussels. The event showcased high-level discussions, featuring contributions from representatives of key EU institutions…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-conference-cross-regulatory-cooperation-what-we-learned_en",
+      "published": "2026-03-24",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
       "categories": [
-        "cybersecurity"
-      ],
-      "jurisdictions": [
-        "us_federal"
-      ]
-    },
-    {
-      "id": "fc3754ca6900",
-      "title": "Announcing the &quot;AI Agent Standards Initiative&quot; for Interoperable and Secure Innovation",
-      "summary": "The Initiative will ensure that the next generation of AI is widely adopted with confidence, can function securely on behalf of its users, and can interoperate smoothly across the digital ecosystem.",
-      "url": "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure",
-      "published": "2026-02-17",
-      "source": "NIST",
-      "source_url": "https://www.nist.gov",
-      "categories": [
-        "cybersecurity"
-      ],
-      "jurisdictions": [
-        "us_federal"
-      ]
-    },
-    {
-      "id": "ae49427bef3f",
-      "title": "NIST Releases New Forensic Genetic Reference Material to Help Crime Laboratories Analyze Challenging Cases",
-      "summary": "The reference material is the first to include mixtures of high-quality and degraded DNA from different individuals.",
-      "url": "https://www.nist.gov/news-events/news/2026/02/nist-releases-new-forensic-genetic-reference-material-help-crime",
-      "published": "2026-02-17",
-      "source": "NIST",
-      "source_url": "https://www.nist.gov",
-      "categories": [
-        "cybersecurity"
-      ],
-      "jurisdictions": [
-        "us_federal"
-      ]
-    },
-    {
-      "id": "dee85ba4ff5d",
-      "title": "NIST Allocates Over $3 Million to Small Businesses Advancing AI, Biotechnology, Semiconductors, Quantum and More",
-      "summary": "NIST is allocating funding to eight small businesses in seven states under the Small Business Innovation Research (SBIR) program.",
-      "url": "https://www.nist.gov/news-events/news/2026/02/nist-allocates-over-3-million-small-businesses-advancing-ai-biotechnology",
-      "published": "2026-02-10",
-      "source": "NIST",
-      "source_url": "https://www.nist.gov",
-      "categories": [
-        "cybersecurity"
-      ],
-      "jurisdictions": [
-        "us_federal"
-      ]
-    },
-    {
-      "id": "ef8e699aff21",
-      "title": "Space: The Final Frontier for Standards",
-      "summary": "Seven NIST reference materials, including house dust and freeze-dried human liver tissue, have been flown to the International Space Station.",
-      "url": "https://www.nist.gov/news-events/news/2026/02/space-final-frontier-standards",
-      "published": "2026-02-09",
-      "source": "NIST",
-      "source_url": "https://www.nist.gov",
-      "categories": [
-        "cybersecurity"
-      ],
-      "jurisdictions": [
-        "us_federal"
-      ]
-    },
-    {
-      "id": "208c2512eb49",
-      "title": "CAISI Issues Request for Information About Securing AI Agent Systems",
-      "summary": "The Center for AI Standards and Innovation (CAISI) at the U.S. Department of Commerce’s National Institute of Standards and Technology (NIST) has published a Request for Information (RFI) seeking insights from industry, academia, and the security",
-      "url": "https://www.nist.gov/news-events/news/2026/01/caisi-issues-request-information-about-securing-ai-agent-systems",
-      "published": "2026-01-12",
-      "source": "NIST",
-      "source_url": "https://www.nist.gov",
-      "categories": [
-        "cybersecurity"
-      ],
-      "jurisdictions": [
-        "us_federal"
-      ]
-    },
-    {
-      "id": "80cb71ec1ff4",
-      "title": "Consumer Financial Protection Bureau and the Department of Justice Withdraw Joint Statement on Fair Lending and Credit Opportunities for Noncitizen Borrowers",
-      "summary": "CFPB and Justice have withdrawn a joint statement linked to a creditor’s consideration of an individual’s immigration status under the Equal Credit Opportunity Act.",
-      "url": "https://www.consumerfinance.gov/about-us/newsroom/consumer-financial-protection-bureau-and-the-department-of-justice-withdraw-joint-statement-on-fair-lending-and-credit-opportunities-for-noncitizen-borrowers/",
-      "published": "2026-01-12",
-      "source": "CFPB",
-      "source_url": "https://www.consumerfinance.gov",
-      "categories": [
-        "finance",
         "data_privacy"
       ],
       "jurisdictions": [
-        "us_federal"
+        "eu"
       ]
     },
     {
-      "id": "563d1d66cd66",
-      "title": "NIST Launches Centers for AI in Manufacturing and Critical Infrastructure",
-      "summary": "NIST has expanded its collaboration with the nonprofit MITRE Corporation as part of its efforts to ensure U.S. leadership in artificial intelligence.",
-      "url": "https://www.nist.gov/news-events/news/2025/12/nist-launches-centers-ai-manufacturing-and-critical-infrastructure",
-      "published": "2025-12-22",
-      "source": "NIST",
-      "source_url": "https://www.nist.gov",
+      "id": "c37fe7ecccaa",
+      "title": "EDPB and EDPS support strengthening EU’s cybersecurity and easing compliance while protecting individuals’ personal data",
+      "summary": "Brussels, 19 March 2026 – The European Data Protection Board (EDPB) and the European Data Protection Supervisor (EDPS) have adopted a Joint Opinion on the European Commission’s proposal for a Cybersecurity Act 2 (CSA2) and the proposal on amendments to the Network and Information…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-and-edps-support-strengthening-eus-cybersecurity-and-easing-compliance-while_en",
+      "published": "2026-03-19",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
       "categories": [
-        "cybersecurity"
+        "data_privacy"
       ],
       "jurisdictions": [
-        "us_federal"
-      ]
-    },
-    {
-      "id": "e21a64f36bab",
-      "title": "Securing Smart Speakers for Home Health Care: NIST Offers New Guidelines",
-      "summary": "Cybersecurity and privacy risks can threaten patient confidentiality.",
-      "url": "https://www.nist.gov/news-events/news/2025/12/securing-smart-speakers-home-health-care-nist-offers-new-guidelines",
-      "published": "2025-12-17",
-      "source": "NIST",
-      "source_url": "https://www.nist.gov",
-      "categories": [
-        "cybersecurity"
-      ],
-      "jurisdictions": [
-        "us_federal"
-      ]
-    },
-    {
-      "id": "579ec2c3e039",
-      "title": "Draft NIST Guidelines Rethink Cybersecurity for the AI Era",
-      "summary": "New guidelines can help an organization determine ways to incorporate AI into its operations while mitigating cybersecurity risks.",
-      "url": "https://www.nist.gov/news-events/news/2025/12/draft-nist-guidelines-rethink-cybersecurity-ai-era",
-      "published": "2025-12-16",
-      "source": "NIST",
-      "source_url": "https://www.nist.gov",
-      "categories": [
-        "cybersecurity"
-      ],
-      "jurisdictions": [
-        "us_federal"
+        "eu"
       ]
     }
   ]
