@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "last_updated": "2026-06-09",
+  "last_updated": "2026-06-10",
   "mappings": [
     {
       "regulation_id": "GDPR",
@@ -2718,6 +2718,1242 @@
       ],
       "mapped_controls": [
         "AC, IR, SI"
+      ]
+    },
+    {
+      "regulation_id": "SINGAPORE_PDPA",
+      "standard_id": "ISO27701",
+      "coverage_level": "full",
+      "notes": "ISO 27701 directly maps to PDPA obligations: consent management, data subject rights, DPO, breach notification, and cross-border transfer controls.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "SINGAPORE_PDPA",
+      "standard_id": "ISO27001",
+      "coverage_level": "substantial",
+      "notes": "ISO 27001 ISMS covers PDPA security obligations and DPO accountability requirements; consent and rights mechanisms require supplementation.",
+      "mapped_articles": [
+        "Secs 12-24"
+      ],
+      "mapped_controls": [
+        "A.5,A.9,A.16,A.18"
+      ]
+    },
+    {
+      "regulation_id": "SINGAPORE_PDPA",
+      "standard_id": "SOC2",
+      "coverage_level": "partial",
+      "notes": "SOC 2 Privacy criteria cover a subset of PDPA obligations; PDPC-specific requirements like DPO and 3-day notification not fully addressed.",
+      "mapped_articles": [
+        "Sec 26A"
+      ],
+      "mapped_controls": [
+        "P1-P8"
+      ]
+    },
+    {
+      "regulation_id": "JAPAN_APPI",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 maps to APPI's data handling rules, cross-border transfer provisions, and data subject rights. Japan's adequacy under GDPR facilitates alignment.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "JAPAN_APPI",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 addresses APPI security management obligations for personal information; rights management and third-party transfer records not covered.",
+      "mapped_articles": [
+        "Art 20-22"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16,A.18"
+      ]
+    },
+    {
+      "regulation_id": "INDIA_DPDPA",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 provides PIMS controls aligning with DPDPA Data Fiduciary obligations: consent management, purpose limitation, breach notification, DPO duties.",
+      "mapped_articles": [
+        "Secs 5-14"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "INDIA_DPDPA",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 ISMS covers DPDPA security safeguards obligation; Data Board-specific reporting and consent management require supplementation.",
+      "mapped_articles": [
+        "Sec 8"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16"
+      ]
+    },
+    {
+      "regulation_id": "INDIA_DPDPA",
+      "standard_id": "NIST_CSF",
+      "coverage_level": "partial",
+      "notes": "NIST CSF supports DPDPA security obligations; Identify and Protect functions are most directly relevant.",
+      "mapped_articles": [
+        "Sec 8"
+      ],
+      "mapped_controls": [
+        "ID,PR"
+      ]
+    },
+    {
+      "regulation_id": "SOUTH_KOREA_PIPA",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 maps to PIPA's privacy management obligations including consent, data minimisation, and cross-border transfer requirements.",
+      "mapped_articles": [
+        "Art 15-39"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "SOUTH_KOREA_PIPA",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 covers PIPA's technical and physical security measures; consent management and PIPC reporting require supplementation.",
+      "mapped_articles": [
+        "Art 29"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16"
+      ]
+    },
+    {
+      "regulation_id": "THAILAND_PDPA",
+      "standard_id": "ISO27701",
+      "coverage_level": "full",
+      "notes": "Thailand PDPA is GDPR-modelled; ISO 27701 provides comprehensive PIMS controls mapping to all key PDPA obligations.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "THAILAND_PDPA",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 covers PDPA security measures obligation; DPO appointment and consent records require additional controls.",
+      "mapped_articles": [
+        "Sec 37"
+      ],
+      "mapped_controls": [
+        "A.5,A.9,A.16"
+      ]
+    },
+    {
+      "regulation_id": "MALAYSIA_PDPA",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 maps to Malaysia PDPA's seven Data Protection Principles: notice, choice, disclosure, security, retention, data integrity, and access.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "MALAYSIA_PDPA",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 covers the security principle of PDPA and breach notification requirements under 2024 amendment.",
+      "mapped_articles": [
+        "Sec 9"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16"
+      ]
+    },
+    {
+      "regulation_id": "PHILIPPINES_DPA",
+      "standard_id": "ISO27701",
+      "coverage_level": "full",
+      "notes": "Philippines DPA aligns closely with GDPR and ISO 27701 provides comprehensive PIMS controls for all DPA obligations including DPO registration.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "PHILIPPINES_DPA",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 addresses DPA security obligations; NPC-specific requirements like mandatory DPO registration require supplementation.",
+      "mapped_articles": [
+        "Sec 20"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16,A.18"
+      ]
+    },
+    {
+      "regulation_id": "VIETNAM_PDPD",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 maps to PDPD consent requirements, data subject rights, and cross-border transfer obligations; data localisation requires additional controls.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "VIETNAM_PDPD",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 covers PDPD security safeguards; Vietnam-specific A05 registration and localisation requirements are not addressed.",
+      "mapped_articles": [
+        "Art 26-28"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16"
+      ]
+    },
+    {
+      "regulation_id": "INDONESIA_PDP",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 maps to Indonesia PDP Law: controller obligations, consent, data subject rights, breach notification, and cross-border transfer requirements.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "INDONESIA_PDP",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 covers PDP Law security requirements; DPO appointment and cross-border transfer assessment require supplementation.",
+      "mapped_articles": [
+        "Art 35-39"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16"
+      ]
+    },
+    {
+      "regulation_id": "HONG_KONG_PDPO",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 maps to PDPO's six Data Protection Principles and the 2021 anti-doxxing amendments.",
+      "mapped_articles": [
+        "DPPs 1-6"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "HONG_KONG_PDPO",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 addresses DPP 4 security requirements; direct marketing opt-in and doxxing controls require additional measures.",
+      "mapped_articles": [
+        "DPP 4"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16"
+      ]
+    },
+    {
+      "regulation_id": "NZ_PRIVACY_ACT",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 maps to NZ Privacy Act's 13 Information Privacy Principles and mandatory breach notification obligations.",
+      "mapped_articles": [
+        "IPPs 1-13"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "NZ_PRIVACY_ACT",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 covers IPP 5 (security) and breach notification technical requirements.",
+      "mapped_articles": [
+        "IPP 5"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16"
+      ]
+    },
+    {
+      "regulation_id": "NZ_PRIVACY_ACT",
+      "standard_id": "SOC2",
+      "coverage_level": "partial",
+      "notes": "SOC 2 Privacy criteria align with NZ Privacy Act IPPs for data subject access and security.",
+      "mapped_articles": [
+        "IPPs 5,6"
+      ],
+      "mapped_controls": [
+        "P1-P8"
+      ]
+    },
+    {
+      "regulation_id": "TURKEY_KVKK",
+      "standard_id": "ISO27701",
+      "coverage_level": "substantial",
+      "notes": "ISO 27701 maps to KVKK consent requirements, data subject rights, and security obligations aligned with GDPR.",
+      "mapped_articles": [
+        "Art 5-11"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "TURKEY_KVKK",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 covers KVKK technical and administrative security measures; VERBIS registration not addressed.",
+      "mapped_articles": [
+        "Art 12"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16,A.18"
+      ]
+    },
+    {
+      "regulation_id": "SWITZERLAND_FADP",
+      "standard_id": "ISO27701",
+      "coverage_level": "full",
+      "notes": "Switzerland FADP aligns with GDPR; ISO 27701 provides comprehensive PIMS controls satisfying all nFADP obligations.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "All PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "SWITZERLAND_FADP",
+      "standard_id": "ISO27001",
+      "coverage_level": "substantial",
+      "notes": "ISO 27001 supports nFADP privacy by design, DPIA, and security requirements; FDPIC-specific reporting needs supplementation.",
+      "mapped_articles": [
+        "Art 6-10,23-25"
+      ],
+      "mapped_controls": [
+        "A.5,A.9,A.12,A.16,A.18"
+      ]
+    },
+    {
+      "regulation_id": "RUSSIA_152FZ",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 covers 152-FZ security level requirements; data localisation and Roskomnadzor registration are Russia-specific.",
+      "mapped_articles": [
+        "Art 19"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16"
+      ]
+    },
+    {
+      "regulation_id": "RUSSIA_152FZ",
+      "standard_id": "ISO27701",
+      "coverage_level": "partial",
+      "notes": "ISO 27701 covers consent and rights requirements of 152-FZ; data localisation requirement on Russian servers is not addressed.",
+      "mapped_articles": [
+        "Art 5-9"
+      ],
+      "mapped_controls": [
+        "PIMS controls subset"
+      ]
+    },
+    {
+      "regulation_id": "UKRAINE_LPPD",
+      "standard_id": "ISO27701",
+      "coverage_level": "partial",
+      "notes": "ISO 27701 maps to Ukraine LPPD consent and data subject rights obligations aligned with Council of Europe Convention 108.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "PIMS controls"
+      ]
+    },
+    {
+      "regulation_id": "UKRAINE_LPPD",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 covers LPPD security measures and database protection requirements.",
+      "mapped_articles": [
+        "Art 24"
+      ],
+      "mapped_controls": [
+        "A.9,A.12,A.16"
+      ]
+    },
+    {
+      "regulation_id": "US_FCPA",
+      "standard_id": "COBIT",
+      "coverage_level": "substantial",
+      "notes": "COBIT 2019 governance objectives (MEA01, APO12, APO11) address FCPA books-and-records obligations and internal controls framework.",
+      "mapped_articles": [
+        "Accounting provisions"
+      ],
+      "mapped_controls": [
+        "MEA01,APO12"
+      ]
+    },
+    {
+      "regulation_id": "US_FCPA",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 risk management provides the bribery risk assessment framework required by effective FCPA compliance programmes.",
+      "mapped_articles": [
+        "Anti-bribery provisions"
+      ],
+      "mapped_controls": [
+        "Risk assessment process"
+      ]
+    },
+    {
+      "regulation_id": "US_FCPA",
+      "standard_id": "ISO27001",
+      "coverage_level": "minimal",
+      "notes": "ISO 27001 contributes to FCPA books-and-records controls via access management and audit logging for financial systems.",
+      "mapped_articles": [
+        "Accounting provisions"
+      ],
+      "mapped_controls": [
+        "A.9,A.12"
+      ]
+    },
+    {
+      "regulation_id": "UK_BRIBERY_ACT",
+      "standard_id": "ISO31000",
+      "coverage_level": "substantial",
+      "notes": "ISO 31000 underpins the bribery risk mapping and third-party due diligence processes required for UK Bribery Act adequate procedures defence.",
+      "mapped_articles": [
+        "Sec 7 adequate procedures"
+      ],
+      "mapped_controls": [
+        "Risk identification,assessment,treatment"
+      ]
+    },
+    {
+      "regulation_id": "UK_BRIBERY_ACT",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance framework supports the internal controls and management oversight required by the adequate procedures defence.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "MEA01,APO11,APO12"
+      ]
+    },
+    {
+      "regulation_id": "FRANCE_SAPIN2",
+      "standard_id": "ISO31000",
+      "coverage_level": "substantial",
+      "notes": "ISO 31000 risk management directly supports Sapin II's mandatory risk mapping pillar.",
+      "mapped_articles": [
+        "Sapin II Art 17 pillars"
+      ],
+      "mapped_controls": [
+        "Risk identification,assessment"
+      ]
+    },
+    {
+      "regulation_id": "FRANCE_SAPIN2",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance and assurance objectives address Sapin II training, internal audit, and management oversight pillars.",
+      "mapped_articles": [
+        "Art 17"
+      ],
+      "mapped_controls": [
+        "APO11,MEA01,MEA02"
+      ]
+    },
+    {
+      "regulation_id": "MALAYSIA_MACC",
+      "standard_id": "ISO31000",
+      "coverage_level": "substantial",
+      "notes": "ISO 31000 supports MACC Section 17A risk assessment pillar of T.R.U.S.T. adequate procedures framework.",
+      "mapped_articles": [
+        "Sec 17A(4)"
+      ],
+      "mapped_controls": [
+        "Risk assessment process"
+      ]
+    },
+    {
+      "regulation_id": "MALAYSIA_MACC",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance objectives support top-level commitment and systematic review pillars of T.R.U.S.T. framework.",
+      "mapped_articles": [
+        "All T.R.U.S.T. pillars"
+      ],
+      "mapped_controls": [
+        "EDM01,APO11,MEA02"
+      ]
+    },
+    {
+      "regulation_id": "ITALY_D231",
+      "standard_id": "ISO31000",
+      "coverage_level": "substantial",
+      "notes": "ISO 31000 underpins the risk mapping component of the Modello 231 — the primary tool for identifying predicate offence exposure.",
+      "mapped_articles": [
+        "Art 6-7 Modello 231"
+      ],
+      "mapped_controls": [
+        "Risk identification,assessment"
+      ]
+    },
+    {
+      "regulation_id": "ITALY_D231",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance objectives support the OdV supervisory board monitoring, internal audit, and documentation requirements of Decree 231.",
+      "mapped_articles": [
+        "Art 6"
+      ],
+      "mapped_controls": [
+        "MEA01,MEA02,APO11"
+      ]
+    },
+    {
+      "regulation_id": "BRAZIL_CCA",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 supports the risk mapping component of Brazil's integrity programme required by the Clean Company Act regulations.",
+      "mapped_articles": [
+        "Decree 8.420/2015 Art 41-43"
+      ],
+      "mapped_controls": [
+        "Risk assessment process"
+      ]
+    },
+    {
+      "regulation_id": "BRAZIL_CCA",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance framework supports CCA internal controls and audit requirements.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "MEA01,APO11"
+      ]
+    },
+    {
+      "regulation_id": "CANADA_CFPOA",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 supports bribery risk assessment required by an effective CFPOA compliance programme.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "Risk assessment process"
+      ]
+    },
+    {
+      "regulation_id": "CANADA_CFPOA",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance framework supports internal controls and financial records integrity requirements under CFPOA.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "MEA01,APO11"
+      ]
+    },
+    {
+      "regulation_id": "MEXICO_GLAR",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 risk assessment framework supports the corporate integrity programme risk mapping required by GLAR.",
+      "mapped_articles": [
+        "Art 25 Integrity Programme"
+      ],
+      "mapped_controls": [
+        "Risk assessment process"
+      ]
+    },
+    {
+      "regulation_id": "MEXICO_GLAR",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance supports GLAR compliance officer accountability, monitoring, and audit requirements.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "MEA01,APO11"
+      ]
+    },
+    {
+      "regulation_id": "SA_PRECCA",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 supports corruption risk assessment required for effective PRECCA compliance.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "Risk assessment process"
+      ]
+    },
+    {
+      "regulation_id": "SA_PRECCA",
+      "standard_id": "COBIT",
+      "coverage_level": "minimal",
+      "notes": "COBIT governance supports internal controls and duty-to-report compliance mechanisms.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "MEA01"
+      ]
+    },
+    {
+      "regulation_id": "SINGAPORE_PCA",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 risk management supports anti-corruption risk assessment required by PCA compliance programmes.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "Risk assessment process"
+      ]
+    },
+    {
+      "regulation_id": "SINGAPORE_PCA",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance framework supports PCA compliance monitoring, gift registers, and internal controls.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "MEA01,APO11"
+      ]
+    },
+    {
+      "regulation_id": "EU_CSRD",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 management system principles support CSRD's documented processes, management review, and improvement requirements.",
+      "mapped_articles": [
+        "ESRS G1,G2"
+      ],
+      "mapped_controls": [
+        "Quality management system"
+      ]
+    },
+    {
+      "regulation_id": "EU_CSRD",
+      "standard_id": "ISO31000",
+      "coverage_level": "substantial",
+      "notes": "ISO 31000 directly supports CSRD's double materiality assessment and sustainability risk management disclosures.",
+      "mapped_articles": [
+        "ESRS 1 material impacts"
+      ],
+      "mapped_controls": [
+        "Risk identification,assessment"
+      ]
+    },
+    {
+      "regulation_id": "EU_CSRD",
+      "standard_id": "ISO27001",
+      "coverage_level": "minimal",
+      "notes": "ISO 27001 contributes to CSRD cybersecurity and data governance disclosures under ESRS G1.",
+      "mapped_articles": [
+        "ESRS G1"
+      ],
+      "mapped_controls": [
+        "A.18"
+      ]
+    },
+    {
+      "regulation_id": "EU_CSRD",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance objectives support CSRD board oversight, governance structure, and accountability disclosures.",
+      "mapped_articles": [
+        "ESRS G1,G2"
+      ],
+      "mapped_controls": [
+        "EDM01,APO11,MEA02"
+      ]
+    },
+    {
+      "regulation_id": "EU_CSDDD",
+      "standard_id": "ISO31000",
+      "coverage_level": "substantial",
+      "notes": "ISO 31000 is the primary risk management standard supporting CSDDD's due diligence risk identification and assessment obligations.",
+      "mapped_articles": [
+        "Art 8-9"
+      ],
+      "mapped_controls": [
+        "Risk identification,assessment,treatment"
+      ]
+    },
+    {
+      "regulation_id": "EU_CSDDD",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 process management principles support CSDDD's documented due diligence processes and stakeholder engagement.",
+      "mapped_articles": [
+        "Art 5-10"
+      ],
+      "mapped_controls": [
+        "Quality management process"
+      ]
+    },
+    {
+      "regulation_id": "EU_CSDDD",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance objectives support CSDDD director accountability and management oversight requirements.",
+      "mapped_articles": [
+        "Art 22"
+      ],
+      "mapped_controls": [
+        "EDM01,APO12"
+      ]
+    },
+    {
+      "regulation_id": "GERMANY_LKSG",
+      "standard_id": "ISO31000",
+      "coverage_level": "full",
+      "notes": "ISO 31000 is explicitly referenced in LkSG implementation guidance; risk identification, assessment, and treatment directly map to LkSG due diligence steps.",
+      "mapped_articles": [
+        "Secs 4-7"
+      ],
+      "mapped_controls": [
+        "Risk identification,assessment,treatment"
+      ]
+    },
+    {
+      "regulation_id": "GERMANY_LKSG",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 process management supports LkSG's supplier evaluation, corrective action, and documented procedures.",
+      "mapped_articles": [
+        "Secs 4-9"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "GERMANY_LKSG",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance framework supports LkSG reporting, management oversight, and board accountability.",
+      "mapped_articles": [
+        "Sec 10"
+      ],
+      "mapped_controls": [
+        "MEA01,APO11"
+      ]
+    },
+    {
+      "regulation_id": "UK_MODERN_SLAVERY",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 process management and supplier evaluation principles support Modern Slavery Act due diligence and transparency statement.",
+      "mapped_articles": [
+        "Sec 54"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "UK_MODERN_SLAVERY",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 risk assessment supports supply chain risk identification required by the Modern Slavery Act compliance framework.",
+      "mapped_articles": [
+        "Sec 54"
+      ],
+      "mapped_controls": [
+        "Risk assessment"
+      ]
+    },
+    {
+      "regulation_id": "AUSTRALIA_MODERN_SLAVERY",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 supplier evaluation and process management support the due diligence and effectiveness measurement criteria of the Modern Slavery Act.",
+      "mapped_articles": [
+        "Mandatory criteria"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "AUSTRALIA_MODERN_SLAVERY",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 risk assessment framework supports modern slavery risk identification across supply chain tiers.",
+      "mapped_articles": [
+        "Mandatory criteria 3-4"
+      ],
+      "mapped_controls": [
+        "Risk assessment"
+      ]
+    },
+    {
+      "regulation_id": "CANADA_FORCED_LABOUR",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 process management and supplier evaluation support the due diligence reporting requirements of S-211.",
+      "mapped_articles": [
+        "Sec 11"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "CANADA_FORCED_LABOUR",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 risk assessment supports identification of forced labour risks across supply chains as required by S-211.",
+      "mapped_articles": [
+        "Sec 11"
+      ],
+      "mapped_controls": [
+        "Risk assessment"
+      ]
+    },
+    {
+      "regulation_id": "SPAIN_WHISTLEBLOWING",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 A.6.1 and A.16 controls support the confidentiality protections required for whistleblowing channels.",
+      "mapped_articles": [
+        "Art 5-7"
+      ],
+      "mapped_controls": [
+        "A.6.1,A.16"
+      ]
+    },
+    {
+      "regulation_id": "SPAIN_WHISTLEBLOWING",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance objectives support the management oversight and audit requirements for whistleblowing programmes.",
+      "mapped_articles": [
+        "Art 8-12"
+      ],
+      "mapped_controls": [
+        "APO11,MEA02"
+      ]
+    },
+    {
+      "regulation_id": "CHINA_CSL",
+      "standard_id": "ISO27001",
+      "coverage_level": "substantial",
+      "notes": "ISO 27001 ISMS aligns with MLPS 2.0 requirements; CSL-specific CII data localisation requires additional controls.",
+      "mapped_articles": [
+        "Art 10-24"
+      ],
+      "mapped_controls": [
+        "A.5-A.18"
+      ]
+    },
+    {
+      "regulation_id": "CHINA_CSL",
+      "standard_id": "NIST_CSF",
+      "coverage_level": "substantial",
+      "notes": "NIST CSF five functions map to CSL network security requirements; CAC-specific obligations require supplementation.",
+      "mapped_articles": [
+        "Art 21-23"
+      ],
+      "mapped_controls": [
+        "ID,PR,DE,RS"
+      ]
+    },
+    {
+      "regulation_id": "CHINA_CSL",
+      "standard_id": "CIS_CONTROLS",
+      "coverage_level": "partial",
+      "notes": "CIS Controls v8 technical controls address CSL network security measures; China-specific MLPS grading requires local standards.",
+      "mapped_articles": [
+        "Art 21"
+      ],
+      "mapped_controls": [
+        "CIS 1-16"
+      ]
+    },
+    {
+      "regulation_id": "CHINA_CSL",
+      "standard_id": "NIST_800_53",
+      "coverage_level": "partial",
+      "notes": "NIST 800-53 detailed controls address CSL security requirements; CII data localisation and real-name registration are China-specific.",
+      "mapped_articles": [
+        "Art 21-23"
+      ],
+      "mapped_controls": [
+        "AC,CA,IR,SI,SC"
+      ]
+    },
+    {
+      "regulation_id": "CHINA_DSL",
+      "standard_id": "ISO27001",
+      "coverage_level": "partial",
+      "notes": "ISO 27001 supports DSL's data classification and security management requirements; Important Data catalogue and cross-border assessment are China-specific.",
+      "mapped_articles": [
+        "Art 21-27"
+      ],
+      "mapped_controls": [
+        "A.8,A.12,A.16"
+      ]
+    },
+    {
+      "regulation_id": "CHINA_DSL",
+      "standard_id": "NIST_CSF",
+      "coverage_level": "partial",
+      "notes": "NIST CSF Identify function (asset and risk management) supports DSL data classification and risk assessment requirements.",
+      "mapped_articles": [
+        "Art 21-25"
+      ],
+      "mapped_controls": [
+        "ID.AM,ID.RA"
+      ]
+    },
+    {
+      "regulation_id": "CHINA_DSL",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 risk management framework supports DSL's data security risk assessment and classification requirements.",
+      "mapped_articles": [
+        "Art 21"
+      ],
+      "mapped_controls": [
+        "Risk assessment process"
+      ]
+    },
+    {
+      "regulation_id": "SINGAPORE_CSA",
+      "standard_id": "ISO27001",
+      "coverage_level": "substantial",
+      "notes": "ISO 27001 provides the ISMS baseline required by Singapore CSA for CII operators and cybersecurity service providers.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "A.5-A.18"
+      ]
+    },
+    {
+      "regulation_id": "SINGAPORE_CSA",
+      "standard_id": "NIST_CSF",
+      "coverage_level": "substantial",
+      "notes": "NIST CSF aligns with CSA cybersecurity framework for CII risk management; five functions map to CSA codes of practice.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "ID,PR,DE,RS,RC"
+      ]
+    },
+    {
+      "regulation_id": "SINGAPORE_CSA",
+      "standard_id": "CIS_CONTROLS",
+      "coverage_level": "partial",
+      "notes": "CIS Controls v8 technical controls support CSA cybersecurity requirements for CII owners.",
+      "mapped_articles": [
+        "CII requirements"
+      ],
+      "mapped_controls": [
+        "CIS 1-18"
+      ]
+    },
+    {
+      "regulation_id": "CHINA_ECL",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance objectives support ECL internal compliance programme, due diligence, and recordkeeping requirements.",
+      "mapped_articles": [
+        "Art 31-36"
+      ],
+      "mapped_controls": [
+        "APO11,MEA01"
+      ]
+    },
+    {
+      "regulation_id": "CHINA_ECL",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 supports the export control risk assessment required by effective ECL compliance programmes.",
+      "mapped_articles": [
+        "Art 7"
+      ],
+      "mapped_controls": [
+        "Risk assessment process"
+      ]
+    },
+    {
+      "regulation_id": "US_UFLPA",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 supplier evaluation and audit processes directly support UFLPA supply chain due diligence and traceability requirements.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "US_UFLPA",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 supply chain risk assessment framework supports UFLPA due diligence and risk identification obligations.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "Risk assessment"
+      ]
+    },
+    {
+      "regulation_id": "EU_FUELEU",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 documentation and management review principles support FuelEU compliance management and annual reporting requirements.",
+      "mapped_articles": [
+        "Art 5-6"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "EU_FUELEU",
+      "standard_id": "ISO31000",
+      "coverage_level": "minimal",
+      "notes": "ISO 31000 risk management supports FuelEU transition risk planning for GHG intensity reduction targets.",
+      "mapped_articles": [
+        "Art 4"
+      ],
+      "mapped_controls": [
+        "Risk assessment"
+      ]
+    },
+    {
+      "regulation_id": "EU_ICS2",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 process controls and data accuracy requirements support ICS2 ENS submission quality and compliance.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "EU_ICS2",
+      "standard_id": "ISO27001",
+      "coverage_level": "minimal",
+      "notes": "ISO 27001 supports security of ICS2 ENS data transmission systems and trader portal access controls.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "A.9,A.12"
+      ]
+    },
+    {
+      "regulation_id": "US_OSRA",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance and service management objectives support OSRA compliance monitoring, tariff publication, and complaint handling.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "APO11,MEA01"
+      ]
+    },
+    {
+      "regulation_id": "US_OSRA",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 process management and customer satisfaction principles support OSRA service delivery and dispute resolution requirements.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "US_CTA",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance objectives support CTA's beneficial ownership recordkeeping and accuracy requirements.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "APO11,MEA01"
+      ]
+    },
+    {
+      "regulation_id": "US_CTA",
+      "standard_id": "ISO27001",
+      "coverage_level": "minimal",
+      "notes": "ISO 27001 access controls and data accuracy requirements support CTA's accurate beneficial ownership data maintenance.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "A.9,A.18"
+      ]
+    },
+    {
+      "regulation_id": "BRAZIL_CVM193",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 management system and documented processes support CVM 193 sustainability reporting quality and governance.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "BRAZIL_CVM193",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 supports the climate and sustainability risk assessment required by IFRS S1/S2 disclosures.",
+      "mapped_articles": [
+        "IFRS S1"
+      ],
+      "mapped_controls": [
+        "Risk assessment"
+      ]
+    },
+    {
+      "regulation_id": "BRAZIL_CVM193",
+      "standard_id": "COBIT",
+      "coverage_level": "partial",
+      "notes": "COBIT governance objectives support board oversight and governance disclosures required by CVM 193.",
+      "mapped_articles": [
+        "IFRS S1 Governance"
+      ],
+      "mapped_controls": [
+        "EDM01,MEA02"
+      ]
+    },
+    {
+      "regulation_id": "IMO_HKC",
+      "standard_id": "ISO9001",
+      "coverage_level": "substantial",
+      "notes": "ISO 9001 management system and documented procedures map closely to Ship Recycling Facility Plan (SRFP) and Inventory of Hazardous Materials requirements.",
+      "mapped_articles": [
+        "All"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "IMO_HKC",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 risk management supports the hazard identification and risk assessment components of the Ship Recycling Facility Plan.",
+      "mapped_articles": [
+        "Annex 2"
+      ],
+      "mapped_controls": [
+        "Risk assessment"
+      ]
+    },
+    {
+      "regulation_id": "SOUTH_KOREA_SAPA",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 process management and continuous improvement principles support SAPA safety management documentation and review requirements.",
+      "mapped_articles": [
+        "Art 4-5"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "SOUTH_KOREA_SAPA",
+      "standard_id": "ISO31000",
+      "coverage_level": "substantial",
+      "notes": "ISO 31000 risk management framework directly supports SAPA's mandatory workplace risk analysis and safety management plans.",
+      "mapped_articles": [
+        "Art 4"
+      ],
+      "mapped_controls": [
+        "Risk identification,assessment,treatment"
+      ]
+    },
+    {
+      "regulation_id": "UK_ENVIRONMENT_ACT",
+      "standard_id": "ISO9001",
+      "coverage_level": "partial",
+      "notes": "ISO 9001 supplier evaluation and process controls support UK Environment Act's forest risk commodity due diligence requirements.",
+      "mapped_articles": [
+        "Part 3"
+      ],
+      "mapped_controls": [
+        "Quality management"
+      ]
+    },
+    {
+      "regulation_id": "UK_ENVIRONMENT_ACT",
+      "standard_id": "ISO31000",
+      "coverage_level": "partial",
+      "notes": "ISO 31000 risk assessment supports the environmental risk identification required by the UK Environment Act's due diligence obligations.",
+      "mapped_articles": [
+        "Part 3"
+      ],
+      "mapped_controls": [
+        "Risk assessment"
       ]
     }
   ]

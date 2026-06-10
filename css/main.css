@@ -53,6 +53,12 @@
   --domain-labor-bg: #ffedd5;
   --domain-critical_infrastructure-bg: #f1f5f9;
   --domain-maritime-bg: #cffafe;
+  --domain-anti_corruption: #b91c1c;
+  --domain-anti_corruption-bg: #fee2e2;
+  --domain-esg: #15803d;
+  --domain-esg-bg: #dcfce7;
+  --domain-customs_trade: #92400e;
+  --domain-customs_trade-bg: #fef3c7;
 
   /* Spacing */
   --space-1: 4px;
