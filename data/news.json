@@ -1,9 +1,24 @@
 {
-  "last_updated": "2026-06-10",
+  "last_updated": "2026-06-11",
   "items": [
     {
+      "id": "ca3c1833c457",
+      "title": "EDPB meets with EU Commissioner McGrath and adopts common data breach notification template",
+      "summary": "Brussels, 10 June – During its latest plenary, the EDPB met with Michael McGrath, Commissioner for Democracy, Justice, the Rule of Law and Consumer Protection. In addition, the Board has adopted a common data breach notification template . The Board held a meeting with Commission…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-meets-eu-commissioner-mcgrath-and-adopts-common-data-breach-notification_en",
+      "published": "2026-06-10",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ]
+    },
+    {
       "id": "9f1a110c1c18",
-      "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Consultation Report",
+      "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Consultation report",
       "summary": "The FSB has developed sound practices to help all types of financial institutions navigate benefits and risks responsibly as they adopt AI.",
       "url": "https://www.fsb.org/2026/06/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-consultation-report/",
       "published": "2026-06-10",
@@ -891,21 +906,6 @@
       "summary": "Brussels, 23 March - On 17 March 2026, the EDPB conference “Cross-regulatory interplay and cooperation in the EU: a data protection perspective” took place in Brussels. The event showcased high-level discussions, featuring contributions from representatives of key EU institutions…",
       "url": "https://www.edpb.europa.eu/news/news/2026/edpb-conference-cross-regulatory-cooperation-what-we-learned_en",
       "published": "2026-03-24",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ]
-    },
-    {
-      "id": "c37fe7ecccaa",
-      "title": "EDPB and EDPS support strengthening EU’s cybersecurity and easing compliance while protecting individuals’ personal data",
-      "summary": "Brussels, 19 March 2026 – The European Data Protection Board (EDPB) and the European Data Protection Supervisor (EDPS) have adopted a Joint Opinion on the European Commission’s proposal for a Cybersecurity Act 2 (CSA2) and the proposal on amendments to the Network and Information…",
-      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-and-edps-support-strengthening-eus-cybersecurity-and-easing-compliance-while_en",
-      "published": "2026-03-19",
       "source": "EDPB",
       "source_url": "https://www.edpb.europa.eu",
       "categories": [
