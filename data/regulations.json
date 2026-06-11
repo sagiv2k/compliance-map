@@ -913,7 +913,7 @@
       "status": "active",
       "effective_date": "2021-05-12",
       "authority": "U.S. Office of Management and Budget (OMB), CISA, NIST",
-      "url": "https://www.federalregister.gov/executive-order/14028",
+      "url": "https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity",
       "summary": "U.S. presidential executive order mandating sweeping cybersecurity improvements across the federal government, catalyzing Zero Trust architecture, SBOM requirements, and software supply chain security.",
       "key_requirements": [
         "Federal agencies must adopt Zero Trust Architecture (ZTA) following NIST SP 800-207",
@@ -956,7 +956,7 @@
       "status": "active",
       "effective_date": "2021-11-01",
       "authority": "Cyberspace Administration of China (CAC)",
-      "url": "http://www.npc.gov.cn/npc/c30834/202108/a8c4e3672c74491a80b53a172bb753fe.shtml",
+      "url": "https://www.gov.cn/xinwen/2021-08/20/content_5632486.htm",
       "summary": "China's first comprehensive personal information protection law, drawing inspiration from the GDPR while incorporating distinctive Chinese characteristics. Imposes strict cross-border data transfer restrictions and data localization requirements.",
       "key_requirements": [
         {
@@ -1028,7 +1028,7 @@
       "status": "active",
       "effective_date": "2020-09-18",
       "authority": "Autoridade Nacional de Protecao de Dados (ANPD)",
-      "url": "https://www.gov.br/secretariageral/pt-br/legislacao/lei/2018/2018-lei-13709",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
       "summary": "Brazil's comprehensive data protection law, heavily influenced by the GDPR. Applies to any processing of personal data performed in Brazil or directed at individuals in Brazil.",
       "key_requirements": [
         {
@@ -1221,7 +1221,7 @@
       "status": "active",
       "effective_date": "2000-08-07",
       "authority": "Israel Money Laundering and Terror Financing Prohibition Authority (IMPA)",
-      "url": "https://www.impa.gov.il/Eng/Pages/impa_about.aspx",
+      "url": "https://www.gov.il/en/departments/ministry_of_justice",
       "summary": "Israeli law prohibiting money laundering and the financing of terrorism, requiring financial institutions, money service businesses, insurance companies, attorneys, and accountants to implement AML/CFT programs. Israel is a FATF member and aligns its regime with FATF recommendations.",
       "key_requirements": [
         "Customer due diligence (CDD/KYC) for all customers prior to establishing a business relationship",
@@ -1897,7 +1897,7 @@
       "status": "active",
       "effective_date": "2012-10-17",
       "authority": "Superintendencia de Industria y Comercio (SIC)",
-      "url": "https://www.sic.gov.co/datos-personales",
+      "url": "https://www.sic.gov.co/proteccion-de-datos-personales",
       "summary": "Colombia's comprehensive data protection law guaranteeing the fundamental constitutional right to habeas data. Requires prior express authorization (consent) as the primary lawful basis. The SIC supervises compliance.",
       "key_requirements": [
         "Obtain prior express authorization (consent) from data subjects before processing personal data",
@@ -2032,7 +2032,7 @@
       "status": "active",
       "effective_date": "2021-05-26",
       "authority": "Superintendencia de Proteccion de Datos Personales",
-      "url": "https://www.protecciondatos.gob.ec/",
+      "url": "https://www.supercias.gob.ec/",
       "summary": "Ecuador's comprehensive data protection law closely modeled on the GDPR, establishing rights for data subjects and obligations for controllers and processors. Applies to any organization processing personal data of individuals located in Ecuador.",
       "key_requirements": [
         "Lawful basis for processing required - consent, contractual necessity, legitimate interests, legal obligation",
@@ -2123,7 +2123,7 @@
       "status": "active",
       "effective_date": "2023-06-09",
       "authority": "Federal Trade Commission (FTC), federal banking regulators (OCC, FDIC, Federal Reserve)",
-      "url": "https://www.ftc.gov/tips-advice/business-center/guidance/financial-institutions-customer-information-complying-safeguards",
+      "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know",
       "summary": "Federal law requiring financial institutions to protect the privacy and security of customers' non-public personal financial information. The FTC's updated 2023 Safeguards Rule strengthened security requirements for non-banking financial institutions including auto dealers, mortgage brokers, payday lenders, tax preparers, and financial advisors.",
       "key_requirements": [
         "Designate a qualified individual to oversee the information security program",
@@ -2214,7 +2214,7 @@
       "status": "active",
       "effective_date": "2014-12-18",
       "authority": "CISA, Office of Management and Budget (OMB), NIST, Agency Inspector Generals",
-      "url": "https://www.cisa.gov/fisma",
+      "url": "https://www.cisa.gov/topics/cyber-threats-and-advisories/federal-information-security-modernization-act",
       "summary": "U.S. federal law requiring all federal agencies and their contractors to develop, document, and implement information security programs protecting government information and systems. Mandates use of the NIST Risk Management Framework.",
       "key_requirements": [
         "Develop an agency-wide information security program using the NIST Risk Management Framework (RMF)",
@@ -2576,7 +2576,7 @@
       "status": "active",
       "effective_date": "2018-02-22",
       "authority": "Office of the Australian Information Commissioner (OAIC)",
-      "url": "https://www.oaic.gov.au/privacy/the-privacy-act",
+      "url": "https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act",
       "summary": "Australia's primary privacy law applying to Australian Government agencies and most private-sector organizations with annual turnover over AUD 3 million. The 13 Australian Privacy Principles (APPs) govern all aspects of personal information handling. The Notifiable Data Breaches (NDB) Scheme requires notification of eligible breaches.",
       "key_requirements": [
         {
@@ -3544,7 +3544,7 @@
       "status": "active",
       "effective_date": "2014-06-01",
       "authority": "Bank of Israel — Banking Supervision Department",
-      "url": "https://www.boi.org.il/en/banking-supervision/supervised-entities/banking-corporations-and-credit-card-companies/technology-information-and-cyber/",
+      "url": "https://www.boi.org.il/en/banking-supervision/supervised-entities/banking-corporations-and-credit-card-companies/",
       "summary": "Bank of Israel Directive 357 on Technology and Information Systems Risk Management establishes binding cybersecurity and IT governance requirements for all Israeli banking corporations. It mandates risk management frameworks covering IT systems, cyber defense, business continuity, and outsourcing of technology services including cloud.",
       "key_requirements": [
         "Establish a board-approved technology and cyber risk management policy",
@@ -3728,7 +3728,7 @@
       "status": "active",
       "effective_date": "2014-07-02",
       "authority": "Personal Data Protection Commission (PDPC)",
-      "url": "https://www.pdpc.gov.sg/Overview-of-PDPA/The-Legislation/Personal-Data-Protection-Act",
+      "url": "https://www.pdpc.gov.sg/about/the-legislation/pdpa-overview",
       "summary": "Singapore's primary data protection law governing the collection, use, disclosure, and care of personal data. Major 2020 amendments introduced mandatory breach notification within 3 days for significant breaches, data portability, enhanced consent exceptions, and increased financial penalties up to 10% of annual turnover.",
       "key_requirements": [
         {
@@ -4100,7 +4100,7 @@
       "status": "active",
       "effective_date": "2023-07-01",
       "authority": "Ministry of Public Security (MPS) — A05 Department",
-      "url": "https://dataprotection.gov.vn/",
+      "url": "https://bkhcn.gov.vn/",
       "summary": "Vietnam's first comprehensive personal data protection regulation, effective July 2023. Introduces broad data subject rights, consent requirements, data transfer restrictions, and a data localisation obligation for sensitive data. Foreign companies processing Vietnamese citizens' data must appoint a local representative and register with the Ministry of Public Security.",
       "key_requirements": [
         "Obtain clear, voluntary, and specific consent before processing personal data",
@@ -4145,7 +4145,7 @@
       "status": "active",
       "effective_date": "2024-10-17",
       "authority": "Ministry of Communication and Informatics (Kominfo) / Personal Data Protection Agency",
-      "url": "https://www.kominfo.go.id/",
+      "url": "https://komdigi.go.id/",
       "summary": "Indonesia's Personal Data Protection Law (Law No. 27/2022) passed in October 2022, with full enforcement from October 2024 after a 2-year transition. GDPR-influenced, it establishes data subject rights, controller and processor obligations, breach notification, international transfer rules, and a dedicated Personal Data Protection Agency.",
       "key_requirements": [
         "Process personal data only with consent or other lawful basis",
@@ -4325,7 +4325,7 @@
       "status": "active",
       "effective_date": "2023-09-01",
       "authority": "Federal Data Protection and Information Commissioner (FDPIC)",
-      "url": "https://www.edoeb.admin.ch/edoeb/en/home/the-fdpic/tasks/data-protection.html",
+      "url": "https://www.edoeb.admin.ch/edoeb/en/home.html",
       "summary": "Switzerland's revised Federal Act on Data Protection (nFADP, revDSG), effective September 2023, modernises Swiss data protection law to align with GDPR standards while maintaining Swiss-specific elements. Introduces privacy by design and default, mandatory breach notification, data protection impact assessments, and enhanced individual rights.",
       "key_requirements": [
         "Process personal data lawfully, in good faith, and proportionately to the declared purpose",
@@ -4533,7 +4533,7 @@
       "status": "active",
       "effective_date": "2011-07-01",
       "authority": "Serious Fraud Office (SFO) and Crown Prosecution Service (CPS)",
-      "url": "https://www.justice.gov.uk/legislation/bribery",
+      "url": "https://www.gov.uk/government/publications/bribery-act-2010-guidance",
       "summary": "The UK Bribery Act 2010 is one of the world's strictest anti-bribery laws. It criminalises active and passive bribery, bribery of foreign public officials, and — uniquely — the failure of commercial organisations to prevent bribery by associated persons. The 'adequate procedures' defence requires organisations to implement genuine anti-bribery controls.",
       "key_requirements": [
         {
@@ -4771,7 +4771,7 @@
       "status": "active",
       "effective_date": "2014-01-29",
       "authority": "Comptroller General of the Union (CGU) and Attorney General's Office (AGU)",
-      "url": "https://www.gov.br/cgu/pt-br/assuntos/responsabilizacao-de-empresas/lei-anticorrupcao",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm",
       "summary": "Brazil's Clean Company Act (Lei 12.846/2013) introduces strict corporate liability for acts of corruption against national or foreign public administrations. Companies can receive fine reductions of up to 4% by demonstrating an effective integrity programme. The Leniency Agreement mechanism allows voluntary disclosure in exchange for reduced penalties.",
       "key_requirements": [
         "Prohibit offering or paying bribes to public officials for business advantage",
@@ -4906,7 +4906,7 @@
       "status": "active",
       "effective_date": "2004-04-27",
       "authority": "Directorate for Priority Crime Investigation (Hawks) / National Prosecuting Authority",
-      "url": "https://www.gov.za/documents/prevention-and-combating-corrupt-activities-act",
+      "url": "https://www.justice.gov.za/legislation/acts/2004-012.pdf",
       "summary": "South Africa's PRECCA creates a general offence of corruption applicable to any person and introduces a duty to report corrupt activities on persons in positions of authority. It targets bribery, extortion, fraud, money laundering, and procurement fraud in both public and private sectors.",
       "key_requirements": [
         "General corruption offence: prohibition on any gratification that improperly influences any person",
@@ -5288,7 +5288,7 @@
       "status": "active",
       "effective_date": "2019-01-01",
       "authority": "Department of Home Affairs (Australian Border Force)",
-      "url": "https://www.homeaffairs.gov.au/foi1/other/modern-slavery/modern-slavery-act-guidance",
+      "url": "https://modernslaveryregister.gov.au/",
       "summary": "Australia's Modern Slavery Act 2018 requires entities based or operating in Australia with annual consolidated revenue over AUD 100 million to report annually on modern slavery risks in their operations and supply chains. Reports must be submitted to the government-managed Modern Slavery Register and are publicly available.",
       "key_requirements": [
         "Submit an annual modern slavery statement covering required criteria to the online Register",
@@ -5429,7 +5429,7 @@
       "status": "active",
       "effective_date": "2017-06-01",
       "authority": "Cyberspace Administration of China (CAC)",
-      "url": "https://www.cac.gov.cn/2017-06/11/c_1121029560.htm",
+      "url": "https://www.cac.gov.cn/2022-01/04/c_1642894602490821.htm",
       "summary": "China's Cybersecurity Law (CSL) is the foundational national cybersecurity legislation establishing requirements for network operators, critical information infrastructure (CII) operators, and data handlers. It mandates data localisation for CII operators, network security protections, user data handling restrictions, and real-name registration.",
       "key_requirements": [
         {
@@ -5497,7 +5497,7 @@
       "status": "active",
       "effective_date": "2021-09-01",
       "authority": "Cyberspace Administration of China (CAC) and sector regulators",
-      "url": "https://www.cac.gov.cn/2021-06/11/c_1624994566736342.htm",
+      "url": "https://www.cac.gov.cn/2021-09/20/c_1633460775602386.htm",
       "summary": "China's Data Security Law establishes a national data classification and grading system and imposes obligations on all data processing activities within China and overseas activities affecting national security. Introduces an Important Data catalogue system and mandatory security assessments before exporting important data.",
       "key_requirements": [
         "Implement a data classification and grading system based on national importance and sensitivity",
@@ -5544,7 +5544,7 @@
       "status": "active",
       "effective_date": "2018-08-31",
       "authority": "Cyber Security Agency of Singapore (CSA)",
-      "url": "https://www.csa.gov.sg/legislation/the-cybersecurity-act",
+      "url": "https://www.csa.gov.sg/legislation",
       "summary": "Singapore's Cybersecurity Act 2018, amended in 2024, establishes the regulatory framework for national cybersecurity including oversight of Critical Information Infrastructure (CII), licensure of cybersecurity service providers, and computer misuse provisions. The 2024 amendment expanded scope to include systems of temporary cybersecurity concern and major critical infrastructure.",
       "key_requirements": [
         "Critical Information Infrastructure (CII) owners must notify CSA of cybersecurity incidents within 2 hours of awareness",
@@ -5863,7 +5863,7 @@
       "status": "active",
       "effective_date": "2022-06-16",
       "authority": "Federal Maritime Commission (FMC)",
-      "url": "https://www.fmc.gov/resources-services/the-ocean-shipping-reform-act-of-2022/",
+      "url": "https://www.fmc.gov/regulations-and-actions/shipping-act/",
       "summary": "The Ocean Shipping Reform Act of 2022 strengthens the Shipping Act of 1984 to address unfair practices by ocean common carriers. It provides new FMC enforcement tools, requires carriers to publish service contracts, prohibits unreasonable refusals of export cargo bookings, and mandates transparency in detention and demurrage charges.",
       "key_requirements": [
         "Ocean carriers must maintain public tariffs and service contracts on file with FMC",
