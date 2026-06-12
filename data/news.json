@@ -1,4 +1,571 @@
 {
-  "last_updated": "",
-  "items": []
+  "last_updated": "2026-06-12",
+  "items": [
+    {
+      "id": "edf85062d9a9",
+      "title": "Financial services",
+      "summary": "",
+      "url": "https://www.pwc.com/gx/en/industries/financial-services.html",
+      "published": "2026-06-12",
+      "source": "PwC",
+      "source_url": "https://www.pwc.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "PwC financial services update covering regulatory trends and compliance requirements in banking sector.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "808e9d0b6d67",
+      "title": "Banking and capital markets",
+      "summary": "",
+      "url": "https://www.pwc.com/gx/en/industries/financial-services/banking-capital-markets.html",
+      "published": "2026-06-12",
+      "source": "PwC",
+      "source_url": "https://www.pwc.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "PwC banking and capital markets regulatory guidance on industry compliance and risk management frameworks.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "bd5f7d896a4d",
+      "title": "Public safety, justice and security",
+      "summary": "",
+      "url": "https://www.pwc.com/gx/en/industries/government-public-sector/public-safety-justice-security.html",
+      "published": "2026-06-12",
+      "source": "PwC",
+      "source_url": "https://www.pwc.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "PwC public safety and security sector regulatory update on government and law enforcement compliance.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "8af4a32e0e20",
+      "title": "Aerospace, defence and security",
+      "summary": "",
+      "url": "https://www.pwc.com/gx/en/industries/aerospace-defence.html",
+      "published": "2026-06-12",
+      "source": "PwC",
+      "source_url": "https://www.pwc.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "PwC aerospace, defence and security sector compliance guidance on regulatory requirements.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "991c88342ed3",
+      "title": "Industrial manufacturing",
+      "summary": "",
+      "url": "https://www.pwc.com/gx/en/industries/industrial-manufacturing.html",
+      "published": "2026-06-12",
+      "source": "PwC",
+      "source_url": "https://www.pwc.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "PwC industrial manufacturing sector regulatory compliance update and industry standards.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "1a95fa0adaa1",
+      "title": "Human Capital Trends",
+      "summary": "",
+      "url": "https://www2.deloitte.com/us/en/insights/topics/talent/human-capital-trends.html?icid=disidenav_human-capital-trends",
+      "published": "2026-06-12",
+      "source": "Deloitte",
+      "source_url": "https://www2.deloitte.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "Deloitte human capital trends report covering employment and workforce regulatory considerations.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "701e1c00cbe0",
+      "title": "Sustainability, Equity & Climate",
+      "summary": "",
+      "url": "https://www2.deloitte.com/us/en/insights/research-centers/economics/sustainability-equity-climate.html?icid=disidenav_sustainability-equity-climate",
+      "published": "2026-06-12",
+      "source": "Deloitte",
+      "source_url": "https://www2.deloitte.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "Deloitte sustainability and climate compliance guidance covering environmental and ESG regulatory requirements.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "cefb50c7eed7",
+      "title": "Retail, Wholesale & Distribution",
+      "summary": "",
+      "url": "https://www2.deloitte.com/us/en/insights/industry/retail-distribution.html?icid=disidenav_retail-distribution",
+      "published": "2026-06-12",
+      "source": "Deloitte",
+      "source_url": "https://www2.deloitte.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "Deloitte retail, wholesale and distribution sector compliance and regulatory guidance.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "e1ef6692c1f5",
+      "title": "Hospitality & Airlines",
+      "summary": "",
+      "url": "https://www2.deloitte.com/us/en/insights/research-centers/consumer-industry-center/hospitality.html?icid=disidenav_hospitality",
+      "published": "2026-06-12",
+      "source": "Deloitte",
+      "source_url": "https://www2.deloitte.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "Deloitte hospitality and airlines sector regulatory compliance and operational requirements.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "e88963250cb9",
+      "title": "Industrial Manufacturing",
+      "summary": "",
+      "url": "https://www2.deloitte.com/us/en/insights/industry/manufacturing-industrial-products.html?icid=disidenav_manufacturing-industrial-products",
+      "published": "2026-06-12",
+      "source": "Deloitte",
+      "source_url": "https://www2.deloitte.com",
+      "categories": [
+        "finance",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "Deloitte industrial manufacturing compliance guidance on regulatory and operational standards.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "afe1b3df7f3f",
+      "title": "Working Capital",
+      "summary": "",
+      "url": "https://www.ey.com/en_gl/services/strategy-transactions/liquidity-working-capital-advisory",
+      "published": "2026-06-12",
+      "source": "EY",
+      "source_url": "https://www.ey.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "EY working capital analysis covering financial compliance and regulatory considerations.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "14667b2a1186",
+      "title": "Sustainability Strategy",
+      "summary": "",
+      "url": "https://www.ey.com/en_gl/services/strategy-transactions/sustainability-esg-strategy",
+      "published": "2026-06-12",
+      "source": "EY",
+      "source_url": "https://www.ey.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "EY sustainability strategy guidance on regulatory compliance and environmental reporting requirements.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "9670dd52e15d",
+      "title": "AI Strategy Services",
+      "summary": "",
+      "url": "https://www.ey.com/en_gl/services/strategy/ai-strategy-consulting-mergers-acquisitions",
+      "published": "2026-06-12",
+      "source": "EY",
+      "source_url": "https://www.ey.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "EY AI strategy services covering governance and regulatory compliance for artificial intelligence.",
+      "regulation_ids": [
+        "AI_ACT"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "343b3078ec29",
+      "title": "Transactions and Corporate Finance by EY-Parthenon",
+      "summary": "",
+      "url": "https://www.ey.com/en_gl/services/strategy-transactions",
+      "published": "2026-06-12",
+      "source": "EY",
+      "source_url": "https://www.ey.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "EY M&A and corporate finance advisory on regulatory and compliance considerations.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "1e3eab22adb2",
+      "title": "M&A AI-powered Technology",
+      "summary": "",
+      "url": "https://www.ey.com/en_gl/services/strategy-transactions/connected-capital-technologies",
+      "published": "2026-06-12",
+      "source": "EY",
+      "source_url": "https://www.ey.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "EY M&A technology powered by AI for due diligence and regulatory compliance analysis.",
+      "regulation_ids": [
+        "AI_ACT"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "ebc1fab075cf",
+      "title": "AI and Technology",
+      "summary": "",
+      "url": "https://kpmg.com/xx/en/our-insights/ai-and-technology.html",
+      "published": "2026-06-12",
+      "source": "KPMG",
+      "source_url": "https://kpmg.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "KPMG AI and technology services covering regulatory compliance and governance frameworks.",
+      "regulation_ids": [
+        "AI_ACT"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "a6d43ce011d3",
+      "title": "Risk and Regulation",
+      "summary": "",
+      "url": "https://kpmg.com/xx/en/our-insights/risk-and-regulation.html",
+      "published": "2026-06-12",
+      "source": "KPMG",
+      "source_url": "https://kpmg.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "KPMG risk and regulation advisory on compliance management and regulatory requirements.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "b69ea9fe6bfd",
+      "title": "Consumer, Retail & Leisure",
+      "summary": "",
+      "url": "https://kpmg.com/xx/en/what-we-do/industries/consumer-retail-and-leisure.html",
+      "published": "2026-06-12",
+      "source": "KPMG",
+      "source_url": "https://kpmg.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "KPMG consumer, retail and leisure sector compliance and regulatory guidance.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "5f1633333238",
+      "title": "Financial Services",
+      "summary": "",
+      "url": "https://kpmg.com/xx/en/what-we-do/industries/financial-services.html",
+      "published": "2026-06-12",
+      "source": "KPMG",
+      "source_url": "https://kpmg.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "KPMG financial services regulatory compliance and risk management advisory services.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "c60a36a84d94",
+      "title": "AI Governance Principles for Boards",
+      "summary": "",
+      "url": "https://kpmg.com/xx/en/our-insights/ai-and-technology/ai-governance-principles-for-boards.html",
+      "published": "2026-06-12",
+      "source": "KPMG",
+      "source_url": "https://kpmg.com",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "international"
+      ],
+      "ai_summary": "KPMG AI governance principles for boards covering regulatory compliance and oversight frameworks.",
+      "regulation_ids": [
+        "AI_ACT"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "8c6f35929c79",
+      "title": "Australian Prudential Regulation Authority (APRA) - click to go to the home page",
+      "summary": "",
+      "url": "https://www.apra.gov.au/",
+      "published": "2026-06-12",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA homepage providing access to Australian prudential regulation authority resources.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "4cb9aa03adfa",
+      "title": "Prudential and reporting standards",
+      "summary": "",
+      "url": "https://www.apra.gov.au/industries/1/standards",
+      "published": "2026-06-12",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA prudential and reporting standards for financial institutions and regulatory requirements.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "bd2aaf269927",
+      "title": "Licensing guidelines",
+      "summary": "",
+      "url": "https://www.apra.gov.au/licensing-guidelines-for-authorised-deposit-taking-institutions-adi",
+      "published": "2026-06-12",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA licensing guidelines for financial institutions regulatory approval and compliance.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "7c7448d6285b",
+      "title": "Legislation, determinations and orders",
+      "summary": "",
+      "url": "https://www.apra.gov.au/legislation-determinations-and-consent-orders-for-authorised-deposit-taking-institutions",
+      "published": "2026-06-12",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA legislation, determinations and orders providing regulatory directives and requirements.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "97d4e38eaaf0",
+      "title": "Financial Claims Scheme",
+      "summary": "",
+      "url": "https://www.apra.gov.au/financial-claims-scheme-for-authorised-deposit-taking-institutions",
+      "published": "2026-06-12",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA Financial Claims Scheme information on deposit protection and regulatory safeguards.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "ca3c1833c457",
+      "title": "EDPB meets with EU Commissioner McGrath and adopts common data breach notification template",
+      "summary": "Brussels, 10 June – During its latest plenary, the EDPB met with Michael McGrath, Commissioner for Democracy, Justice, the Rule of Law and Consumer Protection. In addition, the Board has adopted a common data breach notification template . The Board held a meeting with Commission…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-meets-eu-commissioner-mcgrath-and-adopts-common-data-breach-notification_en",
+      "published": "2026-06-10",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB adopts common data breach notification template to standardize GDPR breach reporting requirements.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "09b928379a69",
+      "title": "Europe Day 2026: let’s celebrate together",
+      "summary": "Brussels, 5 May – On 9 May each year, Europeans celebrate the anniversary of the Schuman Declaration, the key moment which led to the creation of the EU as we know it today. To mark this special occasion, the European institutions will open their doors to the public on 9 May 2026…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/europe-day-2026-lets-celebrate-together_en",
+      "published": "2026-05-05",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Europe Day 2026 celebration announcement by EU institutions on 9 May 2026.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "7e09689e74fa",
+      "title": "Marking 10 years of the GDPR: the evolution of the European data protection landscape",
+      "summary": "Brussels, 27 April – Today marks the 10th anniversary of the GDPR’s adoption, the first comprehensive data protection framework spanning an entire continent, establishing clear rights for individuals and obligations for organisations across Europe. The moment that led to the crea…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/marking-10-years-gdpr-evolution-european-data-protection-landscape_en",
+      "published": "2026-04-27",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB marks 10 years of GDPR, Europe's landmark data protection framework adopted 10 years ago.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "ff3ebc796297",
+      "title": "Stakeholder event on competition and data protection",
+      "summary": "Brussels, 23 April – The EDPB is organising a remote stakeholder event in the context of its joint work with the European Commission on upcoming guidelines on the interplay between competition and data protection .&nbsp; The event is an opportunity for stakeholders to inform and …",
+      "url": "https://www.edpb.europa.eu/news/news/2026/stakeholder-event-competition-and-data-protection_en",
+      "published": "2026-04-23",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB organizes stakeholder event on competition and data protection guidelines collaboration.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "8d0cf637315a",
+      "title": "EDPB brings clarity to data processing for scientific research, speeds up the finalisation of the anonymisation guidelines and approves first European data protection seal as a tool for transfers",
+      "summary": "Brussels, 16 April – During its latest plenary, the EDPB has adopted Guidelines on processing of personal data for scientific research purposes . In addition, the Board has created a team to speed up the finalisation of the guidelines on anonymisation. The EDPB has also adopted t…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-brings-clarity-data-processing-scientific-research-speeds-finalisation_en",
+      "published": "2026-04-16",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB adopts guidelines for scientific research data processing, anonymization standards, and EU data protection seal.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    }
+  ]
 }
