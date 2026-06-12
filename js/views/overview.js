@@ -2,6 +2,44 @@
 const OverviewView = {
   template: `
     <div>
+      <!-- Quick-Start Strip (dismissible) -->
+      <div class="quickstart-strip" v-if="!quickstartDismissed">
+        <div class="quickstart-strip__header">
+          <span class="quickstart-strip__label">Quick Start</span>
+          <button class="quickstart-strip__dismiss" @click="dismissQuickstart" title="Dismiss">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        <div class="quickstart-strip__cards">
+          <button class="quickstart-card" @click="$s.wizardOpen = true">
+            <span class="quickstart-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg></span>
+            <span class="quickstart-card__title">Set My Profile</span>
+            <span class="quickstart-card__desc">Narrow to your applicable regulations</span>
+            <span class="quickstart-card__arrow">→</span>
+          </button>
+          <button class="quickstart-card" @click="$s.activeView = 'regulations'">
+            <span class="quickstart-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+            <span class="quickstart-card__title">Browse Regulations</span>
+            <span class="quickstart-card__desc">Explore all 102 global regulations</span>
+            <span class="quickstart-card__arrow">→</span>
+          </button>
+          <button class="quickstart-card" @click="$s.activeView = 'gap'">
+            <span class="quickstart-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg></span>
+            <span class="quickstart-card__title">Analyze Gaps</span>
+            <span class="quickstart-card__desc">Find uncovered regulatory requirements</span>
+            <span class="quickstart-card__arrow">→</span>
+          </button>
+          <button class="quickstart-card" @click="$s.activeView = 'calendar'">
+            <span class="quickstart-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+            <span class="quickstart-card__title">Track Deadlines</span>
+            <span class="quickstart-card__desc">See upcoming compliance milestones</span>
+            <span class="quickstart-card__arrow">→</span>
+          </button>
+        </div>
+      </div>
+
       <!-- Stat cards -->
       <div class="stats-row">
         <div class="stat-card">
@@ -113,7 +151,8 @@ const OverviewView = {
   data() {
     return {
       mapColorMode: 'count',
-      countryPanel: null
+      countryPanel: null,
+      quickstartDismissed: localStorage.getItem('cm_quickstart_dismissed') === 'true'
     };
   },
 
@@ -212,6 +251,10 @@ const OverviewView = {
   },
 
   methods: {
+    dismissQuickstart() {
+      this.quickstartDismissed = true;
+      try { localStorage.setItem('cm_quickstart_dismissed', 'true'); } catch(e) {}
+    },
     choroplethColor(count) {
       if (!count || count === 0) return '#e8edf2';
       if (count === 1)           return '#c7ddf5';

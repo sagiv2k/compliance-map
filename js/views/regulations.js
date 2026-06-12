@@ -2,12 +2,17 @@
 const RegulationsView = {
   template: `
     <div>
-      <div class="view-header">
-        <h1 class="view-title">Regulations</h1>
-        <p class="view-subtitle">
-          Global regulations categorized by domain and country of application.
-          Click any card to see full details and related compliance standards.
-        </p>
+      <div class="view-header" style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+        <div>
+          <h1 class="view-title">Regulations</h1>
+          <p class="view-subtitle">
+            Global regulations categorized by domain and country of application.
+            Click any card to see full details and related compliance standards.
+          </p>
+        </div>
+        <button class="view-help-btn" @click="$s.helpPanelOpen = true" title="How to use Regulations">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </button>
       </div>
 
       <div class="results-count">

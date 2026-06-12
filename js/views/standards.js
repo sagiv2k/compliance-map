@@ -2,13 +2,18 @@
 const StandardsView = {
   template: `
     <div>
-      <div class="view-header">
-        <h1 class="view-title">Compliance Standards</h1>
-        <p class="view-subtitle">
-          Internationally recognized frameworks and standards that help organizations
-          implement the controls needed to satisfy regulatory requirements.
-          Click any card to see which regulations it helps satisfy.
-        </p>
+      <div class="view-header" style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+        <div>
+          <h1 class="view-title">Compliance Standards</h1>
+          <p class="view-subtitle">
+            Internationally recognized frameworks and standards that help organizations
+            implement the controls needed to satisfy regulatory requirements.
+            Click any card to see which regulations it helps satisfy.
+          </p>
+        </div>
+        <button class="view-help-btn" @click="$s.helpPanelOpen = true" title="How to use Standards">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </button>
       </div>
 
       <div class="results-count">

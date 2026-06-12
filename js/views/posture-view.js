@@ -2,6 +2,18 @@
 const PostureView = {
   template: `
     <div>
+      <div class="hint-banner" v-if="!hintDismissed">
+        <svg class="hint-banner__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div class="hint-banner__content">
+          <strong class="hint-banner__title">Check off what you hold.</strong>
+          <span class="hint-banner__text">Select your implemented standards at the top. The Scorecard tab shows overall coverage; the Recommendations tab shows what to add next for maximum impact.</span>
+          <button class="hint-banner__help-link" @click="$s.helpPanelOpen = true">How to use this view</button>
+        </div>
+        <button class="hint-banner__dismiss" @click="hintDismissed=true;dismissHint()" aria-label="Dismiss">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
       <div class="view-header">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;">
           <div>
@@ -11,6 +23,7 @@ const PostureView = {
               and get recommendations for maximum gap closure.
             </p>
           </div>
+          <div style="display:flex;align-items:center;gap:10px;">
           <div class="posture-view-tabs">
             <button class="btn-posture-tab" :class="{active: tab==='scorecard'}" @click="tab='scorecard'">
               Scorecard
@@ -18,6 +31,10 @@ const PostureView = {
             <button class="btn-posture-tab" :class="{active: tab==='recommender'}" @click="tab='recommender'">
               Recommendations
             </button>
+          </div>
+          <button class="view-help-btn" @click="$s.helpPanelOpen = true" title="How to use Posture Scorecard">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </button>
           </div>
         </div>
       </div>
@@ -214,7 +231,8 @@ const PostureView = {
   data() {
     return {
       implementedStds: [],
-      tab: 'scorecard'
+      tab: 'scorecard',
+      hintDismissed: sessionStorage.getItem('cm_hint_posture') === 'true'
     };
   },
 
@@ -360,6 +378,7 @@ const PostureView = {
   },
 
   methods: {
+    dismissHint() { try { sessionStorage.setItem('cm_hint_posture', 'true'); } catch(e) {} },
     stdById(id) {
       return this.$s.standards.find(s => s.id === id);
     },

@@ -2,6 +2,18 @@
 const MatrixView = {
   template: `
     <div>
+      <div class="hint-banner" v-if="!hintDismissed">
+        <svg class="hint-banner__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div class="hint-banner__content">
+          <strong class="hint-banner__title">Dots show coverage level.</strong>
+          <span class="hint-banner__text">Each dot indicates how well a standard covers a regulation. Click any dot for specifics, or click a regulation name to open full details.</span>
+          <button class="hint-banner__help-link" @click="$s.helpPanelOpen = true">How to use this view</button>
+        </div>
+        <button class="hint-banner__dismiss" @click="hintDismissed=true;dismissHint()" aria-label="Dismiss">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
       <div class="view-header">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;">
           <div>
@@ -11,14 +23,19 @@ const MatrixView = {
               Click any regulation name to view full details; click a cell to see coverage notes.
             </p>
           </div>
-          <button class="btn-export" @click="exportCsv">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-              <polyline points="7 10 12 15 17 10"/>
-              <line x1="12" y1="15" x2="12" y2="3"/>
-            </svg>
-            Export CSV
-          </button>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <button class="view-help-btn" @click="$s.helpPanelOpen = true" title="How to use Coverage Matrix">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </button>
+            <button class="btn-export" @click="exportCsv">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Export CSV
+            </button>
+          </div>
         </div>
       </div>
 
@@ -94,6 +111,10 @@ const MatrixView = {
     </div>
   `,
 
+  data() {
+    return { hintDismissed: sessionStorage.getItem('cm_hint_matrix') === 'true' };
+  },
+
   computed: {
     filteredRegulations() {
       const { regulations, filters } = this.$s;
@@ -117,6 +138,7 @@ const MatrixView = {
   },
 
   methods: {
+    dismissHint() { try { sessionStorage.setItem('cm_hint_matrix', 'true'); } catch(e) {} },
     getMapping(regId, stdId) {
       return this.mappingIndex[regId + '|' + stdId] || null;
     },

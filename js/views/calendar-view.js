@@ -11,6 +11,10 @@ const CalendarView = {
               Advance the reference date to plan ahead.
             </p>
           </div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <button class="view-help-btn" @click="$s.helpPanelOpen = true" title="How to use Compliance Calendar">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </button>
           <div class="calendar-view-toggle">
             <button class="btn-cal-view" :class="{active: viewMode==='lanes'}" @click="viewMode='lanes'">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px;">
@@ -27,6 +31,7 @@ const CalendarView = {
                 <circle cx="3" cy="18" r="1" fill="currentColor"/>
               </svg>Table
             </button>
+          </div>
           </div>
         </div>
       </div>

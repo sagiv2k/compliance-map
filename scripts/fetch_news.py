@@ -1,15 +1,16 @@
 """
-fetch_news.py — Fetch regulatory news from official RSS feeds + advisory web pages.
-Run manually or via GitHub Actions (.github/workflows/update-news.yml).
+fetch_news.py — Fetch regulatory news from official RSS feeds + advisory web pages,
+then enrich new articles with Claude Haiku (AI summary, regulation tags, priority).
 
-Dependencies: pip install feedparser requests beautifulsoup4
+Dependencies: pip install feedparser requests beautifulsoup4 anthropic
+Set ANTHROPIC_API_KEY environment variable to enable AI enrichment (optional).
 """
 
 import json
 import hashlib
 import re
 import sys
-import io
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -20,7 +21,7 @@ if hasattr(sys.stdout, "reconfigure"):
 try:
     import feedparser
 except ImportError:
-    raise SystemExit("Missing dependency: run  pip install feedparser requests beautifulsoup4")
+    raise SystemExit("Missing dependency: run  pip install feedparser requests beautifulsoup4 anthropic")
 
 try:
     import requests
@@ -28,6 +29,12 @@ try:
     _BS4_AVAILABLE = True
 except ImportError:
     _BS4_AVAILABLE = False
+
+try:
+    import anthropic as _anthropic_module
+    _ANTHROPIC_AVAILABLE = True
+except ImportError:
+    _ANTHROPIC_AVAILABLE = False
 
 # ---------------------------------------------------------------------------
 # RSS / Atom feed definitions
@@ -255,7 +262,9 @@ RELEVANCE_KEYWORDS = [
 ]
 
 OUTPUT_FILE = Path(__file__).parent.parent / "data" / "news.json"
-MAX_ITEMS   = 60
+REGS_FILE   = Path(__file__).parent.parent / "data" / "regulations.json"
+MAX_ITEMS       = 80   # total items kept in news.json
+MAX_NEW_PER_RUN = 30   # cap on new articles sent to Claude per run (cost guard)
 
 _HEADERS = {
     "User-Agent": (
@@ -492,6 +501,106 @@ def fetch_advisory_pages() -> dict[str, dict]:
     return items
 
 
+# ── AI enrichment ─────────────────────────────────────────────────────────────
+
+def _build_reg_index() -> str:
+    if not REGS_FILE.exists():
+        return ""
+    regs = json.loads(REGS_FILE.read_text(encoding="utf-8"))
+    return "\n".join(
+        f"{r['id']}: {r['short_name']} ({r.get('enforcement_region', '?')})"
+        for r in regs
+    )
+
+
+def enrich_with_claude(articles: list) -> list:
+    """
+    Sends new articles to Claude Haiku in a single batch call.
+    Adds ai_summary, regulation_ids, and priority to each article in-place.
+    Falls back gracefully if the API call fails.
+    """
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key or not _ANTHROPIC_AVAILABLE:
+        print("  [skip] ANTHROPIC_API_KEY not set or anthropic not installed — skipping AI enrichment")
+        for a in articles:
+            a.setdefault("ai_summary", "")
+            a.setdefault("regulation_ids", [])
+            a.setdefault("priority", "medium")
+        return articles
+
+    reg_index = _build_reg_index()
+    if not reg_index:
+        print("  [skip] regulations.json not found — skipping AI enrichment")
+        for a in articles:
+            a.setdefault("ai_summary", "")
+            a.setdefault("regulation_ids", [])
+            a.setdefault("priority", "medium")
+        return articles
+
+    numbered = "\n\n".join(
+        f"[{i}] SOURCE: {a['source']}\nTITLE: {a['title']}\nSUMMARY: {a.get('summary', '')}"
+        for i, a in enumerate(articles)
+    )
+
+    prompt = f"""You are a regulatory compliance analyst. Analyze each numbered article and return a JSON array.
+
+Available regulation IDs (use exact IDs only; return [] if none clearly match):
+{reg_index}
+
+For each article return exactly:
+{{
+  "index": <number>,
+  "ai_summary": "<2 sentences on compliance impact, max 220 chars total>",
+  "regulation_ids": ["<EXACT_ID>", ...],
+  "priority": "high" | "medium" | "low"
+}}
+
+Priority guide:
+- high   = enforcement action, fine issued, breach disclosed, binding requirement now effective
+- medium = consultation open, draft rule, guidance published, industry warning
+- low    = research paper, general update, scheduled review, minor clarification
+
+Articles:
+{numbered}
+
+Return ONLY the JSON array. No markdown, no explanation."""
+
+    try:
+        client   = _anthropic_module.Anthropic(api_key=api_key)
+        response = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=2000,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        raw = response.content[0].text.strip()
+        raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()
+
+        enriched = json.loads(raw)
+        for item in enriched:
+            idx = item.get("index")
+            if isinstance(idx, int) and 0 <= idx < len(articles):
+                articles[idx]["ai_summary"]     = item.get("ai_summary", "")
+                articles[idx]["regulation_ids"] = item.get("regulation_ids", [])
+                articles[idx]["priority"]       = item.get("priority", "medium")
+
+        print(f"  Claude enriched {len(enriched)} articles.")
+
+    except (json.JSONDecodeError, TypeError) as e:
+        print(f"  [warn] Claude JSON parse error: {e} — falling back to defaults")
+        for a in articles:
+            a.setdefault("ai_summary", "")
+            a.setdefault("regulation_ids", [])
+            a.setdefault("priority", "medium")
+    except Exception as e:
+        print(f"  [warn] Claude API error: {e} — falling back to defaults")
+        for a in articles:
+            a.setdefault("ai_summary", "")
+            a.setdefault("regulation_ids", [])
+            a.setdefault("priority", "medium")
+
+    return articles
+
+
 def main():
     print("Fetching regulatory news…")
     print()
@@ -516,11 +625,24 @@ def main():
         except Exception:
             pass
 
-    for item in existing:
-        if item["id"] not in merged:
-            merged[item["id"]] = item
+    existing_ids = {item["id"] for item in existing}
 
-    final = sorted(merged.values(), key=lambda x: x["published"], reverse=True)[:MAX_ITEMS]
+    # Identify truly new articles (not seen before)
+    new_articles = [v for k, v in merged.items() if k not in existing_ids]
+    new_articles  = new_articles[:MAX_NEW_PER_RUN]
+
+    print()
+    print(f"[ AI enrichment ] {len(new_articles)} new articles")
+    if new_articles:
+        new_articles = enrich_with_claude(new_articles)
+
+    # Rebuild merged dict with enriched new items
+    enriched_map = {a["id"]: a for a in new_articles}
+    for item in existing:
+        if item["id"] not in enriched_map:
+            enriched_map[item["id"]] = item
+
+    final = sorted(enriched_map.values(), key=lambda x: x["published"], reverse=True)[:MAX_ITEMS]
 
     output = {
         "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),

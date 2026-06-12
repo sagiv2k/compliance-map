@@ -16,6 +16,9 @@ const NewsView = {
               <span class="news-updated-label">Last updated:</span>
               <span class="news-updated-date">{{ $s.newsLastUpdated }}</span>
             </div>
+            <button class="view-help-btn" @click="$s.helpPanelOpen = true" title="How to use Regulatory News">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </button>
             <button class="btn-update-news" @click="showUpdatePanel = !showUpdatePanel">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="1 4 1 10 7 10"/>

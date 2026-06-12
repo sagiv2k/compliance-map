@@ -2,12 +2,29 @@
 const TraceabilityView = {
   template: `
     <div>
-      <div class="view-header">
-        <h1 class="view-title">Control Traceability Matrix</h1>
-        <p class="view-subtitle">
-          Select a standard to see how its controls map across regulations.
-          Each cell shows the coverage level and mapped regulatory articles.
-        </p>
+      <div class="hint-banner" v-if="!hintDismissed">
+        <svg class="hint-banner__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div class="hint-banner__content">
+          <strong class="hint-banner__title">Pick a standard to begin.</strong>
+          <span class="hint-banner__text">Select a standard tab above — the matrix shows how each of its controls maps to regulations, with coverage level and specific articles cited.</span>
+          <button class="hint-banner__help-link" @click="$s.helpPanelOpen = true">How to use this view</button>
+        </div>
+        <button class="hint-banner__dismiss" @click="hintDismissed=true;dismissHint()" aria-label="Dismiss">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="view-header" style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+        <div>
+          <h1 class="view-title">Control Traceability Matrix</h1>
+          <p class="view-subtitle">
+            Select a standard to see how its controls map across regulations.
+            Each cell shows the coverage level and mapped regulatory articles.
+          </p>
+        </div>
+        <button class="view-help-btn" @click="$s.helpPanelOpen = true" title="How to use Control Traceability">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </button>
       </div>
 
       <!-- Standard selector -->
@@ -126,7 +143,8 @@ const TraceabilityView = {
   data() {
     return {
       selectedStdId: null,
-      groupByTheme: false
+      groupByTheme: false,
+      hintDismissed: sessionStorage.getItem('cm_hint_traceability') === 'true'
     };
   },
 
@@ -195,6 +213,7 @@ const TraceabilityView = {
   },
 
   methods: {
+    dismissHint() { try { sessionStorage.setItem('cm_hint_traceability', 'true'); } catch(e) {} },
     cellMapping(ctrl, reg) {
       return this.mappingsForStd.find(m => m.regulation_id === reg.id) || null;
     },
