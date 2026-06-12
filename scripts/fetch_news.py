@@ -674,7 +674,8 @@ def fetch_advisory_pages() -> dict[str, dict]:
 def _build_reg_index() -> str:
     if not REGS_FILE.exists():
         return ""
-    regs = json.loads(REGS_FILE.read_text(encoding="utf-8"))
+    data = json.loads(REGS_FILE.read_text(encoding="utf-8"))
+    regs = data if isinstance(data, list) else data.get("regulations", [])
     return "\n".join(
         f"{r['id']}: {r['short_name']} ({r.get('enforcement_region', '?')})"
         for r in regs
