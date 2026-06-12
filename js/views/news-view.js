@@ -126,15 +126,24 @@ const NewsView = {
           v-for="item in filteredNews"
           :key="item.id"
           class="news-card"
+          :class="item.priority === 'high' ? 'news-card--high' : ''"
         >
           <div class="news-card__header">
             <span class="news-source-badge" :style="{ background: sourceColor(item.source) }">
               {{ item.source }}
             </span>
-            <span class="news-date">{{ formatDate(item.published) }}</span>
+            <span v-if="item.priority" class="news-priority-badge" :class="'news-priority-badge--' + item.priority">
+              {{ item.priority === 'high' ? '⚑ High' : item.priority === 'medium' ? 'Medium' : 'Low' }}
+            </span>
+            <span class="news-date" style="margin-left:auto;">{{ formatDate(item.published) }}</span>
           </div>
           <h3 class="news-card__title">{{ item.title }}</h3>
-          <p class="news-card__summary">{{ item.summary }}</p>
+          <p class="news-card__summary">
+            <span v-if="item.ai_summary" class="news-ai-label">AI</span>{{ item.ai_summary || item.summary }}
+          </p>
+          <div v-if="item.regulation_ids && item.regulation_ids.length" class="news-reg-tags">
+            <span v-for="rid in item.regulation_ids.slice(0,4)" :key="rid" class="news-reg-tag">{{ rid }}</span>
+          </div>
           <div class="news-card__footer">
             <div class="news-tags">
               <span
@@ -189,6 +198,7 @@ const NewsView = {
       ghStatusClass:   '',
       filterChips: [
         { key: 'all',                     label: 'All Topics' },
+        { key: 'high_priority',           label: '⚑ High Priority' },
         { key: 'data_privacy',            label: 'Data Privacy' },
         { key: 'cybersecurity',           label: 'Cybersecurity' },
         { key: 'finance',                 label: 'Finance' },
@@ -229,13 +239,16 @@ const NewsView = {
   computed: {
     filteredNews() {
       let items = this.$s.news;
-      if (this.activeChip !== 'all') {
+      if (this.activeChip === 'high_priority') {
+        items = items.filter(i => i.priority === 'high');
+      } else if (this.activeChip !== 'all') {
         items = items.filter(i => i.categories && i.categories.includes(this.activeChip));
       }
       const q = this.searchQuery.toLowerCase().trim();
       if (q) {
         items = items.filter(i =>
           i.title.toLowerCase().includes(q) ||
+          (i.ai_summary && i.ai_summary.toLowerCase().includes(q)) ||
           (i.summary && i.summary.toLowerCase().includes(q)) ||
           i.source.toLowerCase().includes(q)
         );
