@@ -1,1 +1,572 @@
-{}
+{
+  "GDPR": {
+    "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "NIS2": {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022L2555",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "DORA": {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "AI_ACT": {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "CYBER_ACT": {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0881",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "CCPA": {
+    "url": "https://oag.ca.gov/privacy/ccpa",
+    "hash": "sha256:43c9eb7cd4f9ab2b3d9c30cc3e280b6cdd1395933e2843c8a21a50155bf1c0a2",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "HIPAA": {
+    "url": "https://www.hhs.gov/hipaa/index.html",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "SOX": {
+    "url": "https://www.govinfo.gov/app/details/PLAW-107publ204",
+    "hash": "sha256:073b3e390260d09b6e20380cd3142ef7f29f8d373fe2d3288b3c2a452629a9a4",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "EO14028": {
+    "url": "https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity",
+    "hash": "sha256:30c6f35fd2d7a7e86de607e3928995d30c205a2b15c633f80085191159b393ae",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "PIPL": {
+    "url": "https://www.gov.cn/xinwen/2021-08/20/content_5632486.htm",
+    "last_checked": "2026-06-12",
+    "last_status": "http_404"
+  },
+  "LGPD": {
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+    "last_checked": "2026-06-12",
+    "last_status": "error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "PDPL": {
+    "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023.pdf",
+    "last_checked": "2026-06-12",
+    "last_status": "error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "PPL_ISRAEL": {
+    "url": "https://www.gov.il/en/departments/legalInfo/computer_security_regulations",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "ISRAEL_CYBER": {
+    "url": "https://www.gov.il/en/Departments/israel_national_cyber_directorate",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "ISRAEL_AML": {
+    "url": "https://www.gov.il/en/departments/ministry_of_justice",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "POPIA": {
+    "url": "https://www.inforegulator.org.za/",
+    "last_checked": "2026-06-12",
+    "last_status": "http_415"
+  },
+  "FICA_SA": {
+    "url": "https://www.fic.gov.za/",
+    "hash": "sha256:f7f3b61f9d6ecdf9c78d68d670de5b4c17308c25b9025fb169abd899b99409a0",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "KENYA_DPA": {
+    "url": "https://www.odpc.go.ke/",
+    "last_checked": "2026-06-12",
+    "last_status": "http_415"
+  },
+  "NDPA": {
+    "url": "https://ndpc.gov.ng/",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "GHANA_DPA": {
+    "url": "https://www.dataprotection.org.gh/",
+    "last_checked": "2026-06-12",
+    "last_status": "http_415"
+  },
+  "RWANDA_DPPPA": {
+    "url": "https://www.ncsa.rw/",
+    "last_checked": "2026-06-12",
+    "last_status": "error: HTTPSConnectionPool(host='www.ncsa.rw', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.ncsa.rw', port=443): Failed to resolve 'www.ncsa.rw' ([Errno -2] Name or service not known)\"))"
+  },
+  "EGYPT_PDPL": {
+    "url": "https://mcit.gov.eg/en/",
+    "hash": "sha256:6ff81e69dc571526f4005461b193b429f1bde7c9cb84e06287f1dceacdeb7f24",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "MOROCCO_L0908": {
+    "url": "https://www.cndp.ma/",
+    "hash": "sha256:f3163feab9e1e7d588ba5ffef448273941f988b473183d54cdcf739c5f5b8531",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "UAE_PDPL": {
+    "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-personal-data-in-uae",
+    "last_checked": "2026-06-12",
+    "last_status": "timeout"
+  },
+  "PIPEDA": {
+    "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/",
+    "hash": "sha256:97377cdcb3d4e6bde49437e4a3de887af6a0862e9d104519a92efafa509272d8",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "QUEBEC_LAW25": {
+    "url": "https://www.cai.gouv.qc.ca/",
+    "last_checked": "2026-06-12",
+    "last_status": "http_415"
+  },
+  "CASL": {
+    "url": "https://crtc.gc.ca/eng/internet/anti.htm",
+    "hash": "sha256:75c55b57e11d4378c19962a07d4b25a7a898db1726fc2431347f5f7b2ede0fc3",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "OSFI_B13": {
+    "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/technology-cyber-risk-management",
+    "hash": "sha256:4b0d45616cd9d7930e01be4ec7a9179b62a759bc3abbcb1c15319d1c8ae382ba",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "ARGENTINA_PDPA": {
+    "url": "https://www.argentina.gob.ar/aaip/datospersonales",
+    "hash": "sha256:5c583865ac61133bb21c89c404ddeefb1903144c79f1dee7e285578eb33221af",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "COLOMBIA_L1581": {
+    "url": "https://www.sic.gov.co/proteccion-de-datos-personales",
+    "last_checked": "2026-06-12",
+    "last_status": "error: HTTPSConnectionPool(host='www.sic.gov.co', port=443): Max retries exceeded with url: /proteccion-de-datos-personales (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
+  },
+  "CHILE_DPL": {
+    "url": "https://www.bcn.cl/leychile/navegar?idNorma=141599",
+    "hash": "sha256:931d507d489fa633a414cebc734eba72732388e691e83cd79667f76ac7a2df0b",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "MEXICO_LFPDPPP": {
+    "url": "https://home.inai.org.mx/",
+    "hash": "sha256:9aff8e18b48ffd312e418b90ea29522b55edf816c876e7eeb1fb4fb98e312fb2",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "ECUADOR_LOPDP": {
+    "url": "https://www.supercias.gob.ec/",
+    "hash": "sha256:788bcd1e9372d11def7eea613da3270aa754da6a3d7264ae07db406d000530fe",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "URUGUAY_L18331": {
+    "url": "https://www.gub.uy/unidad-reguladora-control-datos-personales/",
+    "hash": "sha256:367f97665c5042f6f6dd5e54ee3af5f4aee079f95cb33f332677f826cc7e62a8",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "GLBA": {
+    "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "COPPA": {
+    "url": "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "FISMA": {
+    "url": "https://www.cisa.gov/topics/cyber-threats-and-advisories/federal-information-security-modernization-act",
+    "hash": "sha256:8349a2633133f9cca6c2b7119699c6c2272902e712c93307a5f8ddc7666209e6",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "SEC_CYBER_2023": {
+    "url": "https://www.sec.gov/rules-regulations/2023/07/33-11216",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "CMMC": {
+    "url": "https://dodcio.defense.gov/CMMC/",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "NYDFS_500": {
+    "url": "https://www.dfs.ny.gov/industry_guidance/cybersecurity",
+    "hash": "sha256:6fbe58e6613d53194fb50bc5a99d6ac42ead803fd915bc5f21697347af327e0c",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "ILLINOIS_BIPA": {
+    "url": "https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3004",
+    "last_checked": "2026-06-12",
+    "last_status": "http_404"
+  },
+  "VIRGINIA_CDPA": {
+    "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/",
+    "hash": "sha256:6e9b3355515d756bebc62278b2f6d6b4ab5f748a3a3f08e2b9ad8b1945124a82",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "COLORADO_CPA": {
+    "url": "https://coag.gov/resources/colorado-privacy-act/",
+    "hash": "sha256:12cd37aff472dbdab60297e44fc16898b329a610101500d91640e3b19a92fc04",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "AUSTRALIA_PRIVACY_ACT": {
+    "url": "https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act",
+    "hash": "sha256:ec2d7afcb49abd95ab01346898778bca447ff97487a52df4bea8ba7f47e0436b",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "AUSTRALIA_SOCI": {
+    "url": "https://www.cisc.gov.au/",
+    "hash": "sha256:33f4664eb1b0c8f91d305f818da8c25ee1ff0b889509b797b3215225ee79564d",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "AUSTRALIA_AMLCTF": {
+    "url": "https://www.austrac.gov.au/",
+    "last_checked": "2026-06-12",
+    "last_status": "timeout"
+  },
+  "AUSTRALIA_CYBER_ACT": {
+    "url": "https://www.legislation.gov.au/details/C2025A00003",
+    "hash": "sha256:8de94007e20ae47227efe9b8c72a03b28012ed557de9505d2db06659f5be14e9",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "IMO_SOLAS": {
+    "url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Safety-of-Life-at-Sea-(SOLAS),-1974.aspx",
+    "hash": "sha256:1f48d2294a5c6ee20c60f17e0f5ea0a8f4c8a19740ee4c8f2935bd92bf9dcc7d",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "IMO_MARPOL": {
+    "url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Prevention-of-Pollution-from-Ships-(MARPOL).aspx",
+    "hash": "sha256:f767317992ce8f128b37e9b069f5aef9e1b3e3f6fccdba840116c042f911f1b2",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "IMO_ISPS": {
+    "url": "https://www.imo.org/en/OurWork/Security/Pages/SOLAS-XI-2%20ISPS%20Code.aspx",
+    "hash": "sha256:f2efb1595c9cd2ad2f61bc147ed1b1939e0dc23831f429c38580cf0b1897d70d",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "IMO_MLC": {
+    "url": "https://www.ilo.org/global/standards/maritime-labour-convention/lang--en/index.htm",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "IMO_ISM": {
+    "url": "https://www.imo.org/en/OurWork/HumanElement/Pages/ISMCode.aspx",
+    "hash": "sha256:72beba55915f5390bd822de8c8632c7791f442b95bcce4145b15a8092e3f13c1",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "IMO_BWM": {
+    "url": "https://www.imo.org/en/OurWork/Environment/Pages/BallastWaterManagement.aspx",
+    "hash": "sha256:5a0253e2ed0dfca24a6607792aeecb745dc19486bb8ea3140cf68bc234c034be",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "BOI_357": {
+    "url": "https://www.boi.org.il/en/banking-supervision/supervised-entities/banking-corporations-and-credit-card-companies/",
+    "last_checked": "2026-06-12",
+    "last_status": "http_404"
+  },
+  "CMISA_CYBER": {
+    "url": "https://www.gov.il/en/departments/capital_market",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "ISA_CYBER_IL": {
+    "url": "https://www.isa.gov.il/en",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "IL_COMPUTER_LAW": {
+    "url": "https://www.nevo.co.il/law_html/law01/099_001.htm",
+    "hash": "sha256:756b93e617b795bfb85caf0a1e7a7ba13e44c5455afdc283242f9c94aa17b13d",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "SINGAPORE_PDPA": {
+    "url": "https://www.pdpc.gov.sg/about/the-legislation/pdpa-overview",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "JAPAN_APPI": {
+    "url": "https://www.ppc.go.jp/en/legal/",
+    "hash": "sha256:c5f09b0200be19039e695f256be4e8797bb960dd8b3fb870f70d3bc756e950c3",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "INDIA_DPDPA": {
+    "url": "https://www.meity.gov.in/data-protection-framework",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "SOUTH_KOREA_PIPA": {
+    "url": "https://www.pipc.go.kr/np/default/page.do?mCode=D010010000",
+    "last_checked": "2026-06-12",
+    "last_status": "timeout"
+  },
+  "THAILAND_PDPA": {
+    "url": "https://www.pdpc.or.th/",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "MALAYSIA_PDPA": {
+    "url": "https://www.pdp.gov.my/",
+    "hash": "sha256:b9f4c9c3987061a16df47065e6c404d02cc62f3f93fa14569699b591e08b3cfb",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "PHILIPPINES_DPA": {
+    "url": "https://www.privacy.gov.ph/",
+    "hash": "sha256:7f4b0bac33feab5fd7b117c4493db1819b5e7979935bde884fb75357d8c3b2c4",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "VIETNAM_PDPD": {
+    "url": "https://bkhcn.gov.vn/",
+    "last_checked": "2026-06-12",
+    "last_status": "error: HTTPSConnectionPool(host='bkhcn.gov.vn', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='bkhcn.gov.vn', port=443): Failed to resolve 'bkhcn.gov.vn' ([Errno -2] Name or service not known)\"))"
+  },
+  "INDONESIA_PDP": {
+    "url": "https://komdigi.go.id/",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "HONG_KONG_PDPO": {
+    "url": "https://www.pcpd.org.hk/",
+    "hash": "sha256:c2055a4fa714b56c2f1943bd6c6a3962eae482224a436eaea85814b557ed5212",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "NZ_PRIVACY_ACT": {
+    "url": "https://www.privacy.org.nz/privacy-act-2020/",
+    "hash": "sha256:d1b8e019bdfa47867c27b5b59c2f0f8677d3aef41a7d13027f9dbfeabf92f0c7",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "TURKEY_KVKK": {
+    "url": "https://www.kvkk.gov.tr/",
+    "hash": "sha256:4c393312a6d2102c3b274d4510dca4cf4ee547827d4ace680a37f611f8bab1d0",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "SWITZERLAND_FADP": {
+    "url": "https://www.edoeb.admin.ch/edoeb/en/home.html",
+    "hash": "sha256:7cc3af2bc3273f7bb9af6cf0584b12b61d782b7614aa0a0544923f21bf60e7fc",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "RUSSIA_152FZ": {
+    "url": "https://pd.rkn.gov.ru/",
+    "last_checked": "2026-06-12",
+    "last_status": "timeout"
+  },
+  "UKRAINE_LPPD": {
+    "url": "https://www.ombudsman.gov.ua/en/",
+    "last_checked": "2026-06-12",
+    "last_status": "http_406"
+  },
+  "US_FCPA": {
+    "url": "https://www.justice.gov/criminal-fraud/foreign-corrupt-practices-act",
+    "hash": "sha256:5194d6ff5b93e1ad85130762fcce54b6adc69ea0babe731aacc9fa6a65068943",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "UK_BRIBERY_ACT": {
+    "url": "https://www.gov.uk/government/publications/bribery-act-2010-guidance",
+    "hash": "sha256:5c88449190492f2b6fb7252de1c43c7cae982041f6a1762e303310bc206b87c1",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "FRANCE_SAPIN2": {
+    "url": "https://www.agence-francaise-anticorruption.gouv.fr/",
+    "hash": "sha256:f7c3e90a10f44a4c7218c0e636769dd9a8ed203ab7744770bea544043e54009b",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "MALAYSIA_MACC": {
+    "url": "https://www.sprm.gov.my/index.php",
+    "last_checked": "2026-06-12",
+    "last_status": "timeout"
+  },
+  "ITALY_D231": {
+    "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-06-08;231",
+    "hash": "sha256:aedc380e599e766cac73536a8f7c57cbf64cfa5ee2213c3568e28cbd6a5ae3fd",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "BRAZIL_CCA": {
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm",
+    "last_checked": "2026-06-12",
+    "last_status": "error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "CANADA_CFPOA": {
+    "url": "https://laws-lois.justice.gc.ca/eng/acts/C-45.2/",
+    "hash": "sha256:abc7d3b6a383b9a58c900169115f0ed89128cf62ca4555967e2605e5d68921c8",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "MEXICO_GLAR": {
+    "url": "https://www.gob.mx/sfp",
+    "hash": "sha256:9c1ae208df15007974dddbc057c5e7f552cd5ab6c298e10d128c2d8cc6e1ceba",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "SA_PRECCA": {
+    "url": "https://www.justice.gov.za/legislation/acts/2004-012.pdf",
+    "hash": "sha256:38775d3ce2c136a195b28a2d0b6459e91b74084020cf64249191aa3ed89effde",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "SINGAPORE_PCA": {
+    "url": "https://www.cpib.gov.sg/",
+    "hash": "sha256:f49d2792caa4ebe24e79d296a5e24d89014c3e575d1f976dcaba74585f7bbc52",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "EU_CSRD": {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022L2464",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "EU_CSDDD": {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024L1760",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "GERMANY_LKSG": {
+    "url": "https://www.bafa.de/DE/Lieferketten/lieferketten_node.html",
+    "last_checked": "2026-06-12",
+    "last_status": "error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  "UK_MODERN_SLAVERY": {
+    "url": "https://www.legislation.gov.uk/ukpga/2015/30/contents",
+    "hash": "sha256:cdb43cfdcb18f7ee80cdca909b3391d1d26945f8ec7373ba435d1c67e8a27c61",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "AUSTRALIA_MODERN_SLAVERY": {
+    "url": "https://modernslaveryregister.gov.au/",
+    "hash": "sha256:ddffc21de243eed35418d7a9b5c0463a158ebe2c5d733db39f24fa79443dde09",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "CANADA_FORCED_LABOUR": {
+    "url": "https://www.canada.ca/en/public-safety-canada/news/2023/05/fighting-against-forced-labour-and-child-labour-in-supply-chains-act.html",
+    "last_checked": "2026-06-12",
+    "last_status": "http_404"
+  },
+  "SPAIN_WHISTLEBLOWING": {
+    "url": "https://www.boe.es/eli/es/l/2023/02/20/2",
+    "last_checked": "2026-06-12",
+    "last_status": "timeout"
+  },
+  "CHINA_CSL": {
+    "url": "https://www.cac.gov.cn/2022-01/04/c_1642894602490821.htm",
+    "last_checked": "2026-06-12",
+    "last_status": "http_404"
+  },
+  "CHINA_DSL": {
+    "url": "https://www.cac.gov.cn/2021-09/20/c_1633460775602386.htm",
+    "last_checked": "2026-06-12",
+    "last_status": "http_404"
+  },
+  "SINGAPORE_CSA": {
+    "url": "https://www.csa.gov.sg/legislation",
+    "hash": "sha256:c9edba32d6278f1cf94495e0fe420f7fb68af6ee120bf254881f0b7a1f29d970",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "CHINA_ECL": {
+    "url": "https://www.mofcom.gov.cn/",
+    "hash": "sha256:1d918a80f264fb3264e34048bdf15982b66bd57b664fa8ee4dab96288b6ff0c6",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "US_UFLPA": {
+    "url": "https://www.cbp.gov/trade/forced-labor/UFLPA",
+    "hash": "sha256:cdeddd3e267c496efa631d004393f95b4d407932c766a36b3bb28b821e5797c7",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "EU_FUELEU": {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1805",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "EU_ICS2": {
+    "url": "https://taxation-customs.ec.europa.eu/customs-4/customs-security/import-control-system-2-ics2_en",
+    "last_checked": "2026-06-12",
+    "last_status": "http_403"
+  },
+  "US_OSRA": {
+    "url": "https://www.fmc.gov/regulations-and-actions/shipping-act/",
+    "last_checked": "2026-06-12",
+    "last_status": "http_404"
+  },
+  "US_CTA": {
+    "url": "https://www.fincen.gov/boi",
+    "hash": "sha256:f19c647770c9cc079bb0881755dc0ccfb9f78adaf61a5f4be156c998aa1cdb0d",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "BRAZIL_CVM193": {
+    "url": "https://www.gov.br/cvm",
+    "hash": "sha256:342a48e6f004b8cd89314f17093caf855f29d016b0dbf90e93a911537b392951",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "IMO_HKC": {
+    "url": "https://www.imo.org/en/OurWork/Environment/Pages/Ship-Recycling.aspx",
+    "hash": "sha256:e9ed6bd32db57f6bf6886290be22c575c10e35e44468cd6e7104abc0dc45cca3",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  },
+  "SOUTH_KOREA_SAPA": {
+    "url": "https://www.moel.go.kr/",
+    "last_checked": "2026-06-12",
+    "last_status": "timeout"
+  },
+  "UK_ENVIRONMENT_ACT": {
+    "url": "https://www.legislation.gov.uk/ukpga/2021/30",
+    "hash": "sha256:0be2d827b2e5146e9e1e19de7e9178a09fffccccb69d524f4ce9041abee0d06f",
+    "last_checked": "2026-06-12",
+    "last_status": "ok"
+  }
+}

@@ -1,3 +1,11 @@
 {
-  "snapshots": []
+  "snapshots": [
+    {
+      "month": "2026-06",
+      "file": "2026-06.json",
+      "regulation_count": 102,
+      "changes": [],
+      "checked_at": "2026-06-12T05:35:49Z"
+    }
+  ]
 }
