@@ -144,6 +144,38 @@ const DetailModalComponent = {
                     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
                     <strong>Evidence:</strong> {{ req.evidence_guide }}
                   </div>
+
+                  <!-- Guidance toggle (only shown after enrichment) -->
+                  <button
+                    v-if="req.how_to_meet || req.vendor_actions"
+                    class="req-guidance-toggle"
+                    @click="toggleReqGuidance(req.id)"
+                  >
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <polyline :points="expandedReqs[req.id] ? '18 15 12 9 6 15' : '6 9 12 15 18 9'"/>
+                    </svg>
+                    {{ expandedReqs[req.id] ? 'Hide guidance' : 'Show compliance guidance' }}
+                  </button>
+
+                  <!-- Guidance grid (2×2) -->
+                  <div v-if="expandedReqs[req.id]" class="req-guidance-grid">
+                    <div v-if="req.how_to_meet" class="req-guidance-cell req-guidance-cell--how">
+                      <div class="req-guidance-cell__label">📋 How to Meet</div>
+                      <div class="req-guidance-cell__text">{{ req.how_to_meet }}</div>
+                    </div>
+                    <div v-if="req.internal_actions" class="req-guidance-cell req-guidance-cell--internal">
+                      <div class="req-guidance-cell__label">🏢 Internal Actions</div>
+                      <div class="req-guidance-cell__text">{{ req.internal_actions }}</div>
+                    </div>
+                    <div v-if="req.vendor_actions" class="req-guidance-cell req-guidance-cell--vendor">
+                      <div class="req-guidance-cell__label">🤝 Vendor Actions</div>
+                      <div class="req-guidance-cell__text">{{ req.vendor_actions }}</div>
+                    </div>
+                    <div v-if="req.compliance_evidence" class="req-guidance-cell req-guidance-cell--evidence">
+                      <div class="req-guidance-cell__label">✅ Compliance Evidence</div>
+                      <div class="req-guidance-cell__text">{{ req.compliance_evidence }}</div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -241,7 +273,8 @@ const DetailModalComponent = {
   data() {
     return {
       activeTab: 'overview',
-      checklistMenuOpen: false
+      checklistMenuOpen: false,
+      expandedReqs: {}
     };
   },
 
@@ -311,6 +344,7 @@ const DetailModalComponent = {
     '$s.selectedItem'() {
       this.activeTab = 'overview';
       this.checklistMenuOpen = false;
+      this.expandedReqs = {};
     }
   },
 
@@ -346,47 +380,79 @@ const DetailModalComponent = {
       }[t] || t;
     },
 
+    toggleReqGuidance(id) {
+      this.expandedReqs = { ...this.expandedReqs, [id]: !this.expandedReqs[id] };
+    },
+
     /* ── Feature E: Checklist Generator ── */
     exportChecklist(format) {
       this.checklistMenuOpen = false;
-      const reg = this.item;
+      const reg  = this.item;
       const reqs = reg.key_requirements || [];
-      const today = new Date().toISOString().slice(0, 10);
+      const today   = new Date().toISOString().slice(0, 10);
       const orgName = '[ Organisation Name ]';
+      const esc = s => '"' + String(s || '').replace(/"/g, '""') + '"';
 
       if (format === 'csv') {
+        const cols = ['Req #', 'Requirement', 'Control Theme',
+                      'How to Meet', 'Internal Actions', 'Vendor Actions', 'Compliance Evidence',
+                      'Status', 'Finding / Notes', 'Evidence Collected', 'Owner'];
         const rows = [
-          [reg.short_name + ' Compliance Checklist', '', '', '', '', '', ''],
-          ['Generated:', today, '', '', '', '', ''],
-          ['', '', '', '', '', '', ''],
-          ['Req #', 'Requirement', 'Control Theme', 'Status', 'Finding / Notes', 'Evidence Reference', 'Owner']
+          [reg.short_name + ' Compliance Checklist — Enhanced', ...Array(cols.length - 1).fill('')],
+          ['Generated:', today, ...Array(cols.length - 2).fill('')],
+          Array(cols.length).fill(''),
+          cols
         ];
         reqs.forEach((req, i) => {
-          const text = typeof req === 'object' ? req.text : req;
-          const theme = typeof req === 'object' ? this.themeLabel(req.control_theme) : '';
-          const id = typeof req === 'object' ? req.id : (reg.short_name + '-R' + String(i + 1).padStart(3, '0'));
-          rows.push([id, text, theme, '', '', '', '']);
+          const isObj = typeof req === 'object';
+          rows.push([
+            isObj ? req.id : (reg.short_name + '-R' + String(i + 1).padStart(3, '0')),
+            isObj ? req.text : req,
+            isObj ? this.themeLabel(req.control_theme) : '',
+            isObj ? (req.how_to_meet       || '') : '',
+            isObj ? (req.internal_actions  || '') : '',
+            isObj ? (req.vendor_actions    || '') : '',
+            isObj ? (req.compliance_evidence || '') : '',
+            '', '', '', ''
+          ]);
         });
-        const csv = rows.map(r => r.map(c => '"' + String(c).replace(/"/g, '""') + '"').join(',')).join('\n');
+        const csv = rows.map(r => r.map(esc).join(',')).join('\n');
         this._download(csv, `${reg.short_name}-checklist-${today}.csv`, 'text/csv');
 
       } else {
         const rowsHtml = reqs.map((req, i) => {
-          const text = typeof req === 'object' ? req.text : req;
-          const theme = typeof req === 'object' ? this.themeLabel(req.control_theme) : '';
-          const id = typeof req === 'object' ? req.id : (reg.short_name + '-R' + String(i + 1).padStart(3, '0'));
-          const consequence = typeof req === 'object' && req.consequence ? `<div style="font-size:11px;color:#b91c1c;margin-top:4px;">⚠ ${req.consequence}</div>` : '';
-          const evidence = typeof req === 'object' && req.evidence_guide ? `<div style="font-size:11px;color:#0369a1;margin-top:3px;">📄 ${req.evidence_guide}</div>` : '';
+          const isObj    = typeof req === 'object';
+          const text     = isObj ? req.text : req;
+          const theme    = isObj ? this.themeLabel(req.control_theme) : '';
+          const id       = isObj ? req.id : (reg.short_name + '-R' + String(i + 1).padStart(3, '0'));
+          const conseq   = isObj && req.consequence
+            ? `<div style="font-size:11px;color:#b91c1c;margin-top:4px;">⚠ ${req.consequence}</div>` : '';
+          const evGuide  = isObj && req.evidence_guide
+            ? `<div style="font-size:11px;color:#0369a1;margin-top:3px;">📄 ${req.evidence_guide}</div>` : '';
+
+          const hasGuidance = isObj && (req.how_to_meet || req.internal_actions || req.vendor_actions || req.compliance_evidence);
+          const guidanceRow = hasGuidance ? `
+            <tr class="guidance-row">
+              <td colspan="7" style="padding:0 10px 12px 30px;background:#f0f9ff;border-bottom:2px solid #bfdbfe;">
+                <div class="guidance-grid">
+                  ${req.how_to_meet ? `<div class="gc gc--how"><div class="gc__label">📋 HOW TO MEET</div><div class="gc__text">${req.how_to_meet}</div></div>` : ''}
+                  ${req.internal_actions ? `<div class="gc gc--internal"><div class="gc__label">🏢 INTERNAL ACTIONS</div><div class="gc__text">${req.internal_actions}</div></div>` : ''}
+                  ${req.vendor_actions ? `<div class="gc gc--vendor"><div class="gc__label">🤝 VENDOR ACTIONS</div><div class="gc__text">${req.vendor_actions}</div></div>` : ''}
+                  ${req.compliance_evidence ? `<div class="gc gc--evidence"><div class="gc__label">✅ COMPLIANCE EVIDENCE</div><div class="gc__text">${req.compliance_evidence}</div></div>` : ''}
+                </div>
+              </td>
+            </tr>` : '';
+
           return `
-            <tr>
-              <td style="font-weight:600;font-size:11px;color:#64748b;white-space:nowrap;">${id}</td>
-              <td>${text}${consequence}${evidence}</td>
-              <td style="font-size:11px;color:#64748b;">${theme}</td>
-              <td style="text-align:center;">☐</td>
+            <tr class="req-row">
+              <td style="font-weight:600;font-size:11px;color:#64748b;white-space:nowrap;vertical-align:top;">${id}</td>
+              <td style="vertical-align:top;">${text}${conseq}${evGuide}</td>
+              <td style="font-size:11px;color:#64748b;vertical-align:top;">${theme}</td>
+              <td style="text-align:center;vertical-align:top;">☐</td>
               <td></td>
               <td></td>
               <td></td>
-            </tr>`;
+            </tr>${guidanceRow}`;
         }).join('');
 
         const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
@@ -398,10 +464,22 @@ const DetailModalComponent = {
   table{width:100%;border-collapse:collapse;font-size:12px;}
   thead tr{background:#0f172a;color:#fff;}
   thead th{padding:8px 10px;text-align:left;font-weight:600;font-size:11px;}
-  tbody tr:nth-child(even){background:#f8fafc;}
-  tbody td{padding:8px 10px;vertical-align:top;border-bottom:1px solid #e2e8f0;}
+  .req-row td{padding:8px 10px;vertical-align:top;border-bottom:1px solid #e2e8f0;background:#fff;}
+  .req-row:nth-of-type(4n+1) td{background:#f8fafc;}
+  .guidance-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 0;}
+  .gc{background:#fff;border-radius:6px;padding:10px;border:1px solid #e2e8f0;}
+  .gc__label{font-size:10px;font-weight:700;letter-spacing:.05em;margin-bottom:5px;}
+  .gc__text{font-size:11px;color:#1e293b;line-height:1.55;}
+  .gc--how{border-color:#bfdbfe;}.gc--how .gc__label{color:#1d4ed8;}
+  .gc--internal{border-color:#bbf7d0;}.gc--internal .gc__label{color:#15803d;}
+  .gc--vendor{border-color:#fde68a;}.gc--vendor .gc__label{color:#92400e;}
+  .gc--evidence{border-color:#d9f99d;}.gc--evidence .gc__label{color:#3d7d0a;}
   .footer{margin-top:20px;font-size:11px;color:#94a3b8;border-top:1px solid #e2e8f0;padding-top:12px;}
-  @media print{body{padding:10px;}thead tr{-webkit-print-color-adjust:exact;print-color-adjust:exact;}}
+  @media print{
+    body{padding:10px;}
+    thead tr{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .guidance-grid{page-break-inside:avoid;}
+  }
 </style></head><body>
 <h1>${reg.name}</h1>
 <div class="meta">
@@ -412,11 +490,11 @@ const DetailModalComponent = {
   <thead><tr>
     <th style="width:90px;">Req #</th>
     <th>Requirement</th>
-    <th style="width:110px;">Theme</th>
+    <th style="width:100px;">Theme</th>
     <th style="width:50px;">Status</th>
-    <th style="width:140px;">Finding / Notes</th>
-    <th style="width:130px;">Evidence Ref</th>
-    <th style="width:90px;">Owner</th>
+    <th style="width:130px;">Finding / Notes</th>
+    <th style="width:120px;">Evidence Collected</th>
+    <th style="width:80px;">Owner</th>
   </tr></thead>
   <tbody>${rowsHtml}</tbody>
 </table>

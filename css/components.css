@@ -3190,3 +3190,66 @@
   border: 1px solid #e2e8f0;
   letter-spacing: 0.02em;
 }
+
+/* ── Requirement guidance grid (in detail modal) ───────────────────────────── */
+.req-guidance-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #0369a1;
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.req-guidance-toggle:hover { background: #bae6fd; }
+
+.req-guidance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.req-guidance-cell {
+  border-radius: 6px;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  background: #fafafa;
+}
+
+.req-guidance-cell__label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.req-guidance-cell__text {
+  font-size: 11.5px;
+  color: var(--color-text);
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.req-guidance-cell--how      { border-color: #bfdbfe; background: #eff6ff; }
+.req-guidance-cell--how      .req-guidance-cell__label { color: #1d4ed8; }
+
+.req-guidance-cell--internal { border-color: #bbf7d0; background: #f0fdf4; }
+.req-guidance-cell--internal .req-guidance-cell__label { color: #15803d; }
+
+.req-guidance-cell--vendor   { border-color: #fde68a; background: #fffbeb; }
+.req-guidance-cell--vendor   .req-guidance-cell__label { color: #92400e; }
+
+.req-guidance-cell--evidence { border-color: #d9f99d; background: #f7fee7; }
+.req-guidance-cell--evidence .req-guidance-cell__label { color: #3d7d0a; }
+
+@media (max-width: 540px) {
+  .req-guidance-grid { grid-template-columns: 1fr; }
+}
