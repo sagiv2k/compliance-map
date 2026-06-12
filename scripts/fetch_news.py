@@ -41,167 +41,335 @@ except ImportError:
 # Each entry may include:
 #   url               — primary feed URL (tried first)
 #   _fallback_urls    — list of alternative URLs tried if primary returns 0 entries
-#   trust_source      — skip relevance filter (use for non-English sources)
+#   trust_source      — True for non-English sources (skip keyword filter; Claude translates)
+#   language          — BCP-47 language code, for logging only (default "en")
 # ---------------------------------------------------------------------------
 FEEDS = [
-    # --- EU ---
+    # ── EU bodies ─────────────────────────────────────────────────────────────
     {
-        "source":        "EDPB",
-        "url":           "https://www.edpb.europa.eu/feed/news_en",
-        "_fallback_urls": [
-            "https://www.edpb.europa.eu/news/news_en.xml",
-            "https://edpb.europa.eu/news/news_en.xml",
-        ],
-        "categories":    ["data_privacy"],
-        "jurisdictions": ["eu"],
+        "source": "EDPB", "language": "en",
+        "url": "https://www.edpb.europa.eu/feed/news_en",
+        "_fallback_urls": ["https://www.edpb.europa.eu/news/news_en.xml", "https://edpb.europa.eu/news/news_en.xml"],
+        "categories": ["data_privacy"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "ENISA",
-        "url":           "https://www.enisa.europa.eu/news/enisa-news/news/RSS",
-        "_fallback_urls": [
-            "https://www.enisa.europa.eu/news/enisa-news/RSS",
-            "https://www.enisa.europa.eu/publications/rss",
-        ],
-        "categories":    ["cybersecurity"],
-        "jurisdictions": ["eu"],
-    },
-    # --- US Federal ---
-    {
-        "source":        "CISA",
-        "url":           "https://www.cisa.gov/uscert/ncas/alerts.xml",
-        "categories":    ["cybersecurity", "critical_infrastructure"],
-        "jurisdictions": ["us_federal"],
+        "source": "ENISA", "language": "en",
+        "url": "https://www.enisa.europa.eu/news/enisa-news/news/RSS",
+        "_fallback_urls": ["https://www.enisa.europa.eu/news/enisa-news/RSS", "https://www.enisa.europa.eu/publications/rss"],
+        "categories": ["cybersecurity"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "NIST",
-        "url":           "https://www.nist.gov/news-events/news/rss.xml",
-        "categories":    ["cybersecurity"],
-        "jurisdictions": ["us_federal"],
+        "source": "EBA", "language": "en",
+        "url": "https://www.eba.europa.eu/rss.xml",
+        "_fallback_urls": ["https://www.eba.europa.eu/en/rss.xml"],
+        "categories": ["finance"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "FTC",
-        "url":           "https://www.ftc.gov/feeds/press-release-rss.xml",
-        "_fallback_urls": [
-            "https://www.ftc.gov/feeds/news",
-            "https://www.ftc.gov/news-events/news/press-releases/rss",
-        ],
-        "categories":    ["data_privacy"],
-        "jurisdictions": ["us_federal"],
+        "source": "ESMA", "language": "en",
+        "url": "https://www.esma.europa.eu/press-news/rss.xml",
+        "_fallback_urls": ["https://www.esma.europa.eu/sites/default/files/rss.xml"],
+        "categories": ["finance"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "SEC",
-        "url":           "https://www.sec.gov/rss/news/pressreleases.rss",
-        "_fallback_urls": [
-            "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=press&dateb=&owner=include&count=40&output=atom",
-        ],
-        "categories":    ["finance"],
-        "jurisdictions": ["us_federal"],
+        "source": "EIOPA", "language": "en",
+        "url": "https://www.eiopa.europa.eu/media/news/rss.xml",
+        "_fallback_urls": ["https://www.eiopa.europa.eu/rss.xml"],
+        "categories": ["finance"], "jurisdictions": ["eu"],
+    },
+    # ── EU member states ──────────────────────────────────────────────────────
+    {
+        "source": "CNIL", "language": "fr", "trust_source": True,
+        "url": "https://www.cnil.fr/fr/rss.xml",
+        "_fallback_urls": ["https://www.cnil.fr/rss.xml"],
+        "categories": ["data_privacy"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "OCC",
-        "url":           "https://www.occ.gov/news-issuances/rss/occ-news.xml",
-        "_fallback_urls": [
-            "https://www.occ.gov/rss/occ-news.xml",
-            "https://www.occ.gov/tools-forms/tools/rss-feeds/occ-press-releases.xml",
-        ],
-        "categories":    ["finance"],
-        "jurisdictions": ["us_federal"],
+        "source": "AEPD", "language": "es", "trust_source": True,
+        "url": "https://www.aepd.es/es/feeds/noticias",
+        "_fallback_urls": ["https://www.aepd.es/rss.xml"],
+        "categories": ["data_privacy"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "CFPB",
-        "url":           "https://www.consumerfinance.gov/about-us/newsroom/feed/",
-        "categories":    ["finance", "data_privacy"],
-        "jurisdictions": ["us_federal"],
+        "source": "Garante", "language": "it", "trust_source": True,
+        "url": "https://www.garanteprivacy.it/rss",
+        "_fallback_urls": ["https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/rss"],
+        "categories": ["data_privacy"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "FED",
-        "url":           "https://www.federalreserve.gov/feeds/press_all.xml",
-        "_fallback_urls": [
-            "https://www.federalreserve.gov/feeds/press_monetary.xml",
-        ],
-        "categories":    ["finance"],
-        "jurisdictions": ["us_federal"],
-    },
-    # --- UK ---
-    {
-        "source":        "ICO",
-        "url":           "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/rss",
-        "_fallback_urls": [
-            "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/rss/",
-            "https://ico.org.uk/rss/all",
-        ],
-        "categories":    ["data_privacy"],
-        "jurisdictions": ["eu"],
-    },
-    # --- International / Multi-jurisdiction ---
-    {
-        "source":        "BIS",
-        "url":           "https://www.bis.org/rss/presstat.xml",
-        "_fallback_urls": [
-            "https://www.bis.org/rss/presspdf.xml",
-            "https://www.bis.org/rss/speeches.xml",
-        ],
-        "categories":    ["finance"],
-        "jurisdictions": ["international"],
+        "source": "BfDI", "language": "de", "trust_source": True,
+        "url": "https://www.bfdi.bund.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSS_Newsfeed.xml",
+        "_fallback_urls": ["https://www.bfdi.bund.de/RSS"],
+        "categories": ["data_privacy"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "EBA",
-        "url":           "https://www.eba.europa.eu/rss.xml",
-        "_fallback_urls": [
-            "https://www.eba.europa.eu/en/rss.xml",
-        ],
-        "categories":    ["finance"],
-        "jurisdictions": ["eu"],
+        "source": "BSI", "language": "de", "trust_source": True,
+        "url": "https://www.bsi.bund.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSS_Newsfeed.xml",
+        "_fallback_urls": ["https://www.bsi.bund.de/rss"],
+        "categories": ["cybersecurity"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "IMO",
-        "url":           "https://www.imo.org/en/pages/pressbriefingsrss.aspx",
-        "_fallback_urls": [
-            "https://www.imo.org/rss/rssnews.aspx",
-            "https://www.imo.org/en/MediaCentre/rss/rssnews.aspx",
-        ],
-        "categories":    ["maritime"],
-        "jurisdictions": ["international"],
+        "source": "BaFin", "language": "en",
+        "url": "https://www.bafin.de/rss/en/",
+        "_fallback_urls": ["https://www.bafin.de/rss/de/"],
+        "categories": ["finance"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "ILO",
-        "url":           "https://www.ilo.org/rss/iloNewsAndPress.rss",
-        "_fallback_urls": [
-            "https://www.ilo.org/global/about-the-ilo/newsroom/news/lang--en/rss.xml",
-            "https://www.ilo.org/global/about-the-ilo/newsroom/lang--en/rss.xml",
-        ],
-        "categories":    ["labor"],
-        "jurisdictions": ["international"],
+        "source": "ANSSI", "language": "fr", "trust_source": True,
+        "url": "https://www.ssi.gouv.fr/actualite/feed/",
+        "_fallback_urls": ["https://www.ssi.gouv.fr/feed/"],
+        "categories": ["cybersecurity"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "FATF",
-        "url":           "https://www.fatf-gafi.org/en/topics/fatf-recommendations.rss.xml",
-        "_fallback_urls": [
-            "https://www.fatf-gafi.org/en/publications.rss.xml",
-            "https://www.fatf-gafi.org/rss/publications.rss",
-        ],
-        "categories":    ["finance"],
-        "jurisdictions": ["international"],
+        "source": "DPC", "language": "en",
+        "url": "https://www.dataprotection.ie/en/news-media/rss",
+        "_fallback_urls": ["https://www.dataprotection.ie/rss"],
+        "categories": ["data_privacy"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "FSB",
-        "url":           "https://www.fsb.org/feed/",
-        "_fallback_urls": [
-            "https://www.fsb.org/rss/",
-        ],
-        "categories":    ["finance"],
-        "jurisdictions": ["international"],
+        "source": "AP-NL", "language": "nl", "trust_source": True,
+        "url": "https://www.autoriteitpersoonsgegevens.nl/nl/rss.xml",
+        "_fallback_urls": ["https://www.autoriteitpersoonsgegevens.nl/rss.xml"],
+        "categories": ["data_privacy"], "jurisdictions": ["eu"],
     },
     {
-        "source":        "ANPD",
-        "url":           "https://www.gov.br/anpd/pt-br/assuntos/noticias/RSS",
-        "_fallback_urls": [
-            "https://www.gov.br/anpd/pt-br/assuntos/noticias/rss.xml",
-            "https://www.gov.br/anpd/pt-br/assuntos/RSS",
-        ],
-        "categories":    ["data_privacy"],
-        "jurisdictions": ["latam"],
-        "trust_source":  True,   # Portuguese — skip English keyword filter
+        "source": "IMY", "language": "sv", "trust_source": True,
+        "url": "https://www.imy.se/rss.xml",
+        "_fallback_urls": ["https://www.imy.se/en/rss.xml"],
+        "categories": ["data_privacy"], "jurisdictions": ["eu"],
+    },
+    {
+        "source": "Datatilsynet", "language": "no", "trust_source": True,
+        "url": "https://www.datatilsynet.no/rss",
+        "_fallback_urls": ["https://www.datatilsynet.no/om-datatilsynet/rss/"],
+        "categories": ["data_privacy"], "jurisdictions": ["eu"],
+    },
+    # ── United Kingdom ────────────────────────────────────────────────────────
+    {
+        "source": "ICO", "language": "en",
+        "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/rss",
+        "_fallback_urls": ["https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/rss/", "https://ico.org.uk/rss/all"],
+        "categories": ["data_privacy"], "jurisdictions": ["uk"],
+    },
+    {
+        "source": "NCSC", "language": "en",
+        "url": "https://www.ncsc.gov.uk/feeds/news.xml",
+        "_fallback_urls": ["https://www.ncsc.gov.uk/api/1/services/v1/report-rss-feed.xml"],
+        "categories": ["cybersecurity"], "jurisdictions": ["uk"],
+    },
+    {
+        "source": "FCA", "language": "en",
+        "url": "https://www.fca.org.uk/news/rss.xml",
+        "_fallback_urls": ["https://www.fca.org.uk/rss.xml"],
+        "categories": ["finance"], "jurisdictions": ["uk"],
+    },
+    # ── United States ─────────────────────────────────────────────────────────
+    {
+        "source": "CISA", "language": "en",
+        "url": "https://www.cisa.gov/uscert/ncas/alerts.xml",
+        "categories": ["cybersecurity", "critical_infrastructure"], "jurisdictions": ["us_federal"],
+    },
+    {
+        "source": "NIST", "language": "en",
+        "url": "https://www.nist.gov/news-events/news/rss.xml",
+        "categories": ["cybersecurity"], "jurisdictions": ["us_federal"],
+    },
+    {
+        "source": "FTC", "language": "en",
+        "url": "https://www.ftc.gov/feeds/press-release-rss.xml",
+        "_fallback_urls": ["https://www.ftc.gov/feeds/news", "https://www.ftc.gov/news-events/news/press-releases/rss"],
+        "categories": ["data_privacy"], "jurisdictions": ["us_federal"],
+    },
+    {
+        "source": "SEC", "language": "en",
+        "url": "https://www.sec.gov/rss/news/pressreleases.rss",
+        "_fallback_urls": ["https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=press&dateb=&owner=include&count=40&output=atom"],
+        "categories": ["finance"], "jurisdictions": ["us_federal"],
+    },
+    {
+        "source": "OCC", "language": "en",
+        "url": "https://www.occ.gov/news-issuances/rss/occ-news.xml",
+        "_fallback_urls": ["https://www.occ.gov/rss/occ-news.xml"],
+        "categories": ["finance"], "jurisdictions": ["us_federal"],
+    },
+    {
+        "source": "CFPB", "language": "en",
+        "url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
+        "categories": ["finance", "data_privacy"], "jurisdictions": ["us_federal"],
+    },
+    {
+        "source": "FED", "language": "en",
+        "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+        "_fallback_urls": ["https://www.federalreserve.gov/feeds/press_monetary.xml"],
+        "categories": ["finance"], "jurisdictions": ["us_federal"],
+    },
+    # ── Canada ────────────────────────────────────────────────────────────────
+    {
+        "source": "OPC-CA", "language": "en",
+        "url": "https://www.priv.gc.ca/en/rss/",
+        "_fallback_urls": ["https://www.priv.gc.ca/en/opc-news/news-and-announcements/rss/"],
+        "categories": ["data_privacy"], "jurisdictions": ["us_state"],
+    },
+    # ── Brazil ────────────────────────────────────────────────────────────────
+    {
+        "source": "ANPD", "language": "pt", "trust_source": True,
+        "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/RSS",
+        "_fallback_urls": ["https://www.gov.br/anpd/pt-br/assuntos/noticias/rss.xml", "https://www.gov.br/anpd/pt-br/assuntos/RSS"],
+        "categories": ["data_privacy"], "jurisdictions": ["latam"],
+    },
+    # ── Colombia ──────────────────────────────────────────────────────────────
+    {
+        "source": "SIC-CO", "language": "es", "trust_source": True,
+        "url": "https://www.sic.gov.co/rss.xml",
+        "_fallback_urls": ["https://www.sic.gov.co/noticias/rss"],
+        "categories": ["data_privacy"], "jurisdictions": ["latam"],
+    },
+    # ── Australia ─────────────────────────────────────────────────────────────
+    {
+        "source": "OAIC", "language": "en",
+        "url": "https://www.oaic.gov.au/updates/rss/",
+        "_fallback_urls": ["https://www.oaic.gov.au/rss/"],
+        "categories": ["data_privacy"], "jurisdictions": ["australia"],
+    },
+    {
+        "source": "ACSC", "language": "en",
+        "url": "https://www.cyber.gov.au/news-and-updates/rss.xml",
+        "_fallback_urls": ["https://www.cyber.gov.au/rss.xml"],
+        "categories": ["cybersecurity"], "jurisdictions": ["australia"],
+    },
+    # ── New Zealand ───────────────────────────────────────────────────────────
+    {
+        "source": "NZ-OPC", "language": "en",
+        "url": "https://www.privacy.org.nz/news/rss/",
+        "_fallback_urls": ["https://www.privacy.org.nz/feed/"],
+        "categories": ["data_privacy"], "jurisdictions": ["australia"],
+    },
+    # ── Singapore ─────────────────────────────────────────────────────────────
+    {
+        "source": "PDPC-SG", "language": "en",
+        "url": "https://www.pdpc.gov.sg/news/rss",
+        "_fallback_urls": ["https://www.pdpc.gov.sg/feeds/news"],
+        "categories": ["data_privacy"], "jurisdictions": ["apac"],
+    },
+    {
+        "source": "CSA-SG", "language": "en",
+        "url": "https://www.csa.gov.sg/news/rss",
+        "_fallback_urls": ["https://www.csa.gov.sg/feeds/news"],
+        "categories": ["cybersecurity"], "jurisdictions": ["apac"],
+    },
+    # ── Japan ─────────────────────────────────────────────────────────────────
+    {
+        "source": "PPC-JP", "language": "ja", "trust_source": True,
+        "url": "https://www.ppc.go.jp/news/rss/",
+        "_fallback_urls": ["https://www.ppc.go.jp/rss/"],
+        "categories": ["data_privacy"], "jurisdictions": ["apac"],
+    },
+    # ── India ─────────────────────────────────────────────────────────────────
+    {
+        "source": "MeitY", "language": "en",
+        "url": "https://www.meity.gov.in/rss.xml",
+        "_fallback_urls": ["https://www.meity.gov.in/feed"],
+        "categories": ["cybersecurity", "data_privacy"], "jurisdictions": ["apac"],
+    },
+    {
+        "source": "CERT-In", "language": "en",
+        "url": "https://www.cert-in.org.in/RSS.jsp",
+        "_fallback_urls": ["https://www.cert-in.org.in/rss/"],
+        "categories": ["cybersecurity"], "jurisdictions": ["apac"],
+    },
+    # ── Nigeria ───────────────────────────────────────────────────────────────
+    {
+        "source": "NITDA", "language": "en",
+        "url": "https://nitda.gov.ng/feed/",
+        "_fallback_urls": ["https://nitda.gov.ng/rss/"],
+        "categories": ["data_privacy", "cybersecurity"], "jurisdictions": ["africa"],
+    },
+    # ── International ─────────────────────────────────────────────────────────
+    {
+        "source": "BIS", "language": "en",
+        "url": "https://www.bis.org/rss/presstat.xml",
+        "_fallback_urls": ["https://www.bis.org/rss/presspdf.xml", "https://www.bis.org/rss/speeches.xml"],
+        "categories": ["finance"], "jurisdictions": ["international"],
+    },
+    {
+        "source": "IMO", "language": "en",
+        "url": "https://www.imo.org/en/pages/pressbriefingsrss.aspx",
+        "_fallback_urls": ["https://www.imo.org/rss/rssnews.aspx", "https://www.imo.org/en/MediaCentre/rss/rssnews.aspx"],
+        "categories": ["maritime"], "jurisdictions": ["international"],
+    },
+    {
+        "source": "ILO", "language": "en",
+        "url": "https://www.ilo.org/rss/iloNewsAndPress.rss",
+        "_fallback_urls": ["https://www.ilo.org/global/about-the-ilo/newsroom/news/lang--en/rss.xml"],
+        "categories": ["labor"], "jurisdictions": ["international"],
+    },
+    {
+        "source": "FATF", "language": "en",
+        "url": "https://www.fatf-gafi.org/en/topics/fatf-recommendations.rss.xml",
+        "_fallback_urls": ["https://www.fatf-gafi.org/en/publications.rss.xml", "https://www.fatf-gafi.org/rss/publications.rss"],
+        "categories": ["finance"], "jurisdictions": ["international"],
+    },
+    {
+        "source": "FSB", "language": "en",
+        "url": "https://www.fsb.org/feed/",
+        "_fallback_urls": ["https://www.fsb.org/rss/"],
+        "categories": ["finance"], "jurisdictions": ["international"],
+    },
+]
+
+# ---------------------------------------------------------------------------
+# Country-specific regulatory websites (HTML scrape — no RSS available)
+# Used for bodies in countries without machine-readable feeds.
+# trust_source=True means Claude will translate non-English content.
+# ---------------------------------------------------------------------------
+COUNTRY_SCRAPERS = [
+    # Israel — Privacy Protection Authority
+    {
+        "source": "IL-PPA", "language": "en",
+        "url": "https://www.gov.il/en/departments/news/privacyprotectionauthority",
+        "_fallback_urls": ["https://www.gov.il/en/departments/the_privacy_protection_authority/govil-landing-page"],
+        "categories": ["data_privacy"], "jurisdictions": ["mena"],
+    },
+    # South Korea — Personal Information Protection Commission
+    {
+        "source": "PIPC-KR", "language": "ko", "trust_source": True,
+        "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardList.do?bbsId=BS217",
+        "_fallback_urls": ["https://www.pipc.go.kr/np/default/page.do?mCode=D010010000"],
+        "categories": ["data_privacy"], "jurisdictions": ["apac"],
+    },
+    # South Africa — Information Regulator
+    {
+        "source": "InfoReg-ZA", "language": "en",
+        "url": "https://www.justice.gov.za/inforeg/news.html",
+        "_fallback_urls": ["https://www.inforegulator.org.za/news/"],
+        "categories": ["data_privacy"], "jurisdictions": ["africa"],
+    },
+    # UAE — Telecommunications & Digital Regulatory Authority
+    {
+        "source": "TDRA-UAE", "language": "en",
+        "url": "https://tdra.gov.ae/en/news",
+        "_fallback_urls": ["https://www.tdra.gov.ae/en/media-centre/news"],
+        "categories": ["cybersecurity", "data_privacy"], "jurisdictions": ["mena"],
+    },
+    # Saudi Arabia — National Data Management Office
+    {
+        "source": "NDMO-SA", "language": "ar", "trust_source": True,
+        "url": "https://ndmo.gov.sa/en/news",
+        "_fallback_urls": ["https://ndmo.gov.sa/ar/news", "https://ndmo.gov.sa/news"],
+        "categories": ["data_privacy"], "jurisdictions": ["mena"],
+    },
+    # China — Cyberspace Administration of China
+    {
+        "source": "CAC-CN", "language": "zh", "trust_source": True,
+        "url": "http://www.cac.gov.cn/xwzx/index.htm",
+        "_fallback_urls": ["https://www.cac.gov.cn/xwzx/"],
+        "categories": ["data_privacy", "cybersecurity"], "jurisdictions": ["china"],
+    },
+    # India — MEITY press releases (HTML fallback if RSS fails)
+    {
+        "source": "APRA-AU", "language": "en",
+        "url": "https://www.apra.gov.au/news-and-publications/apra-releases",
+        "_fallback_urls": ["https://www.apra.gov.au/news-and-publications"],
+        "categories": ["finance"], "jurisdictions": ["australia"],
     },
 ]
 
@@ -414,7 +582,7 @@ def fetch_rss_feeds() -> dict[str, dict]:
 
 
 def fetch_advisory_pages() -> dict[str, dict]:
-    """Best-effort HTML scrape of Big Four advisory pages (no JS rendering)."""
+    """Best-effort HTML scrape of Big Four advisory pages + country regulatory sites."""
     if not _BS4_AVAILABLE:
         print("  [skip] beautifulsoup4 not installed — skipping advisory pages")
         return {}
@@ -422,7 +590,7 @@ def fetch_advisory_pages() -> dict[str, dict]:
     items: dict[str, dict] = {}
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    for cfg in BIG4_SCRAPERS:
+    for cfg in BIG4_SCRAPERS + COUNTRY_SCRAPERS:
         source = cfg["source"]
         print(f"  HTML {source:<10} …", end=" ", flush=True)
 
@@ -542,7 +710,10 @@ def enrich_with_claude(articles: list) -> list:
         for i, a in enumerate(articles)
     )
 
-    prompt = f"""You are a regulatory compliance analyst. Analyze each numbered article and return a JSON array.
+    prompt = f"""You are a regulatory compliance analyst covering global regulatory news.
+
+IMPORTANT: Articles may be in any language (French, German, Japanese, Arabic, Hebrew, Korean, Chinese, etc.).
+Always write ai_summary in English, regardless of the source language. Translate and summarize as needed.
 
 Available regulation IDs (use exact IDs only; return [] if none clearly match):
 {reg_index}
@@ -550,7 +721,7 @@ Available regulation IDs (use exact IDs only; return [] if none clearly match):
 For each article return exactly:
 {{
   "index": <number>,
-  "ai_summary": "<2 sentences on compliance impact, max 220 chars total>",
+  "ai_summary": "<2 sentences in English on compliance impact, max 220 chars total>",
   "regulation_ids": ["<EXACT_ID>", ...],
   "priority": "high" | "medium" | "low"
 }}
@@ -609,7 +780,7 @@ def main():
     rss_items = fetch_rss_feeds()
 
     print()
-    print("[ Big Four advisory pages ]")
+    print("[ Advisory pages + country regulatory sites ]")
     advisory_items = fetch_advisory_pages()
 
     # Merge all sources (RSS takes precedence over advisory for same URL)
