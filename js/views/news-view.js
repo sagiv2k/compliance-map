@@ -7,8 +7,8 @@ const NewsView = {
           <div>
             <h1 class="view-title">Regulatory News</h1>
             <p class="view-subtitle">
-              Latest updates from EDPB, ENISA, CISA, NIST, FTC, ICO, SEC, EBA, ESMA, BIS, OCC, CFPB,
-              Federal Reserve, IMO, and others. Updated daily via automated feed collection.
+              Latest regulatory and compliance news from official bodies (EDPB, CISA, FTC, ICO, SEC…)
+              and major news sources (Reuters, Yahoo Finance, AP, BBC, Politico) across all regulated countries. Updated weekly.
             </p>
           </div>
           <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
@@ -227,10 +227,12 @@ const NewsView = {
         'FATF':    '#b45309',
         'FSB':     '#7c3aed',
         'ANPD':    '#009C3B',
-        'PwC':     '#d97706',
-        'Deloitte':'#0f172a',
-        'EY':      '#c2410c',
-        'KPMG':    '#1d4ed8',
+        'Politico-EU': '#003399',
+        'TheRegister': '#c2410c',
+        'GNews-EU':  '#003399',
+        'GNews-US':  '#B22234',
+        'GNews-UK':  '#0d9488',
+        'GNews-Global': '#475569',
         'OTHER':   '#64748b'
       }
     };

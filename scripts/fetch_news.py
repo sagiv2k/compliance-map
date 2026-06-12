@@ -374,47 +374,176 @@ COUNTRY_SCRAPERS = [
 ]
 
 # ---------------------------------------------------------------------------
-# Big Four advisory pages (HTML scrape — best-effort, no JS rendering)
+# Major news websites — RSS feeds and Google News aggregator queries.
+# Google News RSS aggregates from Yahoo Finance, Reuters, AP, BBC, etc.
+# Country-specific queries use local language where trust_source=True.
 # ---------------------------------------------------------------------------
-BIG4_SCRAPERS = [
+NEWS_SITE_FEEDS = [
+    # ── Direct RSS: large news outlets ────────────────────────────────────────
     {
-        "source":        "PwC",
-        "url":           "https://www.pwc.com/gx/en/services/advisory/regulatory.html",
-        "_fallback_urls": [
-            "https://www.pwc.com/gx/en/issues/regulation.html",
-        ],
-        "categories":    ["finance", "data_privacy"],
+        "source":     "Politico-EU",
+        "url":        "https://www.politico.eu/feed/",
+        "_fallback_urls": ["https://www.politico.eu/rss/"],
+        "categories": ["data_privacy", "cybersecurity", "finance", "ai_governance"],
+        "jurisdictions": ["eu"],
+    },
+    {
+        "source":     "TheRegister",
+        "url":        "https://www.theregister.com/headlines.atom",
+        "_fallback_urls": ["https://www.theregister.com/security/headlines.atom"],
+        "categories": ["cybersecurity", "data_privacy"],
+        "jurisdictions": ["international"],
+    },
+    # ── Google News: global ───────────────────────────────────────────────────
+    {
+        "source":     "GNews-Global",
+        "url":        "https://news.google.com/rss/search?q=regulation+compliance+%22data+protection%22+enforcement+fine+penalty&hl=en&gl=US&ceid=US:en",
+        "categories": ["data_privacy", "cybersecurity", "finance"],
         "jurisdictions": ["international"],
     },
     {
-        "source":        "Deloitte",
-        "url":           "https://www2.deloitte.com/us/en/insights/industry/financial-services.html",
-        "_fallback_urls": [
-            "https://www2.deloitte.com/us/en/insights/topics/regulatory-environment.html",
-            "https://www2.deloitte.com/us/en/insights/industry/financial-services/regulatory-considerations.html",
-        ],
-        "categories":    ["finance", "data_privacy"],
+        "source":     "GNews-AI",
+        "url":        "https://news.google.com/rss/search?q=%22AI+Act%22+%22artificial+intelligence%22+regulation+governance+compliance&hl=en&gl=US&ceid=US:en",
+        "categories": ["ai_governance"],
         "jurisdictions": ["international"],
     },
     {
-        "source":        "EY",
-        "url":           "https://www.ey.com/en_gl/insights",
-        "_fallback_urls": [
-            "https://www.ey.com/en_gl/insights/tax",
-            "https://www.ey.com/en_gl/insights/financial-services",
-        ],
-        "categories":    ["finance"],
+        "source":     "GNews-AML",
+        "url":        "https://news.google.com/rss/search?q=FATF+AML+sanctions+%22financial+crime%22+compliance+regulation&hl=en&gl=US&ceid=US:en",
+        "categories": ["finance"],
         "jurisdictions": ["international"],
     },
+    # ── Google News: EU ───────────────────────────────────────────────────────
     {
-        "source":        "KPMG",
-        "url":           "https://kpmg.com/xx/en/home/topics/regulatory.html",
-        "_fallback_urls": [
-            "https://kpmg.com/xx/en/home/insights/2024/02/regulatory-insights.html",
-            "https://kpmg.com/xx/en/home/insights.html",
-        ],
-        "categories":    ["finance"],
-        "jurisdictions": ["international"],
+        "source":     "GNews-EU",
+        "url":        "https://news.google.com/rss/search?q=EU+GDPR+NIS2+DORA+%22AI+Act%22+regulation+compliance&hl=en&gl=US&ceid=US:en",
+        "categories": ["data_privacy", "cybersecurity", "ai_governance", "finance"],
+        "jurisdictions": ["eu"],
+    },
+    {
+        "source":     "GNews-DE",
+        "url":        "https://news.google.com/rss/search?q=Datenschutz+DSGVO+BaFin+Regulierung+Compliance&hl=de&gl=DE&ceid=DE:de",
+        "categories": ["data_privacy", "finance"],
+        "jurisdictions": ["eu"],
+        "trust_source": True,
+        "language": "de",
+    },
+    {
+        "source":     "GNews-FR",
+        "url":        "https://news.google.com/rss/search?q=CNIL+donn%C3%A9es+personnelles+r%C3%A8glement+conformit%C3%A9&hl=fr&gl=FR&ceid=FR:fr",
+        "categories": ["data_privacy"],
+        "jurisdictions": ["eu"],
+        "trust_source": True,
+        "language": "fr",
+    },
+    # ── Google News: UK ───────────────────────────────────────────────────────
+    {
+        "source":     "GNews-UK",
+        "url":        "https://news.google.com/rss/search?q=ICO+FCA+NCSC+%22data+protection%22+regulation+compliance+UK&hl=en&gl=GB&ceid=GB:en",
+        "categories": ["data_privacy", "finance", "cybersecurity"],
+        "jurisdictions": ["uk"],
+    },
+    # ── Google News: US ───────────────────────────────────────────────────────
+    {
+        "source":     "GNews-US",
+        "url":        "https://news.google.com/rss/search?q=FTC+SEC+CISA+%22data+privacy%22+cybersecurity+compliance+rule&hl=en&gl=US&ceid=US:en",
+        "categories": ["data_privacy", "cybersecurity", "finance"],
+        "jurisdictions": ["us_federal"],
+    },
+    # ── Google News: Israel ───────────────────────────────────────────────────
+    {
+        "source":     "GNews-IL",
+        "url":        "https://news.google.com/rss/search?q=Israel+%22privacy+protection%22+%22Cyber+Directorate%22+regulation+compliance&hl=en&gl=IL&ceid=IL:en",
+        "categories": ["data_privacy", "cybersecurity"],
+        "jurisdictions": ["mena"],
+    },
+    # ── Google News: Brazil ───────────────────────────────────────────────────
+    {
+        "source":     "GNews-BR",
+        "url":        "https://news.google.com/rss/search?q=LGPD+ANPD+prote%C3%A7%C3%A3o+de+dados+regula%C3%A7%C3%A3o&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+        "categories": ["data_privacy"],
+        "jurisdictions": ["latam"],
+        "trust_source": True,
+        "language": "pt",
+    },
+    # ── Google News: China ────────────────────────────────────────────────────
+    {
+        "source":     "GNews-CN",
+        "url":        "https://news.google.com/rss/search?q=China+PIPL+CAC+%22data+protection%22+cybersecurity+regulation&hl=en&gl=US&ceid=US:en",
+        "categories": ["data_privacy", "cybersecurity"],
+        "jurisdictions": ["china"],
+    },
+    # ── Google News: Japan ────────────────────────────────────────────────────
+    {
+        "source":     "GNews-JP",
+        "url":        "https://news.google.com/rss/search?q=Japan+APPI+%22personal+information%22+PPC+compliance+regulation&hl=en&gl=US&ceid=US:en",
+        "categories": ["data_privacy"],
+        "jurisdictions": ["apac"],
+    },
+    # ── Google News: Singapore ────────────────────────────────────────────────
+    {
+        "source":     "GNews-SG",
+        "url":        "https://news.google.com/rss/search?q=Singapore+PDPA+%22personal+data%22+MAS+compliance+regulation&hl=en&gl=SG&ceid=SG:en",
+        "categories": ["data_privacy", "finance"],
+        "jurisdictions": ["apac"],
+    },
+    # ── Google News: India ────────────────────────────────────────────────────
+    {
+        "source":     "GNews-IN",
+        "url":        "https://news.google.com/rss/search?q=India+DPDPA+%22data+protection%22+cybersecurity+MeitY+compliance&hl=en&gl=IN&ceid=IN:en",
+        "categories": ["data_privacy", "cybersecurity"],
+        "jurisdictions": ["apac"],
+    },
+    # ── Google News: Australia ────────────────────────────────────────────────
+    {
+        "source":     "GNews-AU",
+        "url":        "https://news.google.com/rss/search?q=Australia+%22Privacy+Act%22+OAIC+APRA+compliance+regulation&hl=en&gl=AU&ceid=AU:en",
+        "categories": ["data_privacy", "finance"],
+        "jurisdictions": ["australia"],
+    },
+    # ── Google News: South Korea ──────────────────────────────────────────────
+    {
+        "source":     "GNews-KR",
+        "url":        "https://news.google.com/rss/search?q=%22South+Korea%22+PIPA+PIPC+%22personal+information%22+regulation&hl=en&gl=US&ceid=US:en",
+        "categories": ["data_privacy"],
+        "jurisdictions": ["apac"],
+    },
+    # ── Google News: Canada ───────────────────────────────────────────────────
+    {
+        "source":     "GNews-CA",
+        "url":        "https://news.google.com/rss/search?q=Canada+PIPEDA+%22Law+25%22+%22privacy+law%22+OPC+compliance&hl=en&gl=CA&ceid=CA:en",
+        "categories": ["data_privacy"],
+        "jurisdictions": ["us_state"],
+    },
+    # ── Google News: Saudi Arabia ─────────────────────────────────────────────
+    {
+        "source":     "GNews-SA",
+        "url":        "https://news.google.com/rss/search?q=%22Saudi+Arabia%22+PDPL+NDMO+%22data+protection%22+cybersecurity&hl=en&gl=SA&ceid=SA:en",
+        "categories": ["data_privacy", "cybersecurity"],
+        "jurisdictions": ["mena"],
+    },
+    # ── Google News: Nigeria ──────────────────────────────────────────────────
+    {
+        "source":     "GNews-NG",
+        "url":        "https://news.google.com/rss/search?q=Nigeria+NDPA+NITDA+%22data+protection%22+compliance&hl=en&gl=NG&ceid=NG:en",
+        "categories": ["data_privacy"],
+        "jurisdictions": ["africa"],
+    },
+    # ── Google News: South Africa ─────────────────────────────────────────────
+    {
+        "source":     "GNews-ZA",
+        "url":        "https://news.google.com/rss/search?q=%22South+Africa%22+POPIA+%22Information+Regulator%22+compliance&hl=en&gl=ZA&ceid=ZA:en",
+        "categories": ["data_privacy"],
+        "jurisdictions": ["africa"],
+    },
+    # ── Google News: Colombia ─────────────────────────────────────────────────
+    {
+        "source":     "GNews-CO",
+        "url":        "https://news.google.com/rss/search?q=Colombia+SIC+%22habeas+data%22+protecci%C3%B3n+datos&hl=es&gl=CO&ceid=CO:es",
+        "categories": ["data_privacy"],
+        "jurisdictions": ["latam"],
+        "trust_source": True,
+        "language": "es",
     },
 ]
 
@@ -525,7 +654,7 @@ def _try_feed_urls(feed_cfg: dict) -> tuple[list, str]:
 def fetch_rss_feeds() -> dict[str, dict]:
     items: dict[str, dict] = {}
 
-    for feed_cfg in FEEDS:
+    for feed_cfg in FEEDS + NEWS_SITE_FEEDS:
         source = feed_cfg["source"]
         trust  = feed_cfg.get("trust_source", False)
         print(f"  RSS  {source:<10} …", end=" ", flush=True)
@@ -582,7 +711,7 @@ def fetch_rss_feeds() -> dict[str, dict]:
 
 
 def fetch_advisory_pages() -> dict[str, dict]:
-    """Best-effort HTML scrape of Big Four advisory pages + country regulatory sites."""
+    """Best-effort HTML scrape of country regulatory body websites (no RSS available)."""
     if not _BS4_AVAILABLE:
         print("  [skip] beautifulsoup4 not installed — skipping advisory pages")
         return {}
@@ -590,7 +719,7 @@ def fetch_advisory_pages() -> dict[str, dict]:
     items: dict[str, dict] = {}
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    for cfg in BIG4_SCRAPERS + COUNTRY_SCRAPERS:
+    for cfg in COUNTRY_SCRAPERS:
         source = cfg["source"]
         print(f"  HTML {source:<10} …", end=" ", flush=True)
 
