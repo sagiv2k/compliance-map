@@ -42,9 +42,10 @@ const CalendarView = {
         <input type="date" class="calendar-date-input" v-model="refDateStr" />
         <button class="btn-calendar-reset" @click="resetDate" v-if="refDateStr !== todayStr">Reset to today</button>
         <span style="font-size:12px;color:var(--color-text-muted);">
-          {{ allEvents.filter(e => !e.isRisk && !e.isVendor).length }} events · {{ filteredRegulations.length }} regulations
+          {{ allEvents.filter(e => !e.isRisk && !e.isVendor && !e.isAudit).length }} events · {{ filteredRegulations.length }} regulations
           <span v-if="riskEventCount > 0" style="color:#dc2626;"> · {{ riskEventCount }} risk due dates</span>
           <span v-if="vendorEventCount > 0" style="color:#7c3aed;"> · {{ vendorEventCount }} vendor reviews</span>
+          <span v-if="auditEventCount > 0" style="color:#0e7490;"> · {{ auditEventCount }} audit findings</span>
         </span>
       </div>
 
@@ -66,17 +67,18 @@ const CalendarView = {
                   v-for="ev in lane.events"
                   :key="ev.key"
                   class="calendar-card"
-                  :class="{'calendar-card--risk': ev.isRisk, 'calendar-card--vendor': ev.isVendor}"
-                  @click="ev.isRisk ? ($s.activeView = 'risk-register') : ev.isVendor ? ($s.activeView = 'vendor-risk') : $openItem(ev.reg, 'regulation')"
-                  :title="(ev.isRisk || ev.isVendor) ? ev.title : ev.reg.name"
+                  :class="{'calendar-card--risk': ev.isRisk, 'calendar-card--vendor': ev.isVendor, 'calendar-card--audit': ev.isAudit}"
+                  @click="ev.isRisk ? ($s.activeView='risk-register') : ev.isVendor ? ($s.activeView='vendor-risk') : ev.isAudit ? ($s.activeView='audit') : $openItem(ev.reg,'regulation')"
+                  :title="(ev.isRisk || ev.isVendor || ev.isAudit) ? ev.title : ev.reg.name"
                 >
                   <div class="calendar-card__date">{{ formatDate(ev.date) }}</div>
-                  <div class="calendar-card__name">{{ (ev.isRisk || ev.isVendor) ? ev.title : ev.reg.short_name }}</div>
+                  <div class="calendar-card__name">{{ (ev.isRisk || ev.isVendor || ev.isAudit) ? ev.title : ev.reg.short_name }}</div>
                   <div v-if="ev.isRisk" class="calendar-card__milestone" style="color:#dc2626;">Risk due date</div>
                   <div v-else-if="ev.isVendor" class="calendar-card__milestone" style="color:#7c3aed;">Vendor review</div>
+                  <div v-else-if="ev.isAudit" class="calendar-card__milestone" style="color:#0e7490;">Audit finding</div>
                   <div v-else-if="ev.label && ev.label !== 'Effective date'" class="calendar-card__milestone">{{ ev.label }}</div>
                   <div class="calendar-card__reg">
-                    {{ ev.isRisk ? ('Risk · ' + ev.riskStatus) : ev.isVendor ? ('Vendor · ' + (ev.vendorCategory || 'Other')) : ev.reg.jurisdiction }}
+                    {{ ev.isRisk ? ('Risk · ' + ev.riskStatus) : ev.isVendor ? ('Vendor · ' + (ev.vendorCategory || 'Other')) : ev.isAudit ? ('Audit · ' + (ev.auditSeverity ? ev.auditSeverity[0].toUpperCase() + ev.auditSeverity.slice(1) : 'Medium')) : ev.reg.jurisdiction }}
                   </div>
                 </div>
               </div>
@@ -188,6 +190,17 @@ const CalendarView = {
         });
       });
 
+      // Audit finding due dates (open/in-remediation only)
+      (this.$s.auditFindings || []).forEach(finding => {
+        if (!finding.due_date || finding.status === 'closed' || finding.status === 'accepted') return;
+        const d = new Date(finding.due_date + 'T00:00:00');
+        const days = Math.round((d - ref) / 86400000);
+        events.push({
+          key: 'audit-' + finding.id, date: finding.due_date, days, isAudit: true,
+          title: finding.title, auditSeverity: finding.severity || 'medium', finding
+        });
+      });
+
       // Vendor review dates
       (this.$s.vendors || []).forEach(vendor => {
         if (!vendor.next_review_date) return;
@@ -208,6 +221,10 @@ const CalendarView = {
 
     vendorEventCount() {
       return this.allEvents.filter(e => e.isVendor).length;
+    },
+
+    auditEventCount() {
+      return this.allEvents.filter(e => e.isAudit).length;
     },
 
     visibleLanes() {
@@ -239,7 +256,7 @@ const CalendarView = {
     },
 
     sortedTableEvents() {
-      const evs = [...this.allEvents].filter(e => !e.isRisk && !e.isVendor);
+      const evs = [...this.allEvents].filter(e => !e.isRisk && !e.isVendor && !e.isAudit);
       const col = this.sortCol;
       const dir = this.sortDir;
       evs.sort((a, b) => {

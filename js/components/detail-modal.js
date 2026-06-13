@@ -145,8 +145,31 @@ const DetailModalComponent = {
                   </div>
                 </div>
 
-                <div v-for="req in item.key_requirements" :key="req.id" class="req-structured-item">
+                <!-- Bulk action toolbar -->
+                <div class="bulk-action-bar" v-if="hasStructuredReqs">
+                  <label class="bulk-select-all">
+                    <input type="checkbox"
+                      :checked="selectedReqs.length === structuredReqs.length && structuredReqs.length > 0"
+                      :indeterminate="selectedReqs.length > 0 && selectedReqs.length < structuredReqs.length"
+                      @change="toggleSelectAll" />
+                    <span>{{ selectedReqs.length > 0 ? selectedReqs.length + ' selected' : 'Select all' }}</span>
+                  </label>
+                  <template v-if="selectedReqs.length > 0">
+                    <span class="bulk-action-sep">→ Mark as:</span>
+                    <button class="bulk-btn bulk-btn--impl" @click="bulkSetStatus('implemented')">Implemented</button>
+                    <button class="bulk-btn bulk-btn--prog" @click="bulkSetStatus('in_progress')">In Progress</button>
+                    <button class="bulk-btn bulk-btn--na" @click="bulkSetStatus('na')">N/A</button>
+                    <button class="bulk-btn bulk-btn--reset" @click="bulkSetStatus('not_started')">Reset</button>
+                  </template>
+                </div>
+
+                <div v-for="req in item.key_requirements" :key="req.id" class="req-structured-item"
+                  :class="{'req-structured-item--selected': selectedReqs.includes(req.id)}">
                   <div class="req-structured-item__header">
+                    <input type="checkbox" class="req-select-checkbox"
+                      :checked="selectedReqs.includes(req.id)"
+                      @change="toggleReqSelect(req.id)"
+                      @click.stop />
                     <span class="req-id">{{ req.id }}</span>
                     <span class="req-theme" :class="'req-theme--' + req.control_theme">{{ themeLabel(req.control_theme) }}</span>
                   </div>
@@ -304,6 +327,34 @@ const DetailModalComponent = {
               </div>
             </div>
 
+            <!-- Audit Findings -->
+            <div class="modal-section" v-if="isReg && regFindings.length">
+              <div class="modal-section-title" style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align:middle;margin-right:5px;">
+                    <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                  </svg>
+                  Audit Findings ({{ regFindings.length }})
+                </span>
+                <button @click="$s.activeView='audit';$closeItem()"
+                  style="font-size:11px;color:#0e7490;background:none;border:none;cursor:pointer;font-weight:600;">
+                  View all →
+                </button>
+              </div>
+              <div class="audit-findings-mini">
+                <div v-for="f in regFindings.slice(0,4)" :key="f.id" class="audit-finding-mini-item">
+                  <span class="audit-severity-dot" :class="'audit-severity-dot--' + f.severity"></span>
+                  <span style="flex:1;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{{ f.title }}</span>
+                  <span class="audit-status-badge audit-status-badge--sm" :class="'audit-status-badge--' + f.status" style="flex-shrink:0;">
+                    {{ { open:'Open', in_remediation:'Remediating', accepted:'Accepted', closed:'Closed' }[f.status] || f.status }}
+                  </span>
+                </div>
+                <div v-if="regFindings.length > 4" style="font-size:11px;color:#64748b;padding:4px 0;">
+                  +{{ regFindings.length - 4 }} more findings
+                </div>
+              </div>
+            </div>
+
             <!-- Recent news updates (Feature J) -->
             <div class="modal-section" v-if="isReg && recentNews.length">
               <div class="modal-section-title">
@@ -367,6 +418,7 @@ const DetailModalComponent = {
       evidenceInputs: {},
       showAddPolicy: false,
       newPolicy: { name: '', url: '', owner: '', last_reviewed: '' },
+      selectedReqs: [],
       statusOptions: [
         { value: 'not_started', label: 'Not Started' },
         { value: 'in_progress', label: 'In Progress' },
@@ -382,6 +434,10 @@ const DetailModalComponent = {
     hasStructuredReqs() {
       const r = this.item?.key_requirements;
       return r && r.length > 0 && typeof r[0] === 'object';
+    },
+    structuredReqs() {
+      if (!this.hasStructuredReqs) return [];
+      return (this.item.key_requirements || []).filter(r => typeof r === 'object');
     },
     hasTabs() {
       return this.isReg && (this.item?.milestones?.length > 0);
@@ -427,6 +483,16 @@ const DetailModalComponent = {
       const regId = this.item.id;
       return (this.$s.policies || []).filter(p => p.linked_reg_ids && p.linked_reg_ids.includes(regId));
     },
+    regFindings() {
+      if (!this.isReg || !this.item) return [];
+      const regId = this.item.id;
+      return (this.$s.auditFindings || [])
+        .filter(f => f.regulation_id === regId && f.status !== 'closed' && f.status !== 'accepted')
+        .sort((a, b) => {
+          const SEV = { critical: 0, high: 1, medium: 2, low: 3 };
+          return (SEV[a.severity] || 2) - (SEV[b.severity] || 2);
+        });
+    },
     crossRefs() {
       if (!this.item) return [];
       const { mappings, regulations, standards } = this.$s;
@@ -460,6 +526,7 @@ const DetailModalComponent = {
       this.evidenceInputs = {};
       this.showAddPolicy = false;
       this.newPolicy = { name: '', url: '', owner: '', last_reviewed: '' };
+      this.selectedReqs = [];
     }
   },
 
@@ -497,6 +564,23 @@ const DetailModalComponent = {
 
     toggleReqGuidance(id) {
       this.expandedReqs = { ...this.expandedReqs, [id]: !this.expandedReqs[id] };
+    },
+
+    toggleReqSelect(reqId) {
+      const idx = this.selectedReqs.indexOf(reqId);
+      if (idx === -1) this.selectedReqs.push(reqId);
+      else this.selectedReqs.splice(idx, 1);
+    },
+    toggleSelectAll() {
+      if (this.selectedReqs.length === this.structuredReqs.length) {
+        this.selectedReqs = [];
+      } else {
+        this.selectedReqs = this.structuredReqs.map(r => r.id);
+      }
+    },
+    bulkSetStatus(status) {
+      this.selectedReqs.forEach(reqId => this.$setReqStatus(reqId, status));
+      this.selectedReqs = [];
     },
 
     addEv(reqId) {

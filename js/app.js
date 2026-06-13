@@ -49,7 +49,7 @@ const JURISDICTION_CONFIG = {
 
 const ALL_DOMAINS       = Object.keys(DOMAIN_CONFIG);
 const ALL_JURISDICTIONS = Object.keys(JURISDICTION_CONFIG);
-const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix', 'news', 'watchlist', 'calendar', 'risk', 'gap', 'traceability', 'posture', 'jurisdiction', 'copilot', 'mappings', 'risk-register', 'vendor-risk'];
+const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix', 'news', 'watchlist', 'calendar', 'risk', 'gap', 'traceability', 'posture', 'jurisdiction', 'copilot', 'mappings', 'risk-register', 'vendor-risk', 'audit'];
 
 /* ===== Global Reactive State ===== */
 const AppState = Vue.reactive({
@@ -95,7 +95,8 @@ const AppState = Vue.reactive({
   reqEvidence: {},
   riskRegister: [],
   policies: [],
-  vendors: []
+  vendors: [],
+  auditFindings: []
 });
 
 /* ===== Root Component ===== */
@@ -288,6 +289,11 @@ const RootComponent = {
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>'
         },
         {
+          id: 'audit', label: 'Audit',
+          help: 'Log and track audit findings through remediation to closure',
+          icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>'
+        },
+        {
           id: 'vendor-risk', label: 'Vendors',
           help: 'Track third-party vendors, their compliance relevance, and review schedules',
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
@@ -314,6 +320,7 @@ const RootComponent = {
         risk:           RiskView,
         'risk-register':RiskRegisterView,
         'vendor-risk':  VendorRiskView,
+        audit:          AuditView,
         posture:        PostureView,
         jurisdiction:   JurisdictionView,
         copilot:        CopilotView,
@@ -404,6 +411,12 @@ const RootComponent = {
     try {
       const vnd = JSON.parse(localStorage.getItem('cm_vendors') || 'null');
       if (Array.isArray(vnd)) vnd.forEach(v => AppState.vendors.push(v));
+    } catch {}
+
+    // Restore audit findings from localStorage
+    try {
+      const af = JSON.parse(localStorage.getItem('cm_audit_findings') || 'null');
+      if (Array.isArray(af)) af.forEach(f => AppState.auditFindings.push(f));
     } catch {}
 
     // Load regulation changes (non-blocking)
@@ -510,6 +523,7 @@ app.component('help-panel',           HelpPanelComponent);
 app.component('onboarding-modal',     OnboardingModalComponent);
 app.component('change-alert-banner',  ChangeAlertBannerComponent);
 app.component('vendor-risk-view',      VendorRiskView);
+app.component('audit-view',            AuditView);
 app.component('matrix-pane',          MatrixView);
 app.component('traceability-pane',    TraceabilityView);
 app.component('gap-analysis-pane',    GapAnalysisView);

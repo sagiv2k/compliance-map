@@ -66,6 +66,17 @@ const OverviewView = {
           <div class="stat-card__value" style="color:#7c3aed;">{{ overdueVendors }}</div>
           <div class="stat-card__label">Vendor Reviews Due</div>
         </div>
+        <div class="stat-card stat-card--audit" v-if="openFindings > 0" @click="$s.activeView = 'audit'">
+          <div class="stat-card__value" style="color:#0e7490;">{{ openFindings }}</div>
+          <div class="stat-card__label">Open Findings</div>
+        </div>
+        <div class="stat-card stat-card--health" v-if="programHealthScore.hasData"
+          @click="$s.activeView = 'posture'" title="Composite score: implementation % + risk posture + vendor reviews + audit findings">
+          <div class="stat-card__value" :style="'color:' + programHealthScore.color">
+            {{ programHealthScore.score }}<span style="font-size:14px;">/100</span>
+          </div>
+          <div class="stat-card__label">Program Health</div>
+        </div>
       </div>
 
       <!-- World map -->
@@ -193,6 +204,40 @@ const OverviewView = {
     overdueVendors() {
       const today = new Date().toISOString().slice(0, 10);
       return (this.$s.vendors || []).filter(v => v.next_review_date && v.next_review_date < today).length;
+    },
+    openFindings() {
+      return (this.$s.auditFindings || []).filter(f => f.status === 'open' || f.status === 'in_remediation').length;
+    },
+    programHealthScore() {
+      const s = this.$s;
+      const cs = s.complianceStatus;
+
+      // Component 1: implementation % (max 40 pts)
+      const allReqs = s.regulations.flatMap(r => (r.key_requirements || []).filter(x => typeof x === 'object'));
+      const implCount = allReqs.filter(r => cs[r.id] === 'implemented').length;
+      const implPct = allReqs.length > 0 ? implCount / allReqs.length : 0;
+      const implScore = Math.round(implPct * 40);
+
+      // Component 2: no open critical risks (max 25 pts)
+      const critRisks = (s.riskRegister || []).filter(r => r.status !== 'resolved' && r.severity * r.likelihood >= 13).length;
+      const openRisks = (s.riskRegister || []).filter(r => r.status !== 'resolved').length;
+      const riskScore = openRisks === 0 ? 25 : critRisks === 0 ? 18 : Math.max(0, 25 - critRisks * 5);
+
+      // Component 3: no overdue vendor reviews (max 15 pts)
+      const today = new Date().toISOString().slice(0, 10);
+      const overdueV = (s.vendors || []).filter(v => v.next_review_date && v.next_review_date < today).length;
+      const vendorScore = (s.vendors || []).length === 0 ? 15 : overdueV === 0 ? 15 : Math.max(0, 15 - overdueV * 3);
+
+      // Component 4: no open critical findings (max 20 pts)
+      const critF = (s.auditFindings || []).filter(f => (f.status === 'open' || f.status === 'in_remediation') && f.severity === 'critical').length;
+      const openF = (s.auditFindings || []).filter(f => f.status === 'open' || f.status === 'in_remediation').length;
+      const findingScore = openF === 0 ? 20 : critF === 0 ? 14 : Math.max(0, 20 - critF * 5);
+
+      const total = implScore + riskScore + vendorScore + findingScore;
+      const grade = total >= 85 ? 'A' : total >= 70 ? 'B' : total >= 55 ? 'C' : total >= 40 ? 'D' : 'F';
+      const color = total >= 85 ? '#16a34a' : total >= 70 ? '#3b82f6' : total >= 55 ? '#d97706' : '#dc2626';
+      const hasData = implCount > 0 || (s.riskRegister || []).length > 0 || (s.vendors || []).length > 0 || (s.auditFindings || []).length > 0;
+      return { score: total, grade, color, hasData };
     },
     countByCountry() {
       const counts = {};

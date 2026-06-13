@@ -3730,3 +3730,92 @@ a.policy-item__name:hover { color: #3b82f6; text-decoration: underline; }
   background: #dbeafe !important;
   border-color: #93c5fd !important;
 }
+
+/* ===== Audit Findings ===== */
+.audit-severity-badge {
+  display: inline-block; padding: 3px 10px; border-radius: 999px;
+  font-size: 11px; font-weight: 700; white-space: nowrap;
+}
+.audit-severity-badge--low      { background: #dcfce7; color: #166534; }
+.audit-severity-badge--medium   { background: #fef3c7; color: #92400e; }
+.audit-severity-badge--high     { background: #fee2e2; color: #991b1b; }
+.audit-severity-badge--critical { background: #dc2626; color: #fff; }
+
+.audit-status-badge {
+  display: inline-block; padding: 3px 9px; border-radius: 999px;
+  font-size: 11px; font-weight: 600; white-space: nowrap;
+}
+.audit-status-badge--open           { background: #fee2e2; color: #991b1b; }
+.audit-status-badge--in_remediation { background: #fef3c7; color: #92400e; }
+.audit-status-badge--accepted       { background: #e0f2fe; color: #0369a1; }
+.audit-status-badge--closed         { background: #dcfce7; color: #166534; }
+
+/* Calendar audit cards */
+.calendar-card--audit {
+  border-left: 3px solid #0e7490 !important;
+  background: linear-gradient(135deg, #ecfeff 0%, #fff 100%);
+  cursor: pointer;
+}
+.calendar-card--audit:hover { box-shadow: 0 2px 8px rgba(14,116,144,0.15); }
+
+/* Stat card audit and health variants */
+.stat-card--audit { cursor: pointer; border-color: #a5f3fc !important; transition: transform 0.13s, box-shadow 0.13s; }
+.stat-card--audit:hover { background: #ecfeff; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(14,116,144,0.12); }
+.stat-card--health { cursor: pointer; border-color: #bfdbfe !important; transition: transform 0.13s, box-shadow 0.13s; }
+.stat-card--health:hover { background: #eff6ff; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(59,130,246,0.12); }
+
+/* Severity picker in add dialog */
+.audit-severity-picker { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+.audit-sev-btn {
+  flex: 1; min-width: 64px; padding: 5px 4px; border: 1px solid #e2e8f0; border-radius: 5px;
+  font-size: 11px; font-weight: 600; cursor: pointer; background: #f8fafc; color: #64748b;
+  transition: all 0.15s;
+}
+.audit-sev-btn--low.active      { background: #dcfce7; color: #166534; border-color: #86efac; }
+.audit-sev-btn--medium.active   { background: #fef3c7; color: #92400e; border-color: #fcd34d; }
+.audit-sev-btn--high.active     { background: #fee2e2; color: #991b1b; border-color: #fca5a5; }
+.audit-sev-btn--critical.active { background: #dc2626; color: #fff; border-color: #dc2626; }
+.audit-sev-btn:hover:not(.active) { background: #f1f5f9; border-color: #cbd5e1; }
+
+/* Detail modal audit findings mini list */
+.audit-findings-mini { display: flex; flex-direction: column; gap: 5px; }
+.audit-finding-mini-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 10px; background: #f8fafc; border-radius: 6px;
+  border: 1px solid #f1f5f9;
+}
+.audit-severity-dot {
+  width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+}
+.audit-severity-dot--low      { background: #16a34a; }
+.audit-severity-dot--medium   { background: #d97706; }
+.audit-severity-dot--high     { background: #dc2626; }
+.audit-severity-dot--critical { background: #7f1d1d; }
+.audit-status-badge--sm { font-size: 10px !important; padding: 2px 7px !important; }
+
+/* ===== Bulk Requirement Actions ===== */
+.bulk-action-bar {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  padding: 8px 12px; margin-bottom: 10px;
+  background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 7px;
+  font-size: 12px;
+}
+.bulk-select-all {
+  display: flex; align-items: center; gap: 6px; cursor: pointer; font-weight: 600; color: #475569;
+}
+.bulk-select-all input[type="checkbox"] { width: 14px; height: 14px; cursor: pointer; }
+.bulk-action-sep { color: #94a3b8; font-size: 11px; }
+.bulk-btn {
+  padding: 4px 10px; border-radius: 5px; font-size: 11px; font-weight: 700;
+  border: 1px solid transparent; cursor: pointer; transition: all 0.12s;
+}
+.bulk-btn--impl  { background: #dcfce7; color: #166534; border-color: #86efac; }
+.bulk-btn--impl:hover { background: #bbf7d0; }
+.bulk-btn--prog  { background: #fef3c7; color: #92400e; border-color: #fcd34d; }
+.bulk-btn--prog:hover { background: #fde68a; }
+.bulk-btn--na    { background: #f1f5f9; color: #64748b; border-color: #cbd5e1; }
+.bulk-btn--na:hover { background: #e2e8f0; }
+.bulk-btn--reset { background: #fff; color: #64748b; border-color: #cbd5e1; }
+.bulk-btn--reset:hover { background: #f1f5f9; }
+.req-select-checkbox { width: 14px; height: 14px; cursor: pointer; flex-shrink: 0; margin-right: 2px; }
+.req-structured-item--selected { background: #eff6ff !important; border-color: #bfdbfe !important; }

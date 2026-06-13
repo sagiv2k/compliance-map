@@ -119,7 +119,8 @@ const CopilotView = {
         'Compare GDPR and CCPA',
         'What should I do first for ISO 27001?',
         'Help me prioritize my open compliance risks',
-        'What vendor due diligence do I need for GDPR and ISO 27001?'
+        'What vendor due diligence do I need for GDPR and ISO 27001?',
+        'How should I prioritize my open audit findings?'
       ]
     };
   },
@@ -265,6 +266,16 @@ DATABASE: ${s.regulations.length} global regulations · ${s.standards.length} st
         if (openRisks.length) {
           const critCount = openRisks.filter(r => r.severity * r.likelihood >= 13).length;
           prompt += `RISK REGISTER: ${openRisks.length} open risk${openRisks.length > 1 ? 's' : ''} tracked`;
+          if (critCount) prompt += ` (${critCount} critical)`;
+          prompt += '\n\n';
+        }
+      }
+
+      if (s.auditFindings && s.auditFindings.length) {
+        const openF = s.auditFindings.filter(f => f.status === 'open' || f.status === 'in_remediation');
+        if (openF.length) {
+          const critCount = openF.filter(f => f.severity === 'critical').length;
+          prompt += `AUDIT FINDINGS: ${openF.length} open finding${openF.length > 1 ? 's' : ''}`;
           if (critCount) prompt += ` (${critCount} critical)`;
           prompt += '\n\n';
         }
