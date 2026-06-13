@@ -130,6 +130,21 @@ const DetailModalComponent = {
 
               <!-- Structured requirements -->
               <div v-if="isReg && hasStructuredReqs" class="req-structured-list">
+
+                <!-- Status progress summary bar -->
+                <div class="req-status-summary" v-if="statusSummary.total > 0">
+                  <div class="req-status-summary__bar">
+                    <div class="req-status-summary__fill req-status-summary__fill--impl" :style="{width: (statusSummary.implemented / statusSummary.total * 100) + '%'}"></div>
+                    <div class="req-status-summary__fill req-status-summary__fill--prog" :style="{width: (statusSummary.in_progress / statusSummary.total * 100) + '%', left: (statusSummary.implemented / statusSummary.total * 100) + '%'}"></div>
+                  </div>
+                  <div class="req-status-summary__labels">
+                    <span class="req-status-label--impl">{{ statusSummary.implemented }} implemented</span>
+                    <span class="req-status-label--prog" v-if="statusSummary.in_progress">{{ statusSummary.in_progress }} in progress</span>
+                    <span class="req-status-label--gap">{{ statusSummary.not_started }} not started</span>
+                    <span class="req-status-label--total">of {{ statusSummary.total }}</span>
+                  </div>
+                </div>
+
                 <div v-for="req in item.key_requirements" :key="req.id" class="req-structured-item">
                   <div class="req-structured-item__header">
                     <span class="req-id">{{ req.id }}</span>
@@ -143,6 +158,18 @@ const DetailModalComponent = {
                   <div v-if="req.evidence_guide" class="req-structured-item__evidence">
                     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
                     <strong>Evidence:</strong> {{ req.evidence_guide }}
+                  </div>
+
+                  <!-- Status selector -->
+                  <div class="req-status-row" @click.stop>
+                    <div class="req-status-pills">
+                      <button
+                        v-for="opt in statusOptions" :key="opt.value"
+                        class="req-status-pill"
+                        :class="['req-status-pill--' + opt.value, { active: $getReqStatus(req.id) === opt.value }]"
+                        @click="$setReqStatus(req.id, opt.value)"
+                      >{{ opt.label }}</button>
+                    </div>
                   </div>
 
                   <!-- Guidance toggle (only shown after enrichment) -->
@@ -274,7 +301,13 @@ const DetailModalComponent = {
     return {
       activeTab: 'overview',
       checklistMenuOpen: false,
-      expandedReqs: {}
+      expandedReqs: {},
+      statusOptions: [
+        { value: 'not_started', label: 'Not Started' },
+        { value: 'in_progress', label: 'In Progress' },
+        { value: 'implemented', label: 'Implemented' },
+        { value: 'na',          label: 'N/A' }
+      ]
     };
   },
 
@@ -314,6 +347,15 @@ const DetailModalComponent = {
         const text = ((n.title || '') + ' ' + (n.summary || '')).toLowerCase();
         return searchTerms.some(t => text.includes(t));
       }).slice(0, 5);
+    },
+    statusSummary() {
+      if (!this.hasStructuredReqs) return { total: 0, implemented: 0, in_progress: 0, not_started: 0 };
+      const reqs  = this.item.key_requirements.filter(r => typeof r === 'object');
+      const cs    = this.$s.complianceStatus;
+      const impl  = reqs.filter(r => cs[r.id] === 'implemented').length;
+      const prog  = reqs.filter(r => cs[r.id] === 'in_progress').length;
+      const na    = reqs.filter(r => cs[r.id] === 'na').length;
+      return { total: reqs.length, implemented: impl, in_progress: prog, not_started: reqs.length - impl - prog - na };
     },
     crossRefs() {
       if (!this.item) return [];

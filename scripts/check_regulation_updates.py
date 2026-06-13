@@ -32,9 +32,10 @@ except ImportError:
 ROOT          = Path(__file__).parent.parent
 REGS_FILE     = ROOT / "data" / "regulations.json"
 HASHES_FILE   = ROOT / "data" / "regulation-hashes.json"
-VERSIONS_DIR  = ROOT / "data" / "versions"
-MANIFEST_FILE = VERSIONS_DIR / "manifest.json"
-CHANGELOG     = ROOT / "CHANGELOG.md"
+VERSIONS_DIR   = ROOT / "data" / "versions"
+MANIFEST_FILE  = VERSIONS_DIR / "manifest.json"
+CHANGELOG      = ROOT / "CHANGELOG.md"
+CHANGES_FILE   = ROOT / "data" / "regulation-changes.json"
 
 VERSIONS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -176,6 +177,19 @@ def main():
     # Keep newest first
     manifest["snapshots"].sort(key=lambda s: s["month"], reverse=True)
     _save_json(MANIFEST_FILE, manifest)
+
+    # -------------------------------------------------------------------
+    # Update regulation-changes.json (read by the frontend alert banner)
+    # -------------------------------------------------------------------
+    existing_changes = _load_json(CHANGES_FILE, [])
+    existing_keys = {f"{c['regulation_id']}:{c.get('detected_at', '')}" for c in existing_changes}
+    for c in changes:
+        key = f"{c['regulation_id']}:{c.get('detected_at', '')}"
+        if key not in existing_keys:
+            existing_changes.append(c)
+    existing_changes.sort(key=lambda c: c.get("detected_at", ""), reverse=True)
+    _save_json(CHANGES_FILE, existing_changes[:100])
+    print(f"regulation-changes.json updated ({len(existing_changes)} total changes tracked).")
 
     # -------------------------------------------------------------------
     # Update CHANGELOG.md if there are changes

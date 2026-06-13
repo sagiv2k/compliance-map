@@ -60,6 +60,18 @@ const RegCardComponent = {
 
       <p class="reg-card__summary">{{ regulation.summary }}</p>
 
+      <!-- Implementation progress bar (shown when user has tracked requirements) -->
+      <div class="reg-card__progress" v-if="reqProgress && (reqProgress.implemented > 0 || reqProgress.in_progress > 0)">
+        <div class="reg-card__progress-track">
+          <div class="reg-card__progress-impl" :style="{width: (reqProgress.implemented / reqProgress.total * 100) + '%'}"></div>
+          <div class="reg-card__progress-prog" :style="{width: (reqProgress.in_progress / reqProgress.total * 100) + '%', left: (reqProgress.implemented / reqProgress.total * 100) + '%'}"></div>
+        </div>
+        <span class="reg-card__progress-text">
+          {{ reqProgress.implemented }}/{{ reqProgress.total }} implemented
+          <span class="reg-card__progress-inprog" v-if="reqProgress.in_progress"> · {{ reqProgress.in_progress }} in progress</span>
+        </span>
+      </div>
+
       <div class="reg-card__footer">
         <span class="reg-card__date">Effective: {{ formatDate(regulation.effective_date) }}</span>
         <span style="font-size:11px;color:var(--color-primary);font-weight:600;">View details →</span>
@@ -69,6 +81,15 @@ const RegCardComponent = {
   computed: {
     accentColor() {
       return this.$domainColor(this.regulation.domain[0]);
+    },
+    reqProgress() {
+      const reqs = this.regulation.key_requirements;
+      if (!reqs || !reqs.length || typeof reqs[0] !== 'object') return null;
+      const cs = this.$s.complianceStatus;
+      const total = reqs.length;
+      const implemented = reqs.filter(r => cs[r.id] === 'implemented').length;
+      const in_progress = reqs.filter(r => cs[r.id] === 'in_progress').length;
+      return { total, implemented, in_progress };
     },
     hasRecentNews() {
       const news = this.$s.news;

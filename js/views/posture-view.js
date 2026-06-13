@@ -31,6 +31,9 @@ const PostureView = {
             <button class="btn-posture-tab" :class="{active: tab==='recommender'}" @click="tab='recommender'">
               Recommendations
             </button>
+            <button class="btn-posture-tab" :class="{active: tab==='mystatus'}" @click="tab='mystatus'">
+              My Status
+            </button>
           </div>
           <button class="view-help-btn" @click="$s.helpPanelOpen = true" title="How to use Posture Scorecard">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
@@ -225,6 +228,83 @@ const PostureView = {
           </div>
         </div>
       </template>
+
+      <!-- ══ MY STATUS TAB ══ -->
+      <template v-if="tab === 'mystatus'">
+        <div v-if="myStatusRegs.length === 0" style="text-align:center;padding:48px;color:#64748b;">
+          <div style="font-size:40px;margin-bottom:12px;">📋</div>
+          <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#374151;">No implementation status tracked yet</h3>
+          <p style="margin:0;font-size:13px;line-height:1.65;">Open any regulation's detail panel and mark requirements as<br>In Progress or Implemented to see your progress here.</p>
+        </div>
+        <template v-else>
+          <!-- KPI row -->
+          <div class="posture-kpi-row">
+            <div class="posture-kpi-card">
+              <div class="posture-ring-wrap">
+                <svg class="posture-ring" viewBox="0 0 36 36">
+                  <circle cx="18" cy="18" r="15.9" fill="none" stroke="#f1f5f9" stroke-width="3.5"/>
+                  <circle cx="18" cy="18" r="15.9" fill="none"
+                    :stroke="myStatusPct >= 75 ? '#16a34a' : myStatusPct >= 50 ? '#3b82f6' : myStatusPct >= 25 ? '#d97706' : '#dc2626'"
+                    stroke-width="3.5" stroke-dasharray="100 100"
+                    :stroke-dashoffset="100 - myStatusPct"
+                    stroke-linecap="round" transform="rotate(-90 18 18)"
+                  />
+                  <text x="18" y="20.5" text-anchor="middle" font-size="8" font-weight="800" fill="#1e293b">{{ myStatusPct }}%</text>
+                </svg>
+              </div>
+              <div class="posture-kpi-label">Implementation Rate</div>
+            </div>
+            <div class="posture-kpi-card posture-kpi-card--green">
+              <div class="posture-kpi-num">{{ myStatusFullyImpl }}</div>
+              <div class="posture-kpi-label">Fully Implemented</div>
+            </div>
+            <div class="posture-kpi-card" style="background:#fffbeb;border-color:#fde68a;">
+              <div class="posture-kpi-num" style="color:#d97706;">{{ myStatusInProgress }}</div>
+              <div class="posture-kpi-label">In Progress</div>
+            </div>
+            <div class="posture-kpi-card posture-kpi-card--red">
+              <div class="posture-kpi-num">{{ myStatusNotStarted }}</div>
+              <div class="posture-kpi-label">Not Yet Started</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px;">
+            <div class="posture-section-title" style="margin:0;">Per-Regulation Implementation</div>
+            <button class="btn-posture-export" @click="exportProgramReport">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Export Program Report
+            </button>
+          </div>
+
+          <div class="posture-reg-list">
+            <div
+              v-for="row in myStatusRegs"
+              :key="row.reg.id"
+              class="posture-reg-row"
+              @click="$openItem(row.reg, 'regulation')"
+            >
+              <div class="posture-reg-left">
+                <span class="posture-reg-name">{{ row.reg.short_name }}</span>
+                <div class="posture-reg-stds" style="gap:6px;">
+                  <span class="my-status-count my-status-count--impl">{{ row.implemented }}/{{ row.total }} impl</span>
+                  <span class="my-status-count my-status-count--prog" v-if="row.in_progress">{{ row.in_progress }} in progress</span>
+                  <span class="my-status-count my-status-count--na" v-if="row.na">{{ row.na }} N/A</span>
+                </div>
+              </div>
+              <div class="posture-reg-right">
+                <div class="posture-reg-bar" style="position:relative;overflow:hidden;background:#f1f5f9;">
+                  <div :style="{position:'absolute',left:0,top:0,height:'100%',width:row.pct+'%',background:'#16a34a',transition:'width 0.35s'}"></div>
+                  <div :style="{position:'absolute',left:row.pct+'%',top:0,height:'100%',width:(row.in_progress/row.total*100)+'%',background:'#d97706',transition:'all 0.35s'}"></div>
+                </div>
+                <span class="posture-reg-pct">{{ row.pct }}%</span>
+              </div>
+            </div>
+          </div>
+        </template>
+      </template>
     </div>
   `,
 
@@ -361,6 +441,40 @@ const PostureView = {
       return combos.sort((a, b) => b.pct - a.pct).slice(0, 5);
     },
 
+    myStatusRegs() {
+      const cs = this.$s.complianceStatus;
+      return this.filteredRegulations
+        .filter(reg => {
+          const reqs = reg.key_requirements || [];
+          return reqs.length > 0 && typeof reqs[0] === 'object';
+        })
+        .map(reg => {
+          const reqs = reg.key_requirements.filter(r => typeof r === 'object');
+          const total        = reqs.length;
+          const implemented  = reqs.filter(r => cs[r.id] === 'implemented').length;
+          const in_progress  = reqs.filter(r => cs[r.id] === 'in_progress').length;
+          const na           = reqs.filter(r => cs[r.id] === 'na').length;
+          const pct          = total > 0 ? Math.round(implemented / total * 100) : 0;
+          return { reg, total, implemented, in_progress, na, pct };
+        })
+        .filter(row => row.implemented > 0 || row.in_progress > 0)
+        .sort((a, b) => a.pct - b.pct);
+    },
+    myStatusPct() {
+      if (!this.myStatusRegs.length) return 0;
+      const totalReqs = this.myStatusRegs.reduce((s, r) => s + r.total, 0);
+      const implReqs  = this.myStatusRegs.reduce((s, r) => s + r.implemented, 0);
+      return totalReqs ? Math.round(implReqs / totalReqs * 100) : 0;
+    },
+    myStatusFullyImpl() { return this.myStatusRegs.filter(r => r.pct === 100).length; },
+    myStatusInProgress() { return this.myStatusRegs.filter(r => r.in_progress > 0 && r.pct < 100).length; },
+    myStatusNotStarted() {
+      const cs = this.$s.complianceStatus;
+      return this.filteredRegulations.filter(reg => {
+        const reqs = (reg.key_requirements || []).filter(r => typeof r === 'object');
+        return reqs.length > 0 && reqs.every(r => !cs[r.id] || cs[r.id] === 'not_started' || cs[r.id] === 'na');
+      }).length;
+    },
     nextBestStd() {
       const unimpl = this.singleStdRanking.filter(r => !this.implementedStds.includes(r.std.id));
       if (!unimpl.length) return null;
@@ -393,6 +507,72 @@ const PostureView = {
         return (best / 4) * 100;
       });
       return Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+    },
+
+    exportProgramReport() {
+      const today   = new Date().toISOString().slice(0, 10);
+      const profile = this.$s.userProfile;
+      const orgLine = profile.active && profile.regions.length
+        ? profile.regions.join(', ') + (profile.industries.length ? ' · ' + profile.industries.join(', ') : '')
+        : '[Organization Name]';
+
+      const rows = this.myStatusRegs.map(row => {
+        const pctColor = row.pct >= 75 ? '#16a34a' : row.pct >= 50 ? '#3b82f6' : row.pct >= 25 ? '#d97706' : '#dc2626';
+        const bar = `<div style="height:8px;background:#f1f5f9;border-radius:999px;overflow:hidden;position:relative;width:110px;display:inline-block;vertical-align:middle;">
+          <div style="position:absolute;left:0;top:0;height:100%;width:${row.pct}%;background:${pctColor};border-radius:999px;"></div>
+        </div>`;
+        const fullName = row.reg.name.length > 50 ? row.reg.name.slice(0, 50) + '…' : row.reg.name;
+        const inProg = row.in_progress > 0 ? `<span style="color:#d97706;font-weight:600;">${row.in_progress} in progress</span>` : '';
+        return `<tr>
+          <td style="font-weight:700;">${row.reg.short_name}</td>
+          <td style="font-size:11px;color:#64748b;">${fullName}</td>
+          <td style="font-size:11px;color:#475569;">${row.reg.jurisdiction}</td>
+          <td>${bar}</td>
+          <td style="font-weight:700;text-align:right;color:${pctColor};">${row.pct}%</td>
+          <td style="font-size:11px;">${row.implemented}/${row.total} req</td>
+          <td style="font-size:11px;">${inProg}</td>
+        </tr>`;
+      }).join('');
+
+      const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<title>Compliance Program Report — ${today}</title>
+<style>
+  body{font-family:Arial,sans-serif;font-size:12px;color:#1e293b;margin:0;padding:24px;max-width:1100px;}
+  h1{font-size:22px;font-weight:800;margin:0 0 4px;}
+  .meta{font-size:11px;color:#64748b;margin-bottom:24px;padding-bottom:14px;border-bottom:1px solid #e2e8f0;}
+  .kpi-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px;}
+  .kpi{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:14px 18px;text-align:center;min-width:120px;}
+  .kpi-num{font-size:28px;font-weight:800;color:#1e293b;line-height:1;}
+  .kpi-lbl{font-size:10px;color:#64748b;margin-top:4px;text-transform:uppercase;letter-spacing:.05em;}
+  .kpi.green .kpi-num{color:#16a34a;} .kpi.amber .kpi-num{color:#d97706;} .kpi.red .kpi-num{color:#dc2626;}
+  h2{font-size:14px;font-weight:700;margin:20px 0 10px;color:#0f172a;}
+  table{width:100%;border-collapse:collapse;font-size:12px;}
+  th{padding:7px 10px;text-align:left;background:#f1f5f9;border-bottom:2px solid #e2e8f0;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;}
+  td{padding:7px 10px;border-bottom:1px solid #e2e8f0;vertical-align:middle;}
+  tr:nth-child(even) td{background:#fafafa;}
+  .footer{margin-top:24px;padding-top:12px;border-top:1px solid #e2e8f0;font-size:10px;color:#94a3b8;}
+  @media print{body{padding:8px;}table{page-break-inside:auto;}tr{page-break-inside:avoid;}}
+</style></head><body>
+<h1>Compliance Program Status Report</h1>
+<div class="meta">${orgLine} · Generated: ${today} · ${this.myStatusRegs.length} regulations with tracked requirements</div>
+<div class="kpi-row">
+  <div class="kpi"><div class="kpi-num">${this.myStatusPct}%</div><div class="kpi-lbl">Implementation Rate</div></div>
+  <div class="kpi green"><div class="kpi-num">${this.myStatusFullyImpl}</div><div class="kpi-lbl">Fully Implemented Regs</div></div>
+  <div class="kpi amber"><div class="kpi-num">${this.myStatusInProgress}</div><div class="kpi-lbl">In Progress</div></div>
+  <div class="kpi red"><div class="kpi-num">${this.myStatusNotStarted}</div><div class="kpi-lbl">Not Yet Started</div></div>
+</div>
+<h2>Per-Regulation Implementation Progress</h2>
+<table>
+  <thead><tr><th>Regulation</th><th>Full Name</th><th>Jurisdiction</th><th>Progress</th><th>Rate</th><th>Requirements</th><th>In Progress</th></tr></thead>
+  <tbody>${rows}</tbody>
+</table>
+<div class="footer">Generated by ComplianceMap · Compliance program status as of ${today}</div>
+</body></html>`;
+      const blob = new Blob([html], { type: 'text/html' });
+      const url  = URL.createObjectURL(blob);
+      const a    = document.createElement('a');
+      a.href = url; a.download = `compliance-program-report-${today}.html`; a.click();
+      URL.revokeObjectURL(url);
     },
 
     exportScorecard() {

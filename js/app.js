@@ -49,7 +49,7 @@ const JURISDICTION_CONFIG = {
 
 const ALL_DOMAINS       = Object.keys(DOMAIN_CONFIG);
 const ALL_JURISDICTIONS = Object.keys(JURISDICTION_CONFIG);
-const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix', 'news', 'watchlist', 'calendar', 'risk', 'gap', 'traceability', 'posture', 'jurisdiction'];
+const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix', 'news', 'watchlist', 'calendar', 'risk', 'gap', 'traceability', 'posture', 'jurisdiction', 'copilot'];
 
 /* ===== Global Reactive State ===== */
 const AppState = Vue.reactive({
@@ -88,8 +88,10 @@ const AppState = Vue.reactive({
   wizardOpen:      false,
   compareTray:     [],
   compareOpen:     false,
-  helpPanelOpen:   false,
-  onboardingDone:  localStorage.getItem('cm_onboarded') === 'true'
+  helpPanelOpen:    false,
+  onboardingDone:   localStorage.getItem('cm_onboarded') === 'true',
+  complianceStatus: {},
+  regulationChanges: []
 });
 
 /* ===== Root Component ===== */
@@ -145,6 +147,9 @@ const RootComponent = {
           </svg>
         </button>
       </nav>
+
+      <!-- ── Regulatory Change Alert Banner ── -->
+      <change-alert-banner v-if="$s.activeView === 'overview' || $s.activeView === 'watchlist'" />
 
       <!-- ── Profile Banner ── -->
       <div class="profile-banner" v-if="$s.userProfile.active">
@@ -282,6 +287,11 @@ const RootComponent = {
           id: 'jurisdiction', label: 'Jurisdiction Overlap',
           help: 'Compare obligations and conflicts across 2+ jurisdictions',
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>'
+        },
+        {
+          id: 'copilot', label: 'AI Copilot',
+          help: 'Ask AI questions about your compliance program',
+          icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>'
         }
       ]
     };
@@ -301,7 +311,8 @@ const RootComponent = {
         gap:          GapAnalysisView,
         traceability: TraceabilityView,
         posture:      PostureView,
-        jurisdiction: JurisdictionView
+        jurisdiction: JurisdictionView,
+        copilot:      CopilotView
       }[this.$s.activeView] || OverviewView;
     },
     profileLabel() {
@@ -357,6 +368,18 @@ const RootComponent = {
       const prof = JSON.parse(localStorage.getItem('cm_user_profile') || 'null');
       if (prof && prof.active) Object.assign(AppState.userProfile, prof);
     } catch {}
+
+    // Restore compliance status from localStorage
+    try {
+      const cs = JSON.parse(localStorage.getItem('cm_compliance_status') || 'null');
+      if (cs && typeof cs === 'object') Object.assign(AppState.complianceStatus, cs);
+    } catch {}
+
+    // Load regulation changes (non-blocking)
+    fetch('./data/regulation-changes.json')
+      .then(r => r.ok ? r.json() : [])
+      .then(data => { AppState.regulationChanges = Array.isArray(data) ? data : []; })
+      .catch(() => {});
 
     // Set initial view from URL hash
     const hash = window.location.hash.replace('#', '');
@@ -414,6 +437,11 @@ app.config.globalProperties.$toggleCompare = (id) => {
   if (idx === -1) { if (AppState.compareTray.length < 3) AppState.compareTray.push(id); }
   else AppState.compareTray.splice(idx, 1);
 };
+app.config.globalProperties.$getReqStatus = (reqId) => AppState.complianceStatus[reqId] || 'not_started';
+app.config.globalProperties.$setReqStatus = (reqId, status) => {
+  AppState.complianceStatus[reqId] = status;
+  try { localStorage.setItem('cm_compliance_status', JSON.stringify(AppState.complianceStatus)); } catch {}
+};
 app.config.globalProperties.$isWatchlisted = (id, type) => {
   const list = type === 'regulation' ? AppState.watchlist.regulations : AppState.watchlist.standards;
   return list.includes(id);
@@ -437,6 +465,7 @@ app.component('applicability-wizard', ApplicabilityWizardComponent);
 app.component('compare-tray',         CompareTrayComponent);
 app.component('help-panel',           HelpPanelComponent);
 app.component('onboarding-modal',     OnboardingModalComponent);
+app.component('change-alert-banner',  ChangeAlertBannerComponent);
 
 /* Mount */
 app.mount('#app');
