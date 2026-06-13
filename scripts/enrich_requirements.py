@@ -35,8 +35,9 @@ except ImportError:
 REGS_FILE  = Path(__file__).parent.parent / "data" / "regulations.json"
 NEW_FIELDS = ("how_to_meet", "internal_actions", "vendor_actions", "compliance_evidence")
 MODEL      = "claude-haiku-4-5-20251001"
-MAX_TOKENS = 4096
-RATE_DELAY = 0.4   # seconds between API calls (gentle rate limiting)
+MAX_TOKENS = 8192   # increased: 10-req regulations (e.g. GDPR) need ~5k tokens output
+BATCH_SIZE = 6      # split regulations with more requirements than this into batches
+RATE_DELAY = 0.4    # seconds between API calls (gentle rate limiting)
 # ---------------------------------------------------------------------------
 
 
@@ -85,24 +86,33 @@ def _strip_fences(raw: str) -> str:
     return raw
 
 
+def _call_api(client: anthropic.Anthropic, reg: dict, batch: list) -> dict:
+    """Call Claude for one batch of requirements. Returns {id: enriched_obj}."""
+    prompt   = _build_prompt(reg, batch)
+    response = client.messages.create(
+        model=MODEL,
+        max_tokens=MAX_TOKENS,
+        messages=[{"role": "user", "content": prompt}]
+    )
+    raw      = _strip_fences(response.content[0].text)
+    enriched = json.loads(raw)
+    return {e["id"]: e for e in enriched if isinstance(e, dict)}
+
+
 def _enrich_regulation(client: anthropic.Anthropic, reg: dict) -> int:
     to_enrich = [r for r in reg.get("key_requirements", [])
                  if isinstance(r, dict) and _needs_enrichment(r)]
     if not to_enrich:
         return 0
 
-    prompt = _build_prompt(reg, to_enrich)
-    response = client.messages.create(
-        model=MODEL,
-        max_tokens=MAX_TOKENS,
-        messages=[{"role": "user", "content": prompt}]
-    )
+    # Split into batches to stay within token limits for regulations with many reqs
+    batches = [to_enrich[i:i + BATCH_SIZE] for i in range(0, len(to_enrich), BATCH_SIZE)]
+    enriched_by_id: dict = {}
+    for batch in batches:
+        enriched_by_id.update(_call_api(client, reg, batch))
+        if len(batches) > 1:
+            time.sleep(RATE_DELAY)
 
-    raw = _strip_fences(response.content[0].text)
-    enriched: list = json.loads(raw)
-
-    enriched_by_id = {e["id"]: e for e in enriched if isinstance(e, dict)}
-    merged = 0
     for req in reg["key_requirements"]:
         if not isinstance(req, dict):
             continue
@@ -112,7 +122,6 @@ def _enrich_regulation(client: anthropic.Anthropic, reg: dict) -> int:
         for field in NEW_FIELDS:
             if not req.get(field) and e.get(field):
                 req[field] = e[field]
-                merged += 1
 
     return len(to_enrich)
 

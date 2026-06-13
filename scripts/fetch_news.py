@@ -11,8 +11,13 @@ import hashlib
 import re
 import sys
 import os
+import socket
 from datetime import datetime, timezone
 from pathlib import Path
+
+# Hard cap on how long any single socket operation can block.
+# Prevents feedparser from hanging indefinitely on unresponsive feeds.
+_FEED_SOCKET_TIMEOUT = 25  # seconds
 
 # Ensure stdout uses UTF-8 so Hebrew path names and non-ASCII chars print correctly
 if hasattr(sys.stdout, "reconfigure"):
@@ -625,7 +630,13 @@ def _try_feed_urls(feed_cfg: dict) -> tuple[list, str]:
         for req_headers in header_attempts:
             try:
                 kw     = {"request_headers": req_headers} if req_headers else {}
-                parsed = feedparser.parse(url, **kw)
+                # Apply socket timeout so feedparser never hangs on unresponsive URLs
+                _prev_timeout = socket.getdefaulttimeout()
+                socket.setdefaulttimeout(_FEED_SOCKET_TIMEOUT)
+                try:
+                    parsed = feedparser.parse(url, **kw)
+                finally:
+                    socket.setdefaulttimeout(_prev_timeout)
                 status = getattr(parsed, "status", None)
 
                 if status == 403:
