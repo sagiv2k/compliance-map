@@ -1,6 +1,134 @@
 {
-  "last_updated": "2026-06-12",
+  "last_updated": "2026-06-13",
   "items": [
+    {
+      "id": "6c2c36c2c39d",
+      "title": "PAIA Fees Structure",
+      "summary": "",
+      "url": "https://inforegulator.org.za/paia-fees-structure-2/",
+      "published": "2026-06-13",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "South African PAIA fees structure announcement. No direct compliance impact identified from summary.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "df8b105aa4ae",
+      "title": "PAIA annual Report",
+      "summary": "",
+      "url": "https://inforegulator.org.za/paia-annual-report/",
+      "published": "2026-06-13",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "South African PAIA annual report publication. General informational update on access requests.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "22edc1593ea4",
+      "title": "Enforcement Notices",
+      "summary": "",
+      "url": "https://inforegulator.org.za/enforcement-notices/",
+      "published": "2026-06-13",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "South African enforcement notices issued. May indicate regulatory actions but no details provided.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "85922f911edf",
+      "title": "Rules of Procedures",
+      "summary": "",
+      "url": "https://inforegulator.org.za/rules-of-procedures/",
+      "published": "2026-06-13",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "Rules of procedures update. Administrative clarification with minimal compliance impact.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "89e59c24e3e6",
+      "title": "40th International Conference of Data Protection and Privacy Commissioners ( ICDPPC) in Brussels from 22-25 October 2018",
+      "summary": "",
+      "url": "https://inforegulator.org.za/2020/07/10/40th-international-conference-of-data-protection-and-privacy-commissioners/",
+      "published": "2026-06-13",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "40th International Conference of Data Protection Commissioners held in Brussels. International dialogue on privacy standards.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "86565bc87c11",
+      "title": "Coordinated Supervision Committee extends scope to include Eurodac",
+      "summary": "Brussels, 12 June – As of today, coordinated supervision of the European Union’s asylum and migration database (Eurodac) will be carried out by the Coordinated Supervision Committee (CSC). Eurodac is an information system initially designed to compare the fingerprints of asylum a…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/coordinated-supervision-committee-extends-scope-include-eurodac_en",
+      "published": "2026-06-12",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB extends coordinated supervision to Eurodac database. Regulatory scope expansion for asylum/migration data systems.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "8887fa70ec2e",
+      "title": "EBA E-mail alert 12 June, 2026",
+      "summary": "EBA E-mail alert 12 June, 2026 Date 12/06/2026 Anonymous (not verified) Fri, 06/12/2026 - 17:00 Final Q&amp;As 2025_7602 Obstacle assessment of a mandatory client segment selection screen in a redirection journey 2025_7606 Clarification of the scope of the term \"authentication pr…",
+      "url": "https://www.eba.europa.eu/node/19744",
+      "published": "2026-06-12",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA Q&A clarifications on client segmentation and authentication procedures. Technical regulatory guidance updates.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
     {
       "id": "edf85062d9a9",
       "title": "Financial services",
@@ -470,6 +598,64 @@
       "priority": "low"
     },
     {
+      "id": "ff5fef13b4b4",
+      "title": "EBA E-mail alert 11 June, 2026",
+      "summary": "EBA E-mail alert 11 June, 2026 Date 11/06/2026 Anonymous (not verified) Thu, 06/11/2026 - 17:45 News &amp; Press ​The EBA launches early consultation on simplified EU-wide stress test, with climate risk integration",
+      "url": "https://www.eba.europa.eu/node/19741",
+      "published": "2026-06-11",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA launches early consultation on simplified EU stress test with climate risk integration. Consultation open for industry input.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "240ba62c663d",
+      "title": "Le CEPD rencontre le commissaire européen McGrath et adopte un modèle commun de notification des violations de données",
+      "summary": "Lors de sa dernière session plénière, le CEPD a rencontré Michael McGrath, commissaire européen chargé de la démocratie, de la justice, de l'État de droit et de la protection des consommateurs. Par ailleurs, le CEPD a adopté un&amp;nbsp;modèle commun de notification des violation…",
+      "url": "https://www.cnil.fr/fr/le-cepd-rencontre-le-commissaire-europeen-mcgrath-et-adopte-un-modele-commun-de-notification-des",
+      "published": "2026-06-10",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB adopts common data breach notification template and meets EU Commissioner McGrath. Harmonized breach notification guidance published.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "97b8e316e114",
+      "title": "Communications par voie électronique aux prospects et clients : quelles règles respecter ?",
+      "summary": "Prospection commerciale, messages d’information… les entreprises échangent régulièrement avec leurs prospects et leurs clients. Selon les cas, les personnes doivent soit donner leur accord préalable, soit pouvoir s’opposer facilement.",
+      "url": "https://www.cnil.fr/fr/communication-electronique-quelles-regles",
+      "published": "2026-06-10",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL guidance on electronic communications to prospects and clients. Rules on commercial prospecting consent requirements.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
       "id": "ca3c1833c457",
       "title": "EDPB meets with EU Commissioner McGrath and adopts common data breach notification template",
       "summary": "Brussels, 10 June – During its latest plenary, the EDPB met with Michael McGrath, Commissioner for Democracy, Justice, the Rule of Law and Consumer Protection. In addition, the Board has adopted a common data breach notification template . The Board held a meeting with Commission…",
@@ -488,6 +674,291 @@
         "GDPR"
       ],
       "priority": "medium"
+    },
+    {
+      "id": "8229d2989cb9",
+      "title": "EBA E-mail alert 8 June, 2026",
+      "summary": "EBA E-mail alert 8 June, 2026 Date 08/06/2026 Anonymous (not verified) Mon, 06/08/2026 - 17:00 News &amp; Press ​The EBA launches Discussion Paper on Pillar 3 Data Hub for small banks Consultations Discussion on Pillar 3 Data Hub process to SNCIs",
+      "url": "https://www.eba.europa.eu/node/19729",
+      "published": "2026-06-08",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA launches discussion paper on Pillar 3 Data Hub for small banks. Consultation on reporting data hub processes.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "96ca5ae469d0",
+      "title": "EBA E-mail alert 5 June, 2026",
+      "summary": "EBA E-mail alert 5 June, 2026 Date 05/06/2026 Anonymous (not verified) Fri, 06/05/2026 - 17:00 Final Q&amp;As 2025_7588 Access to national credit databases for all EU creditors for both cross-border and domestic mortgage loan transactions 2026_7807 Clarification on validation v30…",
+      "url": "https://www.eba.europa.eu/node/19723",
+      "published": "2026-06-05",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA Q&A on credit database access and validation requirements. Technical clarifications on credit data access procedures.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "da05dcbd91ad",
+      "title": "Ordre du jour de la séance plénière du 4 juin 2026",
+      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 4 juin 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
+      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-4-juin-2026",
+      "published": "2026-06-04",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL plenary session agenda for June 4, 2026. Administrative meeting notice.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "bc9ff8c2c90e",
+      "title": "EBA E-mail alert 3 June, 2026",
+      "summary": "EBA E-mail alert 3 June, 2026 Date 03/06/2026 Anonymous (not verified) Wed, 06/03/2026 - 17:00 News &amp; Press ESAs publish the first report on DORA major ICT-related incidents",
+      "url": "https://www.eba.europa.eu/node/19720",
+      "published": "2026-06-03",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "ESAs publish first report on DORA major ICT-related incidents. Enforcement reporting on digital operational resilience.",
+      "regulation_ids": [
+        "DORA"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "4e25591c8075",
+      "title": "EBA E-mail alert 2 June, 2026",
+      "summary": "EBA E-mail alert 2 June, 2026 Date 02/06/2026 Anonymous (not verified) Tue, 06/02/2026 - 17:00 News &amp; Press ​The EBA updates list of other systemically important institutions ​The EBA and the New York State Department of Financial Services sign a Memorandum of Understanding t…",
+      "url": "https://www.eba.europa.eu/node/19715",
+      "published": "2026-06-02",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA updates systemically important institutions list and signs MOU with NYDFS. Regulatory updates and bilateral cooperation.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "36b8fc25e073",
+      "title": "EBA E-mail alert 29 May, 2026",
+      "summary": "EBA E-mail alert 29 May, 2026 Date 29/05/2026 Anonymous (not verified) Fri, 05/29/2026 - 17:00 Final Q&amp;As 2025_7575 SPV repack transactions 2025_7576 Application of Article 207(2) of the CRR to financial collateral under the counterparty credit risk framework 2026_7744 Report…",
+      "url": "https://www.eba.europa.eu/node/19706",
+      "published": "2026-05-29",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA Q&A on SPV transactions and counterparty credit risk. Technical regulatory clarifications on financial structures.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "2b0ae13fbeed",
+      "title": "Ordre du jour de la séance plénière du 28 mai 2026",
+      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 28 mai 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
+      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-28-mai-2026",
+      "published": "2026-05-28",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL plenary session agenda for May 28, 2026. Administrative meeting notice.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "97087c1d86f2",
+      "title": "Privacy Research Day : participez à la journée dédiée à la recherche sur la vie privée",
+      "summary": "La cinquième édition de la Journée de recherche sur la vie privée (Privacy Research Day) se tiendra le 24 juin 2026, dans le cadre du G7 des autorités de protection des données accueilli par la CNIL. Cet évènement international, reliant le monde académique aux acteurs de la régul…",
+      "url": "https://www.cnil.fr/fr/privacy-research-day-2026",
+      "published": "2026-05-28",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL hosts Privacy Research Day June 24, 2026 within G7 data protection framework. Academic and regulatory dialogue event.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "d299ea681001",
+      "title": "Quelles qualifications pour les acteurs de l’informatique en nuage (cloud) ?",
+      "summary": "Avant de traiter des données personnelles, il est essentiel que les acteurs identifient leurs rôles. La CNIL fournit des orientations pour aider ceux du secteur de l’informatique en nuage (cloud) à identifier leurs responsabilités avec des exemples concrets.",
+      "url": "https://www.cnil.fr/fr/quelles-qualifications-pour-les-acteurs-de-linformatique-en-nuage-cloud",
+      "published": "2026-05-28",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL provides cloud sector guidance on data controller/processor roles. Clarification on cloud responsibilities under GDPR.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "e3042c83f66e",
+      "title": "Données de santé : sanction de 5 millions d’euros à l’encontre de la société IQVIA",
+      "summary": "Le 26 mai 2026, la société IQVIA OPERATIONS FRANCE a été sanctionnée d’une amende de 5&amp;nbsp;millions d’euros, notamment pour non-respect des garanties visant à limiter les risques pour les personnes dans le cadre de la gestion d’entrepôts de données de santé.",
+      "url": "https://www.cnil.fr/fr/donnees-sante-sanction-5-millions-iqvia",
+      "published": "2026-05-28",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL fines IQVIA 5 million euros for health data safeguard violations. Enforcement action for data warehouse management failures.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "08d182028344",
+      "title": "« IA générative et vie privée » : une affiche coproduite par la PIPC et la CNIL pour sensibiliser les utilisateurs d’IA à la protection de leurs données",
+      "summary": "Dans le cadre de leur partenariat, la CNIL et la PIPC (autorité de protection des données de la Corée du Sud) ont produit une affiche pour expliquer comment protéger ses données personnelles lorsqu'on utilise des services d'IA générative.",
+      "url": "https://www.cnil.fr/fr/ia-generative-et-vie-privee-affiche-coproduite-pipc-cnil",
+      "published": "2026-05-27",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL and PIPC co-produce awareness poster on generative AI and privacy protection. Educational resource on AI data protection.",
+      "regulation_ids": [
+        "GDPR",
+        "AI_ACT"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "79111d813f06",
+      "title": "Cyberattaque : le sous-traitant au centre de la crise",
+      "summary": "Régulièrement, la CNIL communique sur des violations de données typiques inspirées d’incidents réels qui lui sont notifiés. Cette publication a pour objectif de permettre à tous les professionnels de comprendre et de prévenir les risques d’accès à des données détenues par les sou…",
+      "url": "https://www.cnil.fr/fr/cyberattaque-le-sous-traitant-au-centre-de-la-crise",
+      "published": "2026-05-27",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL publishes guidance on subcontractor cybersecurity breaches and risk prevention. Educational advisory on supplier data security.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "dff4bf94acef",
+      "title": "Recherche en santé : la CNIL met à jour et élargit le champ des méthodologies de référence 001 et 003",
+      "summary": "Les MR-001 et MR-003 évoluent&amp;nbsp;: études à l’étranger, information dématérialisée, contrôle qualité à distance, accès aux données d’identification, etc. La CNIL accompagne les acteurs et simplifie les démarches, tout en renforçant la protection des données personnelles.",
+      "url": "https://www.cnil.fr/fr/recherche-en-sante-la-cnil-met-jour-et-elargit-le-champ-des-methodologies-de-reference-001-et-003",
+      "published": "2026-05-26",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL updates reference methodologies 001/003 for health research with broader scope. Simplified compliance pathways for health studies.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "76bb22a77301",
+      "title": "EBA E-mail alert 22 May, 2026",
+      "summary": "EBA E-mail alert 22 May, 2026 Date 22/05/2026 Anonymous (not verified) Fri, 05/22/2026 - 17:00 Final Q&amp;As 2024_7078 Issuers of EMTs and scope of application AML requirements 2024_7172 Lightning Network (LN) Transactions and whether they fall within the scope of the TFR and Tr…",
+      "url": "https://www.eba.europa.eu/node/19696",
+      "published": "2026-05-22",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA Q&A on EMT issuers and AML requirements. Clarifications on electronic money tokens and AML scope.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "bffc42f2bcb8",
+      "title": "EBA E-mail alert 12 May, 2026",
+      "summary": "EBA E-mail alert 12 May, 2026 Date 12/05/2026 Anonymous (not verified) Tue, 05/12/2026 - 17:00 News &amp; Press European Commission launches call for candidates for the ESAs’ Board of Appeal The EBA issues an opinion about an Austrian macroprudential measure",
+      "url": "https://www.eba.europa.eu/node/19674",
+      "published": "2026-05-12",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA call for ESA Board of Appeal candidates and macroprudential measure opinion. Regulatory staffing and advisory updates.",
+      "regulation_ids": [],
+      "priority": "low"
     },
     {
       "id": "09b928379a69",
@@ -566,6 +1037,105 @@
         "GDPR"
       ],
       "priority": "medium"
+    },
+    {
+      "id": "683b77dda0a2",
+      "title": "Enhancing compliance and consistency: EDPB adopts DPIA template",
+      "summary": "Brussels, 14 April - In line with the EDPB’s Helsinki Statement to make GDPR compliance easier and strengthen consistency across Europe, the EDPB has adopted a template for Data Protection Impact Assessments (DPIA) . The template will help organisations structure, harmonise and e…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/enhancing-compliance-and-consistency-edpb-adopts-dpia-template_en",
+      "published": "2026-04-14",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB adopts harmonized DPIA template to strengthen GDPR compliance consistency. Guidance published to facilitate organizational compliance.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "114ae4822db1",
+      "title": "EDPB annual report 2025: supporting stakeholders through guidance and dialogue",
+      "summary": "Brussels, 09 April - The European Data Protection Board (EDPB) has published its&nbsp; 2025 Annual Report . The report provides an overview of the EDPB work carried out in 2025 and reflects on important milestones, such as the adoption of the&nbsp; Helsinki Statement on Enhanced …",
+      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-annual-report-2025-supporting-stakeholders-through-guidance-and-dialogue_en",
+      "published": "2026-04-09",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB publishes 2025 annual report with Helsinki Statement on enhanced GDPR compliance. Summary of regulatory guidance and milestones.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "e2237d20e094",
+      "title": "EDPB conference on cross-regulatory cooperation: what we learned",
+      "summary": "Brussels, 23 March - On 17 March 2026, the EDPB conference “Cross-regulatory interplay and cooperation in the EU: a data protection perspective” took place in Brussels. The event showcased high-level discussions, featuring contributions from representatives of key EU institutions…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-conference-cross-regulatory-cooperation-what-we-learned_en",
+      "published": "2026-03-24",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB conference on cross-regulatory cooperation and data protection. Dialogue on EU regulatory interplay and coordination.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "c37fe7ecccaa",
+      "title": "EDPB and EDPS support strengthening EU’s cybersecurity and easing compliance while protecting individuals’ personal data",
+      "summary": "Brussels, 19 March 2026 – The European Data Protection Board (EDPB) and the European Data Protection Supervisor (EDPS) have adopted a Joint Opinion on the European Commission’s proposal for a Cybersecurity Act 2 (CSA2) and the proposal on amendments to the Network and Information…",
+      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-and-edps-support-strengthening-eus-cybersecurity-and-easing-compliance-while_en",
+      "published": "2026-03-19",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB and EDPS adopt joint opinion on Cybersecurity Act 2 proposal. Joint guidance on balancing cybersecurity with data protection.",
+      "regulation_ids": [
+        "GDPR",
+        "CYBER_ACT"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "7a10e0d9c2a6",
+      "title": "Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation",
+      "summary": "Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation Jana Jaklic Fri, 06/28/2024 - 10:22",
+      "url": "https://www.eba.europa.eu/publications-and-media/events/call-papers-13th-annual-research-workshop-boundaries-banking-regulation",
+      "published": "2024-06-28",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA call for papers on banking regulation boundaries. Academic research workshop announcement.",
+      "regulation_ids": [],
+      "priority": "low"
     }
   ]
 }
