@@ -49,7 +49,7 @@ const JURISDICTION_CONFIG = {
 
 const ALL_DOMAINS       = Object.keys(DOMAIN_CONFIG);
 const ALL_JURISDICTIONS = Object.keys(JURISDICTION_CONFIG);
-const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix', 'news', 'watchlist', 'calendar', 'risk', 'gap', 'traceability', 'posture', 'jurisdiction', 'copilot', 'mappings', 'risk-register', 'vendor-risk', 'audit'];
+const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix', 'news', 'watchlist', 'calendar', 'risk', 'gap', 'traceability', 'posture', 'jurisdiction', 'copilot', 'mappings', 'risk-register', 'vendor-risk', 'audit', 'req-search'];
 
 /* ===== Global Reactive State ===== */
 const AppState = Vue.reactive({
@@ -299,6 +299,11 @@ const RootComponent = {
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
         },
         {
+          id: 'req-search', label: 'Req. Search',
+          help: 'Search across all requirements in all regulations',
+          icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'
+        },
+        {
           id: 'copilot', label: 'AI Copilot',
           help: 'Ask AI questions about your compliance program',
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>'
@@ -321,6 +326,7 @@ const RootComponent = {
         'risk-register':RiskRegisterView,
         'vendor-risk':  VendorRiskView,
         audit:          AuditView,
+        'req-search':   ReqSearchView,
         posture:        PostureView,
         jurisdiction:   JurisdictionView,
         copilot:        CopilotView,
@@ -524,6 +530,7 @@ app.component('onboarding-modal',     OnboardingModalComponent);
 app.component('change-alert-banner',  ChangeAlertBannerComponent);
 app.component('vendor-risk-view',      VendorRiskView);
 app.component('audit-view',            AuditView);
+app.component('req-search-view',       ReqSearchView);
 app.component('matrix-pane',          MatrixView);
 app.component('traceability-pane',    TraceabilityView);
 app.component('gap-analysis-pane',    GapAnalysisView);

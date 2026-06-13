@@ -320,6 +320,57 @@ const PostureView = {
       <div class="embedded-view-pane" v-show="tab === 'gaps'">
         <gap-analysis-pane />
       </div>
+
+      <!-- ══ DATA BACKUP & RESTORE ══ -->
+      <div class="backup-section">
+        <div class="backup-section__header" @click="backupOpen = !backupOpen">
+          <div class="backup-section__title">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+            Program Data — Backup &amp; Restore
+          </div>
+          <svg class="backup-section__chevron" :class="{open: backupOpen}" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+
+        <div class="backup-section__body" v-show="backupOpen">
+          <p class="backup-section__desc">
+            Export all your compliance data (requirement statuses, evidence, risk register, vendors, audit findings, watchlist, profile) as a JSON file.
+            Import to restore a previous backup or transfer data between devices.
+          </p>
+          <div class="backup-section__summary" v-if="backupSummary">
+            <span v-for="item in backupSummary" :key="item.label" class="backup-stat">
+              <strong>{{ item.count }}</strong> {{ item.label }}
+            </span>
+          </div>
+          <div class="backup-section__actions">
+            <button class="btn-backup" @click="exportBackup">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Export Backup (.json)
+            </button>
+            <button class="btn-backup btn-backup--restore" @click="triggerImport">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>
+              Import Backup (.json)
+            </button>
+            <input type="file" accept=".json" ref="backupFileInput" style="display:none" @change="importBackup" />
+          </div>
+          <div v-if="restoreMsg" class="backup-restore-msg" :class="restoreMsg.ok ? 'backup-restore-msg--ok' : 'backup-restore-msg--err'">
+            {{ restoreMsg.text }}
+          </div>
+        </div>
+      </div>
     </div>
   `,
 
@@ -327,7 +378,9 @@ const PostureView = {
     return {
       implementedStds: [],
       tab: 'scorecard',
-      hintDismissed: sessionStorage.getItem('cm_hint_posture') === 'true'
+      hintDismissed: sessionStorage.getItem('cm_hint_posture') === 'true',
+      backupOpen: false,
+      restoreMsg: null
     };
   },
 
@@ -503,6 +556,18 @@ const PostureView = {
         if (gain > bestGain) { bestGain = gain; bestStd = row.std; }
       });
       return bestStd;
+    },
+
+    backupSummary() {
+      const s = this.$s;
+      const cs = s.complianceStatus || {};
+      const items = [];
+      const implCount = Object.values(cs).filter(v => v === 'implemented').length;
+      if (implCount) items.push({ count: implCount, label: 'requirements tracked' });
+      if ((s.riskRegister || []).length) items.push({ count: s.riskRegister.length, label: 'risks' });
+      if ((s.vendors || []).length) items.push({ count: s.vendors.length, label: 'vendors' });
+      if ((s.auditFindings || []).length) items.push({ count: s.auditFindings.length, label: 'audit findings' });
+      return items.length ? items : null;
     }
   },
 
@@ -851,6 +916,81 @@ ${(s.vendors || []).map(v => {
       const a = document.createElement('a');
       a.href = url; a.download = `compliance-snapshot-${today}.html`; a.click();
       URL.revokeObjectURL(url);
+    },
+
+    exportBackup() {
+      const s = this.$s;
+      const today = new Date().toISOString().slice(0, 10);
+      const KEYS = [
+        'cm_compliance_status',
+        'cm_req_evidence',
+        'cm_risk_register',
+        'cm_policies',
+        'cm_vendors',
+        'cm_audit_findings',
+        'cm_watchlist',
+        'cm_user_profile',
+        'cm_implemented_stds'
+      ];
+      const backup = {
+        _meta: {
+          version: s.version || '1.0.0',
+          exported_at: new Date().toISOString(),
+          tool: 'ComplianceMap'
+        }
+      };
+      KEYS.forEach(k => {
+        try {
+          const raw = localStorage.getItem(k);
+          if (raw !== null) backup[k] = JSON.parse(raw);
+        } catch {}
+      });
+      const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = `compliancemap-backup-${today}.json`; a.click();
+      URL.revokeObjectURL(url);
+    },
+
+    triggerImport() {
+      this.$refs.backupFileInput.value = '';
+      this.$refs.backupFileInput.click();
+    },
+
+    importBackup(evt) {
+      const file = evt.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const data = JSON.parse(e.target.result);
+          if (!data._meta || data._meta.tool !== 'ComplianceMap') {
+            this.restoreMsg = { ok: false, text: 'Invalid backup file — not a ComplianceMap export.' };
+            return;
+          }
+          const s = this.$s;
+          const KEYS = [
+            'cm_compliance_status', 'cm_req_evidence', 'cm_risk_register',
+            'cm_policies', 'cm_vendors', 'cm_audit_findings',
+            'cm_watchlist', 'cm_user_profile', 'cm_implemented_stds'
+          ];
+          let restored = 0;
+          KEYS.forEach(k => {
+            if (data[k] !== undefined) {
+              try {
+                localStorage.setItem(k, JSON.stringify(data[k]));
+                restored++;
+              } catch {}
+            }
+          });
+          // Reload the page to re-apply all restored state
+          this.restoreMsg = { ok: true, text: `Restored ${restored} data categories. Reloading…` };
+          setTimeout(() => window.location.reload(), 1200);
+        } catch {
+          this.restoreMsg = { ok: false, text: 'Could not read backup file — check that it is valid JSON.' };
+        }
+      };
+      reader.readAsText(file);
     }
   }
 };
