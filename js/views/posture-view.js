@@ -928,6 +928,7 @@ ${(s.vendors || []).map(v => {
         'cm_policies',
         'cm_vendors',
         'cm_audit_findings',
+        'cm_tasks',
         'cm_watchlist',
         'cm_user_profile',
         'cm_implemented_stds'
@@ -971,7 +972,7 @@ ${(s.vendors || []).map(v => {
           const s = this.$s;
           const KEYS = [
             'cm_compliance_status', 'cm_req_evidence', 'cm_risk_register',
-            'cm_policies', 'cm_vendors', 'cm_audit_findings',
+            'cm_policies', 'cm_vendors', 'cm_audit_findings', 'cm_tasks',
             'cm_watchlist', 'cm_user_profile', 'cm_implemented_stds'
           ];
           let restored = 0;

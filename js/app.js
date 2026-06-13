@@ -49,7 +49,7 @@ const JURISDICTION_CONFIG = {
 
 const ALL_DOMAINS       = Object.keys(DOMAIN_CONFIG);
 const ALL_JURISDICTIONS = Object.keys(JURISDICTION_CONFIG);
-const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix', 'news', 'watchlist', 'calendar', 'risk', 'gap', 'traceability', 'posture', 'jurisdiction', 'copilot', 'mappings', 'risk-register', 'vendor-risk', 'audit', 'req-search'];
+const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix', 'news', 'watchlist', 'calendar', 'risk', 'gap', 'traceability', 'posture', 'jurisdiction', 'copilot', 'mappings', 'risk-register', 'vendor-risk', 'audit', 'req-search', 'tasks'];
 
 /* ===== Global Reactive State ===== */
 const AppState = Vue.reactive({
@@ -96,7 +96,8 @@ const AppState = Vue.reactive({
   riskRegister: [],
   policies: [],
   vendors: [],
-  auditFindings: []
+  auditFindings: [],
+  tasks: []
 });
 
 /* ===== Root Component ===== */
@@ -125,6 +126,7 @@ const RootComponent = {
           >
             <span v-html="v.icon"></span>
             {{ v.label }}
+            <span v-if="navBadge(v.id)" class="nav-badge">{{ navBadge(v.id) }}</span>
           </button>
         </div>
 
@@ -299,6 +301,11 @@ const RootComponent = {
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
         },
         {
+          id: 'tasks', label: 'Tasks',
+          help: 'Manage compliance action items with owners and due dates',
+          icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="6" height="6" rx="1"/><path d="M3 17h18M3 12h18M13 5h8"/></svg>'
+        },
+        {
           id: 'req-search', label: 'Req. Search',
           help: 'Search across all requirements in all regulations',
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'
@@ -327,6 +334,7 @@ const RootComponent = {
         'vendor-risk':  VendorRiskView,
         audit:          AuditView,
         'req-search':   ReqSearchView,
+        tasks:          TasksView,
         posture:        PostureView,
         jurisdiction:   JurisdictionView,
         copilot:        CopilotView,
@@ -355,6 +363,24 @@ const RootComponent = {
   },
 
   methods: {
+    navBadge(viewId) {
+      const s = this.$s;
+      const today = new Date().toISOString().slice(0, 10);
+      if (viewId === 'audit') {
+        return (s.auditFindings || []).filter(f => f.status === 'open' || f.status === 'in_remediation').length || 0;
+      }
+      if (viewId === 'vendor-risk') {
+        return (s.vendors || []).filter(v => v.next_review_date && v.next_review_date < today).length || 0;
+      }
+      if (viewId === 'risk-register') {
+        const open = (s.riskRegister || []).filter(r => r.status !== 'resolved').length;
+        return open || 0;
+      }
+      if (viewId === 'tasks') {
+        return (s.tasks || []).filter(t => t.status === 'open' || t.status === 'in_progress').length || 0;
+      }
+      return 0;
+    },
     navigate(viewId) {
       this.$s.activeView = viewId;
       window.location.hash = viewId;
@@ -423,6 +449,12 @@ const RootComponent = {
     try {
       const af = JSON.parse(localStorage.getItem('cm_audit_findings') || 'null');
       if (Array.isArray(af)) af.forEach(f => AppState.auditFindings.push(f));
+    } catch {}
+
+    // Restore tasks from localStorage
+    try {
+      const tk = JSON.parse(localStorage.getItem('cm_tasks') || 'null');
+      if (Array.isArray(tk)) tk.forEach(t => AppState.tasks.push(t));
     } catch {}
 
     // Load regulation changes (non-blocking)
@@ -531,6 +563,7 @@ app.component('change-alert-banner',  ChangeAlertBannerComponent);
 app.component('vendor-risk-view',      VendorRiskView);
 app.component('audit-view',            AuditView);
 app.component('req-search-view',       ReqSearchView);
+app.component('tasks-view',            TasksView);
 app.component('matrix-pane',          MatrixView);
 app.component('traceability-pane',    TraceabilityView);
 app.component('gap-analysis-pane',    GapAnalysisView);
