@@ -1,1 +1,106 @@
-[]
+[
+  {
+    "regulation_id": "GDPR",
+    "regulation": "GDPR",
+    "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "old_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "new_hash": "sha256:6ce29d509db729e5e51c8956d3a8e44eeeba6c6e66e68615f1ce7976013e7868",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "NIS2",
+    "regulation": "NIS2",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022L2555",
+    "old_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "new_hash": "sha256:ab3cd7d84c3ae23308e24331568fead7e00b37e82e8973d6ed5afd55f0657e71",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "DORA",
+    "regulation": "DORA",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554",
+    "old_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "new_hash": "sha256:3aac01057bb2afb02235cf729219844404b1207db3d439263d3163bd5b54a804",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "AI_ACT",
+    "regulation": "EU AI Act",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689",
+    "old_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "new_hash": "sha256:79616f13223304deed53ad05725650dc715929579d8d8a28629822e508139b87",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "CYBER_ACT",
+    "regulation": "EU Cyber Act",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0881",
+    "old_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "new_hash": "sha256:72d2a541c7a62b4775aef885e1f27a7ee9ac48862f747e3954face377e854ec6",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "FICA_SA",
+    "regulation": "FICA",
+    "url": "https://www.fic.gov.za/",
+    "old_hash": "sha256:f7f3b61f9d6ecdf9c78d68d670de5b4c17308c25b9025fb169abd899b99409a0",
+    "new_hash": "sha256:f1c280231daa79b82c92cd43bb2b1bc0f3a8b16815a6eb3b306dc8eea96f729e",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "EGYPT_PDPL",
+    "regulation": "Egypt PDPL",
+    "url": "https://mcit.gov.eg/en/",
+    "old_hash": "sha256:6ff81e69dc571526f4005461b193b429f1bde7c9cb84e06287f1dceacdeb7f24",
+    "new_hash": "sha256:f6c5343d7a5293f2fcca4fe86657683a05535db720d6b7666ae4495bf29079d8",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "ARGENTINA_PDPA",
+    "regulation": "Argentina PDPA",
+    "url": "https://www.argentina.gob.ar/aaip/datospersonales",
+    "old_hash": "sha256:5c583865ac61133bb21c89c404ddeefb1903144c79f1dee7e285578eb33221af",
+    "new_hash": "sha256:f2fd80fbe7ef2474013bc404809be803c18daa36fd4a0cbbe744cc4fd64bd735",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "SINGAPORE_PCA",
+    "regulation": "Singapore PCA",
+    "url": "https://www.cpib.gov.sg/",
+    "old_hash": "sha256:f49d2792caa4ebe24e79d296a5e24d89014c3e575d1f976dcaba74585f7bbc52",
+    "new_hash": "sha256:21647281bd3a8fdf700c6192d1c69019a6c4d2576696dffaea2d373e69436bf1",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "AUSTRALIA_MODERN_SLAVERY",
+    "regulation": "Australia Modern Slavery Act",
+    "url": "https://modernslaveryregister.gov.au/",
+    "old_hash": "sha256:ddffc21de243eed35418d7a9b5c0463a158ebe2c5d733db39f24fa79443dde09",
+    "new_hash": "sha256:8b2f4f30eb2551b2b12c906eed769cd85db7ae29be2b2217b9ed9eaf99c37469",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "CHINA_ECL",
+    "regulation": "China ECL",
+    "url": "https://www.mofcom.gov.cn/",
+    "old_hash": "sha256:1d918a80f264fb3264e34048bdf15982b66bd57b664fa8ee4dab96288b6ff0c6",
+    "new_hash": "sha256:fcc41e1a2435d4f7818d08ca3fa9cf8981482106001357717cca2b69a3cee027",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "US_UFLPA",
+    "regulation": "US UFLPA",
+    "url": "https://www.cbp.gov/trade/forced-labor/UFLPA",
+    "old_hash": "sha256:cdeddd3e267c496efa631d004393f95b4d407932c766a36b3bb28b821e5797c7",
+    "new_hash": "sha256:8c6be661011d58702ef62b0f75bf8d30f0b8f97abc7f8cdd3872b86aa47894db",
+    "detected_at": "2026-06-13T18:17:56Z"
+  },
+  {
+    "regulation_id": "EU_FUELEU",
+    "regulation": "FuelEU Maritime",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1805",
+    "old_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "new_hash": "sha256:d536de556a7ba91586b0cb921c3cd2c0091553e3c6621544015e146d703cf47c",
+    "detected_at": "2026-06-13T18:17:56Z"
+  }
+]

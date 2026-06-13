@@ -1,5 +1,21 @@
 # Changelog — ComplianceMap
 
+## [2026-06-13] Monthly Check — 13 change(s) detected
+
+  - GDPR (`GDPR`): content changed at https://eur-lex.europa.eu/eli/reg/2016/679/oj
+  - NIS2 (`NIS2`): content changed at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022L2555
+  - DORA (`DORA`): content changed at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554
+  - EU AI Act (`AI_ACT`): content changed at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689
+  - EU Cyber Act (`CYBER_ACT`): content changed at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0881
+  - FICA (`FICA_SA`): content changed at https://www.fic.gov.za/
+  - Egypt PDPL (`EGYPT_PDPL`): content changed at https://mcit.gov.eg/en/
+  - Argentina PDPA (`ARGENTINA_PDPA`): content changed at https://www.argentina.gob.ar/aaip/datospersonales
+  - Singapore PCA (`SINGAPORE_PCA`): content changed at https://www.cpib.gov.sg/
+  - Australia Modern Slavery Act (`AUSTRALIA_MODERN_SLAVERY`): content changed at https://modernslaveryregister.gov.au/
+  - China ECL (`CHINA_ECL`): content changed at https://www.mofcom.gov.cn/
+  - US UFLPA (`US_UFLPA`): content changed at https://www.cbp.gov/trade/forced-labor/UFLPA
+  - FuelEU Maritime (`EU_FUELEU`): content changed at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1805
+
 All notable changes and the system's objectives are recorded in this file.
 This file is the persistent record of what we have built and where we are going.
 
