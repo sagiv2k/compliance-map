@@ -42,7 +42,9 @@ const CalendarView = {
         <input type="date" class="calendar-date-input" v-model="refDateStr" />
         <button class="btn-calendar-reset" @click="resetDate" v-if="refDateStr !== todayStr">Reset to today</button>
         <span style="font-size:12px;color:var(--color-text-muted);">
-          {{ allEvents.length }} events · {{ filteredRegulations.length }} regulations
+          {{ allEvents.filter(e => !e.isRisk && !e.isVendor).length }} events · {{ filteredRegulations.length }} regulations
+          <span v-if="riskEventCount > 0" style="color:#dc2626;"> · {{ riskEventCount }} risk due dates</span>
+          <span v-if="vendorEventCount > 0" style="color:#7c3aed;"> · {{ vendorEventCount }} vendor reviews</span>
         </span>
       </div>
 
@@ -64,15 +66,18 @@ const CalendarView = {
                   v-for="ev in lane.events"
                   :key="ev.key"
                   class="calendar-card"
-                  @click="$openItem(ev.reg, 'regulation')"
-                  :title="ev.reg.name"
+                  :class="{'calendar-card--risk': ev.isRisk, 'calendar-card--vendor': ev.isVendor}"
+                  @click="ev.isRisk ? ($s.activeView = 'risk-register') : ev.isVendor ? ($s.activeView = 'vendor-risk') : $openItem(ev.reg, 'regulation')"
+                  :title="(ev.isRisk || ev.isVendor) ? ev.title : ev.reg.name"
                 >
                   <div class="calendar-card__date">{{ formatDate(ev.date) }}</div>
-                  <div class="calendar-card__name">{{ ev.reg.short_name }}</div>
-                  <div v-if="ev.label && ev.label !== 'Effective date'" class="calendar-card__milestone">
-                    {{ ev.label }}
+                  <div class="calendar-card__name">{{ (ev.isRisk || ev.isVendor) ? ev.title : ev.reg.short_name }}</div>
+                  <div v-if="ev.isRisk" class="calendar-card__milestone" style="color:#dc2626;">Risk due date</div>
+                  <div v-else-if="ev.isVendor" class="calendar-card__milestone" style="color:#7c3aed;">Vendor review</div>
+                  <div v-else-if="ev.label && ev.label !== 'Effective date'" class="calendar-card__milestone">{{ ev.label }}</div>
+                  <div class="calendar-card__reg">
+                    {{ ev.isRisk ? ('Risk · ' + ev.riskStatus) : ev.isVendor ? ('Vendor · ' + (ev.vendorCategory || 'Other')) : ev.reg.jurisdiction }}
                   </div>
-                  <div class="calendar-card__reg">{{ ev.reg.jurisdiction }}</div>
                 </div>
               </div>
             </div>
@@ -161,31 +166,48 @@ const CalendarView = {
         if (reg.effective_date) {
           const d = new Date(reg.effective_date + 'T00:00:00');
           const days = Math.round((d - ref) / 86400000);
-          events.push({
-            key: reg.id + '-effective',
-            reg,
-            date: reg.effective_date,
-            label: 'Effective date',
-            days
-          });
+          events.push({ key: reg.id + '-effective', reg, date: reg.effective_date, label: 'Effective date', days });
         }
         if (Array.isArray(reg.milestones)) {
           reg.milestones.forEach((ms, i) => {
             const d = new Date(ms.date + 'T00:00:00');
             const days = Math.round((d - ref) / 86400000);
-            events.push({
-              key: reg.id + '-ms-' + i,
-              reg,
-              date: ms.date,
-              label: ms.label,
-              days,
-              status: ms.status
-            });
+            events.push({ key: reg.id + '-ms-' + i, reg, date: ms.date, label: ms.label, days, status: ms.status });
           });
         }
       });
 
+      // Risk register due dates
+      (this.$s.riskRegister || []).forEach(risk => {
+        if (!risk.due_date || risk.status === 'resolved') return;
+        const d = new Date(risk.due_date + 'T00:00:00');
+        const days = Math.round((d - ref) / 86400000);
+        events.push({
+          key: 'risk-' + risk.id, date: risk.due_date, days, isRisk: true,
+          title: risk.title, riskStatus: risk.status === 'mitigating' ? 'Mitigating' : 'Open', risk
+        });
+      });
+
+      // Vendor review dates
+      (this.$s.vendors || []).forEach(vendor => {
+        if (!vendor.next_review_date) return;
+        const d = new Date(vendor.next_review_date + 'T00:00:00');
+        const days = Math.round((d - ref) / 86400000);
+        events.push({
+          key: 'vendor-' + vendor.id, date: vendor.next_review_date, days, isVendor: true,
+          title: vendor.name, vendorCategory: vendor.category || '', vendor
+        });
+      });
+
       return events.sort((a, b) => a.days - b.days);
+    },
+
+    riskEventCount() {
+      return this.allEvents.filter(e => e.isRisk).length;
+    },
+
+    vendorEventCount() {
+      return this.allEvents.filter(e => e.isVendor).length;
     },
 
     visibleLanes() {
@@ -217,7 +239,7 @@ const CalendarView = {
     },
 
     sortedTableEvents() {
-      const evs = [...this.allEvents];
+      const evs = [...this.allEvents].filter(e => !e.isRisk && !e.isVendor);
       const col = this.sortCol;
       const dir = this.sortDir;
       evs.sort((a, b) => {

@@ -117,7 +117,9 @@ const CopilotView = {
         'What are my top compliance gaps?',
         'Which regulation has the highest penalty risk?',
         'Compare GDPR and CCPA',
-        'What should I do first for ISO 27001?'
+        'What should I do first for ISO 27001?',
+        'Help me prioritize my open compliance risks',
+        'What vendor due diligence do I need for GDPR and ISO 27001?'
       ]
     };
   },
@@ -256,6 +258,26 @@ DATABASE: ${s.regulations.length} global regulations · ${s.standards.length} st
       const progIds = Object.keys(cs).filter(k => cs[k] === 'in_progress');
       if (implIds.length || progIds.length) {
         prompt += `IMPLEMENTATION STATUS: ${implIds.length} requirements implemented · ${progIds.length} in progress\n\n`;
+      }
+
+      if (s.riskRegister && s.riskRegister.length) {
+        const openRisks = s.riskRegister.filter(r => r.status !== 'resolved');
+        if (openRisks.length) {
+          const critCount = openRisks.filter(r => r.severity * r.likelihood >= 13).length;
+          prompt += `RISK REGISTER: ${openRisks.length} open risk${openRisks.length > 1 ? 's' : ''} tracked`;
+          if (critCount) prompt += ` (${critCount} critical)`;
+          prompt += '\n\n';
+        }
+      }
+
+      if (s.vendors && s.vendors.length) {
+        const today = new Date().toISOString().slice(0, 10);
+        const overdue = s.vendors.filter(v => v.next_review_date && v.next_review_date < today);
+        const highRisk = s.vendors.filter(v => v.risk_level === 'high');
+        prompt += `VENDOR REGISTER: ${s.vendors.length} vendor${s.vendors.length > 1 ? 's' : ''} tracked`;
+        if (highRisk.length) prompt += ` (${highRisk.length} high-risk)`;
+        if (overdue.length) prompt += ` · ${overdue.length} review${overdue.length > 1 ? 's' : ''} overdue`;
+        prompt += '\n\n';
       }
 
       const topRegs = s.regulations.slice(0, 30).map(r =>

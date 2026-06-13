@@ -58,6 +58,14 @@ const OverviewView = {
           <div class="stat-card__value">{{ activeDomainCount }}</div>
           <div class="stat-card__label">Active domains</div>
         </div>
+        <div class="stat-card stat-card--risk" v-if="openRisks > 0" @click="$s.activeView = 'risk-register'">
+          <div class="stat-card__value" style="color:#dc2626;">{{ openRisks }}</div>
+          <div class="stat-card__label">Open Risks</div>
+        </div>
+        <div class="stat-card stat-card--vendor" v-if="overdueVendors > 0" @click="$s.activeView = 'vendor-risk'">
+          <div class="stat-card__value" style="color:#7c3aed;">{{ overdueVendors }}</div>
+          <div class="stat-card__label">Vendor Reviews Due</div>
+        </div>
       </div>
 
       <!-- World map -->
@@ -178,6 +186,13 @@ const OverviewView = {
       const set = new Set();
       this.filteredRegulations.forEach(r => r.domain.forEach(d => set.add(d)));
       return set.size;
+    },
+    openRisks() {
+      return (this.$s.riskRegister || []).filter(r => r.status !== 'resolved').length;
+    },
+    overdueVendors() {
+      const today = new Date().toISOString().slice(0, 10);
+      return (this.$s.vendors || []).filter(v => v.next_review_date && v.next_review_date < today).length;
     },
     countByCountry() {
       const counts = {};

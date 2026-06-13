@@ -172,6 +172,29 @@ const DetailModalComponent = {
                     </div>
                   </div>
 
+                  <!-- Evidence linking (shown when status is tracked) -->
+                  <div class="req-evidence-section" v-if="$getReqStatus(req.id) !== 'not_started'" @click.stop>
+                    <div class="req-evidence-list" v-if="$getReqEvidence(req.id).length">
+                      <div v-for="(ev, evIdx) in $getReqEvidence(req.id)" :key="evIdx" class="req-evidence-item">
+                        <span class="req-evidence-type">{{ ev.type === 'url' ? '🔗' : '📝' }}</span>
+                        <a v-if="ev.type === 'url'" :href="ev.value" target="_blank" rel="noopener" class="req-evidence-link">{{ ev.value }}</a>
+                        <span v-else class="req-evidence-note">{{ ev.value }}</span>
+                        <button class="req-evidence-remove" @click="removeEv(req.id, evIdx)" title="Remove">✕</button>
+                      </div>
+                    </div>
+                    <div class="req-evidence-add-row">
+                      <input
+                        type="text"
+                        class="req-evidence-input"
+                        :value="evidenceInputs[req.id] || ''"
+                        @input="evidenceInputs[req.id] = $event.target.value"
+                        placeholder="Add URL or note as evidence…"
+                        @keyup.enter="addEv(req.id)"
+                      />
+                      <button class="req-evidence-add-btn" @click="addEv(req.id)" :disabled="!(evidenceInputs[req.id] || '').trim()">+ Add</button>
+                    </div>
+                  </div>
+
                   <!-- Guidance toggle (only shown after enrichment) -->
                   <button
                     v-if="req.how_to_meet || req.vendor_actions"
@@ -242,6 +265,45 @@ const DetailModalComponent = {
               </div>
             </div>
 
+            <!-- Policy Documents -->
+            <div class="modal-section" v-if="isReg" @click.stop>
+              <div class="modal-section-title" style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                <span>Policy Documents</span>
+                <button class="btn-add-policy" @click="showAddPolicy = !showAddPolicy">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                  </svg>
+                  Link Policy
+                </button>
+              </div>
+              <div class="policy-empty" v-if="!linkedPolicies.length && !showAddPolicy">
+                No policies linked. Connect internal documents to track coverage.
+              </div>
+              <div class="policy-list" v-if="linkedPolicies.length">
+                <div v-for="pol in linkedPolicies" :key="pol.id" class="policy-item">
+                  <div class="policy-item__info">
+                    <a v-if="pol.url" :href="pol.url" target="_blank" rel="noopener" class="policy-item__name">{{ pol.name }}</a>
+                    <span v-else class="policy-item__name">{{ pol.name }}</span>
+                    <span class="policy-item__owner" v-if="pol.owner">Owner: {{ pol.owner }}</span>
+                    <span class="policy-item__date" v-if="pol.last_reviewed">Reviewed: {{ pol.last_reviewed }}</span>
+                  </div>
+                  <button class="policy-item__remove" @click="removePolicy(pol.id)" title="Remove">✕</button>
+                </div>
+              </div>
+              <div class="policy-add-form" v-if="showAddPolicy">
+                <div class="policy-form-row">
+                  <input type="text" v-model="newPolicy.name" class="policy-input" placeholder="Policy name (required)" />
+                  <input type="text" v-model="newPolicy.url" class="policy-input" placeholder="URL or file path (optional)" />
+                  <input type="text" v-model="newPolicy.owner" class="policy-input" placeholder="Owner / team" />
+                  <input type="date" v-model="newPolicy.last_reviewed" class="policy-input" />
+                </div>
+                <div class="policy-form-btns">
+                  <button class="policy-btn-save" @click="addPolicy" :disabled="!newPolicy.name.trim()">Add Policy</button>
+                  <button class="policy-btn-cancel" @click="showAddPolicy = false">Cancel</button>
+                </div>
+              </div>
+            </div>
+
             <!-- Recent news updates (Feature J) -->
             <div class="modal-section" v-if="isReg && recentNews.length">
               <div class="modal-section-title">
@@ -302,6 +364,9 @@ const DetailModalComponent = {
       activeTab: 'overview',
       checklistMenuOpen: false,
       expandedReqs: {},
+      evidenceInputs: {},
+      showAddPolicy: false,
+      newPolicy: { name: '', url: '', owner: '', last_reviewed: '' },
       statusOptions: [
         { value: 'not_started', label: 'Not Started' },
         { value: 'in_progress', label: 'In Progress' },
@@ -357,6 +422,11 @@ const DetailModalComponent = {
       const na    = reqs.filter(r => cs[r.id] === 'na').length;
       return { total: reqs.length, implemented: impl, in_progress: prog, not_started: reqs.length - impl - prog - na };
     },
+    linkedPolicies() {
+      if (!this.isReg || !this.item) return [];
+      const regId = this.item.id;
+      return (this.$s.policies || []).filter(p => p.linked_reg_ids && p.linked_reg_ids.includes(regId));
+    },
     crossRefs() {
       if (!this.item) return [];
       const { mappings, regulations, standards } = this.$s;
@@ -387,6 +457,9 @@ const DetailModalComponent = {
       this.activeTab = 'overview';
       this.checklistMenuOpen = false;
       this.expandedReqs = {};
+      this.evidenceInputs = {};
+      this.showAddPolicy = false;
+      this.newPolicy = { name: '', url: '', owner: '', last_reviewed: '' };
     }
   },
 
@@ -426,6 +499,38 @@ const DetailModalComponent = {
       this.expandedReqs = { ...this.expandedReqs, [id]: !this.expandedReqs[id] };
     },
 
+    addEv(reqId) {
+      const val = (this.evidenceInputs[reqId] || '').trim();
+      if (!val) return;
+      const type = /^https?:\/\//.test(val) ? 'url' : 'note';
+      this.$addReqEvidence(reqId, { type, value: val, date: new Date().toISOString().slice(0, 10) });
+      this.evidenceInputs[reqId] = '';
+    },
+    removeEv(reqId, idx) {
+      this.$removeReqEvidence(reqId, idx);
+    },
+
+    addPolicy() {
+      const n = this.newPolicy;
+      if (!n.name.trim()) return;
+      const pol = {
+        id: Date.now() + '-' + Math.random().toString(36).slice(2),
+        name: n.name.trim(), url: n.url.trim(), owner: n.owner.trim(),
+        last_reviewed: n.last_reviewed, linked_reg_ids: [this.item.id]
+      };
+      this.$s.policies.push(pol);
+      try { localStorage.setItem('cm_policies', JSON.stringify(this.$s.policies)); } catch {}
+      this.newPolicy = { name: '', url: '', owner: '', last_reviewed: '' };
+      this.showAddPolicy = false;
+    },
+    removePolicy(polId) {
+      const idx = this.$s.policies.findIndex(p => p.id === polId);
+      if (idx !== -1) {
+        this.$s.policies.splice(idx, 1);
+        try { localStorage.setItem('cm_policies', JSON.stringify(this.$s.policies)); } catch {}
+      }
+    },
+
     /* ── Feature E: Checklist Generator ── */
     exportChecklist(format) {
       this.checklistMenuOpen = false;
@@ -455,7 +560,10 @@ const DetailModalComponent = {
             isObj ? (req.internal_actions  || '') : '',
             isObj ? (req.vendor_actions    || '') : '',
             isObj ? (req.compliance_evidence || '') : '',
-            '', '', '', ''
+            isObj ? this.$getReqStatus(req.id) : '',
+            '',
+            isObj ? (this.$getReqEvidence(req.id) || []).map(e => e.value).join(' | ') : '',
+            ''
           ]);
         });
         const csv = rows.map(r => r.map(esc).join(',')).join('\n');

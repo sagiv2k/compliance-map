@@ -49,7 +49,7 @@ const JURISDICTION_CONFIG = {
 
 const ALL_DOMAINS       = Object.keys(DOMAIN_CONFIG);
 const ALL_JURISDICTIONS = Object.keys(JURISDICTION_CONFIG);
-const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix', 'news', 'watchlist', 'calendar', 'risk', 'gap', 'traceability', 'posture', 'jurisdiction', 'copilot'];
+const VALID_VIEWS = ['overview', 'regulations', 'standards', 'matrix', 'news', 'watchlist', 'calendar', 'risk', 'gap', 'traceability', 'posture', 'jurisdiction', 'copilot', 'mappings', 'risk-register', 'vendor-risk'];
 
 /* ===== Global Reactive State ===== */
 const AppState = Vue.reactive({
@@ -91,7 +91,11 @@ const AppState = Vue.reactive({
   helpPanelOpen:    false,
   onboardingDone:   localStorage.getItem('cm_onboarded') === 'true',
   complianceStatus: {},
-  regulationChanges: []
+  regulationChanges: [],
+  reqEvidence: {},
+  riskRegister: [],
+  policies: [],
+  vendors: []
 });
 
 /* ===== Root Component ===== */
@@ -244,8 +248,8 @@ const RootComponent = {
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'
         },
         {
-          id: 'matrix', label: 'Coverage Matrix',
-          help: 'See which standards cover which regulations',
+          id: 'mappings', label: 'Mappings',
+          help: 'Coverage Matrix and Traceability in one consolidated view',
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>'
         },
         {
@@ -269,14 +273,9 @@ const RootComponent = {
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>'
         },
         {
-          id: 'gap', label: 'Gap Analysis',
-          help: 'Find regulatory requirements not covered by your standards',
-          icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>'
-        },
-        {
-          id: 'traceability', label: 'Traceability',
-          help: 'Map each standard control to its regulatory citations',
-          icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>'
+          id: 'risk-register', label: 'Risk Register',
+          help: 'Log and track compliance risks with owners and due dates',
+          icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>'
         },
         {
           id: 'posture', label: 'Posture',
@@ -287,6 +286,11 @@ const RootComponent = {
           id: 'jurisdiction', label: 'Jurisdiction Overlap',
           help: 'Compare obligations and conflicts across 2+ jurisdictions',
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>'
+        },
+        {
+          id: 'vendor-risk', label: 'Vendors',
+          help: 'Track third-party vendors, their compliance relevance, and review schedules',
+          icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
         },
         {
           id: 'copilot', label: 'AI Copilot',
@@ -300,19 +304,22 @@ const RootComponent = {
   computed: {
     currentViewComponent() {
       return {
-        overview:    OverviewView,
-        regulations: RegulationsView,
-        standards:   StandardsView,
-        matrix:      MatrixView,
-        news:        NewsView,
-        watchlist:    WatchlistView,
-        calendar:     CalendarView,
-        risk:         RiskView,
-        gap:          GapAnalysisView,
-        traceability: TraceabilityView,
-        posture:      PostureView,
-        jurisdiction: JurisdictionView,
-        copilot:      CopilotView
+        overview:       OverviewView,
+        regulations:    RegulationsView,
+        standards:      StandardsView,
+        mappings:       MappingsView,
+        news:           NewsView,
+        watchlist:      WatchlistView,
+        calendar:       CalendarView,
+        risk:           RiskView,
+        'risk-register':RiskRegisterView,
+        'vendor-risk':  VendorRiskView,
+        posture:        PostureView,
+        jurisdiction:   JurisdictionView,
+        copilot:        CopilotView,
+        matrix:         MatrixView,       // kept for direct hash access
+        traceability:   TraceabilityView, // kept for direct hash access
+        gap:            GapAnalysisView   // kept for direct hash access
       }[this.$s.activeView] || OverviewView;
     },
     profileLabel() {
@@ -373,6 +380,30 @@ const RootComponent = {
     try {
       const cs = JSON.parse(localStorage.getItem('cm_compliance_status') || 'null');
       if (cs && typeof cs === 'object') Object.assign(AppState.complianceStatus, cs);
+    } catch {}
+
+    // Restore evidence from localStorage
+    try {
+      const ev = JSON.parse(localStorage.getItem('cm_req_evidence') || 'null');
+      if (ev && typeof ev === 'object') Object.assign(AppState.reqEvidence, ev);
+    } catch {}
+
+    // Restore risk register from localStorage
+    try {
+      const rr = JSON.parse(localStorage.getItem('cm_risk_register') || 'null');
+      if (Array.isArray(rr)) rr.forEach(r => AppState.riskRegister.push(r));
+    } catch {}
+
+    // Restore policies from localStorage
+    try {
+      const pol = JSON.parse(localStorage.getItem('cm_policies') || 'null');
+      if (Array.isArray(pol)) pol.forEach(p => AppState.policies.push(p));
+    } catch {}
+
+    // Restore vendors from localStorage
+    try {
+      const vnd = JSON.parse(localStorage.getItem('cm_vendors') || 'null');
+      if (Array.isArray(vnd)) vnd.forEach(v => AppState.vendors.push(v));
     } catch {}
 
     // Load regulation changes (non-blocking)
@@ -442,6 +473,18 @@ app.config.globalProperties.$setReqStatus = (reqId, status) => {
   AppState.complianceStatus[reqId] = status;
   try { localStorage.setItem('cm_compliance_status', JSON.stringify(AppState.complianceStatus)); } catch {}
 };
+app.config.globalProperties.$getReqEvidence = (reqId) => AppState.reqEvidence[reqId] || [];
+app.config.globalProperties.$addReqEvidence = (reqId, ev) => {
+  if (!AppState.reqEvidence[reqId]) AppState.reqEvidence[reqId] = [];
+  AppState.reqEvidence[reqId].push(ev);
+  try { localStorage.setItem('cm_req_evidence', JSON.stringify(AppState.reqEvidence)); } catch {}
+};
+app.config.globalProperties.$removeReqEvidence = (reqId, idx) => {
+  if (!AppState.reqEvidence[reqId]) return;
+  AppState.reqEvidence[reqId].splice(idx, 1);
+  if (!AppState.reqEvidence[reqId].length) delete AppState.reqEvidence[reqId];
+  try { localStorage.setItem('cm_req_evidence', JSON.stringify(AppState.reqEvidence)); } catch {}
+};
 app.config.globalProperties.$isWatchlisted = (id, type) => {
   const list = type === 'regulation' ? AppState.watchlist.regulations : AppState.watchlist.standards;
   return list.includes(id);
@@ -466,6 +509,10 @@ app.component('compare-tray',         CompareTrayComponent);
 app.component('help-panel',           HelpPanelComponent);
 app.component('onboarding-modal',     OnboardingModalComponent);
 app.component('change-alert-banner',  ChangeAlertBannerComponent);
+app.component('vendor-risk-view',      VendorRiskView);
+app.component('matrix-pane',          MatrixView);
+app.component('traceability-pane',    TraceabilityView);
+app.component('gap-analysis-pane',    GapAnalysisView);
 
 /* Mount */
 app.mount('#app');

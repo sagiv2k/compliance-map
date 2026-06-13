@@ -34,6 +34,9 @@ const PostureView = {
             <button class="btn-posture-tab" :class="{active: tab==='mystatus'}" @click="tab='mystatus'">
               My Status
             </button>
+            <button class="btn-posture-tab" :class="{active: tab==='gaps'}" @click="tab='gaps'">
+              Gap Analysis
+            </button>
           </div>
           <button class="view-help-btn" @click="$s.helpPanelOpen = true" title="How to use Posture Scorecard">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
@@ -42,8 +45,8 @@ const PostureView = {
         </div>
       </div>
 
-      <!-- Standards selector (shared) -->
-      <div class="posture-std-selector">
+      <!-- Standards selector (scorecard / recommender / mystatus only) -->
+      <div class="posture-std-selector" v-if="tab !== 'gaps'">
         <div class="posture-std-selector__label">Standards implemented:</div>
         <div class="posture-std-grid">
           <label
@@ -141,20 +144,27 @@ const PostureView = {
           </div>
         </div>
 
-        <!-- Export button -->
-        <div style="margin-top:24px;text-align:right;">
+        <!-- Export buttons -->
+        <div style="margin-top:24px;display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;">
           <button class="btn-posture-export" @click="exportScorecard">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/>
               <line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
-            Export Executive Summary
+            Standards Scorecard
+          </button>
+          <button class="btn-posture-export btn-posture-export--snapshot" @click="exportSnapshot">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+            Full Compliance Snapshot
           </button>
         </div>
       </template>
 
       <!-- ══ RECOMMENDER TAB ══ -->
-      <template v-else>
+      <template v-else-if="tab === 'recommender'">
         <div class="recommender-intro">
           The recommender ranks standards and combinations by how much they improve your coverage
           of the <strong>{{ filteredRegulations.length }}</strong> regulations in scope.
@@ -230,7 +240,7 @@ const PostureView = {
       </template>
 
       <!-- ══ MY STATUS TAB ══ -->
-      <template v-if="tab === 'mystatus'">
+      <template v-else-if="tab === 'mystatus'">
         <div v-if="myStatusRegs.length === 0" style="text-align:center;padding:48px;color:#64748b;">
           <div style="font-size:40px;margin-bottom:12px;">📋</div>
           <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#374151;">No implementation status tracked yet</h3>
@@ -305,6 +315,11 @@ const PostureView = {
           </div>
         </template>
       </template>
+
+      <!-- ══ GAP ANALYSIS TAB (v-show preserves user selections on tab switch) ══ -->
+      <div class="embedded-view-pane" v-show="tab === 'gaps'">
+        <gap-analysis-pane />
+      </div>
     </div>
   `,
 
@@ -650,6 +665,191 @@ const PostureView = {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url; a.download = `posture-scorecard-${today}.html`; a.click();
+      URL.revokeObjectURL(url);
+    },
+
+    exportSnapshot() {
+      const today = new Date().toISOString().slice(0, 10);
+      const s = this.$s;
+      const p = s.userProfile;
+      const cs = s.complianceStatus;
+
+      const orgLine = p.active && p.regions.length
+        ? p.regions.join(', ') + (p.industries.length ? ' · ' + p.industries.join(', ') : '') + (p.companySize ? ' · ' + p.companySize : '')
+        : 'Not configured';
+
+      const implNames = this.implementedStds
+        .map(id => s.standards.find(st => st.id === id)?.short_name || id).join(', ') || 'None';
+
+      // Implementation status section
+      const implRows = this.myStatusRegs.map(row => {
+        const pctColor = row.pct >= 75 ? '#16a34a' : row.pct >= 50 ? '#2563eb' : row.pct >= 25 ? '#d97706' : '#dc2626';
+        const bar = `<div style="display:inline-block;width:100px;height:7px;background:#f1f5f9;border-radius:999px;overflow:hidden;vertical-align:middle;margin-right:6px;"><div style="height:100%;width:${row.pct}%;background:${pctColor};border-radius:999px;"></div></div>`;
+        const name = row.reg.name.length > 48 ? row.reg.name.slice(0, 48) + '…' : row.reg.name;
+        const evCount = Object.keys(cs).filter(k => k.startsWith(row.reg.id + '-') && (s.reqEvidence[k] || []).length > 0).length;
+        return `<tr>
+          <td><strong>${row.reg.short_name}</strong></td>
+          <td style="font-size:11px;color:#475569;">${name}</td>
+          <td>${bar}<strong style="color:${pctColor};">${row.pct}%</strong></td>
+          <td>${row.implemented}/${row.total}</td>
+          <td style="color:#d97706;">${row.in_progress || '—'}</td>
+          <td style="color:#64748b;font-size:11px;">${evCount > 0 ? evCount + ' items' : '—'}</td>
+        </tr>`;
+      }).join('');
+
+      // Open risks section
+      const openRisks = (s.riskRegister || []).filter(r => r.status !== 'resolved');
+      const riskRows = openRisks.map(r => {
+        const score = r.severity * r.likelihood;
+        const cat = score >= 13 ? 'Critical' : score >= 9 ? 'High' : score >= 5 ? 'Medium' : 'Low';
+        const col = score >= 13 ? '#dc2626' : score >= 9 ? '#ea580c' : score >= 5 ? '#d97706' : '#16a34a';
+        const reg = s.regulations.find(x => x.id === r.regulation_id);
+        return `<tr>
+          <td><strong>${r.title}</strong></td>
+          <td style="font-size:11px;">${reg ? reg.short_name : '—'}</td>
+          <td><span style="color:${col};font-weight:700;">${cat} (${score})</span></td>
+          <td style="font-size:11px;">${r.owner_name || '—'}</td>
+          <td style="font-size:11px;">${r.due_date || '—'}</td>
+          <td><span style="padding:2px 8px;border-radius:999px;font-size:10px;background:${r.status==='mitigating'?'#fef3c7':'#fee2e2'};color:${r.status==='mitigating'?'#92400e':'#991b1b'};">${r.status==='mitigating'?'Mitigating':'Open'}</span></td>
+        </tr>`;
+      }).join('');
+
+      // Upcoming deadlines (next 90 days)
+      const ref = new Date();
+      const deadline90 = new Date(); deadline90.setDate(deadline90.getDate() + 90);
+      const deadlineEvents = [];
+      this.filteredRegulations.forEach(reg => {
+        if (reg.effective_date) {
+          const d = new Date(reg.effective_date + 'T00:00:00');
+          if (d >= ref && d <= deadline90) deadlineEvents.push({ name: reg.short_name, date: reg.effective_date, label: 'Effective date' });
+        }
+        (reg.milestones || []).forEach(ms => {
+          const d = new Date(ms.date + 'T00:00:00');
+          if (d >= ref && d <= deadline90) deadlineEvents.push({ name: reg.short_name, date: ms.date, label: ms.label });
+        });
+      });
+      (s.riskRegister || []).filter(r => r.due_date && r.status !== 'resolved').forEach(r => {
+        const d = new Date(r.due_date + 'T00:00:00');
+        if (d >= ref && d <= deadline90) deadlineEvents.push({ name: r.title, date: r.due_date, label: 'Risk due date', isRisk: true });
+      });
+      (s.vendors || []).filter(v => v.next_review_date).forEach(v => {
+        const d = new Date(v.next_review_date + 'T00:00:00');
+        if (d >= ref && d <= deadline90) deadlineEvents.push({ name: v.name, date: v.next_review_date, label: 'Vendor review', isVendor: true });
+      });
+      deadlineEvents.sort((a, b) => a.date.localeCompare(b.date));
+      const deadlineRows = deadlineEvents.map(e => {
+        const col = e.isRisk ? '#dc2626' : e.isVendor ? '#7c3aed' : '#1e293b';
+        const fmt = new Date(e.date + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+        return `<tr>
+          <td><strong style="color:${col};">${e.name}</strong></td>
+          <td>${fmt}</td>
+          <td style="font-size:11px;color:#64748b;">${e.label}</td>
+        </tr>`;
+      }).join('');
+
+      // Vendor section
+      const overdueVendors = (s.vendors || []).filter(v => v.next_review_date && v.next_review_date < today);
+      const highRiskVendors = (s.vendors || []).filter(v => v.risk_level === 'high');
+
+      const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<title>Compliance Snapshot — ${today}</title>
+<style>
+  *{box-sizing:border-box;}
+  body{font-family:Arial,sans-serif;font-size:12px;color:#1e293b;margin:0;padding:28px 32px;max-width:1100px;}
+  h1{font-size:24px;font-weight:800;margin:0 0 2px;}
+  .meta{font-size:11px;color:#64748b;margin-bottom:20px;}
+  .banner{background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:14px 18px;margin-bottom:20px;display:flex;gap:32px;flex-wrap:wrap;}
+  .banner-stat{text-align:center;}
+  .banner-num{font-size:26px;font-weight:800;}
+  .banner-lbl{font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:0.04em;}
+  h2{font-size:14px;font-weight:700;margin:24px 0 10px;padding-bottom:6px;border-bottom:2px solid #e2e8f0;text-transform:uppercase;letter-spacing:0.04em;color:#475569;}
+  table{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:8px;}
+  th{padding:6px 10px;text-align:left;background:#f8fafc;border-bottom:2px solid #e2e8f0;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:#64748b;}
+  td{padding:7px 10px;border-bottom:1px solid #f1f5f9;vertical-align:middle;}
+  tr:last-child td{border-bottom:none;}
+  .section-box{border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;margin-bottom:20px;}
+  .footer{margin-top:24px;padding-top:12px;border-top:1px solid #e2e8f0;font-size:10px;color:#94a3b8;display:flex;justify-content:space-between;}
+  .profile-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;margin-bottom:20px;font-size:12px;}
+  .empty-notice{text-align:center;padding:16px;color:#94a3b8;font-style:italic;}
+  @media print{body{padding:8px;}h2{margin-top:16px;}table{page-break-inside:auto;}tr{page-break-inside:avoid;}}
+</style></head><body>
+<h1>Compliance Snapshot</h1>
+<div class="meta">Generated: ${today} · ComplianceMap</div>
+
+<div class="profile-box">
+  <strong>Organization:</strong> ${orgLine} &nbsp;|&nbsp;
+  <strong>Standards implemented:</strong> ${implNames} &nbsp;|&nbsp;
+  <strong>Regulations in scope:</strong> ${this.filteredRegulations.length}
+</div>
+
+<div class="banner">
+  <div class="banner-stat">
+    <div class="banner-num" style="color:${this.overallPct>=75?'#16a34a':this.overallPct>=50?'#2563eb':this.overallPct>=25?'#d97706':'#dc2626'};">${this.overallPct}%</div>
+    <div class="banner-lbl">Standards Coverage</div>
+  </div>
+  <div class="banner-stat">
+    <div class="banner-num">${this.myStatusRegs.length}</div>
+    <div class="banner-lbl">Regs Tracked</div>
+  </div>
+  <div class="banner-stat">
+    <div class="banner-num" style="color:${this.myStatusPct>=75?'#16a34a':this.myStatusPct>=50?'#2563eb':this.myStatusPct>=25?'#d97706':'#dc2626'};">${this.myStatusPct}%</div>
+    <div class="banner-lbl">Requirements Done</div>
+  </div>
+  <div class="banner-stat">
+    <div class="banner-num" style="color:${openRisks.length>0?'#dc2626':'#16a34a'};">${openRisks.length}</div>
+    <div class="banner-lbl">Open Risks</div>
+  </div>
+  <div class="banner-stat">
+    <div class="banner-num" style="color:${overdueVendors.length>0?'#7c3aed':'#16a34a'};">${overdueVendors.length}</div>
+    <div class="banner-lbl">Vendors Overdue</div>
+  </div>
+  <div class="banner-stat">
+    <div class="banner-num">${deadlineEvents.length}</div>
+    <div class="banner-lbl">Deadlines (90 days)</div>
+  </div>
+</div>
+
+<h2>Implementation Status</h2>
+<div class="section-box">
+${implRows ? `<table><thead><tr><th>Regulation</th><th>Name</th><th>Progress</th><th>Implemented</th><th>In Progress</th><th>Evidence</th></tr></thead><tbody>${implRows}</tbody></table>` : '<div class="empty-notice">No requirements tracked yet. Open a regulation and mark requirements to track progress.</div>'}
+</div>
+
+<h2>Open Risks (${openRisks.length})</h2>
+<div class="section-box">
+${riskRows ? `<table><thead><tr><th>Risk</th><th>Regulation</th><th>Score</th><th>Owner</th><th>Due Date</th><th>Status</th></tr></thead><tbody>${riskRows}</tbody></table>` : '<div class="empty-notice">No open risks.</div>'}
+</div>
+
+<h2>Upcoming Deadlines — Next 90 Days (${deadlineEvents.length})</h2>
+<div class="section-box">
+${deadlineRows ? `<table><thead><tr><th>Name</th><th>Date</th><th>Type</th></tr></thead><tbody>${deadlineRows}</tbody></table>` : '<div class="empty-notice">No deadlines in the next 90 days.</div>'}
+</div>
+
+${s.vendors && s.vendors.length ? `
+<h2>Vendor Register Summary</h2>
+<div class="section-box">
+<table><thead><tr><th>Vendor</th><th>Category</th><th>Risk</th><th>Next Review</th><th>Status</th></tr></thead><tbody>
+${(s.vendors || []).map(v => {
+  const col = v.risk_level==='high'?'#dc2626':v.risk_level==='low'?'#16a34a':'#d97706';
+  const isOverdue = v.next_review_date && v.next_review_date < today;
+  const fmt = v.next_review_date ? new Date(v.next_review_date+'T00:00:00').toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'}) : '—';
+  return `<tr><td><strong>${v.name}</strong>${v.notes?'<br><span style="font-size:10px;color:#64748b;">'+v.notes+'</span>':''}</td><td style="font-size:11px;">${v.category||'—'}</td><td><span style="color:${col};font-weight:700;">${v.risk_level||'—'}</span></td><td style="font-size:11px;${isOverdue?'color:#dc2626;font-weight:700;':''}">${fmt}${isOverdue?' ⚠':''}${'</td>'}<td>${isOverdue?'<span style="color:#dc2626;font-weight:700;">OVERDUE</span>':'OK'}</td></tr>`;
+}).join('')}
+</tbody></table>
+<div style="font-size:11px;color:#64748b;padding:8px 10px;">
+  ${s.vendors.length} vendors · ${highRiskVendors.length} high-risk · ${overdueVendors.length} review${overdueVendors.length!==1?'s':''} overdue
+</div>
+</div>` : ''}
+
+<div class="footer">
+  <span>ComplianceMap Compliance Snapshot</span>
+  <span>Generated ${today} · Confidential</span>
+</div>
+</body></html>`;
+
+      const blob = new Blob([html], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = `compliance-snapshot-${today}.html`; a.click();
       URL.revokeObjectURL(url);
     }
   }

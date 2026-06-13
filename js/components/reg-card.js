@@ -72,6 +72,14 @@ const RegCardComponent = {
         </span>
       </div>
 
+      <!-- Policy badge -->
+      <div class="reg-card__policy-badge" v-if="policyCount > 0">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+        </svg>
+        {{ policyCount }} polic{{ policyCount > 1 ? 'ies' : 'y' }} linked
+      </div>
+
       <div class="reg-card__footer">
         <span class="reg-card__date">Effective: {{ formatDate(regulation.effective_date) }}</span>
         <span style="font-size:11px;color:var(--color-primary);font-weight:600;">View details →</span>
@@ -90,6 +98,10 @@ const RegCardComponent = {
       const implemented = reqs.filter(r => cs[r.id] === 'implemented').length;
       const in_progress = reqs.filter(r => cs[r.id] === 'in_progress').length;
       return { total, implemented, in_progress };
+    },
+    policyCount() {
+      const regId = this.regulation.id;
+      return (this.$s.policies || []).filter(p => p.linked_reg_ids && p.linked_reg_ids.includes(regId)).length;
     },
     hasRecentNews() {
       const news = this.$s.news;
