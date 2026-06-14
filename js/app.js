@@ -15,13 +15,18 @@ const DOMAIN_CONFIG = {
 };
 
 const CATEGORY_CONFIG = {
-  information_security: { label: 'Information Security' },
-  privacy:              { label: 'Privacy' },
-  cloud_security:       { label: 'Cloud Security' },
-  quality:              { label: 'Quality Management' },
-  risk_management:      { label: 'Risk Management' },
-  financial_controls:   { label: 'Financial Controls' },
-  it_governance:        { label: 'IT Governance' }
+  information_security:  { label: 'Information Security' },
+  privacy:               { label: 'Privacy' },
+  cloud_security:        { label: 'Cloud Security' },
+  quality:               { label: 'Quality Management' },
+  risk_management:       { label: 'Risk Management' },
+  financial_controls:    { label: 'Financial Controls' },
+  it_governance:         { label: 'IT Governance' },
+  ai_governance:         { label: 'AI Governance' },
+  business_continuity:   { label: 'Business Continuity' },
+  health_information:    { label: 'Healthcare' },
+  it_service_management: { label: 'IT Service Management' },
+  operational_technology:{ label: 'OT Security' }
 };
 
 const JURISDICTION_CONFIG = {
@@ -116,20 +121,6 @@ const RootComponent = {
           <span>Compliance<em>Map</em></span>
         </a>
 
-        <div class="topnav__nav">
-          <button
-            v-for="v in navViews" :key="v.id"
-            class="nav-link"
-            :class="{ active: $s.activeView === v.id }"
-            :data-help="v.help"
-            @click="navigate(v.id)"
-          >
-            <span v-html="v.icon"></span>
-            {{ v.label }}
-            <span v-if="navBadge(v.id)" class="nav-badge">{{ navBadge(v.id) }}</span>
-          </button>
-        </div>
-
         <div class="topnav__stats" v-if="!$s.loading">
           <span class="stat-pill"><strong>{{ $s.regulations.length }}</strong> Regs</span>
           <span class="stat-pill"><strong>{{ $s.standards.length }}</strong> Standards</span>
@@ -148,7 +139,7 @@ const RootComponent = {
           </button>
         </div>
 
-        <button class="topnav__mobile-toggle" @click="$s.sidebarOpen = !$s.sidebarOpen" aria-label="Toggle filters">
+        <button class="topnav__mobile-toggle" @click="$s.sidebarOpen = !$s.sidebarOpen" aria-label="Toggle navigation">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>
           </svg>
@@ -182,8 +173,24 @@ const RootComponent = {
         ></div>
 
         <!-- Sidebar -->
-        <aside class="sidebar" :class="{ open: $s.sidebarOpen }" role="complementary" aria-label="Filters">
-          <filter-panel />
+        <aside class="sidebar" :class="{ open: $s.sidebarOpen }" role="complementary" aria-label="Navigation">
+          <nav class="side-nav">
+            <button
+              v-for="v in navViews" :key="v.id"
+              class="side-nav-item"
+              :class="{ active: $s.activeView === v.id }"
+              :title="v.help"
+              @click="navigate(v.id)"
+            >
+              <span class="side-nav-icon" v-html="v.icon"></span>
+              <span class="side-nav-label">{{ v.label }}</span>
+              <span v-if="navBadge(v.id)" class="nav-badge">{{ navBadge(v.id) }}</span>
+            </button>
+          </nav>
+          <div class="side-filter-section">
+            <div class="side-filter-divider"><span>Filters</span></div>
+            <filter-panel />
+          </div>
         </aside>
 
         <!-- Main content -->
@@ -242,12 +249,12 @@ const RootComponent = {
         },
         {
           id: 'regulations', label: 'Regulations',
-          help: 'Browse and filter all 102 global regulations',
+          help: 'Browse and filter all 122 global regulations',
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>'
         },
         {
           id: 'standards', label: 'Standards',
-          help: 'Explore 10 compliance frameworks and their controls',
+          help: 'Explore 20 compliance frameworks and their controls',
           icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'
         },
         {

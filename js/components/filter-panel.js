@@ -14,45 +14,61 @@ const FilterPanelComponent = {
         />
       </div>
 
-      <!-- Domain / Topic filter -->
+      <!-- Domain / Topic filter (accordion) -->
       <div class="sidebar-section">
-        <div class="sidebar-label-row">
-          <span class="sidebar-label">By Topic</span>
-          <button class="sidebar-label-action" @click="toggleAllDomains">
-            {{ allDomainsActive ? 'None' : 'All' }}
-          </button>
+        <div class="filter-accordion-header" @click="domainsOpen = !domainsOpen">
+          <span class="sidebar-label">Topics</span>
+          <span class="filter-accordion-summary">{{ activeDomainsCount }}/{{ totalDomains }}</span>
+          <svg class="filter-accordion-chevron" :class="{ open: domainsOpen }" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
         </div>
-        <div v-for="d in domainList" :key="d.key" class="filter-domain-item" @click="toggleDomain(d.key)">
-          <span class="filter-domain-check" :class="{ checked: isDomainActive(d.key) }"
-                :style="isDomainActive(d.key) ? { background: d.color } : {}">
-            <svg v-if="isDomainActive(d.key)" width="10" height="8" viewBox="0 0 10 8" fill="none">
-              <path d="M1 4l2.5 2.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <span class="filter-domain-dot" :style="{ background: d.color }"></span>
-          <span class="filter-domain-label">{{ d.label }}</span>
-          <span class="filter-domain-count">{{ domainCount(d.key) }}</span>
+        <div v-if="domainsOpen" class="filter-accordion-body">
+          <div v-for="d in domainList" :key="d.key" class="filter-domain-item" @click="toggleDomain(d.key)">
+            <span class="filter-domain-check" :class="{ checked: isDomainActive(d.key) }"
+                  :style="isDomainActive(d.key) ? { background: d.color } : {}">
+              <svg v-if="isDomainActive(d.key)" width="10" height="8" viewBox="0 0 10 8" fill="none">
+                <path d="M1 4l2.5 2.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="filter-domain-dot" :style="{ background: d.color }"></span>
+            <span class="filter-domain-label">{{ d.label }}</span>
+            <span class="filter-domain-count">{{ domainCount(d.key) }}</span>
+          </div>
+          <div class="filter-accordion-footer">
+            <button class="sidebar-label-action" @click.stop="toggleAllDomains">
+              {{ allDomainsActive ? 'None' : 'All' }}
+            </button>
+          </div>
         </div>
       </div>
 
-      <!-- Jurisdiction / Responsible Party filter -->
+      <!-- Jurisdiction / Region filter (accordion) -->
       <div class="sidebar-section">
-        <div class="sidebar-label-row">
-          <span class="sidebar-label">By Jurisdiction</span>
-          <button class="sidebar-label-action" @click="toggleAllJurisdictions">
-            {{ allJurisdictionsActive ? 'None' : 'All' }}
-          </button>
+        <div class="filter-accordion-header" @click="jurisdictionsOpen = !jurisdictionsOpen">
+          <span class="sidebar-label">Regions</span>
+          <span class="filter-accordion-summary">{{ activeJurisdictionsCount }}/{{ totalJurisdictions }}</span>
+          <svg class="filter-accordion-chevron" :class="{ open: jurisdictionsOpen }" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
         </div>
-        <div v-for="j in jurisdictionList" :key="j.key" class="filter-domain-item" @click="toggleJurisdiction(j.key)">
-          <span class="filter-domain-check" :class="{ checked: isJurisdictionActive(j.key) }"
-                :style="isJurisdictionActive(j.key) ? { background: j.color } : {}">
-            <svg v-if="isJurisdictionActive(j.key)" width="10" height="8" viewBox="0 0 10 8" fill="none">
-              <path d="M1 4l2.5 2.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <span class="filter-domain-dot" :style="{ background: j.color }"></span>
-          <span class="filter-domain-label">{{ j.label }}</span>
-          <span class="filter-domain-count">{{ jurisdictionCount(j.key) }}</span>
+        <div v-if="jurisdictionsOpen" class="filter-accordion-body">
+          <div v-for="j in jurisdictionList" :key="j.key" class="filter-domain-item" @click="toggleJurisdiction(j.key)">
+            <span class="filter-domain-check" :class="{ checked: isJurisdictionActive(j.key) }"
+                  :style="isJurisdictionActive(j.key) ? { background: j.color } : {}">
+              <svg v-if="isJurisdictionActive(j.key)" width="10" height="8" viewBox="0 0 10 8" fill="none">
+                <path d="M1 4l2.5 2.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="filter-domain-dot" :style="{ background: j.color }"></span>
+            <span class="filter-domain-label">{{ j.label }}</span>
+            <span class="filter-domain-count">{{ jurisdictionCount(j.key) }}</span>
+          </div>
+          <div class="filter-accordion-footer">
+            <button class="sidebar-label-action" @click.stop="toggleAllJurisdictions">
+              {{ allJurisdictionsActive ? 'None' : 'All' }}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -81,6 +97,12 @@ const FilterPanelComponent = {
       </div>
     </div>
   `,
+  data() {
+    return {
+      domainsOpen: false,
+      jurisdictionsOpen: false
+    };
+  },
   computed: {
     domainList() {
       return Object.entries(this.$dc).map(([key, cfg]) => ({ key, label: cfg.label, color: cfg.color }));
@@ -93,6 +115,18 @@ const FilterPanelComponent = {
     },
     allJurisdictionsActive() {
       return this.$s.filters.jurisdictions.length === Object.keys(this.$jc).length;
+    },
+    activeDomainsCount() {
+      return this.$s.filters.domains.length;
+    },
+    totalDomains() {
+      return Object.keys(this.$dc).length;
+    },
+    activeJurisdictionsCount() {
+      return this.$s.filters.jurisdictions.length;
+    },
+    totalJurisdictions() {
+      return Object.keys(this.$jc).length;
     }
   },
   methods: {

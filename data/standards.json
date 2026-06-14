@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "last_updated": "2026-06-09",
+  "version": "1.1.0",
+  "last_updated": "2026-06-13",
   "standards": [
     {
       "id": "ISO27001",
@@ -333,6 +333,239 @@
         "enterprise_it",
         "management"
       ]
+    },
+    {
+      "id": "ISO22301",
+      "name": "ISO 22301:2019",
+      "short_name": "ISO 22301",
+      "category": "business_continuity",
+      "issuing_body": "International Organization for Standardization (ISO)",
+      "type": "certification",
+      "url": "https://www.iso.org/standard/75106.html",
+      "summary": "The international standard for Business Continuity Management Systems (BCMS). ISO 22301 specifies requirements for organizations to prepare for, respond to, and recover from disruptive incidents. Directly applicable to financial sector resilience regulations such as DORA and NIS2 in the EU, CPS 234 and SOCI in Australia, and MAS TRM in Singapore. Certification is available from accredited third-party bodies.",
+      "scope": "global",
+      "domains_addressed": ["finance", "critical_infrastructure", "cybersecurity"],
+      "key_controls": [
+        "Business impact analysis (BIA): identifying critical functions and acceptable downtime",
+        "Business continuity plans (BCP): response and recovery procedures for disruptive events",
+        "Recovery time objectives (RTO) and recovery point objectives (RPO) for critical services",
+        "Crisis communication and stakeholder notification plans",
+        "Testing and exercising: tabletop exercises, functional tests, and full-interruption drills",
+        "Supply chain and third-party continuity requirements and contractual obligations"
+      ],
+      "certification_available": true,
+      "recertification_cycle_years": 3,
+      "tags": ["bcms", "business_continuity", "resilience", "disaster_recovery", "dora", "nis2", "iso"]
+    },
+    {
+      "id": "ISO27017",
+      "name": "ISO/IEC 27017:2015",
+      "short_name": "ISO 27017",
+      "category": "cloud_security",
+      "issuing_body": "International Organization for Standardization (ISO) / International Electrotechnical Commission (IEC)",
+      "type": "guideline",
+      "url": "https://www.iso.org/standard/43757.html",
+      "summary": "A code of practice providing guidance on information security controls applicable to cloud computing services, supplementing ISO 27001 and ISO 27002. It addresses the distinct roles of cloud service providers (CSPs) and cloud service customers (CSCs), covering virtual machine hardening, tenant isolation, shared responsibility, and cloud-specific incident response. Applicable globally to cloud-hosted deployments under GDPR, NIS2, and MAS TRM.",
+      "scope": "global",
+      "domains_addressed": ["cybersecurity", "data_privacy"],
+      "key_controls": [
+        "Shared responsibility model: defining and documenting CSP vs. CSC security obligations",
+        "Virtual machine hardening: secure baseline configurations and golden image management",
+        "Tenant isolation: logical and cryptographic separation of customer environments",
+        "Cloud service customer asset inventory, classification, and lifecycle management",
+        "Privileged access management for cloud administration consoles and APIs",
+        "Cloud-specific incident detection, response procedures, and customer notification"
+      ],
+      "certification_available": false,
+      "recertification_cycle_years": null,
+      "tags": ["cloud", "iso", "csp", "shared_responsibility", "virtualization", "27017"]
+    },
+    {
+      "id": "ISO27018",
+      "name": "ISO/IEC 27018:2019",
+      "short_name": "ISO 27018",
+      "category": "privacy",
+      "issuing_body": "International Organization for Standardization (ISO) / International Electrotechnical Commission (IEC)",
+      "type": "guideline",
+      "url": "https://www.iso.org/standard/76559.html",
+      "summary": "A code of practice for protection of personally identifiable information (PII) in public cloud services, supplementing ISO 27001 and ISO 27002. Establishes controls for cloud service providers acting as PII processors, aligned with global data protection regulations including GDPR, UK GDPR, PIPL, and PDPA. Addresses consent, data subject rights, transparency, and cross-border transfers in the cloud context.",
+      "scope": "global",
+      "domains_addressed": ["data_privacy"],
+      "key_controls": [
+        "Consent and purpose limitation: cloud processing of PII only for customer-specified purposes",
+        "Data subject rights: access, correction, deletion, and portability support for cloud-hosted PII",
+        "Transparency: mandatory disclosure of sub-processors and data processing locations",
+        "Data return and deletion: mechanisms for customers to retrieve or securely destroy their PII",
+        "International transfer controls: mechanisms for lawful cross-border PII flows from cloud services",
+        "PII breach notification: cloud provider obligations to inform customers of PII-affecting incidents"
+      ],
+      "certification_available": false,
+      "recertification_cycle_years": null,
+      "tags": ["pii", "cloud_privacy", "gdpr_alignment", "data_protection", "iso", "27018"]
+    },
+    {
+      "id": "NIST_AI_RMF",
+      "name": "NIST AI Risk Management Framework 1.0",
+      "short_name": "NIST AI RMF",
+      "category": "ai_governance",
+      "issuing_body": "National Institute of Standards and Technology (NIST), U.S. Department of Commerce",
+      "type": "framework",
+      "url": "https://www.nist.gov/artificial-intelligence/ai-risk-management-framework",
+      "summary": "A voluntary framework for managing risks associated with the design, development, deployment, evaluation, and use of AI systems. The AI RMF 1.0 (2023) organizes AI risk management into four core functions: Govern, Map, Measure, and Manage. Referenced by U.S. Executive Order 14110 on AI safety, and increasingly used alongside the EU AI Act and ISO 42001 as a global benchmark for responsible AI.",
+      "scope": "global",
+      "domains_addressed": ["ai_governance", "cybersecurity"],
+      "key_controls": [
+        "GOVERN: organizational policies, culture, roles, and accountability for AI risk management",
+        "MAP: context establishment, categorization of AI risks, and stakeholder impact identification",
+        "MEASURE: AI risk analysis, evaluation, monitoring, benchmarking, and incident tracking",
+        "MANAGE: risk response, recovery, communication, and continual improvement of AI systems",
+        "Trustworthy AI properties: valid/reliable, safe, secure/resilient, explainable, privacy-enhanced, fair",
+        "AI lifecycle integration: embedding risk management from design through decommissioning"
+      ],
+      "certification_available": false,
+      "recertification_cycle_years": null,
+      "tags": ["ai", "risk_management", "nist", "ai_safety", "trustworthy_ai", "eo14110"]
+    },
+    {
+      "id": "ISO42001",
+      "name": "ISO/IEC 42001:2023",
+      "short_name": "ISO 42001",
+      "category": "ai_governance",
+      "issuing_body": "International Organization for Standardization (ISO) / International Electrotechnical Commission (IEC)",
+      "type": "certification",
+      "url": "https://www.iso.org/standard/81230.html",
+      "summary": "The world's first certifiable management system standard for Artificial Intelligence. ISO 42001 specifies requirements for establishing, implementing, maintaining, and continually improving an AI Management System (AIMS). It addresses responsible AI development, AI-specific risk management, transparency, and human oversight. Can serve as a primary conformance pathway for the EU AI Act for high-risk AI systems, and is referenced by Singapore's AI Verify framework.",
+      "scope": "global",
+      "domains_addressed": ["ai_governance"],
+      "key_controls": [
+        "AI policy: organizational commitment to responsible AI development and deployment",
+        "AI risk assessment: identification, analysis, and evaluation of risks specific to AI systems",
+        "Impact assessments: evaluating AI system impacts on individuals, groups, and society",
+        "Data governance for AI: quality, provenance, bias assessment, and training data documentation",
+        "Human oversight: mechanisms for human review, intervention, and override of AI outputs",
+        "Transparency and explainability: documenting AI capabilities, limitations, and decision rationale",
+        "Responsible disclosure: communicating AI system characteristics to affected stakeholders"
+      ],
+      "certification_available": true,
+      "recertification_cycle_years": 3,
+      "tags": ["ai", "aims", "ai_management", "eu_ai_act", "responsible_ai", "certification", "iso"]
+    },
+    {
+      "id": "SOC1",
+      "name": "SOC 1 Type II",
+      "short_name": "SOC 1",
+      "category": "financial_controls",
+      "issuing_body": "American Institute of Certified Public Accountants (AICPA)",
+      "type": "certification",
+      "url": "https://www.aicpa-cima.com/resources/article/soc-1-reports",
+      "summary": "An auditing standard covering internal controls over financial reporting (ICFR) at service organizations. A SOC 1 Type II report attests that a service provider's controls are suitably designed and operating effectively over a specified period (typically 6–12 months). Required or expected by organizations subject to SOX (Section 404), and relied upon by financial institutions, payroll processors, and any service provider whose controls affect clients' financial statements.",
+      "scope": "global",
+      "domains_addressed": ["finance"],
+      "key_controls": [
+        "Control environment: governance, code of conduct, and management accountability structures",
+        "Risk assessment: identifying risks to financial reporting accuracy, completeness, and timeliness",
+        "Control activities: authorization controls, segregation of duties, and IT general controls",
+        "Information and communication: financial data integrity, error detection, and correction mechanisms",
+        "Monitoring activities: management reviews, exception reporting, and independent audit functions",
+        "IT general controls: change management, logical access, computer operations, and data backup/recovery"
+      ],
+      "certification_available": true,
+      "recertification_cycle_years": 1,
+      "tags": ["sox", "financial_reporting", "icfr", "aicpa", "service_organization", "audit"]
+    },
+    {
+      "id": "NIST_800_171",
+      "name": "NIST SP 800-171 Revision 2",
+      "short_name": "NIST 800-171",
+      "category": "information_security",
+      "issuing_body": "National Institute of Standards and Technology (NIST), U.S. Department of Commerce",
+      "type": "guideline",
+      "url": "https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final",
+      "summary": "A NIST guideline specifying 110 security requirements for protecting Controlled Unclassified Information (CUI) in non-federal systems and organizations. Forms the technical foundation for the Cybersecurity Maturity Model Certification (CMMC) program required for U.S. Department of Defense contractors. Organizations must self-attest or obtain third-party assessment (C3PAO) to demonstrate compliance for DoD contract awards.",
+      "scope": "us_federal",
+      "domains_addressed": ["cybersecurity", "critical_infrastructure"],
+      "key_controls": [
+        "Access Control (AC): limiting CUI access to authorized users, processes, and devices",
+        "Audit and Accountability (AU): creating and protecting audit logs of CUI system activity",
+        "Configuration Management (CM): establishing and maintaining secure baseline configurations",
+        "Identification and Authentication (IA): identifying and authenticating users and devices",
+        "Incident Response (IR): establishing operational IR capabilities for CUI systems",
+        "Risk Assessment (RA): periodically assessing risk to CUI operations and systems",
+        "System and Communications Protection (SC): monitoring, controlling, and protecting organizational communications"
+      ],
+      "certification_available": false,
+      "recertification_cycle_years": null,
+      "tags": ["cui", "cmmc", "defense", "nist", "800-171", "dod", "federal_contractors"]
+    },
+    {
+      "id": "HITRUST_CSF",
+      "name": "HITRUST CSF v11",
+      "short_name": "HITRUST CSF",
+      "category": "health_information",
+      "issuing_body": "Health Information Trust Alliance (HITRUST)",
+      "type": "certification",
+      "url": "https://hitrustalliance.net/product-tool/hitrust-csf/",
+      "summary": "A comprehensive, certifiable security framework designed for the healthcare industry, consolidating requirements from HIPAA, HITECH, NIST CSF, ISO 27001, PCI DSS, and other standards into a unified, risk-based control set. HITRUST r2 Validated Assessment is widely accepted as evidence of HIPAA compliance and security maturity in U.S. healthcare. Increasingly adopted internationally by health data processors in Australia, UK, and the EU.",
+      "scope": "global",
+      "domains_addressed": ["health", "cybersecurity", "data_privacy"],
+      "key_controls": [
+        "Information Protection Program: governance, risk management, and compliance oversight",
+        "Endpoint Protection: antimalware, mobile device management, and workstation controls",
+        "Access Control: identity management, privileged access, and multi-factor authentication for PHI",
+        "Audit Logging and Monitoring: comprehensive logging of PHI access and security events",
+        "Third Party Assurance: vendor risk management and business associate agreement compliance",
+        "Incident Management: detection, reporting, and response to breaches of protected health information",
+        "Scalable assessment types: e1 (Essential), i1 (Implemented), r2 (Risk-Based validated)"
+      ],
+      "certification_available": true,
+      "recertification_cycle_years": 2,
+      "tags": ["hipaa", "healthcare", "health_data", "phi", "hitrust", "certification", "hitech"]
+    },
+    {
+      "id": "ISO20000",
+      "name": "ISO/IEC 20000-1:2018",
+      "short_name": "ISO 20000-1",
+      "category": "it_service_management",
+      "issuing_body": "International Organization for Standardization (ISO) / International Electrotechnical Commission (IEC)",
+      "type": "certification",
+      "url": "https://www.iso.org/standard/70636.html",
+      "summary": "The international standard for IT Service Management (ITSM), specifying requirements for establishing, implementing, maintaining, and continually improving a Service Management System (SMS). Aligned with ITIL practices and directly applicable to financial sector IT service providers under DORA and NIS2, it demonstrates that an organization delivers and manages IT services in a controlled, measurable, and continuously improving manner.",
+      "scope": "global",
+      "domains_addressed": ["cybersecurity", "finance", "critical_infrastructure"],
+      "key_controls": [
+        "Service management system: planning, governance, resource management, and policy alignment",
+        "Service design and transition: change management, release management, and service acceptance testing",
+        "Service delivery: capacity planning, availability management, and service continuity planning",
+        "Incident and problem management: detection, classification, resolution, and root cause analysis",
+        "Service request management: fulfillment processes with defined SLAs and escalation paths",
+        "Supplier management: third-party contracts, performance monitoring, and sub-contractor controls"
+      ],
+      "certification_available": true,
+      "recertification_cycle_years": 3,
+      "tags": ["itsm", "itil", "service_management", "dora", "nis2", "iso", "it_operations"]
+    },
+    {
+      "id": "IEC62443",
+      "name": "ISA/IEC 62443",
+      "short_name": "IEC 62443",
+      "category": "operational_technology",
+      "issuing_body": "International Society of Automation (ISA) / International Electrotechnical Commission (IEC)",
+      "type": "framework",
+      "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
+      "summary": "A series of standards for securing Industrial Automation and Control Systems (IACS) and Operational Technology (OT) environments across energy, water, manufacturing, and transportation sectors. ISA/IEC 62443 is referenced by NIS2 (EU), CIRCIA (US), BSI Kritisschutz (Germany), and critical infrastructure protection regulations worldwide. It addresses security for asset owners, system integrators, and product suppliers throughout the OT lifecycle.",
+      "scope": "global",
+      "domains_addressed": ["cybersecurity", "critical_infrastructure"],
+      "key_controls": [
+        "Security Level (SL) framework: SL 1 (basic) through SL 4 (state-actor resistant), matched to threat profiles",
+        "Zone and conduit model: logical segmentation of industrial networks into security zones with controlled conduits",
+        "Component security requirements (SL-C): hardware and software security ratings for IACS products",
+        "System integration security (SL-T): security requirements for integrating components into complete systems",
+        "Patch management for OT: vulnerability management adapted for industrial uptime and safety constraints",
+        "Supply chain security: security assurance requirements for IACS vendors and third-party components"
+      ],
+      "certification_available": true,
+      "recertification_cycle_years": 3,
+      "tags": ["ics", "scada", "ot_security", "industrial", "critical_infrastructure", "iec", "isa", "62443"]
     }
   ]
 }
