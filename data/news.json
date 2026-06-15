@@ -1,6 +1,100 @@
 {
-  "last_updated": "2026-06-13",
+  "last_updated": "2026-06-15",
   "items": [
+    {
+      "id": "bd4d878a4ccf",
+      "title": "[현재 안내서] 생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서(2025.8.)",
+      "summary": "",
+      "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS217&mCode=&nttId=11439",
+      "published": "2026-06-15",
+      "source": "PIPC-KR",
+      "source_url": "https://www.pipc.go.kr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "apac"
+      ],
+      "ai_summary": "South Korea's PIPC publishes guidance on personal data handling for generative AI development and use in August 2025, clarifying compliance requirements for AI applications.",
+      "regulation_ids": [
+        "SOUTH_KOREA_PIPA"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "7bb7409eedcc",
+      "title": "GPAGlobal Privacy Assembly",
+      "summary": "",
+      "url": "https://globalprivacyassembly.org/",
+      "published": "2026-06-15",
+      "source": "PIPC-KR",
+      "source_url": "https://globalprivacyassembly.org",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "apac"
+      ],
+      "ai_summary": "Global Privacy Assembly update from South Korea's PIPC regarding international privacy cooperation and coordination among data protection authorities.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "cab8ef7d0070",
+      "title": "GPENGlobal Privacy Enforcement Network",
+      "summary": "",
+      "url": "https://www.privacyenforcement.net/",
+      "published": "2026-06-15",
+      "source": "PIPC-KR",
+      "source_url": "https://www.privacyenforcement.net",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "apac"
+      ],
+      "ai_summary": "Global Privacy Enforcement Network update from South Korea's PIPC on international coordination of privacy enforcement activities.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "021473a4062c",
+      "title": "APPAAsia Pacific Privacy Authorities",
+      "summary": "",
+      "url": "https://www.appaforum.org/",
+      "published": "2026-06-15",
+      "source": "PIPC-KR",
+      "source_url": "https://www.appaforum.org",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "apac"
+      ],
+      "ai_summary": "Asia Pacific Privacy Authorities update from South Korea's PIPC on regional privacy cooperation.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "0f0ddec090a7",
+      "title": "Revoir le webinaire - Pixels de suivi dans les courriels : présentation des recommandations de la CNIL",
+      "summary": "La CNIL vous propose de décrypter un sujet ou une actualité en lien avec la protection des données à travers une série de webinaires. Retrouvez ce nouvel épisode consacré aux pixels de suivi.",
+      "url": "https://www.cnil.fr/fr/webinaire-pixels-de-suivi-recommandations-cnil",
+      "published": "2026-06-15",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL webinar on tracking pixels in emails and published recommendations for email privacy compliance.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
     {
       "id": "6c2c36c2c39d",
       "title": "PAIA Fees Structure",
@@ -676,6 +770,26 @@
       "priority": "medium"
     },
     {
+      "id": "9a7a006ce49f",
+      "title": "AP: grote toename van privacyklachten",
+      "summary": "De Autoriteit Persoonsgegevens (AP) ontving in 2025 ruim 13.500 klachten en tips over mogelijke overtredingen van de privacywetgeving. Het aantal klachten steeg met 75 procent vergeleken met 2024. Dat staat in de Klachtenrapportage 2025 van de AP .",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-grote-toename-van-privacyklachten",
+      "published": "2026-06-08",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP reports 75% increase in privacy complaints to 13,500 in 2025, indicating heightened enforcement scrutiny and compliance violations.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
       "id": "8229d2989cb9",
       "title": "EBA E-mail alert 8 June, 2026",
       "summary": "EBA E-mail alert 8 June, 2026 Date 08/06/2026 Anonymous (not verified) Mon, 06/08/2026 - 17:00 News &amp; Press ​The EBA launches Discussion Paper on Pillar 3 Data Hub for small banks Consultations Discussion on Pillar 3 Data Hub process to SNCIs",
@@ -712,6 +826,46 @@
       "priority": "low"
     },
     {
+      "id": "23ebec9dc922",
+      "title": "AP controleert vanaf 1 juli registratie scanauto’s in algoritmeregister",
+      "summary": "De Autoriteit Persoonsgegevens (AP) controleert vanaf 1 juli 2026 of gemeenten de inzet van scanauto’s hebben opgenomen in hun algoritmeregister. Uit een recente thematische studie van de AP bleek namelijk dat tot dan toe minder dan de helft van de onderzochte gemeenten dat had g…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-controleert-vanaf-1-juli-registratie-scanautos-in-algoritmeregister",
+      "published": "2026-06-04",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP begins enforcement from July 1, 2026 requiring municipalities to register scan vehicles in algorithm registry for GDPR compliance.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "01733db64fbf",
+      "title": "AP stelt procesbeschrijving voor verscherpt toezicht vast",
+      "summary": "De Autoriteit Persoonsgegevens (AP) merkte dat er in de toezichtspraktijk behoefte is aan een vorm van toezicht die intensiever is dan het reguliere systeemtoezicht. Voor dit soort situaties heeft de AP het instrument ‘verscherpt toezicht’ ingericht. Met dit instrument wil de AP …",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-stelt-procesbeschrijving-voor-verscherpt-toezicht-vast",
+      "published": "2026-06-04",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP establishes enhanced supervision procedure for intensive oversight beyond standard audits, strengthening GDPR enforcement mechanisms.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
       "id": "da05dcbd91ad",
       "title": "Ordre du jour de la séance plénière du 4 juin 2026",
       "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 4 juin 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
@@ -727,6 +881,26 @@
       ],
       "ai_summary": "CNIL plenary session agenda for June 4, 2026. Administrative meeting notice.",
       "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "8d95a06e8136",
+      "title": "AP keurt protocol goed om criminaliteit te weren in vrachtvervoer",
+      "summary": "De Autoriteit Persoonsgegevens (AP) heeft een protocol goedgekeurd met voorwaarden voor vrachtvervoerders, opslagbedrijven en expediteurs om chauffeurs te weigeren die eerder betrokken waren bij diefstal van een vrachtwagenlading. Organisaties die werken volgens de voorwaarden in…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-keurt-protocol-goed-om-criminaliteit-te-weren-in-vrachtvervoer",
+      "published": "2026-06-03",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP approves protocol for freight transport operators to refuse drivers involved in cargo theft, balancing GDPR with crime prevention.",
+      "regulation_ids": [
+        "GDPR"
+      ],
       "priority": "low"
     },
     {
@@ -864,6 +1038,26 @@
       "priority": "high"
     },
     {
+      "id": "05a97d1c9065",
+      "title": "Geef een reactie op de guidelines over wetenschappelijk onderzoek en persoonsgegevens",
+      "summary": "De European Data Protection Board (EDPB) heeft nieuwe guidelines gemaakt over het gebruik van persoonsgegevens in wetenschappelijk onderzoek. Iedereen mag hierop reageren.",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/geef-een-reactie-op-de-guidelines-over-wetenschappelijk-onderzoek-en-persoonsgegevens",
+      "published": "2026-05-27",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB publishes guidelines on personal data use in scientific research; open consultation period for stakeholder feedback on GDPR compliance.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
       "id": "08d182028344",
       "title": "« IA générative et vie privée » : une affiche coproduite par la PIPC et la CNIL pour sensibiliser les utilisateurs d’IA à la protection de leurs données",
       "summary": "Dans le cadre de leur partenariat, la CNIL et la PIPC (autorité de protection des données de la Corée du Sud) ont produit une affiche pour expliquer comment protéger ses données personnelles lorsqu'on utilise des services d'IA générative.",
@@ -943,6 +1137,24 @@
       "priority": "low"
     },
     {
+      "id": "4f4f8c05b228",
+      "title": "Geert Potjewijd wordt nieuwe voorzitter AP",
+      "summary": "Geert Potjewijd is vanaf 1 augustus 2026 de nieuwe bestuursvoorzitter van de Autoriteit Persoonsgegevens (AP). Hij volgt daarmee Aleid Wolfsen op, die deze positie de afgelopen 10 jaar bekleedde.",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/geert-potjewijd-wordt-nieuwe-voorzitter-ap",
+      "published": "2026-05-13",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP appoints new board chair effective August 1, 2026; administrative announcement with no immediate compliance impact.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
       "id": "bffc42f2bcb8",
       "title": "EBA E-mail alert 12 May, 2026",
       "summary": "EBA E-mail alert 12 May, 2026 Date 12/05/2026 Anonymous (not verified) Tue, 05/12/2026 - 17:00 News &amp; Press European Commission launches call for candidates for the ESAs’ Board of Appeal The EBA issues an opinion about an Austrian macroprudential measure",
@@ -959,6 +1171,26 @@
       "ai_summary": "EBA call for ESA Board of Appeal candidates and macroprudential measure opinion. Regulatory staffing and advisory updates.",
       "regulation_ids": [],
       "priority": "low"
+    },
+    {
+      "id": "6cbfd965dc2e",
+      "title": "AP legt taxi-app Yango boete van 100 miljoen euro op",
+      "summary": "De Autoriteit Persoonsgegevens (AP) legt MLU B.V. een boete op van 100 miljoen euro, voor het doorgeven van persoonsgegevens naar Rusland. MLU is het bedrijf achter de Europese versie van taxi-app Yango en is in Nederland gevestigd.",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-legt-taxi-app-yango-boete-van-100-miljoen-euro-op",
+      "published": "2026-05-08",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP issues 100 million euro fine against Yango taxi app for transferring personal data to Russia without proper safeguards, major GDPR enforcement action.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
     },
     {
       "id": "09b928379a69",
@@ -999,6 +1231,26 @@
       "priority": "low"
     },
     {
+      "id": "e5e5de2655e8",
+      "title": "Privacytoezichthouders vragen Europese Commissie Israëlische registratieplicht voor hulpverleners te toetsen",
+      "summary": "De Europese privacytoezichthouders willen dat de Europese Commissie zich buigt over de registratieplicht die de Israëlische overheid oplegt aan hulpverleners die werken in Palestijnse gebieden. De registratieplicht dwingt hulporganisaties in feite om de Europese privacywet (AVG) …",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/privacytoezichthouders-vragen-europese-commissie-israelische-registratieplicht-voor-hulpverleners-te-toetsen",
+      "published": "2026-04-23",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "European privacy authorities request Commission review of Israeli registration requirement for aid workers, citing conflict with GDPR extraterritorial principles.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
       "id": "ff3ebc796297",
       "title": "Stakeholder event on competition and data protection",
       "summary": "Brussels, 23 April – The EDPB is organising a remote stakeholder event in the context of its joint work with the European Commission on upcoming guidelines on the interplay between competition and data protection .&nbsp; The event is an opportunity for stakeholders to inform and …",
@@ -1013,6 +1265,44 @@
         "eu"
       ],
       "ai_summary": "EDPB organizes stakeholder event on competition and data protection guidelines collaboration.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "7aa3215545bb",
+      "title": "Doe mee aan de AP-scriptieprijs en win 1000 euro",
+      "summary": "Voor de tweede keer reikt de Autoriteit Persoonsgegevens (AP) een scriptieprijs uit voor de beste universitaire masterscriptie op het gebied van gegevensbescherming. Dit jaar is het thema: massasurveillance.&nbsp;Heb je dit jaar een scriptie geschreven die past binnen het thema? …",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/doe-mee-aan-de-ap-scriptieprijs-en-win-1000-euro",
+      "published": "2026-04-22",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP announces annual thesis prize on mass surveillance data protection topic; calls for research participation.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "b7459f6fdbf7",
+      "title": "Veel mensen kennen hun rechten niet bij automatische besluiten",
+      "summary": "Neemt een organisatie een automatisch besluit over iemand? Dan heeft diegene vaak recht op een menselijke blik. Dat betekent: dat een medewerker van de organisatie meekijkt bij het besluit. Uit onderzoek van de Autoriteit Persoonsgegevens (AP) blijkt echter dat mensen dit niet al…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/veel-mensen-kennen-hun-rechten-niet-bij-automatische-besluiten",
+      "published": "2026-04-21",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP research reveals citizens lack awareness of rights regarding automated decisions under GDPR, identifying compliance and awareness gap.",
       "regulation_ids": [
         "GDPR"
       ],
@@ -1120,6 +1410,24 @@
       "priority": "medium"
     },
     {
+      "id": "f6942e01c3eb",
+      "title": "Impact of AI on cyber threat from now to 2027",
+      "summary": "An NCSC assessment highlighting the impacts on cyber threat from AI developments between now and 2027.",
+      "url": "https://www.ncsc.gov.uk/report/impact-ai-cyber-threat-now-2027",
+      "published": "2025-05-07",
+      "source": "NCSC",
+      "source_url": "https://www.ncsc.gov.uk",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "NCSC assessment of AI's impact on cyber threats through 2027; guidance on emerging security challenges from AI developments.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
       "id": "7a10e0d9c2a6",
       "title": "Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation",
       "summary": "Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation Jana Jaklic Fri, 06/28/2024 - 10:22",
@@ -1134,6 +1442,78 @@
         "eu"
       ],
       "ai_summary": "EBA call for papers on banking regulation boundaries. Academic research workshop announcement.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "8ef507ff7696",
+      "title": "The near-term impact of AI on the cyber threat",
+      "summary": "An NCSC assessment focusing on how AI will impact the efficacy of cyber operations and the implications for the cyber threat over the next two years.",
+      "url": "https://www.ncsc.gov.uk/report/impact-of-ai-on-cyber-threat",
+      "published": "2024-01-24",
+      "source": "NCSC",
+      "source_url": "https://www.ncsc.gov.uk",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "NCSC analysis of near-term AI effects on cyber operations and threat landscape over two years.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "d4ad6423ca41",
+      "title": "ACD - The Sixth Year",
+      "summary": "Key findings and full report from the 6th year of the Active Cyber Defence (ACD) programme.",
+      "url": "https://www.ncsc.gov.uk/report/acd-the-sixth-year",
+      "published": "2023-07-06",
+      "source": "NCSC",
+      "source_url": "https://www.ncsc.gov.uk",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "NCSC sixth annual report on Active Cyber Defence program findings and achievements.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "98c42ad11e87",
+      "title": "Cyber Threat Report: UK Legal Sector",
+      "summary": "An updated report from the NCSC explaining how UK law firms - of all sizes - can protect themselves from common cyber threats.",
+      "url": "https://www.ncsc.gov.uk/report/cyber-threat-report-uk-legal-sector",
+      "published": "2023-06-22",
+      "source": "NCSC",
+      "source_url": "https://www.ncsc.gov.uk",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "NCSC report on cyber threats to UK legal sector with protective measures for law firms.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "c1c9d8bbfe7f",
+      "title": "ACD - The Fifth Year",
+      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
+      "url": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
+      "published": "2022-05-10",
+      "source": "NCSC",
+      "source_url": "https://www.ncsc.gov.uk",
+      "categories": [
+        "cybersecurity"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "NCSC fifth annual report on Active Cyber Defence program results.",
       "regulation_ids": [],
       "priority": "low"
     }
