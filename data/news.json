@@ -1,6 +1,238 @@
 {
-  "last_updated": "2026-06-22",
+  "last_updated": "2026-06-29",
   "items": [
+    {
+      "id": "d69e056ad942",
+      "title": "EBA E-mail alert 26 June, 2026",
+      "summary": "EBA E-mail alert 26 June, 2026 Date 26/06/2026 Anonymous (not verified) Fri, 06/26/2026 - 17:00 News &amp; Press ​The EBA reaches another important milestone in enhancing supervisory efficiency with its revised SREP Guidelines ​The EBA updates validation rules for supervisory rep…",
+      "url": "https://www.eba.europa.eu/node/19787",
+      "published": "2026-06-26",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA updates SREP Guidelines and validation rules for supervisory reporting, enhancing supervisory efficiency requirements for regulated financial institutions.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "bc5aaaa1bb83",
+      "title": "Technologies émergentes et protection des mineurs : les autorités de protection des données du G7 s’accordent sur des principes clés",
+      "summary": "Les autorités de protection des données des pays du G7 se sont réunies à Paris les 25 et 26 juin à l’invitation de la CNIL dans le cadre de la présidence française du G7. Elles ont adopté une déclaration sur les mécanismes de vérification de l’âge respectueux de la vie privée, ai…",
+      "url": "https://www.cnil.fr/fr/g7-technologies-protection-mineurs",
+      "published": "2026-06-26",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "G7 data protection authorities adopt declaration on privacy-respecting age verification mechanisms for emerging technologies, establishing key principles.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "9b99eddf5b9e",
+      "title": "One-Stop-Shop case digest on right to object and right to erasure updated",
+      "summary": "Brussels, 25 June - The EDPB has published an update of the One-Stop-Shop (OSS) case digest on right to object and right to erasure . This project has been developed in the framework of the of the Support Pool of Experts programme, which aims to support cooperation among Data Pro…",
+      "url": "https://www.edpb.europa.eu/news/one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated_en",
+      "published": "2026-06-25",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB updates OSS case digest on right to object and erasure under GDPR, providing guidance to support consistent interpretation across EU member states.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "e6f6f9f0caab",
+      "title": "Koninklijke onderscheiding voor Aleid Wolfsen",
+      "summary": "Op 25 juni 2026 is Aleid Wolfsen benoemd tot Officier in de Orde van Oranje-Nassau. Hij ontving deze bijzondere onderscheiding uit handen van Claudia van Bruggen, staatssecretaris van Justitie en Veiligheid. Wolfsen krijgt de onderscheiding omdat hij zich zijn hele carrière heeft…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/koninklijke-onderscheiding-voor-aleid-wolfsen",
+      "published": "2026-06-25",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch official honored for career service; non-regulatory compliance announcement unrelated to data protection.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "8ce0262984d7",
+      "title": "Supporting GDPR consistency: EDPB launches dedicated form",
+      "summary": "Brussels, 24 June – The EDPB has launched a dedicated contact form for stakeholders to report possible inconsistencies in how the GDPR is interpreted across Europe. This initiative reflects the commitments set out in the EDPB Helsinki Statement on enhanced clarity, support and en…",
+      "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
+      "published": "2026-06-24",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB launches contact form for reporting GDPR interpretation inconsistencies across Europe, supporting enhanced clarity and consistency in regulatory enforcement.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "12cd74c2bf4b",
+      "title": "Quatre auteurs reçoivent le deuxième prix CNIL/EHESS pour leur recherche sur la réception du règlement IA par les citoyens européens",
+      "summary": "Lors de la Journée de recherche sur la vie privée, le 24 juin 2026, Gabriel Lima, Gustavo Gil Gasiola, Frederike Zufall et Yixin Zou ont reçu le 2ème prix CNIL/EHESS pour leur article sur la régulation de l’intelligence artificielle et son alignement avec les attentes citoyennes.",
+      "url": "https://www.cnil.fr/fr/prix-ehess-cnil-2026",
+      "published": "2026-06-24",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL awards prize for research on EU AI Regulation alignment with citizen expectations, reflecting regulatory implementation considerations.",
+      "regulation_ids": [
+        "AI_ACT"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "9dff9f258139",
+      "title": "Informations publiques",
+      "summary": "Cette page recense les informations publiques de la CNIL (documents, vidéos, open data).",
+      "url": "https://www.cnil.fr/fr/informations-publiques",
+      "published": "2026-06-24",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL webpage listing public information and resources; administrative compilation without regulatory compliance impact.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "53db60bed555",
+      "title": "Remise du prix « Protection de la vie privée » 2026 par la CNIL et l’Inria",
+      "summary": "Lors de la Journée de recherche sur la vie privée, le 24 juin 2026,&amp;nbsp;la CNIL et l’Inria ont remis le prix 2026 de la protection de la vie privée à une équipe de chercheurs internationaux pour leur article portant sur l’articulation entre la réglementation et la recherche …",
+      "url": "https://www.cnil.fr/fr/prix-inria-cnil-2026",
+      "published": "2026-06-24",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL and Inria award 2026 privacy protection prize for research on regulation-research intersection; recognition of academic contributions.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "277050c73bcf",
+      "title": "Victimes de violations de données : restez vigilants face aux offres d’accompagnement",
+      "summary": "Des victimes de violations de données personnelles reçoivent des courriels proposant une aide pour faire supprimer leurs informations en ligne. La CNIL invite à la prudence face à ces démarches dont elle n’est pas à l’origine.",
+      "url": "https://www.cnil.fr/fr/vigilance-accompagnement-violation-de-donnees",
+      "published": "2026-06-24",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL warns data breach victims about fraudulent assistance offers unrelated to CNIL, advising vigilance against scams targeting personal data.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "bf0f503f135b",
+      "title": "AP vraagt reacties op lijst DPIA-uitzonderingen",
+      "summary": "De Autoriteit Persoonsgegevens (AP) heeft een lijst opgesteld van soorten verwerkingen waarvoor geen ‘data protection impact assessment' (DPIA) vereist is. Om deze lijst goed aan te laten sluiten bij de praktijk, vraagt de AP via een consultatie reacties aan het mkb, zelfstandige…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-vraagt-reacties-op-lijst-dpia-uitzonderingen",
+      "published": "2026-06-24",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "AP Netherlands seeks stakeholder consultation on DPIA exemptions list to align guidance with business practice under GDPR.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "6317fe4f4b35",
+      "title": "Élections professionnelles dans la fonction publique et vote électronique : comment transmettre les rapports d’expertise à la CNIL ?",
+      "summary": "Lorsque le recours au vote électronique est prévu pour les élections professionnelles dans la fonction publique, le système de vote doit faire l’objet d’une expertise indépendante. Dans ce cadre, les rapports d’expertise doivent désormais être transmis à la CNIL.",
+      "url": "https://www.cnil.fr/fr/elections-professionnelles-fonction-publique-vote-electronique",
+      "published": "2026-06-23",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL requires independent expert reports on electronic voting systems for public sector professional elections be submitted for compliance verification.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "689b58b07fea",
+      "title": "EBA E-mail alert 22 June, 2026",
+      "summary": "EBA E-mail alert 22 June, 2026 Date 22/06/2026 Anonymous (not verified) Mon, 06/22/2026 - 17:00 News &amp; Press EBA updates Pillar 3 disclosure requirements on ESG risks, equity and shadow banking exposures, as part of simplification effort Latest EBA MREL dashboard shows that M…",
+      "url": "https://www.eba.europa.eu/node/19765",
+      "published": "2026-06-22",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA updates Pillar 3 disclosure requirements on ESG risks and shadow banking exposures as part of simplification effort for financial institution reporting.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
     {
       "id": "eaabb3967421",
       "title": "Submit a complaint",
@@ -1283,238 +1515,6 @@
         "GDPR"
       ],
       "priority": "high"
-    },
-    {
-      "id": "23ebec9dc922",
-      "title": "AP controleert vanaf 1 juli registratie scanauto’s in algoritmeregister",
-      "summary": "De Autoriteit Persoonsgegevens (AP) controleert vanaf 1 juli 2026 of gemeenten de inzet van scanauto’s hebben opgenomen in hun algoritmeregister. Uit een recente thematische studie van de AP bleek namelijk dat tot dan toe minder dan de helft van de onderzochte gemeenten dat had g…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-controleert-vanaf-1-juli-registratie-scanautos-in-algoritmeregister",
-      "published": "2026-06-04",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch AP begins enforcement from July 1, 2026 requiring municipalities to register scan vehicles in algorithm registry for GDPR compliance.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "01733db64fbf",
-      "title": "AP stelt procesbeschrijving voor verscherpt toezicht vast",
-      "summary": "De Autoriteit Persoonsgegevens (AP) merkte dat er in de toezichtspraktijk behoefte is aan een vorm van toezicht die intensiever is dan het reguliere systeemtoezicht. Voor dit soort situaties heeft de AP het instrument ‘verscherpt toezicht’ ingericht. Met dit instrument wil de AP …",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-stelt-procesbeschrijving-voor-verscherpt-toezicht-vast",
-      "published": "2026-06-04",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch AP establishes enhanced supervision procedure for intensive oversight beyond standard audits, strengthening GDPR enforcement mechanisms.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "da05dcbd91ad",
-      "title": "Ordre du jour de la séance plénière du 4 juin 2026",
-      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 4 juin 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
-      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-4-juin-2026",
-      "published": "2026-06-04",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL plenary session agenda for June 4, 2026. Administrative meeting notice.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "8d95a06e8136",
-      "title": "AP keurt protocol goed om criminaliteit te weren in vrachtvervoer",
-      "summary": "De Autoriteit Persoonsgegevens (AP) heeft een protocol goedgekeurd met voorwaarden voor vrachtvervoerders, opslagbedrijven en expediteurs om chauffeurs te weigeren die eerder betrokken waren bij diefstal van een vrachtwagenlading. Organisaties die werken volgens de voorwaarden in…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-keurt-protocol-goed-om-criminaliteit-te-weren-in-vrachtvervoer",
-      "published": "2026-06-03",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch AP approves protocol for freight transport operators to refuse drivers involved in cargo theft, balancing GDPR with crime prevention.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "low"
-    },
-    {
-      "id": "bc9ff8c2c90e",
-      "title": "EBA E-mail alert 3 June, 2026",
-      "summary": "EBA E-mail alert 3 June, 2026 Date 03/06/2026 Anonymous (not verified) Wed, 06/03/2026 - 17:00 News &amp; Press ESAs publish the first report on DORA major ICT-related incidents",
-      "url": "https://www.eba.europa.eu/node/19720",
-      "published": "2026-06-03",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "ESAs publish first report on DORA major ICT-related incidents. Enforcement reporting on digital operational resilience.",
-      "regulation_ids": [
-        "DORA"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "4e25591c8075",
-      "title": "EBA E-mail alert 2 June, 2026",
-      "summary": "EBA E-mail alert 2 June, 2026 Date 02/06/2026 Anonymous (not verified) Tue, 06/02/2026 - 17:00 News &amp; Press ​The EBA updates list of other systemically important institutions ​The EBA and the New York State Department of Financial Services sign a Memorandum of Understanding t…",
-      "url": "https://www.eba.europa.eu/node/19715",
-      "published": "2026-06-02",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA updates systemically important institutions list and signs MOU with NYDFS. Regulatory updates and bilateral cooperation.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "36b8fc25e073",
-      "title": "EBA E-mail alert 29 May, 2026",
-      "summary": "EBA E-mail alert 29 May, 2026 Date 29/05/2026 Anonymous (not verified) Fri, 05/29/2026 - 17:00 Final Q&amp;As 2025_7575 SPV repack transactions 2025_7576 Application of Article 207(2) of the CRR to financial collateral under the counterparty credit risk framework 2026_7744 Report…",
-      "url": "https://www.eba.europa.eu/node/19706",
-      "published": "2026-05-29",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA Q&A on SPV transactions and counterparty credit risk. Technical regulatory clarifications on financial structures.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "2b0ae13fbeed",
-      "title": "Ordre du jour de la séance plénière du 28 mai 2026",
-      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 28 mai 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
-      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-28-mai-2026",
-      "published": "2026-05-28",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL plenary session agenda for May 28, 2026. Administrative meeting notice.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "97087c1d86f2",
-      "title": "Privacy Research Day : participez à la journée dédiée à la recherche sur la vie privée",
-      "summary": "La cinquième édition de la Journée de recherche sur la vie privée (Privacy Research Day) se tiendra le 24 juin 2026, dans le cadre du G7 des autorités de protection des données accueilli par la CNIL. Cet évènement international, reliant le monde académique aux acteurs de la régul…",
-      "url": "https://www.cnil.fr/fr/privacy-research-day-2026",
-      "published": "2026-05-28",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL hosts Privacy Research Day June 24, 2026 within G7 data protection framework. Academic and regulatory dialogue event.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "low"
-    },
-    {
-      "id": "d299ea681001",
-      "title": "Quelles qualifications pour les acteurs de l’informatique en nuage (cloud) ?",
-      "summary": "Avant de traiter des données personnelles, il est essentiel que les acteurs identifient leurs rôles. La CNIL fournit des orientations pour aider ceux du secteur de l’informatique en nuage (cloud) à identifier leurs responsabilités avec des exemples concrets.",
-      "url": "https://www.cnil.fr/fr/quelles-qualifications-pour-les-acteurs-de-linformatique-en-nuage-cloud",
-      "published": "2026-05-28",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL provides cloud sector guidance on data controller/processor roles. Clarification on cloud responsibilities under GDPR.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "e3042c83f66e",
-      "title": "Données de santé : sanction de 5 millions d’euros à l’encontre de la société IQVIA",
-      "summary": "Le 26 mai 2026, la société IQVIA OPERATIONS FRANCE a été sanctionnée d’une amende de 5&amp;nbsp;millions d’euros, notamment pour non-respect des garanties visant à limiter les risques pour les personnes dans le cadre de la gestion d’entrepôts de données de santé.",
-      "url": "https://www.cnil.fr/fr/donnees-sante-sanction-5-millions-iqvia",
-      "published": "2026-05-28",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL fines IQVIA 5 million euros for health data safeguard violations. Enforcement action for data warehouse management failures.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "05a97d1c9065",
-      "title": "Geef een reactie op de guidelines over wetenschappelijk onderzoek en persoonsgegevens",
-      "summary": "De European Data Protection Board (EDPB) heeft nieuwe guidelines gemaakt over het gebruik van persoonsgegevens in wetenschappelijk onderzoek. Iedereen mag hierop reageren.",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/geef-een-reactie-op-de-guidelines-over-wetenschappelijk-onderzoek-en-persoonsgegevens",
-      "published": "2026-05-27",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EDPB publishes guidelines on personal data use in scientific research; open consultation period for stakeholder feedback on GDPR compliance.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
     }
   ]
 }
