@@ -1,6 +1,235 @@
 {
-  "last_updated": "2026-06-29",
+  "last_updated": "2026-07-06",
   "items": [
+    {
+      "id": "dc503fa08cf7",
+      "title": "La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée",
+      "summary": "Vidéosurveillance excessive, cookies, non-respect des droits des personnes ou encore défaut de coopération avec la CNIL&amp;nbsp;: depuis janvier 2026, 23 nouvelles sanctions ont été prononcées dans le cadre de la procédure simplifiée, dont 19 ont pour origine des plaintes.",
+      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+      "published": "2026-07-06",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL issued 23 new enforcement sanctions since January 2026 for excessive video surveillance, cookies, rights violations, and non-cooperation.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "78dc46ad6326",
+      "title": "EBA E-mail alert 3 July, 2026",
+      "summary": "EBA E-mail alert 3 July, 2026 Date 03/07/2026 Anonymous (not verified) Fri, 07/03/2026 - 17:00 Final Q&amp;As 2025_7587 Reporting additional leverage ratio exposure amount in accordance with Article 3 CRR in C43.00 2025_7664 Validation rules taxonomy V4.0 C_47.00, C_43.00.a, C_43…",
+      "url": "https://www.eba.europa.eu/node/19812",
+      "published": "2026-07-03",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA Q&A finalization on leverage ratio reporting and taxonomy validation rules; technical clarification on existing banking requirements.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "5e16f8983f82",
+      "title": "Le métier de DPO à l’heure de l’intelligence artificielle : publication des résultats de l’enquête",
+      "summary": "L’intégration de l’IA dans les pratiques professionnelles et l’entrée en application du règlement IA créent de nouveaux défis pour les DPO et leurs organisations. Afin de mieux comprendre leurs attentes et préoccupations, le ministère du Travail et des Solidarités, l’AFCDP et la …",
+      "url": "https://www.cnil.fr/fr/enquete-dpo-ia",
+      "published": "2026-07-03",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL survey on DPO role amid AI integration and new AI regulation creates operational challenges for data protection officers.",
+      "regulation_ids": [
+        "GDPR",
+        "AI_ACT"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "2a7c14cfad9d",
+      "title": "EBA E-mail alert 2 July, 2026",
+      "summary": "EBA E-mail alert 2 July, 2026 Date 02/07/2026 Anonymous (not verified) Thu, 07/02/2026 - 17:00 News &amp; Press Targeted EBA peer review finds high compliance on Pillar 3 disclosures but calls for greater consistency",
+      "url": "https://www.eba.europa.eu/node/19810",
+      "published": "2026-07-02",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA peer review finds high Pillar 3 disclosure compliance but identifies consistency gaps; guidance update on banking transparency requirements.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "3089cca54368",
+      "title": "Ordre du jour de la séance plénière du 2 juillet 2026",
+      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 2 juillet 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
+      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-2-juillet-2026",
+      "published": "2026-07-02",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL plenary session agenda publication; administrative notice without specific compliance obligations.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "937bb80e4ba2",
+      "title": "Jeux d’argent et de hasard : appliquer le RGPD aux traitements de données des joueurs",
+      "summary": "Les opérateurs de jeux d’argent et de hasard doivent concilier les exigences du RGPD avec leurs obligations sectorielles. Pour accompagner les acteurs dans cette démarche, l’ANJ a élaboré, en concertation avec la CNIL, un guide apportant des repères pratiques.",
+      "url": "https://www.cnil.fr/fr/jeux-argent-hasard-application-rgpd",
+      "published": "2026-07-02",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL and ANJ publish guidance on applying GDPR to gambling operators' player data processing with sector-specific considerations.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "3c08a4587c7d",
+      "title": "EDPB and AMLA to develop Joint Guidelines on partnerships for information sharing",
+      "summary": "Brussels/Frankfurt, 1 July – The EDPB and the Anti-Money Laundering Authority (AMLA) are working together to bring greater clarity to a question of growing importance for industry and authorities alike: how to share information to fight financial crime while protecting personal d…",
+      "url": "https://www.edpb.europa.eu/news/edpb-and-amla-to-develop-joint-guidelines-on-partnerships-for-information-sharing_en",
+      "published": "2026-07-01",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB and AMLA developing joint guidelines on information sharing between data protection and AML authorities to balance financial crime prevention with personal data protection requirements.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "71f83cfbf311",
+      "title": "EBA E-mail alert 1 July, 2026",
+      "summary": "EBA E-mail alert 1 July, 2026 Date 01/07/2026 Anonymous (not verified) Wed, 07/01/2026 - 17:00 News &amp; Press The EBA launches consultation on key performance indicators of Taxonomy disclosures",
+      "url": "https://www.eba.europa.eu/node/19806",
+      "published": "2026-07-01",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA consultation launched on taxonomy disclosure key performance indicators; open consultation period for stakeholder input.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "dfd4fa8d58b5",
+      "title": "EBA E-mail alert 30 June, 2026",
+      "summary": "EBA E-mail alert 30 June, 2026 Date 30/06/2026 Anonymous (not verified) Tue, 06/30/2026 - 17:00 News &amp; Press EU deposit guarantee scheme funds to protect depositors against bank failures continue to grow and have reached a volume of €85bn, the EBA observes",
+      "url": "https://www.eba.europa.eu/node/19799",
+      "published": "2026-06-30",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EU deposit guarantee scheme funds reach €85 billion; update on depositor protection without new binding requirements.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "c569ee7950d8",
+      "title": "Véhicules connectés : la CNIL publie sa recommandation sur l’utilisation des données de localisation",
+      "summary": "À l’issue d’une consultation publique, la CNIL publie ses recommandations sur l’utilisation par les professionnels des données de localisation des véhicules connectés (voitures, cycles, scooters, etc.). Objectif&amp;nbsp;: renforcer la sécurité juridique et donner plus de transpa…",
+      "url": "https://www.cnil.fr/fr/recommandation-vehicules-connectes-localisation",
+      "published": "2026-06-30",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL publishes recommendations on connected vehicle location data use after public consultation to enhance legal clarity.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "044f06ca16a2",
+      "title": "Véhicules connectés : dans quelles conditions vos données de localisation peuvent être utilisées ?",
+      "summary": "Les véhicules connectés collectent des données de localisation pour proposer certains services liés au divertissement ou à la sécurité. Ces informations peuvent révéler des éléments très personnels sur votre vie privée. La CNIL rappelle les garanties à mettre en œuvre et les droi…",
+      "url": "https://www.cnil.fr/fr/vehicules-connectes-utilisation-de-vos-donnees",
+      "published": "2026-06-30",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL guidance on location data protections for connected vehicles clarifying user rights and professional obligations.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "aad7b9e11414",
+      "title": "EBA E-mail alert 29 June, 2026",
+      "summary": "EBA E-mail alert 29 June, 2026 Date 29/06/2026 Anonymous (not verified) Mon, 06/29/2026 - 17:00 News &amp; Press The EBA publishes a roadmap on the delivery of its mandates under the revised Deposit Guarantee Schemes Directive The EBA publishes its 2025 Report on supervisory conv…",
+      "url": "https://www.eba.europa.eu/node/19791",
+      "published": "2026-06-29",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA publishes roadmap on Deposit Guarantee Schemes Directive mandates and supervisory convergence report; guidance publication.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
     {
       "id": "d69e056ad942",
       "title": "EBA E-mail alert 26 June, 2026",
@@ -1279,242 +1508,6 @@
         "GDPR"
       ],
       "priority": "medium"
-    },
-    {
-      "id": "240ba62c663d",
-      "title": "Le CEPD rencontre le commissaire européen McGrath et adopte un modèle commun de notification des violations de données",
-      "summary": "Lors de sa dernière session plénière, le CEPD a rencontré Michael McGrath, commissaire européen chargé de la démocratie, de la justice, de l'État de droit et de la protection des consommateurs. Par ailleurs, le CEPD a adopté un&amp;nbsp;modèle commun de notification des violation…",
-      "url": "https://www.cnil.fr/fr/le-cepd-rencontre-le-commissaire-europeen-mcgrath-et-adopte-un-modele-commun-de-notification-des",
-      "published": "2026-06-10",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EDPB adopts common data breach notification template and meets EU Commissioner McGrath. Harmonized breach notification guidance published.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "97b8e316e114",
-      "title": "Communications par voie électronique aux prospects et clients : quelles règles respecter ?",
-      "summary": "Prospection commerciale, messages d’information… les entreprises échangent régulièrement avec leurs prospects et leurs clients. Selon les cas, les personnes doivent soit donner leur accord préalable, soit pouvoir s’opposer facilement.",
-      "url": "https://www.cnil.fr/fr/communication-electronique-quelles-regles",
-      "published": "2026-06-10",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL guidance on electronic communications to prospects and clients. Rules on commercial prospecting consent requirements.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "ca3c1833c457",
-      "title": "EDPB meets with EU Commissioner McGrath and adopts common data breach notification template",
-      "summary": "Brussels, 10 June – During its latest plenary, the EDPB met with Michael McGrath, Commissioner for Democracy, Justice, the Rule of Law and Consumer Protection. In addition, the Board has adopted a common data breach notification template . The Board held a meeting with Commission…",
-      "url": "https://www.edpb.europa.eu/news/news/2026/edpb-meets-eu-commissioner-mcgrath-and-adopts-common-data-breach-notification_en",
-      "published": "2026-06-10",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EDPB adopts common data breach notification template to standardize GDPR breach reporting requirements.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "9a7a006ce49f",
-      "title": "AP: grote toename van privacyklachten",
-      "summary": "De Autoriteit Persoonsgegevens (AP) ontving in 2025 ruim 13.500 klachten en tips over mogelijke overtredingen van de privacywetgeving. Het aantal klachten steeg met 75 procent vergeleken met 2024. Dat staat in de Klachtenrapportage 2025 van de AP .",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-grote-toename-van-privacyklachten",
-      "published": "2026-06-08",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch AP reports 75% increase in privacy complaints to 13,500 in 2025, indicating heightened enforcement scrutiny and compliance violations.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "8229d2989cb9",
-      "title": "EBA E-mail alert 8 June, 2026",
-      "summary": "EBA E-mail alert 8 June, 2026 Date 08/06/2026 Anonymous (not verified) Mon, 06/08/2026 - 17:00 News &amp; Press ​The EBA launches Discussion Paper on Pillar 3 Data Hub for small banks Consultations Discussion on Pillar 3 Data Hub process to SNCIs",
-      "url": "https://www.eba.europa.eu/node/19729",
-      "published": "2026-06-08",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA launches discussion paper on Pillar 3 Data Hub for small banks. Consultation on reporting data hub processes.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "96ca5ae469d0",
-      "title": "EBA E-mail alert 5 June, 2026",
-      "summary": "EBA E-mail alert 5 June, 2026 Date 05/06/2026 Anonymous (not verified) Fri, 06/05/2026 - 17:00 Final Q&amp;As 2025_7588 Access to national credit databases for all EU creditors for both cross-border and domestic mortgage loan transactions 2026_7807 Clarification on validation v30…",
-      "url": "https://www.eba.europa.eu/node/19723",
-      "published": "2026-06-05",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA Q&A on credit database access and validation requirements. Technical clarifications on credit data access procedures.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "4e20593dd983",
-      "title": "The Italian SA imposed a 40 000 EUR fine on a company for violating the confidentiality of a employee's email account after the end of his employment",
-      "summary": "Background information Date of final decision: 18 December 2025 National case Controller:&nbsp;LTL S.p.A. Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 12 (Transparent information, communication and modalities for the exercise of the …",
-      "url": "https://www.edpb.europa.eu/news/the-italian-sa-imposed-a-40-000-eur-fine-on-a-company-for-violating-the-confidentiality-of-a_en",
-      "published": "2026-06-04",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Italian SA fines LTL S.p.A. €40,000 for confidentiality breach of employee email post-employment. GDPR enforcement action on Article 5 principles violation.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "a78938dc8304",
-      "title": "The Italian SA fined Poste Vita for data breach",
-      "summary": "Background information Date of final decision: 10 July 2025 National case Controller: Poste Vita s.p.a. Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 33 (Notification of a personal data breach to the supervisory authority) Decision:&n…",
-      "url": "https://www.edpb.europa.eu/news/the-italian-sa-fined-poste-vita-for-data-breach_en",
-      "published": "2026-06-04",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Italian SA fines Poste Vita for data breach and notification violations. GDPR enforcement action on Articles 5 and 33 regarding breach notification requirements.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "9d01942812d0",
-      "title": "Imposition of fine on a telecommunications company for violations of data subject’s rights",
-      "summary": "Background information Date of final decision: 11 February 2026 National case Controller: Vodafone-Panafon S.A Hellenic Telecommunications Company Legal Reference: Article 12: Transparent information, communication and modalities for the exercise of the rights of the data subject…",
-      "url": "https://www.edpb.europa.eu/news/imposition-of-fine-on-a-telecommunications-company-for-violations-of-data-subjects-rights_en",
-      "published": "2026-06-04",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Greek SA fines Vodafone-Panafon for violating data subject transparency rights. GDPR enforcement on Article 12 regarding data subject rights communications.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "d6498d6c92e9",
-      "title": "The Italian Supervisory Authority fined a company 120 000 EUR for tracking five employees who drove company cars",
-      "summary": "Background information Date of final decision: 27 November 2025 National case Controller: Pioneer Hi-Bred Italia Sementi s.r.l. Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 6 (Lawfulness of processing), &nbsp;Article 13 (Information …",
-      "url": "https://www.edpb.europa.eu/news/the-italian-supervisory-authority-fined-a-company-120-000-eur-for-tracking-five-employees-who_en",
-      "published": "2026-06-04",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Italian SA fines Pioneer Hi-Bred €120,000 for unlawful employee vehicle tracking. GDPR enforcement on Articles 5-6 regarding lawfulness and transparency principles.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "41c2b01c1c48",
-      "title": "Italian SA fines a company for post-sick leave questionnaires",
-      "summary": "Background information Date of final decision: 10 July 2025 National case Controller: Magna PT S.p.A. Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 6 (Lawfulness of processing), &nbsp;Article 9 (Processing of special categories of per…",
-      "url": "https://www.edpb.europa.eu/news/italian-sa-fines-a-company-for-post-sick-leave-questionnaires_en",
-      "published": "2026-06-04",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Italian SA fines Magna PT for post-sick leave questionnaires violating special categories processing rules. GDPR enforcement on Articles 5-9 regarding sensitive data.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "3403a24a99a9",
-      "title": "The Italian Supervisory Authority has fined Verisure Italia for unlawful processing of personal data for direct marketing purposes",
-      "summary": "Background information Date of final decision: 27 November 2025 National case Controller:&nbsp;&nbsp;&nbsp;&nbsp;Verisure Italia srl Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 7 (Conditions for consent), Article 12 (Transparent inf…",
-      "url": "https://www.edpb.europa.eu/news/the-italian-supervisory-authority-has-fined-verisure-italia-for-unlawful-processing-of_en",
-      "published": "2026-06-04",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Italian SA fines Verisure Italia for unlawful direct marketing processing without valid consent. GDPR enforcement on Articles 5-7 regarding lawfulness and consent requirements.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
     }
   ]
 }
