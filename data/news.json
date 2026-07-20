@@ -1,6 +1,214 @@
 {
-  "last_updated": "2026-07-13",
+  "last_updated": "2026-07-20",
   "items": [
+    {
+      "id": "8c6f35929c79",
+      "title": "Australian Prudential Regulation Authority (APRA) - click to go to the home page",
+      "summary": "",
+      "url": "https://www.apra.gov.au/",
+      "published": "2026-07-20",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA homepage link with no substantive compliance content provided.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "7029b3bea5b6",
+      "title": "Customers of Anthony Jones (UK) Limited urged to check their insurance policy",
+      "summary": "The insurance broker has agreed to stop carrying out any regulated activity. This means it can't provide any services on behalf of an insurer. From 9 July 2026, the insurance broker Anthony Jones (UK) Limited (AJL) agreed to stop carrying out any regulated activity.This means tha…",
+      "url": "https://www.fca.org.uk/news/news-stories/customers-anthony-jones-uk-limited-urged-check-insurance-policy",
+      "published": "2026-07-20",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "FCA enforcement action: Anthony Jones insurance broker ceases regulated activity effective 9 July 2026.",
+      "regulation_ids": [],
+      "priority": "high"
+    },
+    {
+      "id": "3ccee4433cdb",
+      "title": "Joint taskforce continues crack down on misleading car finance claims adverts",
+      "summary": "The FCA, Advertising Standards Authority, Solicitors Regulation Authority and Information Commissioner's Office are tackling the poor handling of motor finance claims by some claims companies and law firms. As part of the joint taskforce's continued crackdown, in June the FCA had…",
+      "url": "https://www.fca.org.uk/news/press-releases/joint-taskforce-continues-crack-down-misleading-car-finance-claims-adverts",
+      "published": "2026-07-20",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "Joint taskforce (FCA, ASA, SRA, ICO) continues crackdown on misleading car finance claims advertising.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "e0e13d693206",
+      "title": "New member appointed to the Regulatory Decisions Committee",
+      "summary": "The FCA Board has appointed Dan Lavender as a new member of its Regulatory Decisions Committee (RDC). The RDC is responsible for taking certain regulatory decisions on behalf of the FCA relating to contested enforcement action. Committee members bring a broad range of professiona…",
+      "url": "https://www.fca.org.uk/news/press-releases/new-member-regulatory-decisions-committee",
+      "published": "2026-07-20",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "FCA appoints Dan Lavender to Regulatory Decisions Committee; personnel announcement.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "04b23d6f73cf",
+      "title": "Streamlined rulebook to save asset managers £128m a year",
+      "summary": "The FCA has proposed a package of reforms that would tailor requirements proportionately for asset managers, cut costs for firms and give better data to supervise the sector more effectively. A large share of the £128m-a-year savings are expected to come from simpler Fund Reporti…",
+      "url": "https://www.fca.org.uk/news/press-releases/streamlined-rulebook-save-asset-managers-128m-year",
+      "published": "2026-07-20",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "FCA proposes asset manager rulebook reforms projected to save industry £128m annually through simplified reporting.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "8fc17c52a132",
+      "title": "Logbook Lending Limited enters administration",
+      "summary": "On 1 July 2026, Logbook Lending Limited (trading as AFPremier.co.uk, pawnmy.co.uk, LBL Asset Finance, Log Book Loans 247) entered administration. Paul Appleton, Adam Shama and Robert Ferne of BTG Begbies Traynor (London) LLP were appointed as Joint Administrators. Logbook Lending…",
+      "url": "https://www.fca.org.uk/news/news-stories/logbook-lending-limited-enters-administration",
+      "published": "2026-07-20",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "Logbook Lending Limited enters administration on 1 July 2026; firm failure notice.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "1d49dedcd6ff",
+      "title": "EDPB calls for legal basis for cross-regulatory information sharing",
+      "summary": "Dublin, 17 July– At a high-level meeting in Dublin on 16 and 17 July 2026, the European Data Protection Board (EDPB) called for a clear legal basis for the sharing of information among regulators with different competences. The Board also discussed how to further expand efforts t…",
+      "url": "https://www.edpb.europa.eu/news/edpb-calls-for-legal-basis-for-cross-regulatory-information-sharing_en",
+      "published": "2026-07-17",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB calls for legal framework enabling cross-regulatory information sharing among EU authorities with different competences.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "16c264e826eb",
+      "title": "Ordre du jour de la séance plénière du 16 juillet 2026",
+      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 16 juillet 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
+      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-16-juillet-2026",
+      "published": "2026-07-16",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL plenary session agenda for 16 July 2026; no substantive compliance updates disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "48b07c050bd7",
+      "title": "EDPB komt met 3 nieuwe guidelines over scraping, anonimiseren en blockchain",
+      "summary": "De European Data Protection Board (EDPB) heeft 3 guidelines gepubliceerd. Het gaat om guidelines voor het scrapen (automatisch verzamelen) van data voor het trainen van generatieve artificiële intelligentie (AI), voor het anonimiseren van data en voor het gebruik van blockchainte…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/edpb-komt-met-3-nieuwe-guidelines-over-scraping-anonimiseren-en-blockchain",
+      "published": "2026-07-15",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB publishes three guidelines on data scraping for AI training, anonymization, and blockchain use under GDPR.",
+      "regulation_ids": [
+        "GDPR",
+        "AI_ACT"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "324e9fe67039",
+      "title": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint",
+      "summary": "Brussels, 14 July–The EDPB has published its&nbsp; binding decision of 28 May 2026&nbsp;under Art.65(1)(a) GDPR*. &nbsp; The decision concerns a &nbsp; dispute submitted by the Belgian Data Protection Authority (DPA) about a complaint against Vlaamse Radio-en Televisieomroeporgan…",
+      "url": "https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en",
+      "published": "2026-07-14",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB binding decision requires Belgian DPA to review NOYB cookie banner complaint on merits under GDPR Article 65.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "e1f5f53b6edf",
+      "title": "AP helpt ontwikkelaars en organisaties met nieuwe AVG-richtlijnen voor generatieve AI",
+      "summary": "De Autoriteit Persoonsgegevens (AP) publiceert vandaag 2 nieuwe documenten die organisaties helpen bij de verantwoorde ontwikkeling en inzet van generatieve artificiële intelligentie (AI). Het gaat om een AVG-handreiking voor ontwikkelaars van generatieve AI-modellen en een prakt…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-helpt-ontwikkelaars-en-organisaties-met-nieuwe-avg-richtlijnen-voor-generatieve-ai",
+      "published": "2026-07-13",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch DPA publishes GDPR guidance for developers on responsible generative AI development and deployment.",
+      "regulation_ids": [
+        "GDPR",
+        "AI_ACT"
+      ],
+      "priority": "medium"
+    },
     {
       "id": "6c926c6b1ea8",
       "title": "Revoir le webinaire : Nouveau téléservice santé et recherche, ce qui change pour vos demandes d’autorisation",
@@ -1289,213 +1497,6 @@
         "international"
       ],
       "ai_summary": "PwC financial services update covering regulatory trends and compliance requirements in banking sector.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "808e9d0b6d67",
-      "title": "Banking and capital markets",
-      "summary": "",
-      "url": "https://www.pwc.com/gx/en/industries/financial-services/banking-capital-markets.html",
-      "published": "2026-06-12",
-      "source": "PwC",
-      "source_url": "https://www.pwc.com",
-      "categories": [
-        "finance",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "international"
-      ],
-      "ai_summary": "PwC banking and capital markets regulatory guidance on industry compliance and risk management frameworks.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "bd5f7d896a4d",
-      "title": "Public safety, justice and security",
-      "summary": "",
-      "url": "https://www.pwc.com/gx/en/industries/government-public-sector/public-safety-justice-security.html",
-      "published": "2026-06-12",
-      "source": "PwC",
-      "source_url": "https://www.pwc.com",
-      "categories": [
-        "finance",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "international"
-      ],
-      "ai_summary": "PwC public safety and security sector regulatory update on government and law enforcement compliance.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "8af4a32e0e20",
-      "title": "Aerospace, defence and security",
-      "summary": "",
-      "url": "https://www.pwc.com/gx/en/industries/aerospace-defence.html",
-      "published": "2026-06-12",
-      "source": "PwC",
-      "source_url": "https://www.pwc.com",
-      "categories": [
-        "finance",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "international"
-      ],
-      "ai_summary": "PwC aerospace, defence and security sector compliance guidance on regulatory requirements.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "991c88342ed3",
-      "title": "Industrial manufacturing",
-      "summary": "",
-      "url": "https://www.pwc.com/gx/en/industries/industrial-manufacturing.html",
-      "published": "2026-06-12",
-      "source": "PwC",
-      "source_url": "https://www.pwc.com",
-      "categories": [
-        "finance",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "international"
-      ],
-      "ai_summary": "PwC industrial manufacturing sector regulatory compliance update and industry standards.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "1a95fa0adaa1",
-      "title": "Human Capital Trends",
-      "summary": "",
-      "url": "https://www2.deloitte.com/us/en/insights/topics/talent/human-capital-trends.html?icid=disidenav_human-capital-trends",
-      "published": "2026-06-12",
-      "source": "Deloitte",
-      "source_url": "https://www2.deloitte.com",
-      "categories": [
-        "finance",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "international"
-      ],
-      "ai_summary": "Deloitte human capital trends report covering employment and workforce regulatory considerations.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "701e1c00cbe0",
-      "title": "Sustainability, Equity & Climate",
-      "summary": "",
-      "url": "https://www2.deloitte.com/us/en/insights/research-centers/economics/sustainability-equity-climate.html?icid=disidenav_sustainability-equity-climate",
-      "published": "2026-06-12",
-      "source": "Deloitte",
-      "source_url": "https://www2.deloitte.com",
-      "categories": [
-        "finance",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "international"
-      ],
-      "ai_summary": "Deloitte sustainability and climate compliance guidance covering environmental and ESG regulatory requirements.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "cefb50c7eed7",
-      "title": "Retail, Wholesale & Distribution",
-      "summary": "",
-      "url": "https://www2.deloitte.com/us/en/insights/industry/retail-distribution.html?icid=disidenav_retail-distribution",
-      "published": "2026-06-12",
-      "source": "Deloitte",
-      "source_url": "https://www2.deloitte.com",
-      "categories": [
-        "finance",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "international"
-      ],
-      "ai_summary": "Deloitte retail, wholesale and distribution sector compliance and regulatory guidance.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "e1ef6692c1f5",
-      "title": "Hospitality & Airlines",
-      "summary": "",
-      "url": "https://www2.deloitte.com/us/en/insights/research-centers/consumer-industry-center/hospitality.html?icid=disidenav_hospitality",
-      "published": "2026-06-12",
-      "source": "Deloitte",
-      "source_url": "https://www2.deloitte.com",
-      "categories": [
-        "finance",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "international"
-      ],
-      "ai_summary": "Deloitte hospitality and airlines sector regulatory compliance and operational requirements.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "e88963250cb9",
-      "title": "Industrial Manufacturing",
-      "summary": "",
-      "url": "https://www2.deloitte.com/us/en/insights/industry/manufacturing-industrial-products.html?icid=disidenav_manufacturing-industrial-products",
-      "published": "2026-06-12",
-      "source": "Deloitte",
-      "source_url": "https://www2.deloitte.com",
-      "categories": [
-        "finance",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "international"
-      ],
-      "ai_summary": "Deloitte industrial manufacturing compliance guidance on regulatory and operational standards.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "afe1b3df7f3f",
-      "title": "Working Capital",
-      "summary": "",
-      "url": "https://www.ey.com/en_gl/services/strategy-transactions/liquidity-working-capital-advisory",
-      "published": "2026-06-12",
-      "source": "EY",
-      "source_url": "https://www.ey.com",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "international"
-      ],
-      "ai_summary": "EY working capital analysis covering financial compliance and regulatory considerations.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "14667b2a1186",
-      "title": "Sustainability Strategy",
-      "summary": "",
-      "url": "https://www.ey.com/en_gl/services/strategy-transactions/sustainability-esg-strategy",
-      "published": "2026-06-12",
-      "source": "EY",
-      "source_url": "https://www.ey.com",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "international"
-      ],
-      "ai_summary": "EY sustainability strategy guidance on regulatory compliance and environmental reporting requirements.",
       "regulation_ids": [],
       "priority": "low"
     }
