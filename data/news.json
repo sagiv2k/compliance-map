@@ -1,6 +1,232 @@
 {
-  "last_updated": "2026-07-27",
+  "last_updated": "2026-08-03",
   "items": [
+    {
+      "id": "6c2c36c2c39d",
+      "title": "PAIA Fees Structure",
+      "summary": "",
+      "url": "https://inforegulator.org.za/paia-fees-structure-2/",
+      "published": "2026-08-03",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "Administrative guidance on PAIA fee structures for information access requests in South Africa.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "df8b105aa4ae",
+      "title": "PAIA annual Report",
+      "summary": "",
+      "url": "https://inforegulator.org.za/paia-annual-report/",
+      "published": "2026-08-03",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "Annual reporting on PAIA (Promotion of Access to Information Act) implementation and statistics.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "22edc1593ea4",
+      "title": "Enforcement Notices",
+      "summary": "",
+      "url": "https://inforegulator.org.za/enforcement-notices/",
+      "published": "2026-08-03",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "Enforcement actions and notices issued under South African information access regulations.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "85922f911edf",
+      "title": "Rules of Procedures",
+      "summary": "",
+      "url": "https://inforegulator.org.za/rules-of-procedures/",
+      "published": "2026-08-03",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "Procedural rules for PAIA request handling and appeals processes.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "89e59c24e3e6",
+      "title": "40th International Conference of Data Protection and Privacy Commissioners ( ICDPPC) in Brussels from 22-25 October 2018",
+      "summary": "",
+      "url": "https://inforegulator.org.za/2020/07/10/40th-international-conference-of-data-protection-and-privacy-commissioners/",
+      "published": "2026-08-03",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "International data protection conference proceedings from October 2018.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "361ea7bf66de",
+      "title": "FCA finalises rules to cut firms' transaction reporting costs by over £100m a year",
+      "summary": "Transaction reporting requirements become smarter, simpler and more proportionate under new rules from the FCA. Transaction reports are critical to the FCA’s ability to detect and investigate market abuse, monitor market functioning and supervise firms effectively.The new rules a…",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-finalises-rules-cut-firms-transaction-reporting-costs-over-100m-year",
+      "published": "2026-08-03",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "FCA finalizes simplified transaction reporting rules reducing compliance costs by £100m+ annually. Requirements become more proportionate and streamlined for firms.",
+      "regulation_ids": [],
+      "priority": "high"
+    },
+    {
+      "id": "6a1dcefec675",
+      "title": "EBA E-mail alert 31 July, 2026",
+      "summary": "EBA E-mail alert 31 July, 2026 Date 31/07/2026 Anonymous (not verified) Fri, 07/31/2026 - 17:00 News &amp; Press The EBA-ECB-EIOPA “Data Point Model Alliance” consults on improvements to their data dictionary metamodel to better support statistical and supervisory reporting EBA, …",
+      "url": "https://www.eba.europa.eu/node/19908",
+      "published": "2026-07-31",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA consultation on data dictionary metamodel improvements for statistical and supervisory reporting.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "0d40cab8a425",
+      "title": "Revoir le webinaire - Mise à jour des MR-001 et MR-003, ce qui change en 2026",
+      "summary": "La CNIL vous propose de décrypter un sujet ou une actualité en lien avec la protection des données à travers&amp;nbsp;une série de webinaires. Retrouvez ce nouvel épisode consacré aux méthodologies de référence en matière de santé.",
+      "url": "https://www.cnil.fr/fr/webinaire-mise-a-jour-mr",
+      "published": "2026-07-31",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL webinar on updated health data protection methodologies (MR-001, MR-003) effective 2026.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "406e0b0dc593",
+      "title": "Vanaf 2 augustus wordt duidelijker of het AI is of echt",
+      "summary": "De chat met de klantenservice van de webwinkel, dat filmpje op sociale media, de foto op een nieuwssite: vanaf 2 augustus 2026 moet daar in veel gevallen bij staan dat artificiële intelligentie (AI) is gebruikt. Nieuwe Europese regels moeten u helpen om beter te herkennen wat ech…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/vanaf-2-augustus-wordt-duidelijker-of-het-ai-is-of-echt",
+      "published": "2026-07-31",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EU AI Act transparency requirements take effect August 2, 2026: disclosure labeling mandated for AI-generated content across multiple platforms and media types.",
+      "regulation_ids": [
+        "AI_ACT"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "7b4933d637bc",
+      "title": "Stakeholder event on guidelines on the interplay between data protection and competition law: express your interest",
+      "summary": "Brussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for…",
+      "url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en",
+      "published": "2026-07-30",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB stakeholder event on data protection and competition law interplay scheduled for October 2026. Upcoming guidelines being developed jointly with European Commission.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "6b76c6477e75",
+      "title": "AP geeft kinderopvang uitleg over signalen van misbruik",
+      "summary": "De Autoriteit Persoonsgegevens (AP) geeft kinderopvangorganisaties uitleg over het delen van informatie bij vermoedens van strafbare feiten, zoals kindermisbruik. De uitleg gaat over vragen aan sollicitanten, het benaderen van referenten en het gebruiken van een interne zwarte li…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-geeft-kinderopvang-uitleg-over-signalen-van-misbruik",
+      "published": "2026-07-29",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch data authority guidance for childcare organizations on lawful information sharing regarding suspected abuse. Clarifies data processing and reference verification practices.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "6fe1ac19cf79",
+      "title": "Ransomware-aanvallen: leer van de fouten van anderen",
+      "summary": "Een ransomware-aanval legt vaak niet alleen computersystemen plat. Ook de persoonsgegevens van honderden tot soms miljoenen kunnen in gevaar komen. Organisaties moeten dan onder grote tijdsdruk handelen en moeilijke keuzes maken. Daarom publiceert de Autoriteit Persoonsgegevens (…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ransomware-aanvallen-leer-van-de-fouten-van-anderen",
+      "published": "2026-07-28",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch DPA publishes ransomware incident guidance documenting breach notification lessons and data protection compliance during cyber attacks.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
     {
       "id": "c142deb417c8",
       "title": "Outcomes monitoring: why understanding the consumer experience matters and where firms should focus",
@@ -1283,230 +1509,6 @@
         "australia"
       ],
       "ai_summary": "APRA financial claims scheme details. Insufficient content for compliance analysis.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "933f891b75bc",
-      "title": "Prudential and reporting standards",
-      "summary": "",
-      "url": "https://www.apra.gov.au/banking/Prudential-and-reporting-standards",
-      "published": "2026-06-22",
-      "source": "APRA-AU",
-      "source_url": "https://www.apra.gov.au",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "australia"
-      ],
-      "ai_summary": "APRA prudential and reporting standards. Insufficient content for compliance analysis.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "b1cb603e7c6e",
-      "title": "Licensing guidelines",
-      "summary": "",
-      "url": "https://www.apra.gov.au/banking/licensing-guidelines-authorised-deposit-taking-institutions",
-      "published": "2026-06-22",
-      "source": "APRA-AU",
-      "source_url": "https://www.apra.gov.au",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "australia"
-      ],
-      "ai_summary": "APRA licensing guidelines. Insufficient content for compliance analysis.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "faaab60c2f0f",
-      "title": "EDPB gets a new look: discover the new website and brand identity",
-      "summary": "Brussels, 22 June - Since its establishment in 2018, the core mission of the EDPB has been to uphold and safeguard the right to data protection. Over the years, the EDPB has played a key role in ensuring the consistent application of the GDPR across Europe, by providing guidance …",
-      "url": "https://www.edpb.europa.eu/news/edpb-gets-a-new-look-discover-the-new-website-and-brand-identity_en",
-      "published": "2026-06-22",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EDPB website and brand relaunch. Organizational update with no new compliance requirements or enforcement actions.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "low"
-    },
-    {
-      "id": "5fc4a3c01291",
-      "title": "Sécurité des données : les règles essentielles pour protéger les données et votre activité",
-      "summary": "Le numérique offre des opportunités pour développer votre entreprise, mais il s’accompagne aussi de risques concernant la sécurité des données que vous détenez, qu’elles soient personnelles (fichiers clients, employés…) ou non (informations financières, industrielles…). Il est do…",
-      "url": "https://www.cnil.fr/fr/securite-des-donnees-les-regles-essentielles",
-      "published": "2026-06-19",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL guidance on essential data security rules protecting personal and business data. French data protection authority provides security best practices.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "1f870b01ab3f",
-      "title": "EBA E-mail alert 18 June, 2026",
-      "summary": "EBA E-mail alert 18 June, 2026 Date 18/06/2026 Anonymous (not verified) Thu, 06/18/2026 - 17:00 News &amp; Press ​The EBA publishes its annual assessment of banks’ internal approaches for capital requirements calculation EU/EEA banks remain resilient amid rising geopolitical, mar…",
-      "url": "https://www.eba.europa.eu/node/19758",
-      "published": "2026-06-18",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA assessment of banks' capital requirement calculation approaches amid geopolitical risks. Banking regulatory update on internal capital adequacy processes.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "6d301f04de5c",
-      "title": "Ordre du jour de la séance plénière du 18 juin 2026",
-      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 18 juin 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
-      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-18-juin-2026",
-      "published": "2026-06-18",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL plenary session agenda June 18, 2026. Administrative meeting notice with no substantive compliance content.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "low"
-    },
-    {
-      "id": "fa5317d6b812",
-      "title": "EBA E-mail alert 17 June, 2026",
-      "summary": "EBA E-mail alert 17 June, 2026 Date 17/06/2026 Anonymous (not verified) Wed, 06/17/2026 - 17:00 Procurement Crypto assets markets data II",
-      "url": "https://www.eba.europa.eu/node/19752",
-      "published": "2026-06-17",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA alert on crypto assets market data procurement. Banking regulatory notice on digital asset compliance documentation.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "a521f897027c",
-      "title": "EBA E-mail alert 16 June, 2026",
-      "summary": "EBA E-mail alert 16 June, 2026 Date 16/06/2026 Anonymous (not verified) Tue, 06/16/2026 - 17:00 News &amp; Press The EBA proposes simplifications to the EU bank capital framework in a holistic manner to strengthen its efficiency The EBA publishes its 2025 Annual Report outlining …",
-      "url": "https://www.eba.europa.eu/node/19749",
-      "published": "2026-06-16",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA proposes EU bank capital framework simplifications and publishes annual report. Banking regulatory guidance on capital efficiency improvements.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "eeac9df2ffd9",
-      "title": "Nomination de Jean-Michel FIETIER au poste de directeur administratif et financier de la CNIL",
-      "summary": "À compter du 15 juin 2026, Jean-Michel FIETIER est nommé directeur administratif et financier de la CNIL. Il succède à Jean-Marc SALMON, qui occupait ces fonctions depuis 2020.",
-      "url": "https://www.cnil.fr/fr/nomination-jean-michel-fietier",
-      "published": "2026-06-16",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL appoints new administrative and financial director. Personnel announcement with no compliance impact.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "bd4d878a4ccf",
-      "title": "[현재 안내서] 생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서(2025.8.)",
-      "summary": "",
-      "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS217&mCode=&nttId=11439",
-      "published": "2026-06-15",
-      "source": "PIPC-KR",
-      "source_url": "https://www.pipc.go.kr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "apac"
-      ],
-      "ai_summary": "South Korea's PIPC publishes guidance on personal data handling for generative AI development and use in August 2025, clarifying compliance requirements for AI applications.",
-      "regulation_ids": [
-        "SOUTH_KOREA_PIPA"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "7bb7409eedcc",
-      "title": "GPAGlobal Privacy Assembly",
-      "summary": "",
-      "url": "https://globalprivacyassembly.org/",
-      "published": "2026-06-15",
-      "source": "PIPC-KR",
-      "source_url": "https://globalprivacyassembly.org",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "apac"
-      ],
-      "ai_summary": "Global Privacy Assembly update from South Korea's PIPC regarding international privacy cooperation and coordination among data protection authorities.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "cab8ef7d0070",
-      "title": "GPENGlobal Privacy Enforcement Network",
-      "summary": "",
-      "url": "https://www.privacyenforcement.net/",
-      "published": "2026-06-15",
-      "source": "PIPC-KR",
-      "source_url": "https://www.privacyenforcement.net",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "apac"
-      ],
-      "ai_summary": "Global Privacy Enforcement Network update from South Korea's PIPC on international coordination of privacy enforcement activities.",
       "regulation_ids": [],
       "priority": "low"
     }
