@@ -1,6 +1,230 @@
 {
-  "last_updated": "2026-08-03",
+  "last_updated": "2026-08-10",
   "items": [
+    {
+      "id": "bd4d878a4ccf",
+      "title": "[현재 안내서] 생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서(2025.8.)",
+      "summary": "",
+      "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS217&mCode=&nttId=11439",
+      "published": "2026-08-10",
+      "source": "PIPC-KR",
+      "source_url": "https://www.pipc.go.kr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "apac"
+      ],
+      "ai_summary": "PIPC published guidance for generative AI development and personal data processing (August 2025). Organizations must comply with data protection requirements when building or deploying generative AI systems.",
+      "regulation_ids": [
+        "SOUTH_KOREA_PIPA"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "7bb7409eedcc",
+      "title": "GPAGlobal Privacy Assembly",
+      "summary": "",
+      "url": "https://globalprivacyassembly.org/",
+      "published": "2026-08-10",
+      "source": "PIPC-KR",
+      "source_url": "https://globalprivacyassembly.org",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "apac"
+      ],
+      "ai_summary": "PIPC participates in Global Privacy Assembly coordination. Update on international privacy authority cooperation and standard-setting initiatives.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "cab8ef7d0070",
+      "title": "GPENGlobal Privacy Enforcement Network",
+      "summary": "",
+      "url": "https://www.privacyenforcement.net/",
+      "published": "2026-08-10",
+      "source": "PIPC-KR",
+      "source_url": "https://www.privacyenforcement.net",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "apac"
+      ],
+      "ai_summary": "PIPC engages with Global Privacy Enforcement Network. Update on international enforcement coordination and collaborative privacy initiatives.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "021473a4062c",
+      "title": "APPAAsia Pacific Privacy Authorities",
+      "summary": "",
+      "url": "https://www.appaforum.org/",
+      "published": "2026-08-10",
+      "source": "PIPC-KR",
+      "source_url": "https://www.appaforum.org",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "apac"
+      ],
+      "ai_summary": "PIPC participates in Asia Pacific Privacy Authorities forum. Update on regional privacy authority cooperation and knowledge sharing.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "933f891b75bc",
+      "title": "Prudential and reporting standards",
+      "summary": "",
+      "url": "https://www.apra.gov.au/banking/Prudential-and-reporting-standards",
+      "published": "2026-08-10",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA updates prudential and reporting standards for Australian financial institutions. Compliance requirements for regulated entities' risk management and disclosure.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "b1cb603e7c6e",
+      "title": "Licensing guidelines",
+      "summary": "",
+      "url": "https://www.apra.gov.au/banking/licensing-guidelines-authorised-deposit-taking-institutions",
+      "published": "2026-08-10",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA publishes licensing guidelines for Australian financial institutions. Updated regulatory requirements for obtaining and maintaining financial services licenses.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "6f7ee187ae24",
+      "title": "EBA E-mail alert 6 August, 2026",
+      "summary": "EBA E-mail alert 6 August, 2026 Date 06/08/2026 Anonymous (not verified) Thu, 08/06/2026 - 17:45 News &amp; Press EBA ESG risk dashboard shows stable climate risk exposures and continued improvements in data quality",
+      "url": "https://www.eba.europa.eu/node/19929",
+      "published": "2026-08-06",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA email alert on ESG climate risk reporting and data quality improvements. Guidance on environmental risk disclosure and monitoring frameworks.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "09f2e3b1fad1",
+      "title": "EBA E-mail alert 5 August, 2026",
+      "summary": "EBA E-mail alert 5 August, 2026 Date 05/08/2026 Anonymous (not verified) Wed, 08/05/2026 - 17:00 News &amp; Press ​The EBA consults on reporting framework for validation and monitoring of ISDA Standard Initial Margin Model Consultations Consultation on Reporting for the purposes …",
+      "url": "https://www.eba.europa.eu/node/19924",
+      "published": "2026-08-05",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA consultation on ISDA Standard Initial Margin Model reporting framework and validation. Draft reporting requirements for financial institutions' margin compliance.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "a40971413f8b",
+      "title": "Puis-je demander à supprimer des données me concernant figurant dans un article de presse diffusé en ligne ?",
+      "summary": "Toute personne concernée a le droit de demander à un organisme de presse l'effacement de données personnelles la concernant figurant dans un article de presse diffusé en ligne. Il ne s’agit toutefois pas d’un droit absolu&amp;nbsp;: une balance entre les intérêts en présence doit…",
+      "url": "https://www.cnil.fr/fr/supprimer-mes-donnees-presse",
+      "published": "2026-08-05",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL clarifies right to deletion for personal data in online press articles. Data subjects may request erasure from news articles, subject to balancing test with press freedom.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "bc4f89616293",
+      "title": "Collège de la CNIL : 5 nouveaux membres nommés le 2 août 2026",
+      "summary": "À partir du 2 août 2026, cinq nouveaux membres intègrent la CNIL. Ces nominations interviennent dans le cadre d’un renouvellement partiel du Collège.",
+      "url": "https://www.cnil.fr/fr/college-de-la-cnil-5-nouveaux-membres-nommes-le-2-aout-2026",
+      "published": "2026-08-05",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL announces five new board members as of August 2, 2026. Personnel update to French data protection authority.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "087bc50c6f21",
+      "title": "AP: privacyrisico’s door gebruik menstruatie-apps",
+      "summary": "Als je je menstruatiecyclus bijhoudt in een app, deel je zeer gevoelige informatie. Terwijl vaak onduidelijk is wat zo’n app daarmee doet of met wie deze gegevens worden gedeeld. Het gaat om zeer intieme gegevens als wanneer je seks hebt gehad, of je zwanger bent of dat je een mi…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-privacyrisicos-door-gebruik-menstruatie-apps",
+      "published": "2026-08-04",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP warns of privacy risks with menstruation-tracking apps and data sharing. Consumer protection alert on sensitive health data processing and unclear data handling practices.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "36846e8f3878",
+      "title": "EBA E-mail alert 3 August, 2026",
+      "summary": "EBA E-mail alert 3 August, 2026 Date 03/08/2026 Anonymous (not verified) Mon, 08/03/2026 - 17:00 News &amp; Press EBA, EIOPA and ESMA propose amendments to bilateral margin requirements ​The EBA publishes a no-action letter and technical considerations to support the implementati…",
+      "url": "https://www.eba.europa.eu/node/19912",
+      "published": "2026-08-03",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA proposes amendments to bilateral margin requirements and publishes implementation guidance. Updated regulatory requirements for margin calculation and reporting.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
     {
       "id": "6c2c36c2c39d",
       "title": "PAIA Fees Structure",
@@ -1280,235 +1504,6 @@
         "eu"
       ],
       "ai_summary": "CNIL webpage listing public information and resources; administrative compilation without regulatory compliance impact.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "53db60bed555",
-      "title": "Remise du prix « Protection de la vie privée » 2026 par la CNIL et l’Inria",
-      "summary": "Lors de la Journée de recherche sur la vie privée, le 24 juin 2026,&amp;nbsp;la CNIL et l’Inria ont remis le prix 2026 de la protection de la vie privée à une équipe de chercheurs internationaux pour leur article portant sur l’articulation entre la réglementation et la recherche …",
-      "url": "https://www.cnil.fr/fr/prix-inria-cnil-2026",
-      "published": "2026-06-24",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL and Inria award 2026 privacy protection prize for research on regulation-research intersection; recognition of academic contributions.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "low"
-    },
-    {
-      "id": "277050c73bcf",
-      "title": "Victimes de violations de données : restez vigilants face aux offres d’accompagnement",
-      "summary": "Des victimes de violations de données personnelles reçoivent des courriels proposant une aide pour faire supprimer leurs informations en ligne. La CNIL invite à la prudence face à ces démarches dont elle n’est pas à l’origine.",
-      "url": "https://www.cnil.fr/fr/vigilance-accompagnement-violation-de-donnees",
-      "published": "2026-06-24",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL warns data breach victims about fraudulent assistance offers unrelated to CNIL, advising vigilance against scams targeting personal data.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "bf0f503f135b",
-      "title": "AP vraagt reacties op lijst DPIA-uitzonderingen",
-      "summary": "De Autoriteit Persoonsgegevens (AP) heeft een lijst opgesteld van soorten verwerkingen waarvoor geen ‘data protection impact assessment' (DPIA) vereist is. Om deze lijst goed aan te laten sluiten bij de praktijk, vraagt de AP via een consultatie reacties aan het mkb, zelfstandige…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-vraagt-reacties-op-lijst-dpia-uitzonderingen",
-      "published": "2026-06-24",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "AP Netherlands seeks stakeholder consultation on DPIA exemptions list to align guidance with business practice under GDPR.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "6317fe4f4b35",
-      "title": "Élections professionnelles dans la fonction publique et vote électronique : comment transmettre les rapports d’expertise à la CNIL ?",
-      "summary": "Lorsque le recours au vote électronique est prévu pour les élections professionnelles dans la fonction publique, le système de vote doit faire l’objet d’une expertise indépendante. Dans ce cadre, les rapports d’expertise doivent désormais être transmis à la CNIL.",
-      "url": "https://www.cnil.fr/fr/elections-professionnelles-fonction-publique-vote-electronique",
-      "published": "2026-06-23",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL requires independent expert reports on electronic voting systems for public sector professional elections be submitted for compliance verification.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "689b58b07fea",
-      "title": "EBA E-mail alert 22 June, 2026",
-      "summary": "EBA E-mail alert 22 June, 2026 Date 22/06/2026 Anonymous (not verified) Mon, 06/22/2026 - 17:00 News &amp; Press EBA updates Pillar 3 disclosure requirements on ESG risks, equity and shadow banking exposures, as part of simplification effort Latest EBA MREL dashboard shows that M…",
-      "url": "https://www.eba.europa.eu/node/19765",
-      "published": "2026-06-22",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA updates Pillar 3 disclosure requirements on ESG risks and shadow banking exposures as part of simplification effort for financial institution reporting.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "eaabb3967421",
-      "title": "Submit a complaint",
-      "summary": "",
-      "url": "https://tdra.gov.ae/en/Services/submit-a-complaint",
-      "published": "2026-06-22",
-      "source": "TDRA-UAE",
-      "source_url": "https://tdra.gov.ae",
-      "categories": [
-        "cybersecurity",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "mena"
-      ],
-      "ai_summary": "TDRA-UAE complaint submission page. Insufficient content for compliance analysis.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "ae0ba240aa19",
-      "title": "Activate a Government Service on the Federal Network",
-      "summary": "",
-      "url": "https://tdra.gov.ae/en/Services/activate-a-government-service-on-the-federal-network",
-      "published": "2026-06-22",
-      "source": "TDRA-UAE",
-      "source_url": "https://tdra.gov.ae",
-      "categories": [
-        "cybersecurity",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "mena"
-      ],
-      "ai_summary": "TDRA-UAE government service activation page. Insufficient content for compliance analysis.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "e3770b9b136b",
-      "title": "Contact TDRA Leadership",
-      "summary": "",
-      "url": "https://tdra.gov.ae/en/Participation/contact-tdra-leadership",
-      "published": "2026-06-22",
-      "source": "TDRA-UAE",
-      "source_url": "https://tdra.gov.ae",
-      "categories": [
-        "cybersecurity",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "mena"
-      ],
-      "ai_summary": "TDRA-UAE leadership contact page. Insufficient content for compliance analysis.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "2d31d51ed0ea",
-      "title": "Chairman of the Board Message",
-      "summary": "",
-      "url": "https://tdra.gov.ae/en/About/chairman-of-the-board-message",
-      "published": "2026-06-22",
-      "source": "TDRA-UAE",
-      "source_url": "https://tdra.gov.ae",
-      "categories": [
-        "cybersecurity",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "mena"
-      ],
-      "ai_summary": "TDRA-UAE chairman message. Insufficient content for compliance analysis.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "271c905489f9",
-      "title": "Regulations and Ruling",
-      "summary": "",
-      "url": "https://tdra.gov.ae/en/About/regulations-and-ruling",
-      "published": "2026-06-22",
-      "source": "TDRA-UAE",
-      "source_url": "https://tdra.gov.ae",
-      "categories": [
-        "cybersecurity",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "mena"
-      ],
-      "ai_summary": "TDRA-UAE regulations and rulings page. Insufficient content for compliance analysis.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "0ced4be05efd",
-      "title": "Financial Claims Scheme",
-      "summary": "",
-      "url": "https://www.apra.gov.au/financial-claims-scheme",
-      "published": "2026-06-22",
-      "source": "APRA-AU",
-      "source_url": "https://www.apra.gov.au",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "australia"
-      ],
-      "ai_summary": "APRA financial claims scheme overview. Insufficient content for compliance analysis.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "43ff861bded2",
-      "title": "Overview of the Financial Claims Scheme",
-      "summary": "",
-      "url": "https://www.apra.gov.au/financial-claims-scheme/overview-financial-claims-scheme",
-      "published": "2026-06-22",
-      "source": "APRA-AU",
-      "source_url": "https://www.apra.gov.au",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "australia"
-      ],
-      "ai_summary": "APRA financial claims scheme details. Insufficient content for compliance analysis.",
       "regulation_ids": [],
       "priority": "low"
     }
