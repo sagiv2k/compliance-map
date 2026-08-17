@@ -1,6 +1,211 @@
 {
-  "last_updated": "2026-08-10",
+  "last_updated": "2026-08-17",
   "items": [
+    {
+      "id": "eaabb3967421",
+      "title": "Submit a complaint",
+      "summary": "",
+      "url": "https://tdra.gov.ae/en/Services/submit-a-complaint",
+      "published": "2026-08-17",
+      "source": "TDRA-UAE",
+      "source_url": "https://tdra.gov.ae",
+      "categories": [
+        "cybersecurity",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "mena"
+      ],
+      "ai_summary": "TDRA complaint submission page with no substantive regulatory content disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "ae0ba240aa19",
+      "title": "Activate a Government Service on the Federal Network",
+      "summary": "",
+      "url": "https://tdra.gov.ae/en/Services/activate-a-government-service-on-the-federal-network",
+      "published": "2026-08-17",
+      "source": "TDRA-UAE",
+      "source_url": "https://tdra.gov.ae",
+      "categories": [
+        "cybersecurity",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "mena"
+      ],
+      "ai_summary": "TDRA government service activation page with no substantive regulatory content disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "e3770b9b136b",
+      "title": "Contact TDRA Leadership",
+      "summary": "",
+      "url": "https://tdra.gov.ae/en/Participation/contact-tdra-leadership",
+      "published": "2026-08-17",
+      "source": "TDRA-UAE",
+      "source_url": "https://tdra.gov.ae",
+      "categories": [
+        "cybersecurity",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "mena"
+      ],
+      "ai_summary": "TDRA leadership contact information with no substantive regulatory content disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "2d31d51ed0ea",
+      "title": "Chairman of the Board Message",
+      "summary": "",
+      "url": "https://tdra.gov.ae/en/About/chairman-of-the-board-message",
+      "published": "2026-08-17",
+      "source": "TDRA-UAE",
+      "source_url": "https://tdra.gov.ae",
+      "categories": [
+        "cybersecurity",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "mena"
+      ],
+      "ai_summary": "TDRA board chairman message with no substantive regulatory content disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "271c905489f9",
+      "title": "Regulations and Ruling",
+      "summary": "",
+      "url": "https://tdra.gov.ae/en/About/regulations-and-ruling",
+      "published": "2026-08-17",
+      "source": "TDRA-UAE",
+      "source_url": "https://tdra.gov.ae",
+      "categories": [
+        "cybersecurity",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "mena"
+      ],
+      "ai_summary": "TDRA regulations and rulings index page with no substantive regulatory content disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "6a03bbf0645f",
+      "title": "APRA Connect Taxonomy Artefacts",
+      "summary": "",
+      "url": "https://www.apra.gov.au/apra-connect/apra-connect-taxonomy-artefacts",
+      "published": "2026-08-17",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA taxonomy artefacts for financial reporting with no substantive regulatory content disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "0ced4be05efd",
+      "title": "Financial Claims Scheme",
+      "summary": "",
+      "url": "https://www.apra.gov.au/financial-claims-scheme",
+      "published": "2026-08-17",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA Financial Claims Scheme overview with no substantive regulatory content disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "43ff861bded2",
+      "title": "Overview of the Financial Claims Scheme",
+      "summary": "",
+      "url": "https://www.apra.gov.au/financial-claims-scheme/overview-financial-claims-scheme",
+      "published": "2026-08-17",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA Financial Claims Scheme overview with no substantive regulatory content disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "773084bf36ee",
+      "title": "FCA expands global presence with new attachés in India and UAE",
+      "summary": "The FCA has announced Sabina Saini and Darine Obeid as the financial services attachés for India and the UAE. Sabina will be based at the British Deputy High Commission in Mumbai and Darine will be based at the British Embassy in Abu Dhabi.These appointments expand the FCA's glob…",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-expands-global-presence-new-attaches-india-uae",
+      "published": "2026-08-17",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "FCA expands global regulatory presence appointing financial services attachés in India and UAE.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "9a7e0dab681d",
+      "title": "Kom langs bij de AP: Rondje Rechtsstaat op 12 september 2026",
+      "summary": "Bent u nieuwsgierig naar wat er zich afspeelt achter de deuren van de Autoriteit Persoonsgegevens (AP)? Op zaterdag 12 september 2026 bent u van harte welkom in het Bentinckhuis aan het Lange Voorhout 7 in Den Haag.",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/kom-langs-bij-de-ap-rondje-rechtsstaat-op-12-september-2026",
+      "published": "2026-08-14",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP open house event announcement for 2026. No substantive regulatory content disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "c7155c38b38b",
+      "title": "Délégué à la protection des données : identifier et gérer les conflits d’intérêts liés à la fonction de DPO",
+      "summary": "Le RGPD autorise les organismes à confier d’autres missions à leur délégué à la protection des données (DPO). Ces missions ne doivent néanmoins pas faire obstacle à ses missions de DPO ou le placer en situation de conflit d’intérêts. Comment reconnaître un conflit d’intérêt&amp;n…",
+      "url": "https://www.cnil.fr/fr/dpo-identifier-gerer-conflits-interets",
+      "published": "2026-08-10",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL guidance on DPO conflict of interest management. GDPR requires DPOs maintain independence; additional duties must not compromise primary role.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
     {
       "id": "bd4d878a4ccf",
       "title": "[현재 안내서] 생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서(2025.8.)",
@@ -1296,216 +1501,6 @@
       "ai_summary": "EBA consultation launched on taxonomy disclosure key performance indicators; open consultation period for stakeholder input.",
       "regulation_ids": [],
       "priority": "medium"
-    },
-    {
-      "id": "dfd4fa8d58b5",
-      "title": "EBA E-mail alert 30 June, 2026",
-      "summary": "EBA E-mail alert 30 June, 2026 Date 30/06/2026 Anonymous (not verified) Tue, 06/30/2026 - 17:00 News &amp; Press EU deposit guarantee scheme funds to protect depositors against bank failures continue to grow and have reached a volume of €85bn, the EBA observes",
-      "url": "https://www.eba.europa.eu/node/19799",
-      "published": "2026-06-30",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EU deposit guarantee scheme funds reach €85 billion; update on depositor protection without new binding requirements.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "c569ee7950d8",
-      "title": "Véhicules connectés : la CNIL publie sa recommandation sur l’utilisation des données de localisation",
-      "summary": "À l’issue d’une consultation publique, la CNIL publie ses recommandations sur l’utilisation par les professionnels des données de localisation des véhicules connectés (voitures, cycles, scooters, etc.). Objectif&amp;nbsp;: renforcer la sécurité juridique et donner plus de transpa…",
-      "url": "https://www.cnil.fr/fr/recommandation-vehicules-connectes-localisation",
-      "published": "2026-06-30",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL publishes recommendations on connected vehicle location data use after public consultation to enhance legal clarity.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "044f06ca16a2",
-      "title": "Véhicules connectés : dans quelles conditions vos données de localisation peuvent être utilisées ?",
-      "summary": "Les véhicules connectés collectent des données de localisation pour proposer certains services liés au divertissement ou à la sécurité. Ces informations peuvent révéler des éléments très personnels sur votre vie privée. La CNIL rappelle les garanties à mettre en œuvre et les droi…",
-      "url": "https://www.cnil.fr/fr/vehicules-connectes-utilisation-de-vos-donnees",
-      "published": "2026-06-30",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL guidance on location data protections for connected vehicles clarifying user rights and professional obligations.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "aad7b9e11414",
-      "title": "EBA E-mail alert 29 June, 2026",
-      "summary": "EBA E-mail alert 29 June, 2026 Date 29/06/2026 Anonymous (not verified) Mon, 06/29/2026 - 17:00 News &amp; Press The EBA publishes a roadmap on the delivery of its mandates under the revised Deposit Guarantee Schemes Directive The EBA publishes its 2025 Report on supervisory conv…",
-      "url": "https://www.eba.europa.eu/node/19791",
-      "published": "2026-06-29",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA publishes roadmap on Deposit Guarantee Schemes Directive mandates and supervisory convergence report; guidance publication.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "d69e056ad942",
-      "title": "EBA E-mail alert 26 June, 2026",
-      "summary": "EBA E-mail alert 26 June, 2026 Date 26/06/2026 Anonymous (not verified) Fri, 06/26/2026 - 17:00 News &amp; Press ​The EBA reaches another important milestone in enhancing supervisory efficiency with its revised SREP Guidelines ​The EBA updates validation rules for supervisory rep…",
-      "url": "https://www.eba.europa.eu/node/19787",
-      "published": "2026-06-26",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA updates SREP Guidelines and validation rules for supervisory reporting, enhancing supervisory efficiency requirements for regulated financial institutions.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "bc5aaaa1bb83",
-      "title": "Technologies émergentes et protection des mineurs : les autorités de protection des données du G7 s’accordent sur des principes clés",
-      "summary": "Les autorités de protection des données des pays du G7 se sont réunies à Paris les 25 et 26 juin à l’invitation de la CNIL dans le cadre de la présidence française du G7. Elles ont adopté une déclaration sur les mécanismes de vérification de l’âge respectueux de la vie privée, ai…",
-      "url": "https://www.cnil.fr/fr/g7-technologies-protection-mineurs",
-      "published": "2026-06-26",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "G7 data protection authorities adopt declaration on privacy-respecting age verification mechanisms for emerging technologies, establishing key principles.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "9b99eddf5b9e",
-      "title": "One-Stop-Shop case digest on right to object and right to erasure updated",
-      "summary": "Brussels, 25 June - The EDPB has published an update of the One-Stop-Shop (OSS) case digest on right to object and right to erasure . This project has been developed in the framework of the of the Support Pool of Experts programme, which aims to support cooperation among Data Pro…",
-      "url": "https://www.edpb.europa.eu/news/one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated_en",
-      "published": "2026-06-25",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EDPB updates OSS case digest on right to object and erasure under GDPR, providing guidance to support consistent interpretation across EU member states.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "e6f6f9f0caab",
-      "title": "Koninklijke onderscheiding voor Aleid Wolfsen",
-      "summary": "Op 25 juni 2026 is Aleid Wolfsen benoemd tot Officier in de Orde van Oranje-Nassau. Hij ontving deze bijzondere onderscheiding uit handen van Claudia van Bruggen, staatssecretaris van Justitie en Veiligheid. Wolfsen krijgt de onderscheiding omdat hij zich zijn hele carrière heeft…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/koninklijke-onderscheiding-voor-aleid-wolfsen",
-      "published": "2026-06-25",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch official honored for career service; non-regulatory compliance announcement unrelated to data protection.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "8ce0262984d7",
-      "title": "Supporting GDPR consistency: EDPB launches dedicated form",
-      "summary": "Brussels, 24 June – The EDPB has launched a dedicated contact form for stakeholders to report possible inconsistencies in how the GDPR is interpreted across Europe. This initiative reflects the commitments set out in the EDPB Helsinki Statement on enhanced clarity, support and en…",
-      "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
-      "published": "2026-06-24",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EDPB launches contact form for reporting GDPR interpretation inconsistencies across Europe, supporting enhanced clarity and consistency in regulatory enforcement.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "12cd74c2bf4b",
-      "title": "Quatre auteurs reçoivent le deuxième prix CNIL/EHESS pour leur recherche sur la réception du règlement IA par les citoyens européens",
-      "summary": "Lors de la Journée de recherche sur la vie privée, le 24 juin 2026, Gabriel Lima, Gustavo Gil Gasiola, Frederike Zufall et Yixin Zou ont reçu le 2ème prix CNIL/EHESS pour leur article sur la régulation de l’intelligence artificielle et son alignement avec les attentes citoyennes.",
-      "url": "https://www.cnil.fr/fr/prix-ehess-cnil-2026",
-      "published": "2026-06-24",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL awards prize for research on EU AI Regulation alignment with citizen expectations, reflecting regulatory implementation considerations.",
-      "regulation_ids": [
-        "AI_ACT"
-      ],
-      "priority": "low"
-    },
-    {
-      "id": "9dff9f258139",
-      "title": "Informations publiques",
-      "summary": "Cette page recense les informations publiques de la CNIL (documents, vidéos, open data).",
-      "url": "https://www.cnil.fr/fr/informations-publiques",
-      "published": "2026-06-24",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL webpage listing public information and resources; administrative compilation without regulatory compliance impact.",
-      "regulation_ids": [],
-      "priority": "low"
     }
   ]
 }
