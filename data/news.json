@@ -1,6 +1,178 @@
 {
-  "last_updated": "2026-08-17",
+  "last_updated": "2026-08-24",
   "items": [
+    {
+      "id": "2edcffd5edad",
+      "title": "Consumers warned to beware of risky mini-bonds and loan notes",
+      "summary": "The FCA is warning consumers about the risks of investing in loan notes and mini-bonds issued by unregulated companies, after continuing to see people lose money in these high-risk investments. The recent failure of Woodville Consultants Ltd, a litigation funder that raised capit…",
+      "url": "https://www.fca.org.uk/news/press-releases/consumers-warned-beware-risky-mini-bonds-and-loan-notes",
+      "published": "2026-08-24",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "FCA consumer warning on high-risk unregulated mini-bonds and loan notes following investor losses.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "c52d9d1acc23",
+      "title": "Unregulated loan notes and mini-bonds: don't risk your savings on promises of high returns",
+      "summary": "These high-risk investments should not usually be advertised widely to the public. We banned the marketing of speculative mini-bonds and loan notes to ordinary retail investors from 1 January 2021.We did this because these are complicated investments, not suitable for most people…",
+      "url": "https://www.fca.org.uk/news/statements/unregulated-loan-notes-mini-bonds-dont-risk-savings-promises-high-returns",
+      "published": "2026-08-24",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "FCA guidance on risks of unregulated loan notes and mini-bonds; marketing ban to retail investors effective January 2021.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "299078896168",
+      "title": "FCA fines and bans former SVS Securities CEO",
+      "summary": "The FCA has banned Demetrios Hadjigeorgiou from working in senior management positions in financial services and fined him £56,400. Mr Hadjigeorgiou was the former director and chief executive officer (CEO) of SVS Securities Plc (SVS), a discretionary fund manager.The FCA found t…",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-fines-bans-former-svs-securities-ceo",
+      "published": "2026-08-24",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "FCA banned former SVS Securities CEO from senior management and fined £56,400 for management failings.",
+      "regulation_ids": [],
+      "priority": "high"
+    },
+    {
+      "id": "bed395a6215b",
+      "title": "FCA bans senior manager for lack of honesty and integrity",
+      "summary": "The FCA has banned Howard Roland Duckett from working in financial services due to a serious lack of honesty and integrity. Mr Duckett was a senior manager at Beauforce Corporation Limited, a debt management firm. The High Court has disqualified Mr Duckett from acting as a compan…",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-bans-senior-manager-lack-honesty-integrity",
+      "published": "2026-08-24",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "FCA banned senior debt management firm manager for lack of honesty and integrity in financial services.",
+      "regulation_ids": [],
+      "priority": "high"
+    },
+    {
+      "id": "607e2491199a",
+      "title": "Uber krijgt boete van bijna 825 miljoen euro voor geautomatiseerd blokkeren van chauffeurs",
+      "summary": "De Autoriteit Persoonsgegevens (AP) legt Uber een boete op van 824.990.000 euro. De reden hiervoor is dat de AP heeft geoordeeld dat Uber volledig geautomatiseerd besluiten nam over chauffeurs. Bij vermoedens van fraude of bij te lage klantbeoordelingen werden accounts van chauff…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/uber-krijgt-boete-van-bijna-825-miljoen-euro-voor-geautomatiseerd-blokkeren-van-chauffeurs",
+      "published": "2026-08-21",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP fined Uber €824.99M for automated decision-making on driver accounts without human review, violating GDPR automated decision rights.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "450c6a798cf0",
+      "title": "AP adviseert Twitch-gebruikers: zet instellingen uit voor delen van data met Amazon AI",
+      "summary": "Streamingplatform Twitch heeft bekendgemaakt dat Amazon persoonsgegevens van Twitch-gebruikers gebruikt om AI-modellen mee te trainen. Gebruikers die niet willen dat Amazon hun streams, afbeeldingen en andere persoonsgegevens gebruikt, kunnen dit nu uitzetten. De Autoriteit Perso…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-adviseert-twitch-gebruikers-zet-instellingen-uit-voor-delen-van-data-met-amazon-ai",
+      "published": "2026-08-20",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP advises Twitch users to disable data sharing with Amazon AI models; users can opt-out of personal data training use.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "813ed80f8f96",
+      "title": "Le refus de crédit en questions",
+      "summary": "Vous avez demandé un crédit et on vous l’a refusé&amp;nbsp;? Vous êtes inscrit dans un fichier géré par la Banque de France ou un fichier tenu par votre banque&amp;nbsp;? Quelles sont les différentes démarches à effectuer&amp;nbsp;?",
+      "url": "https://www.cnil.fr/fr/le-refus-de-credit-en-questions",
+      "published": "2026-08-19",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL guidance on credit refusal procedures and consumer rights regarding bank records and credit files.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "0c901e459eae",
+      "title": "Piratage du système d’information des impôts : les vérifications sont en cours",
+      "summary": "La CNIL a été notifiée de violations de données affectant le système d’information de la Direction générale des Finances publiques (DGFiP). Elle est donc d’ores et déjà saisie de ces violations et, dans ce contexte, il n’est plus nécessaire de lui adresser des plaintes individuel…",
+      "url": "https://www.cnil.fr/fr/piratage-du-systeme-dinformation-des-impots-les-verifications-sont-en-cours",
+      "published": "2026-08-18",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL notified of data breach affecting French tax authority's information system; individual complaints no longer required.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "9f0b592db5b4",
+      "title": "De FRIA voor AI-systemen komt eraan: bereid u voor",
+      "summary": "Bent u een overheidsorganisatie of een private organisatie die publieke diensten levert? En bent u van plan een AI-systeem met een hoog risico te gaan gebruiken? Of gaat u als publieke of private organisatie een beoordelingssysteem voor financiële risico’s gebruiken? Dan moet u v…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/de-fria-voor-ai-systemen-komt-eraan-bereid-u-voor",
+      "published": "2026-08-17",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP alerts public and private organizations about upcoming AI high-risk system requirements under EU AI Act FRIA obligations.",
+      "regulation_ids": [
+        "AI_ACT"
+      ],
+      "priority": "medium"
+    },
     {
       "id": "eaabb3967421",
       "title": "Submit a complaint",
@@ -1328,177 +1500,6 @@
         "eu"
       ],
       "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "a9fa11d35015",
-      "title": "EBA E-mail alert 6 July, 2026",
-      "summary": "EBA E-mail alert 6 July, 2026 Date 06/07/2026 Anonymous (not verified) Mon, 07/06/2026 - 17:00 News &amp; Press ​The EBA publishes 2025 loss data for immovable property markets under Article 430a of the Capital Requirements Regulation",
-      "url": "https://www.eba.europa.eu/node/19820",
-      "published": "2026-07-06",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "dc503fa08cf7",
-      "title": "La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée",
-      "summary": "Vidéosurveillance excessive, cookies, non-respect des droits des personnes ou encore défaut de coopération avec la CNIL&amp;nbsp;: depuis janvier 2026, 23 nouvelles sanctions ont été prononcées dans le cadre de la procédure simplifiée, dont 19 ont pour origine des plaintes.",
-      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
-      "published": "2026-07-06",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL issued 23 new enforcement sanctions since January 2026 for excessive video surveillance, cookies, rights violations, and non-cooperation.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "78dc46ad6326",
-      "title": "EBA E-mail alert 3 July, 2026",
-      "summary": "EBA E-mail alert 3 July, 2026 Date 03/07/2026 Anonymous (not verified) Fri, 07/03/2026 - 17:00 Final Q&amp;As 2025_7587 Reporting additional leverage ratio exposure amount in accordance with Article 3 CRR in C43.00 2025_7664 Validation rules taxonomy V4.0 C_47.00, C_43.00.a, C_43…",
-      "url": "https://www.eba.europa.eu/node/19812",
-      "published": "2026-07-03",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA Q&A finalization on leverage ratio reporting and taxonomy validation rules; technical clarification on existing banking requirements.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "5e16f8983f82",
-      "title": "Le métier de DPO à l’heure de l’intelligence artificielle : publication des résultats de l’enquête",
-      "summary": "L’intégration de l’IA dans les pratiques professionnelles et l’entrée en application du règlement IA créent de nouveaux défis pour les DPO et leurs organisations. Afin de mieux comprendre leurs attentes et préoccupations, le ministère du Travail et des Solidarités, l’AFCDP et la …",
-      "url": "https://www.cnil.fr/fr/enquete-dpo-ia",
-      "published": "2026-07-03",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL survey on DPO role amid AI integration and new AI regulation creates operational challenges for data protection officers.",
-      "regulation_ids": [
-        "GDPR",
-        "AI_ACT"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "2a7c14cfad9d",
-      "title": "EBA E-mail alert 2 July, 2026",
-      "summary": "EBA E-mail alert 2 July, 2026 Date 02/07/2026 Anonymous (not verified) Thu, 07/02/2026 - 17:00 News &amp; Press Targeted EBA peer review finds high compliance on Pillar 3 disclosures but calls for greater consistency",
-      "url": "https://www.eba.europa.eu/node/19810",
-      "published": "2026-07-02",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA peer review finds high Pillar 3 disclosure compliance but identifies consistency gaps; guidance update on banking transparency requirements.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "3089cca54368",
-      "title": "Ordre du jour de la séance plénière du 2 juillet 2026",
-      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 2 juillet 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
-      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-2-juillet-2026",
-      "published": "2026-07-02",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL plenary session agenda publication; administrative notice without specific compliance obligations.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "937bb80e4ba2",
-      "title": "Jeux d’argent et de hasard : appliquer le RGPD aux traitements de données des joueurs",
-      "summary": "Les opérateurs de jeux d’argent et de hasard doivent concilier les exigences du RGPD avec leurs obligations sectorielles. Pour accompagner les acteurs dans cette démarche, l’ANJ a élaboré, en concertation avec la CNIL, un guide apportant des repères pratiques.",
-      "url": "https://www.cnil.fr/fr/jeux-argent-hasard-application-rgpd",
-      "published": "2026-07-02",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL and ANJ publish guidance on applying GDPR to gambling operators' player data processing with sector-specific considerations.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "3c08a4587c7d",
-      "title": "EDPB and AMLA to develop Joint Guidelines on partnerships for information sharing",
-      "summary": "Brussels/Frankfurt, 1 July – The EDPB and the Anti-Money Laundering Authority (AMLA) are working together to bring greater clarity to a question of growing importance for industry and authorities alike: how to share information to fight financial crime while protecting personal d…",
-      "url": "https://www.edpb.europa.eu/news/edpb-and-amla-to-develop-joint-guidelines-on-partnerships-for-information-sharing_en",
-      "published": "2026-07-01",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EDPB and AMLA developing joint guidelines on information sharing between data protection and AML authorities to balance financial crime prevention with personal data protection requirements.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "71f83cfbf311",
-      "title": "EBA E-mail alert 1 July, 2026",
-      "summary": "EBA E-mail alert 1 July, 2026 Date 01/07/2026 Anonymous (not verified) Wed, 07/01/2026 - 17:00 News &amp; Press The EBA launches consultation on key performance indicators of Taxonomy disclosures",
-      "url": "https://www.eba.europa.eu/node/19806",
-      "published": "2026-07-01",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA consultation launched on taxonomy disclosure key performance indicators; open consultation period for stakeholder input.",
       "regulation_ids": [],
       "priority": "medium"
     }
