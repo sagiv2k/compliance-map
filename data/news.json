@@ -1,6 +1,186 @@
 {
-  "last_updated": "2026-08-24",
+  "last_updated": "2026-08-31",
   "items": [
+    {
+      "id": "7026ce511594",
+      "title": "EBA E-mail alert 27 August, 2026",
+      "summary": "EBA E-mail alert 27 August, 2026 Date 27/08/2026 Anonymous (not verified) Thu, 08/27/2026 - 17:00 News &amp; Press ​The EBA responds to the European Parliament’s observations made in the 2024 Discharge report",
+      "url": "https://www.eba.europa.eu/node/19966",
+      "published": "2026-08-27",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "aeaebe83689e",
+      "title": "Sensibiliser les élèves de CM2 à la protection des données",
+      "summary": "En 2026, la CNIL a contribué à sensibiliser 2&amp;nbsp;500 élèves de CM2 du département de l’Oise aux enjeux du numérique et à la protection des données personnelles. Vous êtes enseignant(e)&amp;nbsp;? Retrouvez, dans cette page, les ressources pour reproduire ce projet pédagogiq…",
+      "url": "https://www.cnil.fr/fr/sensibiliser-les-eleves-de-cm2-la-protection-des-donnees",
+      "published": "2026-08-27",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "e306ec259591",
+      "title": "Advies van de AP aan WordPress-gebruikers die getroffen zijn door datalek",
+      "summary": "Recent zijn kwetsbaarheden ontdekt in de WordPress-software. WordPress wordt relatief veel gebruikt in Nederland. De kwetsbaarheden in WordPress worden momenteel actief misbruikt, met datalekken tot gevolg.",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/advies-van-de-ap-aan-wordpress-gebruikers-die-getroffen-zijn-door-datalek",
+      "published": "2026-08-27",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "f805a722852e",
+      "title": "AP maakt AVG-sancties voortaan verplicht openbaar",
+      "summary": "Vanaf 1 september is de Autoriteit Persoonsgegevens (AP) verplicht om boetes en andere AVG-sancties te publiceren. Dat komt door een wetswijziging. Het openbaar maken van AVG-sancties maakt het voor organisaties duidelijker welke normen de AP hanteert en wat de gevolgen zijn als …",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-maakt-avg-sancties-voortaan-verplicht-openbaar",
+      "published": "2026-08-27",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "1ee54dbf3828",
+      "title": "EBA E-mail alert 26 August, 2026",
+      "summary": "EBA E-mail alert 26 August, 2026 Date 26/08/2026 Anonymous (not verified) Wed, 08/26/2026 - 17:00 News &amp; Press ​The EBA consults on draft technical standards on institutions’ operational risk management Consultations Consultation on draft RTS on operational risk management fr…",
+      "url": "https://www.eba.europa.eu/node/19964",
+      "published": "2026-08-26",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "7fa5f1349463",
+      "title": "IA : la CNIL met à jour son outil de traçabilité des modèles publiés en source ouverte",
+      "summary": "La CNIL publie une nouvelle version de son démonstrateur permettant d’explorer la généalogie des modèles d’IA publiés en source ouverte. Cette mise à jour améliore notamment les performances de l’outil, son ergonomie et automatise l’actualisation des données. Une version en angla…",
+      "url": "https://www.cnil.fr/fr/ia-la-cnil-met-jour-son-outil-de-tracabilite-des-modeles-publies-en-source-ouverte",
+      "published": "2026-08-26",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "a2ff9224b2df",
+      "title": "EBA E-mail alert 25 August, 2026",
+      "summary": "EBA E-mail alert 25 August, 2026 Date 25/08/2026 Anonymous (not verified) Tue, 08/25/2026 - 17:00 News &amp; Press The EBA consults on revised technical standards for the reclassification of investment firms as credit institutions Consultations Consultation on Regulatory Technica…",
+      "url": "https://www.eba.europa.eu/node/19957",
+      "published": "2026-08-25",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "d42194888d10",
+      "title": "Enseignement supérieur : les règles et bonnes pratiques pour utiliser des outils collaboratifs en ligne",
+      "summary": "Les établissements d’enseignement supérieur souhaitant recourir à des outils collaboratifs en ligne doivent se montrer vigilants concernant la protection des données personnelles. La CNIL rappelle les règles applicables pour la mise en œuvre de ces outils.",
+      "url": "https://www.cnil.fr/fr/enseignement-superieur-bonnes-pratiques-outils-collaboratifs",
+      "published": "2026-08-24",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "5d4228102cba",
+      "title": "Enseignement du premier et du second degrés : les règles et bonnes pratiques pour utiliser les outils collaboratifs en ligne",
+      "summary": "Les établissements du premier et du second degrés souhaitant recourir à des outils collaboratifs en ligne doivent se montrer vigilants concernant la protection des données personnelles. La CNIL rappelle les règles à suivre pour la mise en œuvre de ces outils.",
+      "url": "https://www.cnil.fr/fr/enseignement-premier-second-degres-bonnes-pratiques-outils-collaboratifs",
+      "published": "2026-08-24",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "1781e3ea0803",
+      "title": "Décisions automatisées : sanction de près de 825 millions d’euros à l’encontre d’UBER",
+      "summary": "En coopération avec la CNIL, l’autorité néerlandaise de protection des données a prononcé à l’encontre des sociétés UBER B.V. et UBER TECHNOLOGIES INC. une amende de 824&amp;nbsp;990&amp;nbsp;000 euros pour avoir pris des décisions individuelles automatisées concernant les chauff…",
+      "url": "https://www.cnil.fr/fr/decisions-automatisees-sanction-de-pres-de-825-millions-deuros-lencontre-duber",
+      "published": "2026-08-24",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
     {
       "id": "2edcffd5edad",
       "title": "Consumers warned to beware of risky mini-bonds and loan notes",
@@ -1313,186 +1493,6 @@
       "published": "2026-07-09",
       "source": "CNIL",
       "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "aaa21bd18fa8",
-      "title": "Le CEPD met en lumière l’anonymisation et le moissonnage pour l’IA générative et adopte la version finale des lignes directrices sur la chaîne de blocs",
-      "summary": "Le 7 juillet 2026, le CEPD a adopté des lignes directrices sur l’anonymisation et des lignes directrices sur le moissonnage dans le contexte de l’IA générative. Il a aussi adopté la version finale de ses lignes directrices sur le traitement des données au moyen des technologies d…",
-      "url": "https://www.cnil.fr/fr/cepd-ia-generative-chaines-blocs",
-      "published": "2026-07-09",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "13dcee33816e",
-      "title": "Transparantie-eisen AI gelden vanaf 2 augustus: AP adviseert praktijkcode te ondertekenen",
-      "summary": "Vanaf 2 augustus 2026 zijn aanbieders en gebruikers van AI-systemen verplicht duidelijk te maken wanneer mensen met artificiële intelligentie (AI) te maken hebben. De Europese Commissie heeft op 10 juni een praktijkcode gepubliceerd waarin een deel van deze transparantieverplicht…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/transparantie-eisen-ai-gelden-vanaf-2-augustus-ap-adviseert-praktijkcode-te-ondertekenen",
-      "published": "2026-07-09",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "2204a56cef7e",
-      "title": "EDPB sheds light on anonymisation and web scraping for generative AI and adopts final version of guidelines on blockchain",
-      "summary": "Brussels, 8 July– During its latest plenary, the EDPB has adopted guidelines on anonymisation and guidelines on web scraping in the context of generative AI. In addition, the Board has adopted the final version of its guidelines on the processing of personal data through blockcha…",
-      "url": "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en",
-      "published": "2026-07-08",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "b1e9f3cfe849",
-      "title": "EBA E-mail alert 8 July, 2026",
-      "summary": "EBA E-mail alert 8 July, 2026 Date 08/07/2026 Anonymous (not verified) Wed, 07/08/2026 - 17:00 News &amp; Press ​The EBA issues Opinion on the implementation of IFRS 18 in supervisory financial reporting to support consistency with IFRS requirements",
-      "url": "https://www.eba.europa.eu/node/19833",
-      "published": "2026-07-08",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "54101c827d0d",
-      "title": "AI vergroot gevaren van cyberaanvallen",
-      "summary": "De snelle groei van artificiële intelligentie (AI) vergroot de gevaren van cyberaanvallen. Er ontstaan meer risico’s op phishing en datalekken. Daarvoor waarschuwt de Autoriteit Persoonsgegevens (AP) in het jaarlijkse overzicht van datalekken in Nederland. Organisaties moeten nú …",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ai-vergroot-gevaren-van-cyberaanvallen",
-      "published": "2026-07-08",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "38210643fabd",
-      "title": "In gesprek over de AI-verordening",
-      "summary": "Heeft of krijgt uw organisatie te maken met de AI-verordening? En heeft u bijvoorbeeld vragen over hoe u in de praktijk aan deze verordening voldoet? U kunt nu informeel in gesprek met de Autoriteit Persoonsgegevens (AP).",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/in-gesprek-over-de-ai-verordening",
-      "published": "2026-07-08",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "3608a303de25",
-      "title": "EBA E-mail alert 7 July, 2026",
-      "summary": "EBA E-mail alert 7 July, 2026 Date 07/07/2026 Anonymous (not verified) Tue, 07/07/2026 - 17:00 News &amp; Press The ESAs support ESRB warning on systemic cyber risks from frontier AI models ​The EBA publishes final Guidelines on the authorisation of third-country branches under t…",
-      "url": "https://www.eba.europa.eu/node/19827",
-      "published": "2026-07-07",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "a6caa3f41a85",
-      "title": "Géolocalisation et applications mobiles : comment protéger vos données ?",
-      "summary": "Les applications météo, de sport ou de rencontres utilisent souvent votre localisation. Mais savez-vous qui peut accéder à ces données et pourquoi&amp;nbsp;? La CNIL vous aide à comprendre les enjeux et à garder le contrôle sur vos données.",
-      "url": "https://www.cnil.fr/fr/geolocalisation-applications-mobiles-proteger-vos-donnees",
-      "published": "2026-07-07",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "b1fce8f1512a",
-      "title": "Géolocalisation et applications mobiles : quelles règles pour protéger les données des utilisateurs ?",
-      "summary": "La géolocalisation est devenue un outil central des applications mobiles. Mais sa collecte et sa réutilisation soulèvent des enjeux majeurs de protection des données personnelles. La CNIL rappelle les règles applicables et les droits des personnes pour protéger leur vie privée.",
-      "url": "https://www.cnil.fr/fr/geolocalisation-applications-mobiles-quelles-regles",
-      "published": "2026-07-07",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "9ceb0561c5e1",
-      "title": "AP adviseert uitvoeringsorganisaties en toezichthouders: 11 voorwaarden bij signalen van fraude",
-      "summary": "De Autoriteit Persoonsgegevens (AP) heeft een advies gepubliceerd over het verwerken van persoonsgegevens bij signalen en meldingen van mogelijke fraude en niet-naleving. Daarin beschrijft de AP 11 basisvoorwaarden waaraan organisaties moeten voldoen.",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-adviseert-uitvoeringsorganisaties-en-toezichthouders-11-voorwaarden-bij-signalen-van-fraude",
-      "published": "2026-07-07",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
       "categories": [
         "data_privacy"
       ],
