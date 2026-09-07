@@ -1,6 +1,158 @@
 {
-  "last_updated": "2026-08-31",
+  "last_updated": "2026-09-07",
   "items": [
+    {
+      "id": "fa539da74585",
+      "title": "FCA decides to ban and fine Daniel Thomas over unauthorised pension transfer advice",
+      "summary": "The FCA has decided to ban Daniel Thomas from working in financial services and fine him £742,700 after finding he recklessly gave defined benefit pension transfer advice he was neither qualified nor allowed to give.",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-ban-fine-daniel-thomas-unauthorised-pension-transfer-advice",
+      "published": "2026-09-07",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "FCA banned and fined Daniel Thomas £742,700 for recklessly providing unauthorized pension transfer advice. Enforcement action for financial services conduct violation.",
+      "regulation_ids": [],
+      "priority": "high"
+    },
+    {
+      "id": "0bc2c303c779",
+      "title": "FCA urges young adults to check for unclaimed Child Trust Funds",
+      "summary": "Thousands of young adults could be sitting on a forgotten pot of savings as they head back to college and university. As students return to college and university this month, the FCA is urging young adults and parents to check whether they have a forgotten Child Trust Fund waitin…",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-urges-young-adults-check-unclaimed-child-trust-funds",
+      "published": "2026-09-07",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "FCA urging young adults to check for unclaimed Child Trust Funds. Consumer awareness campaign.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "7d41374ff86f",
+      "title": "AP opent deuren tijdens Rondje Rechtsstaat: kom langs",
+      "summary": "Bent u nieuwsgierig naar wat er zich afspeelt achter de deuren van de Autoriteit Persoonsgegevens (AP) aan het Lange Voorhout nummer 7 in Den Haag? En wat de AP voor u doet? Op zaterdag 12 september bent u van 10.00 tot 16.00 uur van harte welkom tijdens Rondje Rechtsstaat. We ge…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-opent-deuren-tijdens-rondje-rechtsstaat-kom-langs",
+      "published": "2026-09-04",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP (Autoriteit Persoonsgegevens) open house event announcement. Organizational outreach activity.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "901a65ae5cf5",
+      "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+      "summary": "Background information Date of final decision: 28 August 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority), A…",
+      "url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en",
+      "published": "2026-09-03",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Irish DPC issued final decision against HSE for data security failures and breach notification violations. Enforcement action addresses personal data processing violations under GDPR Article 5, 32, and 33.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "7202612a8257",
+      "title": "Ordre du jour de la séance plénière du 3 septembre 2026",
+      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 3 septembre 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
+      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-3-septembre-2026",
+      "published": "2026-09-03",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL plenary session agenda announcement for September 2026. Administrative scheduling notice.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "7c55c5b27f8d",
+      "title": "Violation de données en matière de santé : sanction de 500 000 euros à l’encontre de l’HÔPITAL PRIVÉ DE LA LOIRE",
+      "summary": "Le 3 septembre 2026, la CNIL a prononcé une sanction de 500&amp;nbsp;000&amp;nbsp;€ à l’encontre de l’HÔPITAL PRIVÉ DE LA LOIRE, pour ne pas avoir pris des mesures adaptées pour assurer la sécurité des données de ses patients et de certains de leurs proches.",
+      "url": "https://www.cnil.fr/fr/sanction-hopital-prive-loire",
+      "published": "2026-09-03",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL imposed €500,000 fine against Hôpital Privé de la Loire for inadequate data security measures and patient data protection failures. Enforcement action for healthcare data breach under GDPR Article 32.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "1ff1492d6510",
+      "title": "Nieuw voor mkb: praktische sjablonen om aan de privacyregels te voldoen",
+      "summary": "De Autoriteit Persoonsgegevens (AP) heeft 2 praktische documenten gepubliceerd speciaal voor het mkb. Het gaat om sjablonen voor een verwerkingsregister en een privacyverklaring. Ondernemers kunnen hiermee makkelijker voldoen aan de privacyregels en zo de persoonsgegevens van hun…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/nieuw-voor-mkb-praktische-sjablonen-om-aan-de-privacyregels-te-voldoen",
+      "published": "2026-09-03",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP published practical templates for SMBs including processing register and privacy notice templates. Guidance to support GDPR compliance for small businesses.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "844df392d528",
+      "title": "Participez aux Rencontres Informatique & Libertés le 29 septembre 2026",
+      "summary": "La CNIL organise la 2ème édition de ses Rencontres Informatique &amp;amp; Libertés le mardi 29&amp;nbsp;septembre 2026. Cette matinée est l'occasion d’échanger sur différents sujets en lien avec la protection des données, notamment l’essor des lunettes connectées ou le rôle des s…",
+      "url": "https://www.cnil.fr/fr/ril-2026",
+      "published": "2026-08-31",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL organizing public event on data protection including discussion of connected eyewear and specific compliance topics. Outreach and education initiative.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "low"
+    },
     {
       "id": "7026ce511594",
       "title": "EBA E-mail alert 27 August, 2026",
@@ -1350,158 +1502,6 @@
       "ai_summary": "Joint Board of Appeal dismisses appeal against EBA decision. Regulatory decision upheld with limited compliance impact details provided.",
       "regulation_ids": [],
       "priority": "low"
-    },
-    {
-      "id": "16c264e826eb",
-      "title": "Ordre du jour de la séance plénière du 16 juillet 2026",
-      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 16 juillet 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
-      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-16-juillet-2026",
-      "published": "2026-07-16",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL plenary session agenda for 16 July 2026; no substantive compliance updates disclosed.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "48b07c050bd7",
-      "title": "EDPB komt met 3 nieuwe guidelines over scraping, anonimiseren en blockchain",
-      "summary": "De European Data Protection Board (EDPB) heeft 3 guidelines gepubliceerd. Het gaat om guidelines voor het scrapen (automatisch verzamelen) van data voor het trainen van generatieve artificiële intelligentie (AI), voor het anonimiseren van data en voor het gebruik van blockchainte…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/edpb-komt-met-3-nieuwe-guidelines-over-scraping-anonimiseren-en-blockchain",
-      "published": "2026-07-15",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EDPB publishes three guidelines on data scraping for AI training, anonymization, and blockchain use under GDPR.",
-      "regulation_ids": [
-        "GDPR",
-        "AI_ACT"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "324e9fe67039",
-      "title": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint",
-      "summary": "Brussels, 14 July–The EDPB has published its&nbsp; binding decision of 28 May 2026&nbsp;under Art.65(1)(a) GDPR*. &nbsp; The decision concerns a &nbsp; dispute submitted by the Belgian Data Protection Authority (DPA) about a complaint against Vlaamse Radio-en Televisieomroeporgan…",
-      "url": "https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en",
-      "published": "2026-07-14",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EDPB binding decision requires Belgian DPA to review NOYB cookie banner complaint on merits under GDPR Article 65.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "e1f5f53b6edf",
-      "title": "AP helpt ontwikkelaars en organisaties met nieuwe AVG-richtlijnen voor generatieve AI",
-      "summary": "De Autoriteit Persoonsgegevens (AP) publiceert vandaag 2 nieuwe documenten die organisaties helpen bij de verantwoorde ontwikkeling en inzet van generatieve artificiële intelligentie (AI). Het gaat om een AVG-handreiking voor ontwikkelaars van generatieve AI-modellen en een prakt…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-helpt-ontwikkelaars-en-organisaties-met-nieuwe-avg-richtlijnen-voor-generatieve-ai",
-      "published": "2026-07-13",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch DPA publishes GDPR guidance for developers on responsible generative AI development and deployment.",
-      "regulation_ids": [
-        "GDPR",
-        "AI_ACT"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "6c926c6b1ea8",
-      "title": "Revoir le webinaire : Nouveau téléservice santé et recherche, ce qui change pour vos demandes d’autorisation",
-      "summary": "La CNIL vous propose de décrypter un sujet ou une actualité en lien avec la protection des données à travers une série de webinaires. Retrouvez ce nouvel épisode consacré au&amp;nbsp;nouveau téléservice santé et recherche de la CNIL.",
-      "url": "https://www.cnil.fr/fr/revoir-le-webinaire-nouveau-teleservice-sante-et-recherche-ce-qui-change-pour-vos-demandes",
-      "published": "2026-07-10",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "1aaec8ccba62",
-      "title": "Toezichthouders: versnel de overgang naar meer digitale autonomie",
-      "summary": "Bedrijven kunnen vaker gezamenlijk optrekken wanneer zij contracten afsluiten met IT-leveranciers. Dat is belangrijk om hun digitale autonomie te versterken. En overheden en bedrijven zouden digitale autonomie nadrukkelijk moeten meewegen bij de inkoop van IT-diensten. Zo kunnen …",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/toezichthouders-versnel-de-overgang-naar-meer-digitale-autonomie",
-      "published": "2026-07-10",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "d8902566cce7",
-      "title": "EBA E-mail alert 9 July, 2026",
-      "summary": "EBA E-mail alert 9 July, 2026 Date 09/07/2026 Anonymous (not verified) Thu, 07/09/2026 - 17:00 News &amp; Press ​The EBA releases the final technical package for its 4.3 reporting framework to support Third-Country Branches reporting and AML Authority risk assessment data collect…",
-      "url": "https://www.eba.europa.eu/node/19839",
-      "published": "2026-07-09",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "16253ee7b388",
-      "title": "Travail, ressources humaines : le contrôle de l’activité des personnes employées",
-      "summary": "Un employeur a le pouvoir d’encadrer et de contrôler l’activité des membres du personnel ainsi que leur usage des équipements au travail. Il s’agit d’une contrepartie normale et inhérente au contrat de travail. Néanmoins, ce pouvoir ne peut pas être exercé de manière excessive.",
-      "url": "https://www.cnil.fr/fr/controle-de-lactivite-des-personnes-employees",
-      "published": "2026-07-09",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
     }
   ]
 }
