@@ -1,6 +1,186 @@
 {
-  "last_updated": "2026-09-21",
+  "last_updated": "2026-09-28",
   "items": [
+    {
+      "id": "212a70c506d2",
+      "title": "Évènement air 2026 : Convaincre ou manipuler ? L'éthique du numérique à l'épreuve des urnes, le 16 novembre à la CNIL",
+      "summary": "Protection des droits des électeurs, ingérences étrangères… lundi 16&amp;nbsp;novembre 2026, à partir de 14&amp;nbsp;h, la CNIL vous invite à son événement dédié aux enjeux éthiques associés aux communications politiques et aux ingérences. Les inscriptions sont ouvertes.",
+      "url": "https://www.cnil.fr/fr/air2026",
+      "published": "2026-09-28",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "719c68542680",
+      "title": "EBA E-mail alert 25 September, 2026",
+      "summary": "EBA E-mail alert 25 September, 2026 Date 25/09/2026 Anonymous (not verified) Fri, 09/25/2026 - 17:00 News &amp; Press The EBA consults on revised technical standards for joint decisions on institution-specific capital and liquidity requirements EU/EEA banks display strength amid …",
+      "url": "https://www.eba.europa.eu/node/20044",
+      "published": "2026-09-25",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "843a74f95f3f",
+      "title": "EBA E-mail alert 24 September, 2026",
+      "summary": "EBA E-mail alert 24 September, 2026 Date 24/09/2026 Anonymous (not verified) Thu, 09/24/2026 - 17:00 News &amp; Press The EBA identifies priorities for the review of MiCA",
+      "url": "https://www.eba.europa.eu/node/20032",
+      "published": "2026-09-24",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "5cd24e846dcd",
+      "title": "Ordre du jour de la séance plénière du 24 septembre 2026",
+      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 24 septembre 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
+      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-24-septembre-2026",
+      "published": "2026-09-24",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "fc162e9b6fcd",
+      "title": "Clôture de l’injonction prononcée à l’encontre de la société SOLOCAL MARKETING SERVICES",
+      "summary": "Par délibération du 17 septembre 2026, la CNIL a clôturé l’injonction prononcée le 15&amp;nbsp;mai 2025 à l’encontre de la société SOLOCAL MARKETING SERVICES.",
+      "url": "https://www.cnil.fr/fr/cloture-injonction-solocal-marketing-services",
+      "published": "2026-09-24",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "23eccfb4303c",
+      "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+      "summary": "Background information Date of final decision: 21 September 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 6 (Lawfulness of processing), Article 12 (Transparent information, communication and modalities for the exerc…",
+      "url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
+      "published": "2026-09-23",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "bcc26195f279",
+      "title": "EBA E-mail alert 23 September, 2026",
+      "summary": "EBA E-mail alert 23 September, 2026 Date 23/09/2026 Anonymous (not verified) Wed, 09/23/2026 - 17:00 News &amp; Press ESAs call for vigilance over external dependencies, cyber threats and private credit risks",
+      "url": "https://www.eba.europa.eu/node/20027",
+      "published": "2026-09-23",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "9ee9f2ee62b6",
+      "title": "Amendes RGPD et interaction avec le règlement sur les services numériques : retour sur la plénière du CEPD du 17 septembre 2026",
+      "summary": "Le 17 septembre 2026, le CEPD a adopté des lignes directrices sur le pouvoir des autorités de protection des données d’infliger des amendes administratives et la version finale de ses lignes directrices sur l'interaction entre le règlement sur les services numériques (DSA) et le …",
+      "url": "https://www.cnil.fr/fr/pleniere-cepd-amendes-reglement-services-numeriques",
+      "published": "2026-09-23",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "14c9a9ea97de",
+      "title": "The Spanish DPA fined Securitas Direct 100 000 EUR for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number",
+      "summary": "Background information Date of final decision: 1 February 2023 National case Controller: SECURITAS DIRECT, S.A. Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject) Decision: Administrative fine,…",
+      "url": "https://www.edpb.europa.eu/news/the-spanish-dpa-fined-securitas-direct-100-000-eur-for-making-the-exercise-of-data-subject_en",
+      "published": "2026-09-22",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "3b0d9426cf75",
+      "title": "AP waarschuwt gebruikers camerabrillen dat filmen van anderen vrijwel altijd verboden is",
+      "summary": "Camerabrillen zijn bezig aan een snelle opmars. Wie daarmee andere mensen filmt of fotografeert, mag die beelden echter niet zomaar gebruiken, delen of publiceren. Ook mensen die toevallig in beeld komen en herkenbaar zijn, hebben recht op bescherming van hun privacy. Omdat veel …",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-waarschuwt-gebruikers-camerabrillen-dat-filmen-van-anderen-vrijwel-altijd-verboden-is",
+      "published": "2026-09-22",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
     {
       "id": "8c6f35929c79",
       "title": "Australian Prudential Regulation Authority (APRA) - click to go to the home page",
@@ -95,6 +275,24 @@
         "DORA"
       ],
       "priority": "high"
+    },
+    {
+      "id": "68db877ec667",
+      "title": "Statut et organisation de la CNIL",
+      "summary": "Créée en 1978 par la loi Informatique et Libertés, la CNIL est une autorité administrative indépendante, composée d’un Collège de 18 membres et d’une équipe d’agents contractuels de l’État.",
+      "url": "https://www.cnil.fr/fr/fonctionnement/statut-et-organisation-de-la-cnil",
+      "published": "2026-09-17",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
     },
     {
       "id": "4e7b11ab6e12",
@@ -1283,214 +1481,6 @@
       "ai_summary": "Administrative guidance on PAIA fee structures for information access requests in South Africa.",
       "regulation_ids": [],
       "priority": "low"
-    },
-    {
-      "id": "df8b105aa4ae",
-      "title": "PAIA annual Report",
-      "summary": "",
-      "url": "https://inforegulator.org.za/paia-annual-report/",
-      "published": "2026-08-03",
-      "source": "InfoReg-ZA",
-      "source_url": "https://inforegulator.org.za",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "africa"
-      ],
-      "ai_summary": "Annual reporting on PAIA (Promotion of Access to Information Act) implementation and statistics.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "22edc1593ea4",
-      "title": "Enforcement Notices",
-      "summary": "",
-      "url": "https://inforegulator.org.za/enforcement-notices/",
-      "published": "2026-08-03",
-      "source": "InfoReg-ZA",
-      "source_url": "https://inforegulator.org.za",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "africa"
-      ],
-      "ai_summary": "Enforcement actions and notices issued under South African information access regulations.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "85922f911edf",
-      "title": "Rules of Procedures",
-      "summary": "",
-      "url": "https://inforegulator.org.za/rules-of-procedures/",
-      "published": "2026-08-03",
-      "source": "InfoReg-ZA",
-      "source_url": "https://inforegulator.org.za",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "africa"
-      ],
-      "ai_summary": "Procedural rules for PAIA request handling and appeals processes.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "89e59c24e3e6",
-      "title": "40th International Conference of Data Protection and Privacy Commissioners ( ICDPPC) in Brussels from 22-25 October 2018",
-      "summary": "",
-      "url": "https://inforegulator.org.za/2020/07/10/40th-international-conference-of-data-protection-and-privacy-commissioners/",
-      "published": "2026-08-03",
-      "source": "InfoReg-ZA",
-      "source_url": "https://inforegulator.org.za",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "africa"
-      ],
-      "ai_summary": "International data protection conference proceedings from October 2018.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "361ea7bf66de",
-      "title": "FCA finalises rules to cut firms' transaction reporting costs by over £100m a year",
-      "summary": "Transaction reporting requirements become smarter, simpler and more proportionate under new rules from the FCA. Transaction reports are critical to the FCA’s ability to detect and investigate market abuse, monitor market functioning and supervise firms effectively.The new rules a…",
-      "url": "https://www.fca.org.uk/news/press-releases/fca-finalises-rules-cut-firms-transaction-reporting-costs-over-100m-year",
-      "published": "2026-08-03",
-      "source": "FCA",
-      "source_url": "https://www.fca.org.uk",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "uk"
-      ],
-      "ai_summary": "FCA finalizes simplified transaction reporting rules reducing compliance costs by £100m+ annually. Requirements become more proportionate and streamlined for firms.",
-      "regulation_ids": [],
-      "priority": "high"
-    },
-    {
-      "id": "6a1dcefec675",
-      "title": "EBA E-mail alert 31 July, 2026",
-      "summary": "EBA E-mail alert 31 July, 2026 Date 31/07/2026 Anonymous (not verified) Fri, 07/31/2026 - 17:00 News &amp; Press The EBA-ECB-EIOPA “Data Point Model Alliance” consults on improvements to their data dictionary metamodel to better support statistical and supervisory reporting EBA, …",
-      "url": "https://www.eba.europa.eu/node/19908",
-      "published": "2026-07-31",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA consultation on data dictionary metamodel improvements for statistical and supervisory reporting.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "0d40cab8a425",
-      "title": "Revoir le webinaire - Mise à jour des MR-001 et MR-003, ce qui change en 2026",
-      "summary": "La CNIL vous propose de décrypter un sujet ou une actualité en lien avec la protection des données à travers&amp;nbsp;une série de webinaires. Retrouvez ce nouvel épisode consacré aux méthodologies de référence en matière de santé.",
-      "url": "https://www.cnil.fr/fr/webinaire-mise-a-jour-mr",
-      "published": "2026-07-31",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL webinar on updated health data protection methodologies (MR-001, MR-003) effective 2026.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "406e0b0dc593",
-      "title": "Vanaf 2 augustus wordt duidelijker of het AI is of echt",
-      "summary": "De chat met de klantenservice van de webwinkel, dat filmpje op sociale media, de foto op een nieuwssite: vanaf 2 augustus 2026 moet daar in veel gevallen bij staan dat artificiële intelligentie (AI) is gebruikt. Nieuwe Europese regels moeten u helpen om beter te herkennen wat ech…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/vanaf-2-augustus-wordt-duidelijker-of-het-ai-is-of-echt",
-      "published": "2026-07-31",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EU AI Act transparency requirements take effect August 2, 2026: disclosure labeling mandated for AI-generated content across multiple platforms and media types.",
-      "regulation_ids": [
-        "AI_ACT"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "7b4933d637bc",
-      "title": "Stakeholder event on guidelines on the interplay between data protection and competition law: express your interest",
-      "summary": "Brussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for…",
-      "url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en",
-      "published": "2026-07-30",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EDPB stakeholder event on data protection and competition law interplay scheduled for October 2026. Upcoming guidelines being developed jointly with European Commission.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "6b76c6477e75",
-      "title": "AP geeft kinderopvang uitleg over signalen van misbruik",
-      "summary": "De Autoriteit Persoonsgegevens (AP) geeft kinderopvangorganisaties uitleg over het delen van informatie bij vermoedens van strafbare feiten, zoals kindermisbruik. De uitleg gaat over vragen aan sollicitanten, het benaderen van referenten en het gebruiken van een interne zwarte li…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-geeft-kinderopvang-uitleg-over-signalen-van-misbruik",
-      "published": "2026-07-29",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch data authority guidance for childcare organizations on lawful information sharing regarding suspected abuse. Clarifies data processing and reference verification practices.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "6fe1ac19cf79",
-      "title": "Ransomware-aanvallen: leer van de fouten van anderen",
-      "summary": "Een ransomware-aanval legt vaak niet alleen computersystemen plat. Ook de persoonsgegevens van honderden tot soms miljoenen kunnen in gevaar komen. Organisaties moeten dan onder grote tijdsdruk handelen en moeilijke keuzes maken. Daarom publiceert de Autoriteit Persoonsgegevens (…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ransomware-aanvallen-leer-van-de-fouten-van-anderen",
-      "published": "2026-07-28",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch DPA publishes ransomware incident guidance documenting breach notification lessons and data protection compliance during cyber attacks.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
     }
   ]
 }
