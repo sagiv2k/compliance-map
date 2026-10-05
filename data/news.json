@@ -1,6 +1,192 @@
 {
-  "last_updated": "2026-09-28",
+  "last_updated": "2026-10-05",
   "items": [
+    {
+      "id": "df8b105aa4ae",
+      "title": "PAIA annual Report",
+      "summary": "",
+      "url": "https://inforegulator.org.za/paia-annual-report/",
+      "published": "2026-10-05",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "PAIA annual report publication; general informational update on access to information compliance activities.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "22edc1593ea4",
+      "title": "Enforcement Notices",
+      "summary": "",
+      "url": "https://inforegulator.org.za/enforcement-notices/",
+      "published": "2026-10-05",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "Enforcement notices issued; indicates active regulatory action on data protection violations.",
+      "regulation_ids": [],
+      "priority": "high"
+    },
+    {
+      "id": "85922f911edf",
+      "title": "Rules of Procedures",
+      "summary": "",
+      "url": "https://inforegulator.org.za/rules-of-procedures/",
+      "published": "2026-10-05",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "Rules of procedures update; procedural guidance for regulatory compliance processes.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "89e59c24e3e6",
+      "title": "40th International Conference of Data Protection and Privacy Commissioners ( ICDPPC) in Brussels from 22-25 October 2018",
+      "summary": "",
+      "url": "https://inforegulator.org.za/2020/07/10/40th-international-conference-of-data-protection-and-privacy-commissioners/",
+      "published": "2026-10-05",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "International data protection conference scheduled for October 2018; networking and guidance sharing event.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "f408cee721b5",
+      "title": "Wetsvoorstel kredietregistratie gaat goede kant op, maar nog aanpassingen nodig",
+      "summary": "Op aandringen van de Autoriteit Persoonsgegevens (AP) werkt het kabinet aan privacy-vriendelijkere regels voor de kredietregistratie in Nederland. Die moeten zorgen voor een betere bescherming van persoonsgegevens bij het afsluiten van bijvoorbeeld een banklening of een telefoona…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/wetsvoorstel-kredietregistratie-gaat-goede-kant-op-maar-nog-aanpassingen-nodig",
+      "published": "2026-10-05",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP-NL pushes for privacy-friendly credit registration amendments to protect personal data in lending.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "9a86e87ce872",
+      "title": "EBA E-mail alert 2 October, 2026",
+      "summary": "EBA E-mail alert 2 October, 2026 Date 02/10/2026 Anonymous (not verified) Fri, 10/02/2026 - 17:00 Final Q&amp;As 2026_7779 Scope of Article 6 lit. c RTS",
+      "url": "https://www.eba.europa.eu/node/20066",
+      "published": "2026-10-02",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA Q&A alert on Article 6 RTS scope; technical regulatory clarification published.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "b5f078e5d21a",
+      "title": "Violations de données personnelles : dans quels cas peut-on être indemnisé ?",
+      "summary": "Une fuite ou un vol de données peut causer un préjudice pour les personnes concernées. Si l’incident résulte d’un manquement au RGPD, elles peuvent, sous certaines conditions, demander une indemnisation. C’est au juge, et non à la CNIL, de l’accorder.",
+      "url": "https://www.cnil.fr/fr/violations-de-donnees-personnelles-cas-indemnite",
+      "published": "2026-10-02",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL guidance on compensation rights following data breaches under GDPR; clarifies judicial remedies available.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "32b1953d5cd3",
+      "title": "Ordre du jour de la séance plénière du 1er octobre 2026",
+      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 1er octobre 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
+      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-1er-octobre-2026",
+      "published": "2026-10-01",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL plenary session agenda for October 1, 2026; routine regulatory meeting notice.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "71833b327969",
+      "title": "Cybermois 2026 : la CNIL et Cybermalveillance.gouv.fr publient une nouvelle ressource pour adopter les bons réflexes face à une violation de données",
+      "summary": "À l’occasion du Mois européen de la cybersécurité, Cybermois en France, la CNIL et Cybermalveillance.gouv.fr s’associent autour d’un nouveau support pratique pour aider les particuliers à réagir en cas de violation de données personnelles et à adopter les bons réflexes pour limit…",
+      "url": "https://www.cnil.fr/fr/cybermois-2026",
+      "published": "2026-10-01",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL and Cybermalveillance.gouv.fr publish data breach response guidance during Cybersecurity Month 2026.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "837b3279bba5",
+      "title": "EBA E-mail alert 30 September, 2026",
+      "summary": "EBA E-mail alert 30 September, 2026 Date 30/09/2026 Anonymous (not verified) Wed, 09/30/2026 - 17:00 News &amp; Press ​The EBA publishes its 2027 Work Programme",
+      "url": "https://www.eba.europa.eu/node/20057",
+      "published": "2026-09-30",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA 2027 Work Programme published; upcoming regulatory priorities announced.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
     {
       "id": "212a70c506d2",
       "title": "Évènement air 2026 : Convaincre ou manipuler ? L'éthique du numérique à l'épreuve des urnes, le 16 novembre à la CNIL",
@@ -1293,192 +1479,6 @@
         "apac"
       ],
       "ai_summary": "PIPC engages with Global Privacy Enforcement Network. Update on international enforcement coordination and collaborative privacy initiatives.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "021473a4062c",
-      "title": "APPAAsia Pacific Privacy Authorities",
-      "summary": "",
-      "url": "https://www.appaforum.org/",
-      "published": "2026-08-10",
-      "source": "PIPC-KR",
-      "source_url": "https://www.appaforum.org",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "apac"
-      ],
-      "ai_summary": "PIPC participates in Asia Pacific Privacy Authorities forum. Update on regional privacy authority cooperation and knowledge sharing.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "933f891b75bc",
-      "title": "Prudential and reporting standards",
-      "summary": "",
-      "url": "https://www.apra.gov.au/banking/Prudential-and-reporting-standards",
-      "published": "2026-08-10",
-      "source": "APRA-AU",
-      "source_url": "https://www.apra.gov.au",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "australia"
-      ],
-      "ai_summary": "APRA updates prudential and reporting standards for Australian financial institutions. Compliance requirements for regulated entities' risk management and disclosure.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "b1cb603e7c6e",
-      "title": "Licensing guidelines",
-      "summary": "",
-      "url": "https://www.apra.gov.au/banking/licensing-guidelines-authorised-deposit-taking-institutions",
-      "published": "2026-08-10",
-      "source": "APRA-AU",
-      "source_url": "https://www.apra.gov.au",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "australia"
-      ],
-      "ai_summary": "APRA publishes licensing guidelines for Australian financial institutions. Updated regulatory requirements for obtaining and maintaining financial services licenses.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "6f7ee187ae24",
-      "title": "EBA E-mail alert 6 August, 2026",
-      "summary": "EBA E-mail alert 6 August, 2026 Date 06/08/2026 Anonymous (not verified) Thu, 08/06/2026 - 17:45 News &amp; Press EBA ESG risk dashboard shows stable climate risk exposures and continued improvements in data quality",
-      "url": "https://www.eba.europa.eu/node/19929",
-      "published": "2026-08-06",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA email alert on ESG climate risk reporting and data quality improvements. Guidance on environmental risk disclosure and monitoring frameworks.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "09f2e3b1fad1",
-      "title": "EBA E-mail alert 5 August, 2026",
-      "summary": "EBA E-mail alert 5 August, 2026 Date 05/08/2026 Anonymous (not verified) Wed, 08/05/2026 - 17:00 News &amp; Press ​The EBA consults on reporting framework for validation and monitoring of ISDA Standard Initial Margin Model Consultations Consultation on Reporting for the purposes …",
-      "url": "https://www.eba.europa.eu/node/19924",
-      "published": "2026-08-05",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA consultation on ISDA Standard Initial Margin Model reporting framework and validation. Draft reporting requirements for financial institutions' margin compliance.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "a40971413f8b",
-      "title": "Puis-je demander à supprimer des données me concernant figurant dans un article de presse diffusé en ligne ?",
-      "summary": "Toute personne concernée a le droit de demander à un organisme de presse l'effacement de données personnelles la concernant figurant dans un article de presse diffusé en ligne. Il ne s’agit toutefois pas d’un droit absolu&amp;nbsp;: une balance entre les intérêts en présence doit…",
-      "url": "https://www.cnil.fr/fr/supprimer-mes-donnees-presse",
-      "published": "2026-08-05",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL clarifies right to deletion for personal data in online press articles. Data subjects may request erasure from news articles, subject to balancing test with press freedom.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "bc4f89616293",
-      "title": "Collège de la CNIL : 5 nouveaux membres nommés le 2 août 2026",
-      "summary": "À partir du 2 août 2026, cinq nouveaux membres intègrent la CNIL. Ces nominations interviennent dans le cadre d’un renouvellement partiel du Collège.",
-      "url": "https://www.cnil.fr/fr/college-de-la-cnil-5-nouveaux-membres-nommes-le-2-aout-2026",
-      "published": "2026-08-05",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL announces five new board members as of August 2, 2026. Personnel update to French data protection authority.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "low"
-    },
-    {
-      "id": "087bc50c6f21",
-      "title": "AP: privacyrisico’s door gebruik menstruatie-apps",
-      "summary": "Als je je menstruatiecyclus bijhoudt in een app, deel je zeer gevoelige informatie. Terwijl vaak onduidelijk is wat zo’n app daarmee doet of met wie deze gegevens worden gedeeld. Het gaat om zeer intieme gegevens als wanneer je seks hebt gehad, of je zwanger bent of dat je een mi…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-privacyrisicos-door-gebruik-menstruatie-apps",
-      "published": "2026-08-04",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch AP warns of privacy risks with menstruation-tracking apps and data sharing. Consumer protection alert on sensitive health data processing and unclear data handling practices.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "36846e8f3878",
-      "title": "EBA E-mail alert 3 August, 2026",
-      "summary": "EBA E-mail alert 3 August, 2026 Date 03/08/2026 Anonymous (not verified) Mon, 08/03/2026 - 17:00 News &amp; Press EBA, EIOPA and ESMA propose amendments to bilateral margin requirements ​The EBA publishes a no-action letter and technical considerations to support the implementati…",
-      "url": "https://www.eba.europa.eu/node/19912",
-      "published": "2026-08-03",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "EBA proposes amendments to bilateral margin requirements and publishes implementation guidance. Updated regulatory requirements for margin calculation and reporting.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "6c2c36c2c39d",
-      "title": "PAIA Fees Structure",
-      "summary": "",
-      "url": "https://inforegulator.org.za/paia-fees-structure-2/",
-      "published": "2026-08-03",
-      "source": "InfoReg-ZA",
-      "source_url": "https://inforegulator.org.za",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "africa"
-      ],
-      "ai_summary": "Administrative guidance on PAIA fee structures for information access requests in South Africa.",
       "regulation_ids": [],
       "priority": "low"
     }
