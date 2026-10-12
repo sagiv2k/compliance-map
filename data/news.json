@@ -1,6 +1,296 @@
 {
-  "last_updated": "2026-10-05",
+  "last_updated": "2026-10-12",
   "items": [
+    {
+      "id": "021473a4062c",
+      "title": "APPAAsia Pacific Privacy Authorities",
+      "summary": "",
+      "url": "https://www.appaforum.org/",
+      "published": "2026-10-12",
+      "source": "PIPC-KR",
+      "source_url": "https://www.appaforum.org",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "apac"
+      ],
+      "ai_summary": "General update on Asia Pacific Privacy Authorities activities. No specific compliance enforcement or binding requirements disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "6c2c36c2c39d",
+      "title": "PAIA Fees Structure",
+      "summary": "",
+      "url": "https://inforegulator.org.za/paia-fees-structure-2/",
+      "published": "2026-10-12",
+      "source": "InfoReg-ZA",
+      "source_url": "https://inforegulator.org.za",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "africa"
+      ],
+      "ai_summary": "Update on PAIA fees structure in South Africa. Administrative clarification with no new binding compliance requirements.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "933f891b75bc",
+      "title": "Prudential and reporting standards",
+      "summary": "",
+      "url": "https://www.apra.gov.au/banking/Prudential-and-reporting-standards",
+      "published": "2026-10-12",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA prudential and reporting standards update. General guidance publication on regulatory standards.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "452590fa4762",
+      "title": "Italian DPA fines Wind Tre EUR 16 700 000 for unlawful telemarketing and data protection infringements",
+      "summary": "Background information Date of final decision: 05/06/2026 National case Controller: Wind Tre S.p.A. Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 6 (Lawfulness of processing), Article 12 (Transparent information, communication and mod…",
+      "url": "https://www.edpb.europa.eu/news/italian-dpa-fines-wind-tre-eur-16-700-000-for-unlawful-telemarketing-and-data-protection_en",
+      "published": "2026-10-12",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Italian DPA fined Wind Tre €16.7M for unlawful telemarketing and GDPR violations including principles and lawfulness infringements. Enforcement action with binding fine now effective.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "93d8836025e8",
+      "title": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
+      "summary": "Background information Date of final decision: 23 September 2026 National case Controller: IQVIA Solutions Italy S.r.l Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 9 (Processing of special categories of personal data), &nbsp;Article …",
+      "url": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en",
+      "published": "2026-10-09",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Italian DPA fined IQVIA €7M for unlawful processing of patients' health data violating GDPR principles and special category protections. Enforcement action with binding fine now effective.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "3a36f94efa1f",
+      "title": "Italian DPA fines security company EUR 39 000 for violations concerning employees’ data",
+      "summary": "Background information Date of final decision: 6 August 2026 National case Controller: La Patria S.p.A. Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 13 (Information to be provide…",
+      "url": "https://www.edpb.europa.eu/news/italian-dpa-fines-security-company-eur-39-000-for-violations-concerning-employees-data_en",
+      "published": "2026-10-09",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Italian DPA fined La Patria €39,000 for GDPR violations concerning employee data transparency and information rights. Enforcement action with binding fine now effective.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "79e18ba1b374",
+      "title": "Italian DPA fines Emirates EUR 180 000 for infringements concerning passengers’ health data",
+      "summary": "Background information Date of final decision: 14 May 2026 National case Controller: Emirates Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 12 (Transparent information, communication and modalities for the exercise of the rights of th…",
+      "url": "https://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en",
+      "published": "2026-10-09",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Italian DPA fined Emirates €180,000 for GDPR infringements regarding passenger health data processing principles and transparency. Enforcement action with binding fine now effective.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "d932722a96fc",
+      "title": "Italian DPA fines BBVA EUR 5 508 000 for failing to respect a customer’s objection to direct marketing",
+      "summary": "Background information Date of final decision: 3 July 2026 National case Controller: Banco Bilbao Vizcaya Argentaria, S.A., Italian branch (BBVA) Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 12 (Transparent information, communication…",
+      "url": "https://www.edpb.europa.eu/news/italian-dpa-fines-bbva-eur-5-508-000-for-failing-to-respect-a-customers-objection-to-direct_en",
+      "published": "2026-10-09",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Italian DPA fined BBVA €5.508M for failing to respect customer objections to direct marketing under GDPR. Enforcement action with binding fine now effective.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "bff7bc6fc4f4",
+      "title": "EBA E-mail alert 9 October, 2026",
+      "summary": "EBA E-mail alert 9 October, 2026 Date 09/10/2026 Anonymous (not verified) Fri, 10/09/2026 - 17:45 News &amp; Press EBA CRR3/CRD6 dashboard shows banks maintain capital levels well above minimum requirements under the fully loaded Basel III framework Procurement Ex-ante publicity …",
+      "url": "https://www.eba.europa.eu/node/20084",
+      "published": "2026-10-09",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA alert on bank capital levels and Basel III framework compliance. General regulatory dashboard update with no new enforcement.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "3d46410c37df",
+      "title": "AP zet volgende stap in toezicht op AI",
+      "summary": "De Autoriteit Persoonsgegevens (AP) maakt zich verder klaar voor het toezicht op artificiële intelligentie (AI). Met de start van de nieuwe directie Toezicht en Coördinatie AI/Algoritmes (TCA) krijgt de taakopbouw steeds concreter vorm. De nieuwe directie gaat verder met het coör…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-zet-volgende-stap-in-toezicht-op-ai",
+      "published": "2026-10-09",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch DPA establishing new AI/algorithm oversight directorate to prepare for AI regulation compliance. Institutional development for future enforcement.",
+      "regulation_ids": [
+        "AI_ACT"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "a70cbf268739",
+      "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+      "summary": "Background information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision: Administrative fine Website topics: Cybersecurity, personal data breaches Summary of the Decision Origin of the case In August 2025, the IT se…",
+      "url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en",
+      "published": "2026-10-08",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Swedish DPA fined Miljödata approximately €160,000 for insufficient technical and organisational security measures under GDPR Article 32. Enforcement action with binding fine now effective.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "555445145548",
+      "title": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+      "summary": "Background information Date of final decision: 28/07/2026 National case Controller: Ministry of Social Cohesion and Family Affairs Legal Reference(s): Article 25 (Data protection by design and by default), Article 28 (Processor), Article 32 (Security of processing), Article 33 (N…",
+      "url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en",
+      "published": "2026-10-08",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Hellenic DPA decision on data breach involving E.E.T.A.A. processor for Ministry of Social Cohesion addressing GDPR design, security and notification obligations. Enforcement action disclosed.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "8e78918dd160",
+      "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+      "summary": "Background information Cross-border case Controller: Uber B.V Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fi…",
+      "url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en",
+      "published": "2026-10-08",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch DPA fined Uber €824.99M for unlawful automated decision-making and insufficient profiling disclosures under GDPR Articles 22 and 13. Record enforcement action now effective.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "24b9aea343ac",
+      "title": "Ordre du jour de la séance plénière du 8 octobre 2026",
+      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 8 octobre 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
+      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-8-octobre-2026",
+      "published": "2026-10-08",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL plenary session agenda for October 8, 2026. Administrative meeting notice with no specific enforcement actions disclosed.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "29793269a005",
+      "title": "Clôture de l’injonction prononcée à l’encontre de FRANCE TRAVAIL",
+      "summary": "Par délibération du 23 septembre 2026, la CNIL a clos l’injonction prononcée le 22&amp;nbsp;janvier 2026 à l’encontre de FRANCE TRAVAIL, sans liquider l’astreinte prévue compte tenu de sa mise en conformité.",
+      "url": "https://www.cnil.fr/fr/cloture-injonction-france-travail",
+      "published": "2026-10-08",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL closed injunction against FRANCE TRAVAIL after achieving compliance in September 2026. Closure of enforcement action without penalties.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
     {
       "id": "df8b105aa4ae",
       "title": "PAIA annual Report",
@@ -330,6 +620,26 @@
       "ai_summary": "",
       "regulation_ids": [],
       "priority": "medium"
+    },
+    {
+      "id": "0eca15668755",
+      "title": "The Spanish DPA fines Securitas Direct EUR 100 000 for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number",
+      "summary": "Background information Date of final decision: 1 February 2023 National case Controller: SECURITAS DIRECT, S.A. Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject) Decision: Administrative fine,…",
+      "url": "https://www.edpb.europa.eu/news/the-spanish-dpa-fines-securitas-direct-eur-100-000-for-making-the-exercise-of-data-subject_en",
+      "published": "2026-09-22",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Spanish DPA fined Securitas Direct €100,000 for making GDPR data subject rights exercise more difficult through chargeable telephone numbers. Enforcement action effective.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
     },
     {
       "id": "14c9a9ea97de",
@@ -1179,307 +1489,6 @@
       "regulation_ids": [
         "GDPR"
       ],
-      "priority": "low"
-    },
-    {
-      "id": "0c901e459eae",
-      "title": "Piratage du système d’information des impôts : les vérifications sont en cours",
-      "summary": "La CNIL a été notifiée de violations de données affectant le système d’information de la Direction générale des Finances publiques (DGFiP). Elle est donc d’ores et déjà saisie de ces violations et, dans ce contexte, il n’est plus nécessaire de lui adresser des plaintes individuel…",
-      "url": "https://www.cnil.fr/fr/piratage-du-systeme-dinformation-des-impots-les-verifications-sont-en-cours",
-      "published": "2026-08-18",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL notified of data breach affecting French tax authority's information system; individual complaints no longer required.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "9f0b592db5b4",
-      "title": "De FRIA voor AI-systemen komt eraan: bereid u voor",
-      "summary": "Bent u een overheidsorganisatie of een private organisatie die publieke diensten levert? En bent u van plan een AI-systeem met een hoog risico te gaan gebruiken? Of gaat u als publieke of private organisatie een beoordelingssysteem voor financiële risico’s gebruiken? Dan moet u v…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/de-fria-voor-ai-systemen-komt-eraan-bereid-u-voor",
-      "published": "2026-08-17",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch AP alerts public and private organizations about upcoming AI high-risk system requirements under EU AI Act FRIA obligations.",
-      "regulation_ids": [
-        "AI_ACT"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "eaabb3967421",
-      "title": "Submit a complaint",
-      "summary": "",
-      "url": "https://tdra.gov.ae/en/Services/submit-a-complaint",
-      "published": "2026-08-17",
-      "source": "TDRA-UAE",
-      "source_url": "https://tdra.gov.ae",
-      "categories": [
-        "cybersecurity",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "mena"
-      ],
-      "ai_summary": "TDRA complaint submission page with no substantive regulatory content disclosed.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "ae0ba240aa19",
-      "title": "Activate a Government Service on the Federal Network",
-      "summary": "",
-      "url": "https://tdra.gov.ae/en/Services/activate-a-government-service-on-the-federal-network",
-      "published": "2026-08-17",
-      "source": "TDRA-UAE",
-      "source_url": "https://tdra.gov.ae",
-      "categories": [
-        "cybersecurity",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "mena"
-      ],
-      "ai_summary": "TDRA government service activation page with no substantive regulatory content disclosed.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "e3770b9b136b",
-      "title": "Contact TDRA Leadership",
-      "summary": "",
-      "url": "https://tdra.gov.ae/en/Participation/contact-tdra-leadership",
-      "published": "2026-08-17",
-      "source": "TDRA-UAE",
-      "source_url": "https://tdra.gov.ae",
-      "categories": [
-        "cybersecurity",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "mena"
-      ],
-      "ai_summary": "TDRA leadership contact information with no substantive regulatory content disclosed.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "2d31d51ed0ea",
-      "title": "Chairman of the Board Message",
-      "summary": "",
-      "url": "https://tdra.gov.ae/en/About/chairman-of-the-board-message",
-      "published": "2026-08-17",
-      "source": "TDRA-UAE",
-      "source_url": "https://tdra.gov.ae",
-      "categories": [
-        "cybersecurity",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "mena"
-      ],
-      "ai_summary": "TDRA board chairman message with no substantive regulatory content disclosed.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "271c905489f9",
-      "title": "Regulations and Ruling",
-      "summary": "",
-      "url": "https://tdra.gov.ae/en/About/regulations-and-ruling",
-      "published": "2026-08-17",
-      "source": "TDRA-UAE",
-      "source_url": "https://tdra.gov.ae",
-      "categories": [
-        "cybersecurity",
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "mena"
-      ],
-      "ai_summary": "TDRA regulations and rulings index page with no substantive regulatory content disclosed.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "6a03bbf0645f",
-      "title": "APRA Connect Taxonomy Artefacts",
-      "summary": "",
-      "url": "https://www.apra.gov.au/apra-connect/apra-connect-taxonomy-artefacts",
-      "published": "2026-08-17",
-      "source": "APRA-AU",
-      "source_url": "https://www.apra.gov.au",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "australia"
-      ],
-      "ai_summary": "APRA taxonomy artefacts for financial reporting with no substantive regulatory content disclosed.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "0ced4be05efd",
-      "title": "Financial Claims Scheme",
-      "summary": "",
-      "url": "https://www.apra.gov.au/financial-claims-scheme",
-      "published": "2026-08-17",
-      "source": "APRA-AU",
-      "source_url": "https://www.apra.gov.au",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "australia"
-      ],
-      "ai_summary": "APRA Financial Claims Scheme overview with no substantive regulatory content disclosed.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "43ff861bded2",
-      "title": "Overview of the Financial Claims Scheme",
-      "summary": "",
-      "url": "https://www.apra.gov.au/financial-claims-scheme/overview-financial-claims-scheme",
-      "published": "2026-08-17",
-      "source": "APRA-AU",
-      "source_url": "https://www.apra.gov.au",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "australia"
-      ],
-      "ai_summary": "APRA Financial Claims Scheme overview with no substantive regulatory content disclosed.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "773084bf36ee",
-      "title": "FCA expands global presence with new attachés in India and UAE",
-      "summary": "The FCA has announced Sabina Saini and Darine Obeid as the financial services attachés for India and the UAE. Sabina will be based at the British Deputy High Commission in Mumbai and Darine will be based at the British Embassy in Abu Dhabi.These appointments expand the FCA's glob…",
-      "url": "https://www.fca.org.uk/news/press-releases/fca-expands-global-presence-new-attaches-india-uae",
-      "published": "2026-08-17",
-      "source": "FCA",
-      "source_url": "https://www.fca.org.uk",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "uk"
-      ],
-      "ai_summary": "FCA expands global regulatory presence appointing financial services attachés in India and UAE.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "9a7e0dab681d",
-      "title": "Kom langs bij de AP: Rondje Rechtsstaat op 12 september 2026",
-      "summary": "Bent u nieuwsgierig naar wat er zich afspeelt achter de deuren van de Autoriteit Persoonsgegevens (AP)? Op zaterdag 12 september 2026 bent u van harte welkom in het Bentinckhuis aan het Lange Voorhout 7 in Den Haag.",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/kom-langs-bij-de-ap-rondje-rechtsstaat-op-12-september-2026",
-      "published": "2026-08-14",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch AP open house event announcement for 2026. No substantive regulatory content disclosed.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "c7155c38b38b",
-      "title": "Délégué à la protection des données : identifier et gérer les conflits d’intérêts liés à la fonction de DPO",
-      "summary": "Le RGPD autorise les organismes à confier d’autres missions à leur délégué à la protection des données (DPO). Ces missions ne doivent néanmoins pas faire obstacle à ses missions de DPO ou le placer en situation de conflit d’intérêts. Comment reconnaître un conflit d’intérêt&amp;n…",
-      "url": "https://www.cnil.fr/fr/dpo-identifier-gerer-conflits-interets",
-      "published": "2026-08-10",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL guidance on DPO conflict of interest management. GDPR requires DPOs maintain independence; additional duties must not compromise primary role.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "bd4d878a4ccf",
-      "title": "[현재 안내서] 생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서(2025.8.)",
-      "summary": "",
-      "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS217&mCode=&nttId=11439",
-      "published": "2026-08-10",
-      "source": "PIPC-KR",
-      "source_url": "https://www.pipc.go.kr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "apac"
-      ],
-      "ai_summary": "PIPC published guidance for generative AI development and personal data processing (August 2025). Organizations must comply with data protection requirements when building or deploying generative AI systems.",
-      "regulation_ids": [
-        "SOUTH_KOREA_PIPA"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "7bb7409eedcc",
-      "title": "GPAGlobal Privacy Assembly",
-      "summary": "",
-      "url": "https://globalprivacyassembly.org/",
-      "published": "2026-08-10",
-      "source": "PIPC-KR",
-      "source_url": "https://globalprivacyassembly.org",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "apac"
-      ],
-      "ai_summary": "PIPC participates in Global Privacy Assembly coordination. Update on international privacy authority cooperation and standard-setting initiatives.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "cab8ef7d0070",
-      "title": "GPENGlobal Privacy Enforcement Network",
-      "summary": "",
-      "url": "https://www.privacyenforcement.net/",
-      "published": "2026-08-10",
-      "source": "PIPC-KR",
-      "source_url": "https://www.privacyenforcement.net",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "apac"
-      ],
-      "ai_summary": "PIPC engages with Global Privacy Enforcement Network. Update on international enforcement coordination and collaborative privacy initiatives.",
-      "regulation_ids": [],
       "priority": "low"
     }
   ]
