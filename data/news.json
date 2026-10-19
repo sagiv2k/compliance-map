@@ -1,6 +1,465 @@
 {
-  "last_updated": "2026-10-12",
+  "last_updated": "2026-10-19",
   "items": [
+    {
+      "id": "7bb7409eedcc",
+      "title": "GPAGlobal Privacy Assembly",
+      "summary": "",
+      "url": "https://globalprivacyassembly.org/",
+      "published": "2026-10-19",
+      "source": "PIPC-KR",
+      "source_url": "https://globalprivacyassembly.org",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "apac"
+      ],
+      "ai_summary": "Global Privacy Assembly meeting. No specific compliance impact information provided.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "cab8ef7d0070",
+      "title": "GPENGlobal Privacy Enforcement Network",
+      "summary": "",
+      "url": "https://www.privacyenforcement.net/",
+      "published": "2026-10-19",
+      "source": "PIPC-KR",
+      "source_url": "https://www.privacyenforcement.net",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "apac"
+      ],
+      "ai_summary": "Global Privacy Enforcement Network update. No specific compliance impact information provided.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "ae0ba240aa19",
+      "title": "Activate a Government Service on the Federal Network",
+      "summary": "",
+      "url": "https://tdra.gov.ae/en/Services/activate-a-government-service-on-the-federal-network",
+      "published": "2026-10-19",
+      "source": "TDRA-UAE",
+      "source_url": "https://tdra.gov.ae",
+      "categories": [
+        "cybersecurity",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "mena"
+      ],
+      "ai_summary": "UAE government service activation on federal network. No data protection compliance impact identified.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "e3770b9b136b",
+      "title": "Contact TDRA Leadership",
+      "summary": "",
+      "url": "https://tdra.gov.ae/en/Participation/contact-tdra-leadership",
+      "published": "2026-10-19",
+      "source": "TDRA-UAE",
+      "source_url": "https://tdra.gov.ae",
+      "categories": [
+        "cybersecurity",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "mena"
+      ],
+      "ai_summary": "TDRA leadership contact information. No compliance-related content.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "2d31d51ed0ea",
+      "title": "Chairman of the Board Message",
+      "summary": "",
+      "url": "https://tdra.gov.ae/en/About/chairman-of-the-board-message",
+      "published": "2026-10-19",
+      "source": "TDRA-UAE",
+      "source_url": "https://tdra.gov.ae",
+      "categories": [
+        "cybersecurity",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "mena"
+      ],
+      "ai_summary": "Chairman message from UAE telecom authority. No regulatory compliance impact identified.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "271c905489f9",
+      "title": "Regulations and Ruling",
+      "summary": "",
+      "url": "https://tdra.gov.ae/en/About/regulations-and-ruling",
+      "published": "2026-10-19",
+      "source": "TDRA-UAE",
+      "source_url": "https://tdra.gov.ae",
+      "categories": [
+        "cybersecurity",
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "mena"
+      ],
+      "ai_summary": "UAE regulations and ruling publication. Insufficient detail to identify specific compliance impact.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "6a03bbf0645f",
+      "title": "APRA Connect Taxonomy Artefacts",
+      "summary": "",
+      "url": "https://www.apra.gov.au/apra-connect/apra-connect-taxonomy-artefacts",
+      "published": "2026-10-19",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "APRA taxonomy artefacts publication for financial reporting. No direct compliance requirement identified.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "0ced4be05efd",
+      "title": "Financial Claims Scheme",
+      "summary": "",
+      "url": "https://www.apra.gov.au/financial-claims-scheme",
+      "published": "2026-10-19",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "Australian Financial Claims Scheme overview. General depositor protection framework information.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "43ff861bded2",
+      "title": "Overview of the Financial Claims Scheme",
+      "summary": "",
+      "url": "https://www.apra.gov.au/financial-claims-scheme/overview-financial-claims-scheme",
+      "published": "2026-10-19",
+      "source": "APRA-AU",
+      "source_url": "https://www.apra.gov.au",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "ai_summary": "Financial Claims Scheme overview. General information on Australian depositor protection.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "6b483b1190c7",
+      "title": "Revoir le webinaire - Nouveau régime de la prospection téléphonique : comment et quand recueillir le consentement de la personne concernée ?",
+      "summary": "La CNIL vous propose de décrypter un sujet ou une actualité en lien avec la protection des données à travers&amp;nbsp;une série de webinaires. Retrouvez ce nouvel épisode consacré à la prospection téléphonique.",
+      "url": "https://www.cnil.fr/fr/webinaire-demarchage-telephonique",
+      "published": "2026-10-19",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL webinar on telemarketing prospection consent rules. Guidance on GDPR-compliant telephonic outreach consent requirements.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "d1fefb7e3a67",
+      "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+      "summary": "Background information Date of final decision: 2 October 2026 National case&nbsp; Controller: Xandr Inc. Legal References: Article 6 (Lawfulness of processing), Article 9 (Processing of special categories of personal data) Decision: Administrative fine Key words: Fines, Basic pri…",
+      "url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en",
+      "published": "2026-10-16",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Norwegian DPA fines Xandr €8.6M for unlawful personal data processing. Enforcement action demonstrates GDPR Articles 6 & 9 violation consequences.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "820411df2b97",
+      "title": "EBA E-mail alert 16 October, 2026",
+      "summary": "EBA E-mail alert 16 October, 2026 Date 16/10/2026 Anonymous (not verified) Fri, 10/16/2026 - 17:00 Final Q&amp;As 2026_7854 Incoherent formulae on the validation rule v0478_m 2026_7867 Validity of validation rule v903610",
+      "url": "https://www.eba.europa.eu/node/20106",
+      "published": "2026-10-16",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA technical Q&A updates on validation rules. Minor technical clarifications for banking compliance.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "aaebf12b008c",
+      "title": "De la protection des données à la création de valeur en finance : des autorités européennes publient une étude et des bonnes pratiques",
+      "summary": "La CNIL, l’ICO et la CNPD publient leur étude conjointe «&amp;nbsp;De la protection des données à la création de valeur en finance&amp;nbsp;: évaluation des données, comptabilité, fusions-acquisitions et gouvernance&amp;nbsp;», rassemblant analyses et bonnes pratiques à destinati…",
+      "url": "https://www.cnil.fr/fr/protection-donnees-valeur-finance-etude-autorites-europeennes",
+      "published": "2026-10-16",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL, ICO, CNPD publish joint study on data protection value creation in finance. Best practices guidance on data governance compliance.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "8da07efb6db3",
+      "title": "Reconstitution d’adresses électroniques professionnelles : dans quel cadre est-ce autorisé ?",
+      "summary": "La reconstitution d’adresses électroniques professionnelles à partir de données accessibles en ligne est utilisée pour contacter des interlocuteurs, notamment dans le cadre de la prospection. Elle est encadrée par le RGPD et ne peut reposer sur l’intérêt légitime que si certaines…",
+      "url": "https://www.cnil.fr/fr/reconstitution-adresses-professionnelles-quel-cadre",
+      "published": "2026-10-16",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL clarifies professional email address reconstruction rules under GDPR. Guidance on lawful basis for prospecting via reconstituted contact information.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "c95fe100c835",
+      "title": "Reconstitution d’adresses électroniques professionnelles : quels sont vos droits ?",
+      "summary": "Lorsque vos données personnelles sont accessibles sur Internet, elles peuvent être récupérées par des organismes pour reconstituer votre adresse électronique professionnelle, notamment pour faire de la prospection. La reconstitution d’adresse électronique doit respecter le RGPD a…",
+      "url": "https://www.cnil.fr/fr/reconstitution-adresses-professionnelles-vos-droits",
+      "published": "2026-10-16",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL explains individual rights regarding professional email reconstruction. Data subject rights guidance on internet-harvested contact information.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "9420df303c30",
+      "title": "AP onderzoekt websites vanwege misleidende cookiebanner",
+      "summary": "De Autoriteit Persoonsgegevens (AP) is een onderzoek gestart naar 2 organisaties die een misleidende cookiebanner blijven gebruiken op hun website, ondanks uitleg en een waarschuwing van de AP. De cookiebanner van deze organisaties heeft geen direct zichtbare knop waarmee website…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-onderzoekt-websites-vanwege-misleidende-cookiebanner",
+      "published": "2026-10-16",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "Dutch AP investigates two organizations for deceptive cookie banners lacking clear consent buttons. Enforcement action on GDPR consent requirement violations.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "dbedb621bf9e",
+      "title": "Ordre du jour de la séance plénière du 15 octobre 2026",
+      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 15 octobre 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
+      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-15-octobre-2026",
+      "published": "2026-10-15",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL plenary session agenda October 15, 2026. Administrative meeting notice without compliance impact.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "b4e3cb28dd2f",
+      "title": "EBA E-mail alert 14 October, 2026",
+      "summary": "EBA E-mail alert 14 October, 2026 Date 14/10/2026 Anonymous (not verified) Wed, 10/14/2026 - 17:00 News &amp; Press ​The EBA classifies USDC as the first significant e-money token in the European Union",
+      "url": "https://www.eba.europa.eu/node/20099",
+      "published": "2026-10-14",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA classifies USDC as first significant e-money token in EU. Regulatory classification announcement affecting digital asset compliance.",
+      "regulation_ids": [
+        "EU_MICA"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "4b3a739cc4e1",
+      "title": "Clôture de l’injonction prononcée à l’encontre de GOOGLE",
+      "summary": "Par décision du 23 septembre 2026, la formation restreinte de la CNIL a clos l’injonction prononcée le 1er septembre 2025 à l’encontre des sociétés GOOGLE LLC et GOOGLE IRELAND LIMITED.",
+      "url": "https://www.cnil.fr/fr/cloture-injonction-google",
+      "published": "2026-10-14",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "CNIL closes enforcement order against Google. Resolution of GDPR compliance action against Google LLC and Google Ireland Limited.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "7ad89d611da4",
+      "title": "Nieuwe EDPB-guidelines over samenspel DSA/AVG en AVG-boetes",
+      "summary": "De European Data Protection Board (EDPB) heeft nieuwe guidelines vastgesteld voor de wisselwerking tussen de Algemene verordening gegevensbescherming (AVG) en de Digital Services Act (DSA). Daarnaast stelde de EDPB nieuwe guidelines op voor de procedure rond het opleggen van AVG-…",
+      "url": "https://autoriteitpersoonsgegevens.nl/actueel/nieuwe-edpb-guidelines-over-samenspel-dsaavg-en-avg-boetes",
+      "published": "2026-10-14",
+      "source": "AP-NL",
+      "source_url": "https://autoriteitpersoonsgegevens.nl",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB establishes new guidelines on DSA/GDPR interaction and GDPR fines procedures. Regulatory guidance clarifying interplay between digital services and data protection.",
+      "regulation_ids": [
+        "GDPR",
+        "EU_DSA"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "659406238697",
+      "title": "EDPB publishes statement on the data protection challenges of smart glasses",
+      "summary": "Brussels, 13 October – During its latest plenary, the EDPB has adopted statement 1/2026 on smart glasses and published the report “The connected gaze. Video recording, surveillance and administering evidence in the age of smart glasses” *, developed in the context of the Support …",
+      "url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
+      "published": "2026-10-13",
+      "source": "EDPB",
+      "source_url": "https://www.edpb.europa.eu",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB publishes statement on smart glasses data protection challenges, including video recording & surveillance issues. Guidance on privacy implications of emerging technology.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "26d3c320dc78",
+      "title": "EBA E-mail alert 13 October, 2026",
+      "summary": "EBA E-mail alert 13 October, 2026 Date 13/10/2026 Anonymous (not verified) Tue, 10/13/2026 - 17:00 News &amp; Press European Supervisory Authorities set priorities for 2027",
+      "url": "https://www.eba.europa.eu/node/20094",
+      "published": "2026-10-13",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "European Supervisory Authorities announce 2027 regulatory priorities. Forward guidance on financial regulatory focus.",
+      "regulation_ids": [],
+      "priority": "low"
+    },
+    {
+      "id": "fc7865bf7518",
+      "title": "Le CEPD publie une déclaration sur les enjeux de protection des données liés aux lunettes connectées",
+      "summary": "Lors de sa dernière plénière, le CEPD a adopté une déclaration sur les lunettes connectées et publié le rapport intitulé « Le regard connecté. Une sociologie des usages et des défis liés aux lunettes connectées », élaboré dans le cadre du programme de réserve d’experts (Support P…",
+      "url": "https://www.cnil.fr/fr/cepd-declaration-lunettes-connectees",
+      "published": "2026-10-13",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EDPB publishes statement on smart glasses data protection challenges including video surveillance issues. Guidance on privacy implications of wearable recording technology.",
+      "regulation_ids": [
+        "GDPR"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "1142e7703921",
+      "title": "EBA E-mail alert 12 October, 2026",
+      "summary": "EBA E-mail alert 12 October, 2026 Date 12/10/2026 Anonymous (not verified) Mon, 10/12/2026 - 17:00 News &amp; Press The EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories ​The EBA releases the final…",
+      "url": "https://www.eba.europa.eu/node/20089",
+      "published": "2026-10-12",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "EBA publishes final report on prudential requirements for central securities depositories. Technical standards update for financial infrastructure.",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
     {
       "id": "021473a4062c",
       "title": "APPAAsia Pacific Privacy Authorities",
@@ -1044,452 +1503,6 @@
       "ai_summary": "FCA banned and fined Daniel Thomas £742,700 for recklessly providing unauthorized pension transfer advice. Enforcement action for financial services conduct violation.",
       "regulation_ids": [],
       "priority": "high"
-    },
-    {
-      "id": "0bc2c303c779",
-      "title": "FCA urges young adults to check for unclaimed Child Trust Funds",
-      "summary": "Thousands of young adults could be sitting on a forgotten pot of savings as they head back to college and university. As students return to college and university this month, the FCA is urging young adults and parents to check whether they have a forgotten Child Trust Fund waitin…",
-      "url": "https://www.fca.org.uk/news/press-releases/fca-urges-young-adults-check-unclaimed-child-trust-funds",
-      "published": "2026-09-07",
-      "source": "FCA",
-      "source_url": "https://www.fca.org.uk",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "uk"
-      ],
-      "ai_summary": "FCA urging young adults to check for unclaimed Child Trust Funds. Consumer awareness campaign.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "7d41374ff86f",
-      "title": "AP opent deuren tijdens Rondje Rechtsstaat: kom langs",
-      "summary": "Bent u nieuwsgierig naar wat er zich afspeelt achter de deuren van de Autoriteit Persoonsgegevens (AP) aan het Lange Voorhout nummer 7 in Den Haag? En wat de AP voor u doet? Op zaterdag 12 september bent u van 10.00 tot 16.00 uur van harte welkom tijdens Rondje Rechtsstaat. We ge…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-opent-deuren-tijdens-rondje-rechtsstaat-kom-langs",
-      "published": "2026-09-04",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch AP (Autoriteit Persoonsgegevens) open house event announcement. Organizational outreach activity.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "901a65ae5cf5",
-      "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
-      "summary": "Background information Date of final decision: 28 August 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority), A…",
-      "url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en",
-      "published": "2026-09-03",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Irish DPC issued final decision against HSE for data security failures and breach notification violations. Enforcement action addresses personal data processing violations under GDPR Article 5, 32, and 33.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "7202612a8257",
-      "title": "Ordre du jour de la séance plénière du 3 septembre 2026",
-      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 3 septembre 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
-      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-3-septembre-2026",
-      "published": "2026-09-03",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL plenary session agenda announcement for September 2026. Administrative scheduling notice.",
-      "regulation_ids": [],
-      "priority": "low"
-    },
-    {
-      "id": "7c55c5b27f8d",
-      "title": "Violation de données en matière de santé : sanction de 500 000 euros à l’encontre de l’HÔPITAL PRIVÉ DE LA LOIRE",
-      "summary": "Le 3 septembre 2026, la CNIL a prononcé une sanction de 500&amp;nbsp;000&amp;nbsp;€ à l’encontre de l’HÔPITAL PRIVÉ DE LA LOIRE, pour ne pas avoir pris des mesures adaptées pour assurer la sécurité des données de ses patients et de certains de leurs proches.",
-      "url": "https://www.cnil.fr/fr/sanction-hopital-prive-loire",
-      "published": "2026-09-03",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL imposed €500,000 fine against Hôpital Privé de la Loire for inadequate data security measures and patient data protection failures. Enforcement action for healthcare data breach under GDPR Article 32.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "1ff1492d6510",
-      "title": "Nieuw voor mkb: praktische sjablonen om aan de privacyregels te voldoen",
-      "summary": "De Autoriteit Persoonsgegevens (AP) heeft 2 praktische documenten gepubliceerd speciaal voor het mkb. Het gaat om sjablonen voor een verwerkingsregister en een privacyverklaring. Ondernemers kunnen hiermee makkelijker voldoen aan de privacyregels en zo de persoonsgegevens van hun…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/nieuw-voor-mkb-praktische-sjablonen-om-aan-de-privacyregels-te-voldoen",
-      "published": "2026-09-03",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch AP published practical templates for SMBs including processing register and privacy notice templates. Guidance to support GDPR compliance for small businesses.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "844df392d528",
-      "title": "Participez aux Rencontres Informatique & Libertés le 29 septembre 2026",
-      "summary": "La CNIL organise la 2ème édition de ses Rencontres Informatique &amp;amp; Libertés le mardi 29&amp;nbsp;septembre 2026. Cette matinée est l'occasion d’échanger sur différents sujets en lien avec la protection des données, notamment l’essor des lunettes connectées ou le rôle des s…",
-      "url": "https://www.cnil.fr/fr/ril-2026",
-      "published": "2026-08-31",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL organizing public event on data protection including discussion of connected eyewear and specific compliance topics. Outreach and education initiative.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "low"
-    },
-    {
-      "id": "7026ce511594",
-      "title": "EBA E-mail alert 27 August, 2026",
-      "summary": "EBA E-mail alert 27 August, 2026 Date 27/08/2026 Anonymous (not verified) Thu, 08/27/2026 - 17:00 News &amp; Press ​The EBA responds to the European Parliament’s observations made in the 2024 Discharge report",
-      "url": "https://www.eba.europa.eu/node/19966",
-      "published": "2026-08-27",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "aeaebe83689e",
-      "title": "Sensibiliser les élèves de CM2 à la protection des données",
-      "summary": "En 2026, la CNIL a contribué à sensibiliser 2&amp;nbsp;500 élèves de CM2 du département de l’Oise aux enjeux du numérique et à la protection des données personnelles. Vous êtes enseignant(e)&amp;nbsp;? Retrouvez, dans cette page, les ressources pour reproduire ce projet pédagogiq…",
-      "url": "https://www.cnil.fr/fr/sensibiliser-les-eleves-de-cm2-la-protection-des-donnees",
-      "published": "2026-08-27",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "e306ec259591",
-      "title": "Advies van de AP aan WordPress-gebruikers die getroffen zijn door datalek",
-      "summary": "Recent zijn kwetsbaarheden ontdekt in de WordPress-software. WordPress wordt relatief veel gebruikt in Nederland. De kwetsbaarheden in WordPress worden momenteel actief misbruikt, met datalekken tot gevolg.",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/advies-van-de-ap-aan-wordpress-gebruikers-die-getroffen-zijn-door-datalek",
-      "published": "2026-08-27",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "f805a722852e",
-      "title": "AP maakt AVG-sancties voortaan verplicht openbaar",
-      "summary": "Vanaf 1 september is de Autoriteit Persoonsgegevens (AP) verplicht om boetes en andere AVG-sancties te publiceren. Dat komt door een wetswijziging. Het openbaar maken van AVG-sancties maakt het voor organisaties duidelijker welke normen de AP hanteert en wat de gevolgen zijn als …",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-maakt-avg-sancties-voortaan-verplicht-openbaar",
-      "published": "2026-08-27",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "1ee54dbf3828",
-      "title": "EBA E-mail alert 26 August, 2026",
-      "summary": "EBA E-mail alert 26 August, 2026 Date 26/08/2026 Anonymous (not verified) Wed, 08/26/2026 - 17:00 News &amp; Press ​The EBA consults on draft technical standards on institutions’ operational risk management Consultations Consultation on draft RTS on operational risk management fr…",
-      "url": "https://www.eba.europa.eu/node/19964",
-      "published": "2026-08-26",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "7fa5f1349463",
-      "title": "IA : la CNIL met à jour son outil de traçabilité des modèles publiés en source ouverte",
-      "summary": "La CNIL publie une nouvelle version de son démonstrateur permettant d’explorer la généalogie des modèles d’IA publiés en source ouverte. Cette mise à jour améliore notamment les performances de l’outil, son ergonomie et automatise l’actualisation des données. Une version en angla…",
-      "url": "https://www.cnil.fr/fr/ia-la-cnil-met-jour-son-outil-de-tracabilite-des-modeles-publies-en-source-ouverte",
-      "published": "2026-08-26",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "a2ff9224b2df",
-      "title": "EBA E-mail alert 25 August, 2026",
-      "summary": "EBA E-mail alert 25 August, 2026 Date 25/08/2026 Anonymous (not verified) Tue, 08/25/2026 - 17:00 News &amp; Press The EBA consults on revised technical standards for the reclassification of investment firms as credit institutions Consultations Consultation on Regulatory Technica…",
-      "url": "https://www.eba.europa.eu/node/19957",
-      "published": "2026-08-25",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "d42194888d10",
-      "title": "Enseignement supérieur : les règles et bonnes pratiques pour utiliser des outils collaboratifs en ligne",
-      "summary": "Les établissements d’enseignement supérieur souhaitant recourir à des outils collaboratifs en ligne doivent se montrer vigilants concernant la protection des données personnelles. La CNIL rappelle les règles applicables pour la mise en œuvre de ces outils.",
-      "url": "https://www.cnil.fr/fr/enseignement-superieur-bonnes-pratiques-outils-collaboratifs",
-      "published": "2026-08-24",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "5d4228102cba",
-      "title": "Enseignement du premier et du second degrés : les règles et bonnes pratiques pour utiliser les outils collaboratifs en ligne",
-      "summary": "Les établissements du premier et du second degrés souhaitant recourir à des outils collaboratifs en ligne doivent se montrer vigilants concernant la protection des données personnelles. La CNIL rappelle les règles à suivre pour la mise en œuvre de ces outils.",
-      "url": "https://www.cnil.fr/fr/enseignement-premier-second-degres-bonnes-pratiques-outils-collaboratifs",
-      "published": "2026-08-24",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "1781e3ea0803",
-      "title": "Décisions automatisées : sanction de près de 825 millions d’euros à l’encontre d’UBER",
-      "summary": "En coopération avec la CNIL, l’autorité néerlandaise de protection des données a prononcé à l’encontre des sociétés UBER B.V. et UBER TECHNOLOGIES INC. une amende de 824&amp;nbsp;990&amp;nbsp;000 euros pour avoir pris des décisions individuelles automatisées concernant les chauff…",
-      "url": "https://www.cnil.fr/fr/decisions-automatisees-sanction-de-pres-de-825-millions-deuros-lencontre-duber",
-      "published": "2026-08-24",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "2edcffd5edad",
-      "title": "Consumers warned to beware of risky mini-bonds and loan notes",
-      "summary": "The FCA is warning consumers about the risks of investing in loan notes and mini-bonds issued by unregulated companies, after continuing to see people lose money in these high-risk investments. The recent failure of Woodville Consultants Ltd, a litigation funder that raised capit…",
-      "url": "https://www.fca.org.uk/news/press-releases/consumers-warned-beware-risky-mini-bonds-and-loan-notes",
-      "published": "2026-08-24",
-      "source": "FCA",
-      "source_url": "https://www.fca.org.uk",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "uk"
-      ],
-      "ai_summary": "FCA consumer warning on high-risk unregulated mini-bonds and loan notes following investor losses.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "c52d9d1acc23",
-      "title": "Unregulated loan notes and mini-bonds: don't risk your savings on promises of high returns",
-      "summary": "These high-risk investments should not usually be advertised widely to the public. We banned the marketing of speculative mini-bonds and loan notes to ordinary retail investors from 1 January 2021.We did this because these are complicated investments, not suitable for most people…",
-      "url": "https://www.fca.org.uk/news/statements/unregulated-loan-notes-mini-bonds-dont-risk-savings-promises-high-returns",
-      "published": "2026-08-24",
-      "source": "FCA",
-      "source_url": "https://www.fca.org.uk",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "uk"
-      ],
-      "ai_summary": "FCA guidance on risks of unregulated loan notes and mini-bonds; marketing ban to retail investors effective January 2021.",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "299078896168",
-      "title": "FCA fines and bans former SVS Securities CEO",
-      "summary": "The FCA has banned Demetrios Hadjigeorgiou from working in senior management positions in financial services and fined him £56,400. Mr Hadjigeorgiou was the former director and chief executive officer (CEO) of SVS Securities Plc (SVS), a discretionary fund manager.The FCA found t…",
-      "url": "https://www.fca.org.uk/news/press-releases/fca-fines-bans-former-svs-securities-ceo",
-      "published": "2026-08-24",
-      "source": "FCA",
-      "source_url": "https://www.fca.org.uk",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "uk"
-      ],
-      "ai_summary": "FCA banned former SVS Securities CEO from senior management and fined £56,400 for management failings.",
-      "regulation_ids": [],
-      "priority": "high"
-    },
-    {
-      "id": "bed395a6215b",
-      "title": "FCA bans senior manager for lack of honesty and integrity",
-      "summary": "The FCA has banned Howard Roland Duckett from working in financial services due to a serious lack of honesty and integrity. Mr Duckett was a senior manager at Beauforce Corporation Limited, a debt management firm. The High Court has disqualified Mr Duckett from acting as a compan…",
-      "url": "https://www.fca.org.uk/news/press-releases/fca-bans-senior-manager-lack-honesty-integrity",
-      "published": "2026-08-24",
-      "source": "FCA",
-      "source_url": "https://www.fca.org.uk",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "uk"
-      ],
-      "ai_summary": "FCA banned senior debt management firm manager for lack of honesty and integrity in financial services.",
-      "regulation_ids": [],
-      "priority": "high"
-    },
-    {
-      "id": "607e2491199a",
-      "title": "Uber krijgt boete van bijna 825 miljoen euro voor geautomatiseerd blokkeren van chauffeurs",
-      "summary": "De Autoriteit Persoonsgegevens (AP) legt Uber een boete op van 824.990.000 euro. De reden hiervoor is dat de AP heeft geoordeeld dat Uber volledig geautomatiseerd besluiten nam over chauffeurs. Bij vermoedens van fraude of bij te lage klantbeoordelingen werden accounts van chauff…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/uber-krijgt-boete-van-bijna-825-miljoen-euro-voor-geautomatiseerd-blokkeren-van-chauffeurs",
-      "published": "2026-08-21",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch AP fined Uber €824.99M for automated decision-making on driver accounts without human review, violating GDPR automated decision rights.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "high"
-    },
-    {
-      "id": "450c6a798cf0",
-      "title": "AP adviseert Twitch-gebruikers: zet instellingen uit voor delen van data met Amazon AI",
-      "summary": "Streamingplatform Twitch heeft bekendgemaakt dat Amazon persoonsgegevens van Twitch-gebruikers gebruikt om AI-modellen mee te trainen. Gebruikers die niet willen dat Amazon hun streams, afbeeldingen en andere persoonsgegevens gebruikt, kunnen dit nu uitzetten. De Autoriteit Perso…",
-      "url": "https://autoriteitpersoonsgegevens.nl/actueel/ap-adviseert-twitch-gebruikers-zet-instellingen-uit-voor-delen-van-data-met-amazon-ai",
-      "published": "2026-08-20",
-      "source": "AP-NL",
-      "source_url": "https://autoriteitpersoonsgegevens.nl",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "Dutch AP advises Twitch users to disable data sharing with Amazon AI models; users can opt-out of personal data training use.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "medium"
-    },
-    {
-      "id": "813ed80f8f96",
-      "title": "Le refus de crédit en questions",
-      "summary": "Vous avez demandé un crédit et on vous l’a refusé&amp;nbsp;? Vous êtes inscrit dans un fichier géré par la Banque de France ou un fichier tenu par votre banque&amp;nbsp;? Quelles sont les différentes démarches à effectuer&amp;nbsp;?",
-      "url": "https://www.cnil.fr/fr/le-refus-de-credit-en-questions",
-      "published": "2026-08-19",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "CNIL guidance on credit refusal procedures and consumer rights regarding bank records and credit files.",
-      "regulation_ids": [
-        "GDPR"
-      ],
-      "priority": "low"
     }
   ]
 }
