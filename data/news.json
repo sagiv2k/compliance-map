@@ -1,6 +1,150 @@
 {
-  "last_updated": "2026-10-19",
+  "last_updated": "2026-10-26",
   "items": [
+    {
+      "id": "7813c5abda71",
+      "title": "Defence SMEs need banking services that work",
+      "summary": "The UK's most innovative businesses often start small.Before they can develop new technologies, win contracts or expand into new markets, they need access to banking services to help them operate, invest and grow.Access to financial services can be easy to take for granted. When …",
+      "url": "https://www.fca.org.uk/news/blogs/defence-smes-need-banking-services-work",
+      "published": "2026-10-26",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "70f11380a0b1",
+      "title": "Chandler King (City) Limited enters creditors’ voluntary liquidation",
+      "summary": "On 17 September 2026, Chandler King (City) Limited (Chandler King) went into creditors’ voluntary liquidation. Grace Jones and Karyn Jones of Parker Andrews were appointed as joint liquidators. Chandler King, an FCA-authorised firm, was an independent financial adviser which advi…",
+      "url": "https://www.fca.org.uk/news/news-stories/chandler-king-enters-creditors-voluntary-liquidation",
+      "published": "2026-10-26",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "8b2caa9f79d8",
+      "title": "FCA calls on private market firms to manage conflicts of interest in line with rapid growth",
+      "summary": "Private market firms vary in how well they identify and manage conflicts of interest, according to an FCA review. Private markets refer to investments in assets, companies, or debt not listed or traded on public exchanges. They’ve grown significantly in recent years, and the UK i…",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-calls-private-market-firms-manage-conflicts-interest-line-rapid-growth",
+      "published": "2026-10-26",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "9765da0a2ea5",
+      "title": "Beyond borders: Regulating the risks we share",
+      "summary": "Speech by Ashley Alder, FCA Chair, at the Michael D. Gill Lecture on International Financial Regulatory Understanding and Cooperation. I wasn’t fortunate enough to work as closely with Mike as many of you in this room.But I knew him well enough during my time with the IOSCO board…",
+      "url": "https://www.fca.org.uk/news/speeches/beyond-borders-regulating-risks-we-share",
+      "published": "2026-10-26",
+      "source": "FCA",
+      "source_url": "https://www.fca.org.uk",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "df6ad1449dae",
+      "title": "EBA E-mail alert 23 October, 2026",
+      "summary": "EBA E-mail alert 23 October, 2026 Date 23/10/2026 Anonymous (not verified) Fri, 10/23/2026 - 17:00 News &amp; Press ​The EBA appoints Kristīne Černaja-Mežmale as its new Vice-Chair",
+      "url": "https://www.eba.europa.eu/node/20125",
+      "published": "2026-10-23",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "f03af86dde99",
+      "title": "EBA E-mail alert 22 October, 2026",
+      "summary": "EBA E-mail alert 22 October, 2026 Date 22/10/2026 Anonymous (not verified) Thu, 10/22/2026 - 17:00 News &amp; Press The ​EBA extends some consultation deadlines due to website maintenance​",
+      "url": "https://www.eba.europa.eu/node/20121",
+      "published": "2026-10-22",
+      "source": "EBA",
+      "source_url": "https://www.eba.europa.eu",
+      "categories": [
+        "finance"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "d7fec0bf7c00",
+      "title": "Ordre du jour de la séance plénière du 22 octobre 2026",
+      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 22 octobre 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
+      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-22-octobre-2026",
+      "published": "2026-10-22",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
+    {
+      "id": "c8f46e5ff1ac",
+      "title": "Journée RGPD à Poitiers : cybersécurité, IA et conformité au cœur des enjeux de protection des données",
+      "summary": "La CNIL organise une nouvelle Journée RGPD à Poitiers le 1er décembre 2026. Cet évènement sera l’occasion d’échanger avec les acteurs du territoire sur les actualités en matière de protection des données personnelles et les enjeux concrets auxquels sont confrontés les professionn…",
+      "url": "https://www.cnil.fr/fr/journee-rgpd-2026-poitiers",
+      "published": "2026-10-20",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
+    },
     {
       "id": "7bb7409eedcc",
       "title": "GPAGlobal Privacy Assembly",
@@ -533,6 +677,24 @@
         "GDPR"
       ],
       "priority": "high"
+    },
+    {
+      "id": "844df392d528",
+      "title": "Rencontres Informatique & Libertés 2026 : voir la rediffusion de l'évènement",
+      "summary": "La CNIL a organisé la 2ème édition de ses Rencontres Informatique &amp;amp; Libertés le mardi 29&amp;nbsp;septembre 2026. Cette matinée a été l'occasion d’échanger sur différents sujets en lien avec la protection des données, notamment l’essor des lunettes connectées ou le rôle d…",
+      "url": "https://www.cnil.fr/fr/ril-2026",
+      "published": "2026-10-09",
+      "source": "CNIL",
+      "source_url": "https://www.cnil.fr",
+      "categories": [
+        "data_privacy"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "ai_summary": "",
+      "regulation_ids": [],
+      "priority": "medium"
     },
     {
       "id": "93d8836025e8",
@@ -1341,168 +1503,6 @@
       "ai_summary": "",
       "regulation_ids": [],
       "priority": "medium"
-    },
-    {
-      "id": "2c4fb023f739",
-      "title": "Man pleads guilty to fraud and forgery offences relating to fake takeover approach",
-      "summary": "Christopher Woolcott has pleaded guilty to 4 counts of fraud and forgery after creating a fake takeover bid for Touchstone Exploration Inc. Mr Woolcott held shares in Touchstone Exploration Inc and stood to benefit financially from any upward movement in the share price had the f…",
-      "url": "https://www.fca.org.uk/news/press-releases/man-pleads-guilty-fraud-forgery-offences-fake-takeover-approach",
-      "published": "2026-09-14",
-      "source": "FCA",
-      "source_url": "https://www.fca.org.uk",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "uk"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "87cb969a77e3",
-      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
-      "summary": "Background information Date of final decision: 21 July 2026 National case Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 17 (Right to erasure ‘right to be forgotten’) Decision: Adm…",
-      "url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en",
-      "published": "2026-09-11",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "a667d8588ea3",
-      "title": "Ordre du jour de la séance plénière du 10 septembre 2026",
-      "summary": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 10 septembre 2026 à 9&amp;nbsp;h&amp;nbsp;30 avec l’ordre du jour suivant&amp;nbsp;:",
-      "url": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-10-septembre-2026",
-      "published": "2026-09-10",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "99c0171789f6",
-      "title": "Facturation électronique : quels enjeux pour la protection des données personnelles ?",
-      "summary": "Depuis le 1er septembre 2026, la réforme relative à la facturation électronique entre entreprises est entrée en vigueur. La CNIL aide les entreprises à comprendre les enjeux et à assurer la sécurité des données traitées.",
-      "url": "https://www.cnil.fr/fr/facturation-electronique-quels-enjeux",
-      "published": "2026-09-10",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "9f3062d5d466",
-      "title": "La CNIL publie le tome 2 de L’Agence Privacy : une nouvelle enquête pour mieux comprendre la cybercriminalité",
-      "summary": "Avec «&amp;nbsp;Au-delà de l’écran&amp;nbsp;», l’Agence Privacy revient avec de nouvelles aventures&amp;nbsp;! Hypertrucage (deepfakes), arnaque aux sentiments, défis nocifs sur les réseaux sociaux, brouteurs : ce tome 2 aborde des risques numériques pour la vie privée auxquels a…",
-      "url": "https://www.cnil.fr/fr/audeladelecran",
-      "published": "2026-09-10",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "4ecf8ed1bdd2",
-      "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-      "summary": "Background information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32 (Security of processing), Article 34 (Communication of a personal data breach to the data subject),&nbsp; Decision:&nbsp;Administrative …",
-      "url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en",
-      "published": "2026-09-09",
-      "source": "EDPB",
-      "source_url": "https://www.edpb.europa.eu",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "876f730f8b86",
-      "title": "EBA E-mail alert 9 September, 2026",
-      "summary": "EBA E-mail alert 9 September, 2026 Date 09/09/2026 Anonymous (not verified) Wed, 09/09/2026 - 17:00 News &amp; Press The EBA responds to the European Commission’s non-adoption of draft amending technical standards on prior permission",
-      "url": "https://www.eba.europa.eu/node/19987",
-      "published": "2026-09-09",
-      "source": "EBA",
-      "source_url": "https://www.eba.europa.eu",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "a257ef676d46",
-      "title": "Non-respect des droits des personnes : sanction de 300 000 euros à l’encontre de la société EXTIA",
-      "summary": "Le 21 juillet 2026, la CNIL a sanctionné la société EXTIA d’une amende de 300&amp;nbsp;000 euros pour divers manquements relatifs au respect des droits des personnes, notamment du droit à l’effacement des données personnelles («&amp;nbsp;droit à l’oubli&amp;nbsp;»).",
-      "url": "https://www.cnil.fr/fr/sanction-non-respect-droits-personnes-extia",
-      "published": "2026-09-09",
-      "source": "CNIL",
-      "source_url": "https://www.cnil.fr",
-      "categories": [
-        "data_privacy"
-      ],
-      "jurisdictions": [
-        "eu"
-      ],
-      "ai_summary": "",
-      "regulation_ids": [],
-      "priority": "medium"
-    },
-    {
-      "id": "fa539da74585",
-      "title": "FCA decides to ban and fine Daniel Thomas over unauthorised pension transfer advice",
-      "summary": "The FCA has decided to ban Daniel Thomas from working in financial services and fine him £742,700 after finding he recklessly gave defined benefit pension transfer advice he was neither qualified nor allowed to give.",
-      "url": "https://www.fca.org.uk/news/press-releases/fca-ban-fine-daniel-thomas-unauthorised-pension-transfer-advice",
-      "published": "2026-09-07",
-      "source": "FCA",
-      "source_url": "https://www.fca.org.uk",
-      "categories": [
-        "finance"
-      ],
-      "jurisdictions": [
-        "uk"
-      ],
-      "ai_summary": "FCA banned and fined Daniel Thomas £742,700 for recklessly providing unauthorized pension transfer advice. Enforcement action for financial services conduct violation.",
-      "regulation_ids": [],
-      "priority": "high"
     }
   ]
 }
